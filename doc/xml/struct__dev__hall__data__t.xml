@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__dev__hall__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_dev_hall_data_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__dev__hall__data__t_1a37266226255a1f51b386cbc1108c2ef2" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _dev_hall_data_t::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="189" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__hall__data__t_1a77c648e8fa504364bdafd19c170ddd41" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _dev_hall_data_t::hall_level</definition>
+        <argsstring></argsstring>
+        <name>hall_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="190" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>_dev_hall_data_t</label>
+        <link refid="struct__dev__hall__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="188" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="188" bodyend="191"/>
+    <listofallmembers>
+      <member refid="struct__dev__hall__data__t_1a77c648e8fa504364bdafd19c170ddd41" prot="public" virt="non-virtual"><scope>_dev_hall_data_t</scope><name>hall_level</name></member>
+      <member refid="struct__dev__hall__data__t_1a37266226255a1f51b386cbc1108c2ef2" prot="public" virt="non-virtual"><scope>_dev_hall_data_t</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

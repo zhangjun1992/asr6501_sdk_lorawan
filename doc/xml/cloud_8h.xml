@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cloud_8h" kind="file" language="C++">
+    <compoundname>cloud.h</compoundname>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <invincdepgraph>
+      <node id="48">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h</label>
+        <link refid="cloud_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="51">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="55">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bafa5100d8a2fb5b29119f4e716a8fcd09" prot="public">
+          <name>CLOUD_CONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55baad3ff0f03abe7f025b3adfb9b9bea5ea" prot="public">
+          <name>CLOUD_DISCONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba653fda80f170a8e525f61c0c7aa3223a" prot="public">
+          <name>GET_DEVICE_STATUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba117cfefb96599b171b7e723c361830c9" prot="public">
+          <name>SET_DEVICE_STATUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bacb378707e7e04024461ceb841f1b08b5" prot="public">
+          <name>GET_DEVICE_RAWDATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55baf6d9430d71c4aad2e1063cbddb9e9395" prot="public">
+          <name>SET_DEVICE_RAWDATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba42a0b78d508c55738bb54b27fad0bbab" prot="public">
+          <name>UPGRADE_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba7d8fab18d18b9b963176bbdc07ac97e6" prot="public">
+          <name>CANCEL_UPGRADE_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba354c940de4508a5e313f6f60c0d4ed2b" prot="public">
+          <name>GET_SUB_DEVICE_STATUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bac4f306d6e692ae7ba31394a13e95bfee" prot="public">
+          <name>SET_SUB_DEVICE_STATUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba36a3e48f8d7ec790c6ad8c668920b092" prot="public">
+          <name>MAX_EVENT_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" bodystart="8" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cloud_8h_1a22ca1348c62b436e4bde1610673e77e7" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* aos_cloud_cb_t) (int event, const char *json_buffer)</definition>
+        <argsstring>)(int event, const char *json_buffer)</argsstring>
+        <name>aos_cloud_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cloud_8h_1ab3bd028a3acd80c60bc7e6a7e461d93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_cloud_register_callback</definition>
+        <argsstring>(int cb_type, aos_cloud_cb_t cb)</argsstring>
+        <name>aos_cloud_register_callback</name>
+        <param>
+          <type>int</type>
+          <declname>cb_type</declname>
+        </param>
+        <param>
+          <type><ref refid="cloud_8h_1a22ca1348c62b436e4bde1610673e77e7" kindref="member">aos_cloud_cb_t</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register cloud event callback.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cb_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event type interested. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cloud event callback.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the operation status, 0 is OK, others is error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="cloud_8h_1aec9446932fef9166c9b4f1f61b36fb23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_cloud_report</definition>
+        <argsstring>(const char *method, const char *json_buffer, void(*done_cb)(void *), void *arg)</argsstring>
+        <name>aos_cloud_report</name>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>json_buffer</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>done_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Report event to cloud.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>remote method name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">json_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>method&apos;s payload. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">done_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>report done callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>private data passed to done_cb.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the operation status, 0 is OK, others is error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="cloud_8h_1a1d2fd4d25b1689ea4503d4c87ac5c67b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_cloud_trigger</definition>
+        <argsstring>(int cb_type, const char *json_buffer)</argsstring>
+        <name>aos_cloud_trigger</name>
+        <param>
+          <type>int</type>
+          <declname>cb_type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>json_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trigger specific event, used by Cloud Backend.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cb_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">json_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>payload. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="cloud_8h_1a3636a6e0a1ac9b6c90fc43c0afb79627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_cloud_register_backend</definition>
+        <argsstring>(int(*report)(const char *method, const char *json_buffer))</argsstring>
+        <name>aos_cloud_register_backend</name>
+        <param>
+          <type>int(*)(const char *method, const char *json_buffer)</type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register Cloud Backend.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>called when user do aos_cloud_report. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_CLOUD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_CLOUD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bafa5100d8a2fb5b29119f4e716a8fcd09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bafa5100d8a2fb5b29119f4e716a8fcd09" kindref="member">CLOUD_CONNECTED</ref>,</highlight></codeline>
+<codeline lineno="10" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55baad3ff0f03abe7f025b3adfb9b9bea5ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55baad3ff0f03abe7f025b3adfb9b9bea5ea" kindref="member">CLOUD_DISCONNECTED</ref>,</highlight></codeline>
+<codeline lineno="11" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba653fda80f170a8e525f61c0c7aa3223a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba653fda80f170a8e525f61c0c7aa3223a" kindref="member">GET_DEVICE_STATUS</ref>,</highlight></codeline>
+<codeline lineno="12" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba117cfefb96599b171b7e723c361830c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba117cfefb96599b171b7e723c361830c9" kindref="member">SET_DEVICE_STATUS</ref>,</highlight></codeline>
+<codeline lineno="13" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bacb378707e7e04024461ceb841f1b08b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bacb378707e7e04024461ceb841f1b08b5" kindref="member">GET_DEVICE_RAWDATA</ref>,</highlight></codeline>
+<codeline lineno="14" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55baf6d9430d71c4aad2e1063cbddb9e9395" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55baf6d9430d71c4aad2e1063cbddb9e9395" kindref="member">SET_DEVICE_RAWDATA</ref>,</highlight></codeline>
+<codeline lineno="15" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba42a0b78d508c55738bb54b27fad0bbab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba42a0b78d508c55738bb54b27fad0bbab" kindref="member">UPGRADE_DEVICE</ref>,</highlight></codeline>
+<codeline lineno="16" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba7d8fab18d18b9b963176bbdc07ac97e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba7d8fab18d18b9b963176bbdc07ac97e6" kindref="member">CANCEL_UPGRADE_DEVICE</ref>,</highlight></codeline>
+<codeline lineno="17" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba354c940de4508a5e313f6f60c0d4ed2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba354c940de4508a5e313f6f60c0d4ed2b" kindref="member">GET_SUB_DEVICE_STATUS</ref>,</highlight></codeline>
+<codeline lineno="18" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bac4f306d6e692ae7ba31394a13e95bfee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55bac4f306d6e692ae7ba31394a13e95bfee" kindref="member">SET_SUB_DEVICE_STATUS</ref>,</highlight></codeline>
+<codeline lineno="19" refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba36a3e48f8d7ec790c6ad8c668920b092" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cloud_8h_1a06fc87d81c62e9abb8790b6e5713c55ba36a3e48f8d7ec790c6ad8c668920b092" kindref="member">MAX_EVENT_TYPE</ref>,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="cloud_8h_1a22ca1348c62b436e4bde1610673e77e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="cloud_8h_1a22ca1348c62b436e4bde1610673e77e7" kindref="member">aos_cloud_cb_t</ref>)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>event,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json_buffer);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cloud_8h_1ab3bd028a3acd80c60bc7e6a7e461d93b" kindref="member">aos_cloud_register_callback</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cb_type,<sp/><ref refid="cloud_8h_1a22ca1348c62b436e4bde1610673e77e7" kindref="member">aos_cloud_cb_t</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cloud_8h_1aec9446932fef9166c9b4f1f61b36fb23" kindref="member">aos_cloud_report</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json_buffer,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*done_cb)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cloud_8h_1a1d2fd4d25b1689ea4503d4c87ac5c67b" kindref="member">aos_cloud_trigger</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cb_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json_buffer);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cloud_8h_1a3636a6e0a1ac9b6c90fc43c0afb79627" kindref="member">aos_cloud_register_backend</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*report)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json_buffer));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_CLOUD_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cloud.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="kernel_8h" kind="file" language="C++">
+    <compoundname>kernel.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <includedby refid="log__impl_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h</includedby>
+    <incdepgraph>
+      <node id="114">
+        <label>stddef.h</label>
+      </node>
+      <node id="115">
+        <label>sys/types.h</label>
+      </node>
+      <node id="113">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="117">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="120">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="124">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+      <node id="116">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structaos__hdl__t" prot="public">aos_hdl_t</innerclass>
+    <innerclass refid="structaos__workqueue__t" prot="public">aos_workqueue_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="kernel_8h_1ace7b5d4663ba617a23da0ac13acd6ea9" prot="public" static="no">
+        <name>AOS_WAIT_FOREVER</name>
+        <initializer>0xffffffffu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="15" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="kernel_8h_1a2a5ca7918b40f0f73d717f7c5ff20dda" prot="public" static="no">
+        <name>AOS_NO_WAIT</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="16" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="kernel_8h_1af68dd1e94330d50f154d26e8f40b6520" prot="public" static="no">
+        <name>AOS_DEFAULT_APP_PRI</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="17" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="kernel_8h_1a8331188bdef4856ea654e31c05a7827e" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_task_t</definition>
+        <argsstring></argsstring>
+        <name>aos_task_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="23" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_mutex_t</definition>
+        <argsstring></argsstring>
+        <name>aos_mutex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="24" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_sem_t</definition>
+        <argsstring></argsstring>
+        <name>aos_sem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="25" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1ad783cc298941621eda3f9f05d656d613" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_queue_t</definition>
+        <argsstring></argsstring>
+        <name>aos_queue_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="26" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_timer_t</definition>
+        <argsstring></argsstring>
+        <name>aos_timer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="27" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_work_t</definition>
+        <argsstring></argsstring>
+        <name>aos_work_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="28" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" prot="public" static="no">
+        <type><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref></type>
+        <definition>typedef aos_hdl_t aos_event_t</definition>
+        <argsstring></argsstring>
+        <name>aos_event_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="29" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int aos_task_key_t</definition>
+        <argsstring></argsstring>
+        <name>aos_task_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="36" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="kernel_8h_1aaa9ebda2d7e29737cfa7272058e215b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_reboot</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_reboot</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reboot AliOS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ae8d852bd8f91b585e3a3b35b87482a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_get_hz</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_get_hz</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get HZ(ticks per second).</para><para><simplesect kind="return"><para>RHINO_CONFIG_TICKS_PER_SECOND. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1acd94826d0fbcf02968bc1b73ed4dc24e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* aos_version_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_version_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get kernel version.</para><para><simplesect kind="return"><para>SYSINFO_KERNEL_VERSION. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ac3e5819f79305744325c60c53221e81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_task_new</definition>
+        <argsstring>(const char *name, void(*fn)(void *), void *arg, int stack_size)</argsstring>
+        <name>aos_task_new</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a task.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to run. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stacksize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack-size in bytes.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a75ed0d26eba3aa9304533166b751af9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_task_new_ext</definition>
+        <argsstring>(aos_task_t *task, const char *name, void(*fn)(void *), void *arg, int stack_size, int prio)</argsstring>
+        <name>aos_task_new_ext</name>
+        <param>
+          <type><ref refid="kernel_8h_1a8331188bdef4856ea654e31c05a7827e" kindref="member">aos_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a task.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument of the function.. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stack_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack-buf: if stack_buf==NULL, provided by kernel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stack_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack-size in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>priority value, the max is RHINO_CONFIG_USER_PRI_MAX(default 60).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a4f8364a78b8c797ac86ee5de9f0b05c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_task_exit</definition>
+        <argsstring>(int code)</argsstring>
+        <name>aos_task_exit</name>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exit a task.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not used now. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1adbb65e60cc107a65d3d45b578fbf7a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* aos_task_name</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_task_name</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get task name.</para><para><simplesect kind="return"><para>the name of the task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ad81cdd2fa83909ccbaa151e29ae1aea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_task_key_create</definition>
+        <argsstring>(aos_task_key_t *key)</argsstring>
+        <name>aos_task_key_create</name>
+        <param>
+          <type><ref refid="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" kindref="member">aos_task_key_t</ref> *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a task key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of key object.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success, -EINVAL: error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ac93f559c867c74e62ecdaffbb0c5d38b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_task_key_delete</definition>
+        <argsstring>(aos_task_key_t key)</argsstring>
+        <name>aos_task_key_delete</name>
+        <param>
+          <type><ref refid="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" kindref="member">aos_task_key_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete a task key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1abc5849757e768e073914dd672f661b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_task_setspecific</definition>
+        <argsstring>(aos_task_key_t key, void *vp)</argsstring>
+        <name>aos_task_setspecific</name>
+        <param>
+          <type><ref refid="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" kindref="member">aos_task_key_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>vp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Associate a task-specific value with a key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of a task-specific value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the check status, 0 is OK, -1 indicates invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a3d04253f30128f0f443b7b08646472e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* aos_task_getspecific</definition>
+        <argsstring>(aos_task_key_t key)</argsstring>
+        <name>aos_task_getspecific</name>
+        <param>
+          <type><ref refid="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" kindref="member">aos_task_key_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value currently bound to the specified key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a39a39b90a25ef280ba26bef68120a57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_mutex_new</definition>
+        <argsstring>(aos_mutex_t *mutex)</argsstring>
+        <name>aos_mutex_new</name>
+        <param>
+          <type><ref refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" kindref="member">aos_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alloc a mutex.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of mutex object, mutex object must be alloced, hdl pointer in aos_mutex_t will refer a kernel obj internally.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1aad3b88f3a77b2a1139c2e8023f77919d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_mutex_free</definition>
+        <argsstring>(aos_mutex_t *mutex)</argsstring>
+        <name>aos_mutex_free</name>
+        <param>
+          <type><ref refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" kindref="member">aos_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a mutex.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mutex object, mem refered by hdl pointer in aos_mutex_t will be freed internally. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ae33d2cc601477493d159eaae9dafd433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_mutex_lock</definition>
+        <argsstring>(aos_mutex_t *mutex, unsigned int timeout)</argsstring>
+        <name>aos_mutex_lock</name>
+        <param>
+          <type><ref refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" kindref="member">aos_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lock a mutex.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mutex object, it contains kernel obj pointer which aos_mutex_new alloced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>waiting until timeout in milliseconds.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ac0d44d29a69cc71cb5d921cc12df646b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_mutex_unlock</definition>
+        <argsstring>(aos_mutex_t *mutex)</argsstring>
+        <name>aos_mutex_unlock</name>
+        <param>
+          <type><ref refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" kindref="member">aos_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unlock a mutex.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mutex object, it contains kernel obj pointer which oc_mutex_new alloced.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a5c0600e105761364fe15cba496341148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_mutex_is_valid</definition>
+        <argsstring>(aos_mutex_t *mutex)</argsstring>
+        <name>aos_mutex_is_valid</name>
+        <param>
+          <type><ref refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" kindref="member">aos_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will check if mutex is valid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the mutex.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: invalid, 1: valid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a7b4c81682a9a9b9ed039e9bd1ee668cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_sem_new</definition>
+        <argsstring>(aos_sem_t *sem, int count)</argsstring>
+        <name>aos_sem_new</name>
+        <param>
+          <type><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alloc a semaphore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of semaphore object, semaphore object must be alloced, hdl pointer in aos_sem_t will refer a kernel obj internally. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial semaphore counter.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0:success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a8280f3374a68d03e68b7998c16e3e10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_sem_free</definition>
+        <argsstring>(aos_sem_t *sem)</argsstring>
+        <name>aos_sem_free</name>
+        <param>
+          <type><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy a semaphore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of semaphore object, mem refered by hdl pointer in aos_sem_t will be freed internally. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1addd37f144a0d2ab1aff2796d0ea0b6b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_sem_wait</definition>
+        <argsstring>(aos_sem_t *sem, unsigned int timeout)</argsstring>
+        <name>aos_sem_wait</name>
+        <param>
+          <type><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a semaphore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>semaphore object, it contains kernel obj pointer which aos_sem_new alloced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>waiting until timeout in milliseconds.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a88f5c9ab76c15d6046be6bad0e9eadd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_sem_signal</definition>
+        <argsstring>(aos_sem_t *sem)</argsstring>
+        <name>aos_sem_signal</name>
+        <param>
+          <type><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a semaphore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>semaphore object, it contains kernel obj pointer which aos_sem_new alloced. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a312b401df7136fc6676f8b391d3db2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_sem_is_valid</definition>
+        <argsstring>(aos_sem_t *sem)</argsstring>
+        <name>aos_sem_is_valid</name>
+        <param>
+          <type><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will check if semaphore is valid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the semaphore.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: invalid, 1: valid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a53070c6fcdb7f8fbef1a8eb4a26fd7cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_sem_signal_all</definition>
+        <argsstring>(aos_sem_t *sem)</argsstring>
+        <name>aos_sem_signal_all</name>
+        <param>
+          <type><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release all semaphore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>semaphore object, it contains kernel obj pointer which aos_sem_new alloced. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ac732c25ded1eb3a384c5f020ba6a08b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_event_new</definition>
+        <argsstring>(aos_event_t *event, unsigned int flags)</argsstring>
+        <name>aos_event_new</name>
+        <param>
+          <type><ref refid="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" kindref="member">aos_event_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will create an event with an initialization flag set. This function should not be called from interrupt context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event object pointer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization flag set(provided by caller).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a896d0bc3537a1e77adfe57e5f06696a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_event_free</definition>
+        <argsstring>(aos_event_t *event)</argsstring>
+        <name>aos_event_free</name>
+        <param>
+          <type><ref refid="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" kindref="member">aos_event_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will free an event. This function shoud not be called from interrupt context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory refered by hdl pointer in event will be freed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>N/A. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a5b391770d0be54369be74a70afd72c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_event_get</definition>
+        <argsstring>(aos_event_t *event, unsigned int flags, unsigned char opt, unsigned int *actl_flags, unsigned int timeout)</argsstring>
+        <name>aos_event_get</name>
+        <param>
+          <type><ref refid="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" kindref="member">aos_event_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>actl_flags</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will try to get flag set from given event, if the request flag set is satisfied, it will return immediately, if the request flag set is not satisfied with timeout(RHINO_WAIT_FOREVER,0xFFFFFFFF), the caller task will be pended on event until the flag is satisfied, if the request flag is not satisfied with timeout(RHINO_NO_WAIT, 0x0), it will also return immediately. Note, this function should not be called from interrupt context because it has possible to lead context switch and an interrupt has no TCB to save context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event object pointer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>request flag set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>operation type, such as AND,OR,AND_CLEAR,OR_CLEAR. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">actl_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the internal flags value hold by event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>request flag set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max wait time in millisecond.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a9c5e7e9e481fec1371c8ece4a93463f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_event_set</definition>
+        <argsstring>(aos_event_t *event, unsigned int flags, unsigned char opt)</argsstring>
+        <name>aos_event_set</name>
+        <param>
+          <type><ref refid="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" kindref="member">aos_event_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will set flag set to given event, and it will check if any task which is pending on the event should be waken up.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event object pointer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag set to be set into event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>operation type, such as AND,OR.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a5326decc24a0481168a84fa1d69f1548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_queue_new</definition>
+        <argsstring>(aos_queue_t *queue, void *buf, unsigned int size, int max_msg)</argsstring>
+        <name>aos_queue_new</name>
+        <param>
+          <type><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will create a queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the queue(the space is provided by user). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buf of the queue(provided by user). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the bytes of the buf. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the max size of the msg.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a8d136c68d53e64e5adc77ed641c8874c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_queue_free</definition>
+        <argsstring>(aos_queue_t *queue)</argsstring>
+        <name>aos_queue_free</name>
+        <param>
+          <type><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will delete a queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the queue. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a51536bfc868ae28bf2699b875175b39c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_queue_send</definition>
+        <argsstring>(aos_queue_t *queue, void *msg, unsigned int size)</argsstring>
+        <name>aos_queue_send</name>
+        <param>
+          <type><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will send a msg to the front of a queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the queue. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>msg to send. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the msg.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a0b872ba513dd489162e71ac081c24762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_queue_recv</definition>
+        <argsstring>(aos_queue_t *queue, unsigned int ms, void *msg, unsigned int *size)</argsstring>
+        <name>aos_queue_recv</name>
+        <param>
+          <type><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>ms</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will receive msg from a queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the queue. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ms to wait before receive. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buf to save msg. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the msg.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ac8b31749bf7998f9e0e06cc534a02e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_queue_is_valid</definition>
+        <argsstring>(aos_queue_t *queue)</argsstring>
+        <name>aos_queue_is_valid</name>
+        <param>
+          <type><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will check if queue is valid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the queue.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: invalid, 1: valid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a11ac192f58dcf3fb7827261abb0a1e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* aos_queue_buf_ptr</definition>
+        <argsstring>(aos_queue_t *queue)</argsstring>
+        <name>aos_queue_buf_ptr</name>
+        <param>
+          <type><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will return buf ptr if queue is inited.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the queue.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL: error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a65bf6c43ffbc83fb3b2dea492a6113fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_timer_new</definition>
+        <argsstring>(aos_timer_t *timer, void(*fn)(void *, void *), void *arg, int ms, int repeat)</argsstring>
+        <name>aos_timer_new</name>
+        <param>
+          <type><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>void(*)(void *, void *)</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will create a timer and run auto.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callbak of the timer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the argument of the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ms of the normal timer triger. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>repeat or not when the timer is created.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1abb9dac0df33a66c5b9bf62bc95133748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_timer_new_ext</definition>
+        <argsstring>(aos_timer_t *timer, void(*fn)(void *, void *), void *arg, int ms, int repeat, unsigned char auto_run)</argsstring>
+        <name>aos_timer_new_ext</name>
+        <param>
+          <type><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>void(*)(void *, void *)</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>repeat</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>auto_run</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will create a timer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callbak of the timer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the argument of the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ms of the normal timer triger. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>repeat or not when the timer is created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auto_run</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>run auto or not when the timer is created.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a35c10dcc1344edf1f6953571f9be5b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_timer_free</definition>
+        <argsstring>(aos_timer_t *timer)</argsstring>
+        <name>aos_timer_free</name>
+        <param>
+          <type><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will delete a timer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a timer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="383" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ab0d3ca7374c1b73d9b1163b34134f42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_timer_start</definition>
+        <argsstring>(aos_timer_t *timer)</argsstring>
+        <name>aos_timer_start</name>
+        <param>
+          <type><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will start a timer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="392" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1aea7b86d5fa4798a95049190e745907dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_timer_stop</definition>
+        <argsstring>(aos_timer_t *timer)</argsstring>
+        <name>aos_timer_stop</name>
+        <param>
+          <type><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will stop a timer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a2b17bb6230d0b9d567754612c5430e03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_timer_change</definition>
+        <argsstring>(aos_timer_t *timer, int ms)</argsstring>
+        <name>aos_timer_change</name>
+        <param>
+          <type><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will change attributes of a timer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ms of the timer triger.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a7aa3b1afb11951c46eab1d0b43c37226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_workqueue_create</definition>
+        <argsstring>(aos_workqueue_t *workqueue, int pri, int stack_size)</argsstring>
+        <name>aos_workqueue_create</name>
+        <param>
+          <type><ref refid="structaos__workqueue__t" kindref="compound">aos_workqueue_t</ref> *</type>
+          <declname>workqueue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pri</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will creat a workqueue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">workqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the workqueue to be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the priority of the worker. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stack_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the worker-stack.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="422" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ae853d1d6ed0e64b996cf7303d0cdf22c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_work_init</definition>
+        <argsstring>(aos_work_t *work, void(*fn)(void *), void *arg, int dly)</argsstring>
+        <name>aos_work_init</name>
+        <param>
+          <type><ref refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" kindref="member">aos_work_t</ref> *</type>
+          <declname>work</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will initialize a work.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">work</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the work to be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call back function to run. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the paraments of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ms to delay before run.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="434" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ab4b4a876cb5f99870464437fdf1d8473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_work_destroy</definition>
+        <argsstring>(aos_work_t *work)</argsstring>
+        <name>aos_work_destroy</name>
+        <param>
+          <type><ref refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" kindref="member">aos_work_t</ref> *</type>
+          <declname>work</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will destroy a work.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">work</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the work to be destroied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="441" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ad4996714a1cf9618dc4063097a8bd8cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_work_run</definition>
+        <argsstring>(aos_workqueue_t *workqueue, aos_work_t *work)</argsstring>
+        <name>aos_work_run</name>
+        <param>
+          <type><ref refid="structaos__workqueue__t" kindref="compound">aos_workqueue_t</ref> *</type>
+          <declname>workqueue</declname>
+        </param>
+        <param>
+          <type><ref refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" kindref="member">aos_work_t</ref> *</type>
+          <declname>work</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will run a work on a workqueue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">workqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the workqueue to run work. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">work</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the work to run.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="451" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a5efd9714085578c4fc2919f88ddf713d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_work_sched</definition>
+        <argsstring>(aos_work_t *work)</argsstring>
+        <name>aos_work_sched</name>
+        <param>
+          <type><ref refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" kindref="member">aos_work_t</ref> *</type>
+          <declname>work</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will run a work on the default workqueue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">work</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the work to run.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="460" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a468f8735777d13a035291cb8db664d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_work_cancel</definition>
+        <argsstring>(aos_work_t *work)</argsstring>
+        <name>aos_work_cancel</name>
+        <param>
+          <type><ref refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" kindref="member">aos_work_t</ref> *</type>
+          <declname>work</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will cancel a work on the default workqueue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">work</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the work to cancel.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0: success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="469" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1acdbdecb39b5b77bc30b2c76b368a2322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* aos_realloc</definition>
+        <argsstring>(void *mem, unsigned int size)</argsstring>
+        <name>aos_realloc</name>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Realloc memory.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current memory address point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new size of the mem to remalloc.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL: error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ace6ec1b819481718629380a6ab9b3d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* aos_malloc</definition>
+        <argsstring>(unsigned int size)</argsstring>
+        <name>aos_malloc</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alloc memory.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the mem to malloc.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL: error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ad8074d67714dc589918cce73ab6ec751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* aos_zalloc</definition>
+        <argsstring>(unsigned int size)</argsstring>
+        <name>aos_zalloc</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alloc memory and clear to zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the mem to malloc.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL: error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="497" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a99e4fd7a1b3afda2122f5c005a3a4fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_alloc_trace</definition>
+        <argsstring>(void *addr, size_t allocator)</argsstring>
+        <name>aos_alloc_trace</name>
+        <param>
+          <type>void *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trace alloced mems.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of the mem alloced by malloc. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buildin_address. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="505" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a12a6358720769a6489f381d860fe6dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_free</definition>
+        <argsstring>(void *mem)</argsstring>
+        <name>aos_free</name>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free memory.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address point of the mem. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="512" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1af3cea202def3ac1612449897bee0b481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long aos_now</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_now</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current time in nano seconds.</para><para><simplesect kind="return"><para>elapsed time in nano seconds from system starting. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="519" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ab0f5a75d2da6e526862decdf11a2574f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long aos_now_ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_now_ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current time in mini seconds.</para><para><simplesect kind="return"><para>elapsed time in mini seconds from system starting. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="526" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ad02a268f96460567b93155324510a0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_msleep</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>aos_msleep</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Msleep.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sleep time in milliseconds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="533" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1a385192794c9ac99447ff230a7f53213a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="538" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel_8h_1ac91860c96077d8e9754975c04ede1f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="543" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_KERNEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_KERNEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="kernel_8h_1ace7b5d4663ba617a23da0ac13acd6ea9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_WAIT_FOREVER<sp/><sp/><sp/><sp/>0xffffffffu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="kernel_8h_1a2a5ca7918b40f0f73d717f7c5ff20dda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_NO_WAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="kernel_8h_1af68dd1e94330d50f154d26e8f40b6520" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_DEFAULT_APP_PRI<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structaos__hdl__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="structaos__hdl__t_1aeb48605dca77e2ab6c6571a9b251fad9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structaos__hdl__t_1aeb48605dca77e2ab6c6571a9b251fad9" kindref="member">hdl</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="kernel_8h_1a8331188bdef4856ea654e31c05a7827e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1a8331188bdef4856ea654e31c05a7827e" kindref="member">aos_task_t</ref>;</highlight></codeline>
+<codeline lineno="24" refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1ace8bc8c4f45849bf1239ef25cdbc2f7e" kindref="member">aos_mutex_t</ref>;</highlight></codeline>
+<codeline lineno="25" refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1a4f2e4d746fc4b086c6fab52ce8b1a117" kindref="member">aos_sem_t</ref>;</highlight></codeline>
+<codeline lineno="26" refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1ad783cc298941621eda3f9f05d656d613" kindref="member">aos_queue_t</ref>;</highlight></codeline>
+<codeline lineno="27" refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1a0e761beb1932038b7d24c918c2a59c89" kindref="member">aos_timer_t</ref>;</highlight></codeline>
+<codeline lineno="28" refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1a1e7c04d7e97812526bfea771f1f3d6c3" kindref="member">aos_work_t</ref>;</highlight></codeline>
+<codeline lineno="29" refid="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structaos__hdl__t" kindref="compound">aos_hdl_t</ref><sp/><ref refid="kernel_8h_1a768921f6ddd64447ec9ff9c4216171c0" kindref="member">aos_event_t</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structaos__workqueue__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32" refid="structaos__workqueue__t_1a536dc4eb26cd55cf55146b7b1e5fbda9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structaos__workqueue__t_1a536dc4eb26cd55cf55146b7b1e5fbda9" kindref="member">hdl</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structaos__workqueue__t_1a446b911dfebeae3743dde27ad07b7821" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structaos__workqueue__t_1a446b911dfebeae3743dde27ad07b7821" kindref="member">stk</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="structaos__workqueue__t" kindref="compound">aos_workqueue_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac2e6e434ccf67117e3b1f00483d4b364" kindref="member">aos_task_key_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1aaa9ebda2d7e29737cfa7272058e215b1" kindref="member">aos_reboot</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ae8d852bd8f91b585e3a3b35b87482a8c" kindref="member">aos_get_hz</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1acd94826d0fbcf02968bc1b73ed4dc24e" kindref="member">aos_version_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac3e5819f79305744325c60c53221e81c" kindref="member">aos_task_new</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stack_size);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a75ed0d26eba3aa9304533166b751af9f" kindref="member">aos_task_new_ext</ref>(aos_task_t<sp/>*task,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stack_size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prio);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a4f8364a78b8c797ac86ee5de9f0b05c5" kindref="member">aos_task_exit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>code);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1adbb65e60cc107a65d3d45b578fbf7a9e" kindref="member">aos_task_name</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ad81cdd2fa83909ccbaa151e29ae1aea0" kindref="member">aos_task_key_create</ref>(aos_task_key_t<sp/>*key);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac93f559c867c74e62ecdaffbb0c5d38b" kindref="member">aos_task_key_delete</ref>(aos_task_key_t<sp/>key);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1abc5849757e768e073914dd672f661b51" kindref="member">aos_task_setspecific</ref>(aos_task_key_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*vp);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1a3d04253f30128f0f443b7b08646472e5" kindref="member">aos_task_getspecific</ref>(aos_task_key_t<sp/>key);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a39a39b90a25ef280ba26bef68120a57d" kindref="member">aos_mutex_new</ref>(aos_mutex_t<sp/>*mutex);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1aad3b88f3a77b2a1139c2e8023f77919d" kindref="member">aos_mutex_free</ref>(aos_mutex_t<sp/>*mutex);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ae33d2cc601477493d159eaae9dafd433" kindref="member">aos_mutex_lock</ref>(aos_mutex_t<sp/>*mutex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac0d44d29a69cc71cb5d921cc12df646b" kindref="member">aos_mutex_unlock</ref>(aos_mutex_t<sp/>*mutex);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a5c0600e105761364fe15cba496341148" kindref="member">aos_mutex_is_valid</ref>(aos_mutex_t<sp/>*mutex);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a7b4c81682a9a9b9ed039e9bd1ee668cb" kindref="member">aos_sem_new</ref>(aos_sem_t<sp/>*sem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a8280f3374a68d03e68b7998c16e3e10a" kindref="member">aos_sem_free</ref>(aos_sem_t<sp/>*sem);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1addd37f144a0d2ab1aff2796d0ea0b6b8" kindref="member">aos_sem_wait</ref>(aos_sem_t<sp/>*sem,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a88f5c9ab76c15d6046be6bad0e9eadd0" kindref="member">aos_sem_signal</ref>(aos_sem_t<sp/>*sem);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a312b401df7136fc6676f8b391d3db2d0" kindref="member">aos_sem_is_valid</ref>(aos_sem_t<sp/>*sem);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a53070c6fcdb7f8fbef1a8eb4a26fd7cf" kindref="member">aos_sem_signal_all</ref>(aos_sem_t<sp/>*sem);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac732c25ded1eb3a384c5f020ba6a08b2" kindref="member">aos_event_new</ref>(aos_event_t<sp/>*event,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a896d0bc3537a1e77adfe57e5f06696a1" kindref="member">aos_event_free</ref>(aos_event_t<sp/>*event);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a5b391770d0be54369be74a70afd72c0f" kindref="member">aos_event_get</ref>(aos_event_t<sp/>*event,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>opt,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*actl_flags,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a9c5e7e9e481fec1371c8ece4a93463f5" kindref="member">aos_event_set</ref>(aos_event_t<sp/>*event,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>opt);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a5326decc24a0481168a84fa1d69f1548" kindref="member">aos_queue_new</ref>(aos_queue_t<sp/>*queue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_msg);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a8d136c68d53e64e5adc77ed641c8874c" kindref="member">aos_queue_free</ref>(aos_queue_t<sp/>*queue);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a51536bfc868ae28bf2699b875175b39c" kindref="member">aos_queue_send</ref>(aos_queue_t<sp/>*queue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*msg,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a0b872ba513dd489162e71ac081c24762" kindref="member">aos_queue_recv</ref>(aos_queue_t<sp/>*queue,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*msg,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac8b31749bf7998f9e0e06cc534a02e01" kindref="member">aos_queue_is_valid</ref>(aos_queue_t<sp/>*queue);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1a11ac192f58dcf3fb7827261abb0a1e5f" kindref="member">aos_queue_buf_ptr</ref>(aos_queue_t<sp/>*queue);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a65bf6c43ffbc83fb3b2dea492a6113fd" kindref="member">aos_timer_new</ref>(aos_timer_t<sp/>*timer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1abb9dac0df33a66c5b9bf62bc95133748" kindref="member">aos_timer_new_ext</ref>(aos_timer_t<sp/>*timer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>auto_run);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a35c10dcc1344edf1f6953571f9be5b2f" kindref="member">aos_timer_free</ref>(aos_timer_t<sp/>*timer);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ab0d3ca7374c1b73d9b1163b34134f42a" kindref="member">aos_timer_start</ref>(aos_timer_t<sp/>*timer);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1aea7b86d5fa4798a95049190e745907dd" kindref="member">aos_timer_stop</ref>(aos_timer_t<sp/>*timer);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a2b17bb6230d0b9d567754612c5430e03" kindref="member">aos_timer_change</ref>(aos_timer_t<sp/>*timer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms);</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a7aa3b1afb11951c46eab1d0b43c37226" kindref="member">aos_workqueue_create</ref>(<ref refid="structaos__workqueue__t" kindref="compound">aos_workqueue_t</ref><sp/>*workqueue,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pri,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stack_size);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ae853d1d6ed0e64b996cf7303d0cdf22c" kindref="member">aos_work_init</ref>(aos_work_t<sp/>*work,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dly);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ab4b4a876cb5f99870464437fdf1d8473" kindref="member">aos_work_destroy</ref>(aos_work_t<sp/>*work);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ad4996714a1cf9618dc4063097a8bd8cd" kindref="member">aos_work_run</ref>(<ref refid="structaos__workqueue__t" kindref="compound">aos_workqueue_t</ref><sp/>*workqueue,<sp/>aos_work_t<sp/>*work);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a5efd9714085578c4fc2919f88ddf713d" kindref="member">aos_work_sched</ref>(aos_work_t<sp/>*work);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a468f8735777d13a035291cb8db664d02" kindref="member">aos_work_cancel</ref>(aos_work_t<sp/>*work);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1acdbdecb39b5b77bc30b2c76b368a2322" kindref="member">aos_realloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1ace6ec1b819481718629380a6ab9b3d57" kindref="member">aos_malloc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="kernel_8h_1ad8074d67714dc589918cce73ab6ec751" kindref="member">aos_zalloc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a99e4fd7a1b3afda2122f5c005a3a4fe8" kindref="member">aos_alloc_trace</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*addr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocator);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a12a6358720769a6489f381d860fe6dc4" kindref="member">aos_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1af3cea202def3ac1612449897bee0b481" kindref="member">aos_now</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ab0f5a75d2da6e526862decdf11a2574f" kindref="member">aos_now_ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ad02a268f96460567b93155324510a0c5" kindref="member">aos_msleep</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1a385192794c9ac99447ff230a7f53213a" kindref="member">aos_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="kernel_8h_1ac91860c96077d8e9754975c04ede1f7c" kindref="member">aos_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_KERNEL_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h"/>
+  </compounddef>
+</doxygen>

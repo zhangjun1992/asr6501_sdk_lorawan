@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structnand__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>nand_dev_t</compoundname>
+    <includes refid="nand_8h" local="yes">nand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnand__dev__t_1ab0c55b629cd0b5df2f29ceb56a595e42" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nand_dev_t::base_addr</definition>
+        <argsstring></argsstring>
+        <name>base_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="23" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__dev__t_1a1684a7183389fa6d5d95646076afc9bb" prot="public" static="no" mutable="no">
+        <type><ref refid="structnand__config__t" kindref="compound">nand_config_t</ref></type>
+        <definition>nand_config_t nand_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="24" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__dev__t_1ab02a8867a604115a10428a77171a2656" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* nand_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="25" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="150">
+        <label>nand_config_t</label>
+        <link refid="structnand__config__t"/>
+      </node>
+      <node id="149">
+        <label>nand_dev_t</label>
+        <link refid="structnand__dev__t"/>
+        <childnode refid="150" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structnand__dev__t_1ab0c55b629cd0b5df2f29ceb56a595e42" prot="public" virt="non-virtual"><scope>nand_dev_t</scope><name>base_addr</name></member>
+      <member refid="structnand__dev__t_1a1684a7183389fa6d5d95646076afc9bb" prot="public" virt="non-virtual"><scope>nand_dev_t</scope><name>config</name></member>
+      <member refid="structnand__dev__t_1ab02a8867a604115a10428a77171a2656" prot="public" virt="non-virtual"><scope>nand_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

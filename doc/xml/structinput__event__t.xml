@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structinput__event__t" kind="struct" language="C++" prot="public">
+    <compoundname>input_event_t</compoundname>
+    <includes refid="yloop_8h" local="yes">yloop.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structinput__event__t_1ad4ff0379ef91ba031b5e57b3d0036840" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t input_event_t::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" line="67" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__event__t_1abec4e033ca7a1bb5979619201b27e14c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t input_event_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" line="69" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__event__t_1ab6a912cb751656597f1ad64837ecad6c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t input_event_t::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" line="71" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__event__t_1ab3201384223a6dfe7becefe21e6d6e13" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long input_event_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" line="73" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinput__event__t_1a49a18e449723486ab5506e8d745d5313" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long input_event_t::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" line="75" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="141">
+        <label>input_event_t</label>
+        <link refid="structinput__event__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" line="65" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h" bodystart="65" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structinput__event__t_1ab6a912cb751656597f1ad64837ecad6c" prot="public" virt="non-virtual"><scope>input_event_t</scope><name>code</name></member>
+      <member refid="structinput__event__t_1a49a18e449723486ab5506e8d745d5313" prot="public" virt="non-virtual"><scope>input_event_t</scope><name>extra</name></member>
+      <member refid="structinput__event__t_1ad4ff0379ef91ba031b5e57b3d0036840" prot="public" virt="non-virtual"><scope>input_event_t</scope><name>time</name></member>
+      <member refid="structinput__event__t_1abec4e033ca7a1bb5979619201b27e14c" prot="public" virt="non-virtual"><scope>input_event_t</scope><name>type</name></member>
+      <member refid="structinput__event__t_1ab3201384223a6dfe7becefe21e6d6e13" prot="public" virt="non-virtual"><scope>input_event_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

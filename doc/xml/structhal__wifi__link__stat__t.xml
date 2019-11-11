@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__wifi__link__stat__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_wifi_link_stat_t</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__wifi__link__stat__t_1a916eefdf4f4d8ca8b8df95129c07f8e4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hal_wifi_link_stat_t::is_connected</definition>
+        <argsstring></argsstring>
+        <name>is_connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="124" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__link__stat__t_1a92b5ba3cbcdb4a94ac9483af9133d624" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hal_wifi_link_stat_t::wifi_strength</definition>
+        <argsstring></argsstring>
+        <name>wifi_strength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="125" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__link__stat__t_1a32875f213fccbf4cc26f19bbdb83abb7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t hal_wifi_link_stat_t::ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="126" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__link__stat__t_1a7131883307e268e7c93fc1e1a73722de" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t hal_wifi_link_stat_t::bssid[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="127" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__link__stat__t_1ae5fa184f70eb840afc2d0d5a4d9ca9d7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hal_wifi_link_stat_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="128" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="123">
+        <label>hal_wifi_link_stat_t</label>
+        <link refid="structhal__wifi__link__stat__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="123" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="123" bodyend="129"/>
+    <listofallmembers>
+      <member refid="structhal__wifi__link__stat__t_1a7131883307e268e7c93fc1e1a73722de" prot="public" virt="non-virtual"><scope>hal_wifi_link_stat_t</scope><name>bssid</name></member>
+      <member refid="structhal__wifi__link__stat__t_1ae5fa184f70eb840afc2d0d5a4d9ca9d7" prot="public" virt="non-virtual"><scope>hal_wifi_link_stat_t</scope><name>channel</name></member>
+      <member refid="structhal__wifi__link__stat__t_1a916eefdf4f4d8ca8b8df95129c07f8e4" prot="public" virt="non-virtual"><scope>hal_wifi_link_stat_t</scope><name>is_connected</name></member>
+      <member refid="structhal__wifi__link__stat__t_1a32875f213fccbf4cc26f19bbdb83abb7" prot="public" virt="non-virtual"><scope>hal_wifi_link_stat_t</scope><name>ssid</name></member>
+      <member refid="structhal__wifi__link__stat__t_1a92b5ba3cbcdb4a94ac9483af9133d624" prot="public" virt="non-virtual"><scope>hal_wifi_link_stat_t</scope><name>wifi_strength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

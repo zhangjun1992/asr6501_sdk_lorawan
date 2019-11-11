@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structap__list__adv__t" kind="struct" language="C++" prot="public">
+    <compoundname>ap_list_adv_t</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structap__list__adv__t_1ae2310b60b99d7930e26ed9544bfb0233" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ap_list_adv_t::ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="41" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structap__list__adv__t_1af89db2a7058ce289a851eb2f694a56d2" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ap_list_adv_t::ap_power</definition>
+        <argsstring></argsstring>
+        <name>ap_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="42" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structap__list__adv__t_1a7d10b1e4198fc0ef0dbef77819a16b2c" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ap_list_adv_t::bssid[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="43" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structap__list__adv__t_1ad01bf4eab0487ac3d291a2a5394dab49" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ap_list_adv_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="44" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structap__list__adv__t_1a7cdeb4a7e8fb817a33d7b6a890678c49" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ap_list_adv_t::security</definition>
+        <argsstring></argsstring>
+        <name>security</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="45" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="74">
+        <label>ap_list_adv_t</label>
+        <link refid="structap__list__adv__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="40" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="40" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structap__list__adv__t_1af89db2a7058ce289a851eb2f694a56d2" prot="public" virt="non-virtual"><scope>ap_list_adv_t</scope><name>ap_power</name></member>
+      <member refid="structap__list__adv__t_1a7d10b1e4198fc0ef0dbef77819a16b2c" prot="public" virt="non-virtual"><scope>ap_list_adv_t</scope><name>bssid</name></member>
+      <member refid="structap__list__adv__t_1ad01bf4eab0487ac3d291a2a5394dab49" prot="public" virt="non-virtual"><scope>ap_list_adv_t</scope><name>channel</name></member>
+      <member refid="structap__list__adv__t_1a7cdeb4a7e8fb817a33d7b6a890678c49" prot="public" virt="non-virtual"><scope>ap_list_adv_t</scope><name>security</name></member>
+      <member refid="structap__list__adv__t_1ae2310b60b99d7930e26ed9544bfb0233" prot="public" virt="non-virtual"><scope>ap_list_adv_t</scope><name>ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

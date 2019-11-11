@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="spi_8h" kind="file" language="C++">
+    <compoundname>spi.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="556">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+      </node>
+      <node id="557">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="558">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="556" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structspi__config__t" prot="public">spi_config_t</innerclass>
+    <innerclass refid="structspi__dev__t" prot="public">spi_dev_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="spi_8h_1a38350080f4f66969296c5fa79445eba2" prot="public" static="no">
+        <name>HAL_SPI_MODE_MASTER</name>
+        <initializer>1  /* spi communication is master mode */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="8" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spi_8h_1a47c750d065d01e61d2dfd823580e8b8f" prot="public" static="no">
+        <name>HAL_SPI_MODE_SLAVE</name>
+        <initializer>2  /* spi communication is slave mode */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="9" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="spi_8h_1a4b4db09ed0654e035de01ecf137bc7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_spi_init</definition>
+        <argsstring>(spi_dev_t *spi)</argsstring>
+        <name>hal_spi_init</name>
+        <param>
+          <type><ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref> *</type>
+          <declname>spi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises the SPI interface for a given SPI device</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spi device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if the SPI device could not be initialised </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a81f9723012853882615c1e46bc58cc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_spi_send</definition>
+        <argsstring>(spi_dev_t *spi, const uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_spi_send</name>
+        <param>
+          <type><ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref> *</type>
+          <declname>spi</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Spi send</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi send data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if the SPI device could not be initialised </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1ab6aa5dc6e45d8520cd02749fbbe9a269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_spi_recv</definition>
+        <argsstring>(spi_dev_t *spi, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_spi_recv</name>
+        <param>
+          <type><ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref> *</type>
+          <declname>spi</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi_recv</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi recv data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi recv data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if the SPI device could not be initialised </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a72673f11746bb01d27536c2bfa2a997f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_spi_send_recv</definition>
+        <argsstring>(spi_dev_t *spi, uint8_t *tx_data, uint8_t *rx_data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_spi_send_recv</name>
+        <param>
+          <type><ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref> *</type>
+          <declname>spi</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>tx_data</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rx_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi send data and recv</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tx_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rx_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi recv data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi data to be sent and recived </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, on success; EIO : if the SPI device could not be initialised </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1af6f3489747e78677520c0f925eb817ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_spi_finalize</definition>
+        <argsstring>(spi_dev_t *spi)</argsstring>
+        <name>hal_spi_finalize</name>
+        <param>
+          <type><ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref> *</type>
+          <declname>spi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initialises a SPI interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the SPI device to be de-initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="spi_8h_1a38350080f4f66969296c5fa79445eba2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_MODE_MASTER<sp/>1<sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>communication<sp/>is<sp/>master<sp/>mode<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="spi_8h_1a47c750d065d01e61d2dfd823580e8b8f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SPI_MODE_SLAVE<sp/><sp/>2<sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>communication<sp/>is<sp/>slave<sp/>mode<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structspi__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="structspi__config__t_1a10afede6b824e2e9e01c2d0b1819aa23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structspi__config__t_1a10afede6b824e2e9e01c2d0b1819aa23" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>communication<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structspi__config__t_1af8b4b9033931adeaf0aec27eb38ce393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structspi__config__t_1af8b4b9033931adeaf0aec27eb38ce393" kindref="member">freq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>communication<sp/>frequency<sp/>Hz<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><ref refid="structspi__config__t" kindref="compound">spi_config_t</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structspi__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="structspi__dev__t_1a9ae23abf41d0073e6ffbc5b1d38c4fa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structspi__dev__t_1a9ae23abf41d0073e6ffbc5b1d38c4fa3" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structspi__dev__t_1ab7c1e4ab2d918c0e87148c9e538dd274" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structspi__config__t" kindref="compound">spi_config_t</ref><sp/><ref refid="structspi__dev__t_1ab7c1e4ab2d918c0e87148c9e538dd274" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structspi__dev__t_1a717f4ad49d8e6dea13cccfbd2c28300c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structspi__dev__t_1a717f4ad49d8e6dea13cccfbd2c28300c" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">int32_t<sp/><ref refid="spi_8h_1a4b4db09ed0654e035de01ecf137bc7a7" kindref="member">hal_spi_init</ref>(<ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref><sp/>*spi);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">int32_t<sp/><ref refid="spi_8h_1a81f9723012853882615c1e46bc58cc8c" kindref="member">hal_spi_send</ref>(<ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref><sp/>*spi,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">int32_t<sp/><ref refid="spi_8h_1ab6aa5dc6e45d8520cd02749fbbe9a269" kindref="member">hal_spi_recv</ref>(<ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref><sp/>*spi,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">int32_t<sp/><ref refid="spi_8h_1a72673f11746bb01d27536c2bfa2a997f" kindref="member">hal_spi_send_recv</ref>(<ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref><sp/>*spi,<sp/>uint8_t<sp/>*tx_data,<sp/>uint8_t<sp/>*rx_data,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">int32_t<sp/><ref refid="spi_8h_1af6f3489747e78677520c0f925eb817ef" kindref="member">hal_spi_finalize</ref>(<ref refid="structspi__dev__t" kindref="compound">spi_dev_t</ref><sp/>*spi);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_SPI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h"/>
+  </compounddef>
+</doxygen>

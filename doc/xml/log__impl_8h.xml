@@ -1,0 +1,643 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="log__impl_8h" kind="file" language="C++">
+    <compoundname>log_impl.h</compoundname>
+    <includes refid="kernel_8h" local="no">aos/kernel.h</includes>
+    <includedby refid="log_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h</includedby>
+    <incdepgraph>
+      <node id="101">
+        <label>stddef.h</label>
+      </node>
+      <node id="102">
+        <label>sys/types.h</label>
+      </node>
+      <node id="99">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="105">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="108">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="112">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="log__impl_8h_1aa261952d3b777bbb745470f58ce7abdc" prot="public" static="no">
+        <name>AOS_LOG_LEVEL</name>
+        <initializer><ref refid="log__impl_8h_1a24579a47d3fe3782ad920fa667a41d6d" kindref="member">aos_log_get_level</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="28" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a0479c76780f74081e2230b6f6789ec63" prot="public" static="no">
+        <name>AOS_LL_V_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="30" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a3d48a5e0dc40a98effe1f1a01da9cbbe" prot="public" static="no">
+        <name>AOS_LL_V_ALL</name>
+        <initializer>0XFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="31" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1af84ef8d893da4fe00bdcbac07fd53e9f" prot="public" static="no">
+        <name>AOS_LL_V_FATAL</name>
+        <initializer>(1 &lt;&lt; <ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2ba889c91d98c5934beb8fb4245f347d" kindref="member">AOS_LL_V_FATAL_BIT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="32" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1aed3b3779ff60e041e998c458d6e5dc71" prot="public" static="no">
+        <name>AOS_LL_V_ERROR</name>
+        <initializer>(1 &lt;&lt; <ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a5840c458fcd996477a387c45513c8452" kindref="member">AOS_LL_V_ERROR_BIT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="33" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a5c2d038ed8be7b94e3a00f92163f3f58" prot="public" static="no">
+        <name>AOS_LL_V_WARN</name>
+        <initializer>(1 &lt;&lt; <ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a0b8855b3a0a63b71cdca925737abbf77" kindref="member">AOS_LL_V_WARN_BIT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="34" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1aaedc2d9d1d3781636b3a10eb53e3b986" prot="public" static="no">
+        <name>AOS_LL_V_INFO</name>
+        <initializer>(1 &lt;&lt; <ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a65b7cb77e6874e821a726820cb200d68" kindref="member">AOS_LL_V_INFO_BIT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="35" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a0ce70689bb93323dbff1b0030d1e5f47" prot="public" static="no">
+        <name>AOS_LL_V_DEBUG</name>
+        <initializer>(1 &lt;&lt; <ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a34a29f2d55f6a5b83aaf080e3a97597d" kindref="member">AOS_LL_V_DEBUG_BIT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="36" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a9c1b34fcf28ff990ad9eea3c064641bd" prot="public" static="no">
+        <name>COL_DEF</name>
+        <initializer>&quot;\x1B[0m&quot;  /* white */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="42" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a87d30d2657caae38d671f052cb9cc0e7" prot="public" static="no">
+        <name>COL_RED</name>
+        <initializer>&quot;\x1B[31m&quot; /* red */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="43" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a9cdb9d058a13d2b954d52c13ebf6f90d" prot="public" static="no">
+        <name>COL_GRE</name>
+        <initializer>&quot;\x1B[32m&quot; /* green */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="44" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a84a127ed8baebd354118b6d7518ca9fa" prot="public" static="no">
+        <name>COL_BLU</name>
+        <initializer>&quot;\x1B[34m&quot; /* blue */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="45" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a864e4193bd767df90391580c9a7c04d1" prot="public" static="no">
+        <name>COL_YEL</name>
+        <initializer>&quot;\x1B[33m&quot; /* yellow */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="46" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1aa53304ea5f14313a7bf74298da4a13dc" prot="public" static="no">
+        <name>COL_WHE</name>
+        <initializer>&quot;\x1B[37m&quot; /* white */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="47" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1ae0a857bf983563d0f0b299c07d836b76" prot="public" static="no">
+        <name>COL_CYN</name>
+        <initializer>&quot;\x1B[36m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="48" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a8517113b9d0649078b3a75176a5f5573" prot="public" static="no">
+        <name>COL_MAG</name>
+        <initializer>&quot;\x1B[35m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="49" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" prot="public" static="no">
+        <name>log_print</name>
+        <param><defname>CON</defname></param>
+        <param><defname>MOD</defname></param>
+        <param><defname>COLOR</defname></param>
+        <param><defname>LVL</defname></param>
+        <param><defname>FMT</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>do { \
+        if (CON) { \
+            <ref refid="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" kindref="member">csp_printf</ref>(&quot;[%06d]&lt;&quot; LVL &quot;&gt; &quot;FMT&quot;\r\n&quot;, (unsigned)aos_now_ms(), ##__VA_ARGS__); \
+        } \
+    } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="64" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a80ffa8067a17fce16c75107d7e073657" prot="public" static="no">
+        <name>void_func</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="73" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1ad2ddc7261600d1a356896072632ee519" prot="public" static="no">
+        <name>LOG_IMPL</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" kindref="member">log_print</ref>(1, &quot;AOS&quot;, COL_DEF, &quot;V&quot;, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="92" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1ad2c421cdb04bb625d04819febb3ac951" prot="public" static="no">
+        <name>LOGD_IMPL</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a80ffa8067a17fce16c75107d7e073657" kindref="member">void_func</ref>(fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="103" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a9258df246c14776566d9d3c8bb311425" prot="public" static="no">
+        <name>LOGF_IMPL</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" kindref="member">log_print</ref>(<ref refid="log__impl_8h_1aa261952d3b777bbb745470f58ce7abdc" kindref="member">AOS_LOG_LEVEL</ref> &amp; <ref refid="log__impl_8h_1af84ef8d893da4fe00bdcbac07fd53e9f" kindref="member">AOS_LL_V_FATAL</ref>, mod, <ref refid="log__impl_8h_1a87d30d2657caae38d671f052cb9cc0e7" kindref="member">COL_RED</ref>, &quot;F&quot;, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="114" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a372bc53d0eaf1b108a89e95eb1d323bb" prot="public" static="no">
+        <name>LOGE_IMPL</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" kindref="member">log_print</ref>(<ref refid="log__impl_8h_1aa261952d3b777bbb745470f58ce7abdc" kindref="member">AOS_LOG_LEVEL</ref> &amp; <ref refid="log__impl_8h_1aed3b3779ff60e041e998c458d6e5dc71" kindref="member">AOS_LL_V_ERROR</ref>, mod, <ref refid="log__impl_8h_1a864e4193bd767df90391580c9a7c04d1" kindref="member">COL_YEL</ref>, &quot;E&quot;, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="116" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a69e38bb28b849f032de3a3da88577805" prot="public" static="no">
+        <name>LOGW_IMPL</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" kindref="member">log_print</ref>(<ref refid="log__impl_8h_1aa261952d3b777bbb745470f58ce7abdc" kindref="member">AOS_LOG_LEVEL</ref> &amp; <ref refid="log__impl_8h_1a5c2d038ed8be7b94e3a00f92163f3f58" kindref="member">AOS_LL_V_WARN</ref>, mod, <ref refid="log__impl_8h_1a84a127ed8baebd354118b6d7518ca9fa" kindref="member">COL_BLU</ref>, &quot;W&quot;, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="118" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log__impl_8h_1a11c506b1d4a87801d46c9062c5fc1f58" prot="public" static="no">
+        <name>LOGI_IMPL</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" kindref="member">log_print</ref>(<ref refid="log__impl_8h_1aa261952d3b777bbb745470f58ce7abdc" kindref="member">AOS_LOG_LEVEL</ref> &amp; <ref refid="log__impl_8h_1aaedc2d9d1d3781636b3a10eb53e3b986" kindref="member">AOS_LL_V_INFO</ref>, mod, <ref refid="log__impl_8h_1a9cdb9d058a13d2b954d52c13ebf6f90d" kindref="member">COL_GRE</ref>, &quot;I&quot;, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="120" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6" prot="public" static="no">
+        <name>log_level_bit</name>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2baabe2b33096d0312086da3e8b5a564" prot="public">
+          <name>AOS_LL_V_NONE_BIT</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2ba889c91d98c5934beb8fb4245f347d" prot="public">
+          <name>AOS_LL_V_FATAL_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a5840c458fcd996477a387c45513c8452" prot="public">
+          <name>AOS_LL_V_ERROR_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a0b8855b3a0a63b71cdca925737abbf77" prot="public">
+          <name>AOS_LL_V_WARN_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a65b7cb77e6874e821a726820cb200d68" prot="public">
+          <name>AOS_LL_V_INFO_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a34a29f2d55f6a5b83aaf080e3a97597d" prot="public">
+          <name>AOS_LL_V_DEBUG_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6aa4935ec3d25f6c607ca3e111f991c1f5" prot="public">
+          <name>AOS_LL_V_MAX_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="18" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="18" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="log__impl_8h_1af4a360f03ad24d5a41835dcc3cf71272" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int aos_log_level</definition>
+        <argsstring></argsstring>
+        <name>aos_log_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="12" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="log__impl_8h_1a24579a47d3fe3782ad920fa667a41d6d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int aos_log_get_level</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_log_get_level</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" bodystart="13" bodyend="16"/>
+        <references refid="log_8h_1af4a360f03ad24d5a41835dcc3cf71272">aos_log_level</references>
+      </memberdef>
+      <memberdef kind="function" id="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int csp_printf</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>csp_printf</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_LOG_IMPL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LOG_IMPL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1af4a360f03ad24d5a41835dcc3cf71272" kindref="member">aos_log_level</ref>;</highlight></codeline>
+<codeline lineno="13" refid="log__impl_8h_1a24579a47d3fe3782ad920fa667a41d6d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1a24579a47d3fe3782ad920fa667a41d6d" kindref="member">aos_log_get_level</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1af4a360f03ad24d5a41835dcc3cf71272" kindref="member">aos_log_level</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6" kindref="member">log_level_bit</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2baabe2b33096d0312086da3e8b5a564" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2baabe2b33096d0312086da3e8b5a564" kindref="member">AOS_LL_V_NONE_BIT</ref><sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="20" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2ba889c91d98c5934beb8fb4245f347d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a2ba889c91d98c5934beb8fb4245f347d" kindref="member">AOS_LL_V_FATAL_BIT</ref>,</highlight></codeline>
+<codeline lineno="21" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a5840c458fcd996477a387c45513c8452" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a5840c458fcd996477a387c45513c8452" kindref="member">AOS_LL_V_ERROR_BIT</ref>,</highlight></codeline>
+<codeline lineno="22" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a0b8855b3a0a63b71cdca925737abbf77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a0b8855b3a0a63b71cdca925737abbf77" kindref="member">AOS_LL_V_WARN_BIT</ref>,</highlight></codeline>
+<codeline lineno="23" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a65b7cb77e6874e821a726820cb200d68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a65b7cb77e6874e821a726820cb200d68" kindref="member">AOS_LL_V_INFO_BIT</ref>,</highlight></codeline>
+<codeline lineno="24" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a34a29f2d55f6a5b83aaf080e3a97597d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6a34a29f2d55f6a5b83aaf080e3a97597d" kindref="member">AOS_LL_V_DEBUG_BIT</ref>,</highlight></codeline>
+<codeline lineno="25" refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6aa4935ec3d25f6c607ca3e111f991c1f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log__impl_8h_1a3a413ca4b2647ce48fa4506e9b928bc6aa4935ec3d25f6c607ca3e111f991c1f5" kindref="member">AOS_LL_V_MAX_BIT</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="log__impl_8h_1aa261952d3b777bbb745470f58ce7abdc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LOG_LEVEL<sp/>aos_log_get_level()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="log__impl_8h_1a0479c76780f74081e2230b6f6789ec63" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_NONE<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="log__impl_8h_1a3d48a5e0dc40a98effe1f1a01da9cbbe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_ALL<sp/><sp/><sp/>0XFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="log__impl_8h_1af84ef8d893da4fe00bdcbac07fd53e9f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_FATAL<sp/>(1<sp/>&lt;&lt;<sp/>AOS_LL_V_FATAL_BIT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="log__impl_8h_1aed3b3779ff60e041e998c458d6e5dc71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_ERROR<sp/>(1<sp/>&lt;&lt;<sp/>AOS_LL_V_ERROR_BIT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="log__impl_8h_1a5c2d038ed8be7b94e3a00f92163f3f58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_WARN<sp/><sp/>(1<sp/>&lt;&lt;<sp/>AOS_LL_V_WARN_BIT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="log__impl_8h_1aaedc2d9d1d3781636b3a10eb53e3b986" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_INFO<sp/><sp/>(1<sp/>&lt;&lt;<sp/>AOS_LL_V_INFO_BIT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="log__impl_8h_1a0ce70689bb93323dbff1b0030d1e5f47" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LL_V_DEBUG<sp/>(1<sp/>&lt;&lt;<sp/>AOS_LL_V_DEBUG_BIT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>color<sp/>def.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>see<sp/>http://stackoverflow.com/questions/3585846/color-text-in-terminal-applications-in-unix</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="log__impl_8h_1a9c1b34fcf28ff990ad9eea3c064641bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_DEF<sp/>&quot;\x1B[0m&quot;<sp/><sp/></highlight><highlight class="comment">/*<sp/>white<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="log__impl_8h_1a87d30d2657caae38d671f052cb9cc0e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_RED<sp/>&quot;\x1B[31m&quot;<sp/></highlight><highlight class="comment">/*<sp/>red<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="log__impl_8h_1a9cdb9d058a13d2b954d52c13ebf6f90d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_GRE<sp/>&quot;\x1B[32m&quot;<sp/></highlight><highlight class="comment">/*<sp/>green<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="log__impl_8h_1a84a127ed8baebd354118b6d7518ca9fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_BLU<sp/>&quot;\x1B[34m&quot;<sp/></highlight><highlight class="comment">/*<sp/>blue<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="log__impl_8h_1a864e4193bd767df90391580c9a7c04d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_YEL<sp/>&quot;\x1B[33m&quot;<sp/></highlight><highlight class="comment">/*<sp/>yellow<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="log__impl_8h_1aa53304ea5f14313a7bf74298da4a13dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_WHE<sp/>&quot;\x1B[37m&quot;<sp/></highlight><highlight class="comment">/*<sp/>white<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="log__impl_8h_1ae0a857bf983563d0f0b299c07d836b76" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_CYN<sp/>&quot;\x1B[36m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="log__impl_8h_1a8517113b9d0649078b3a75176a5f5573" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_MAG<sp/>&quot;\x1B[35m&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="kernel_8h" kindref="compound">aos/kernel.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" kindref="member">csp_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_LOGMACRO_DETAILS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_print(CON,<sp/>MOD,<sp/>COLOR,<sp/>LVL,<sp/>FMT,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(CON)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>long<sp/>ms<sp/>=<sp/>aos_now_ms();;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>csp_printf(COLOR<sp/>&quot;<sp/>[%4d.%03d]&lt;%s&gt;<sp/>%s<sp/>[%s#%d]<sp/>:<sp/>&quot;,<sp/>(int)(ms/1000),<sp/>(int)(ms%1000),<sp/>LVL,<sp/>MOD,<sp/>__FUNCTION__,<sp/>__LINE__);<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>csp_printf(FMT<sp/>COL_DEF<sp/>&quot;\r\n&quot;,<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="log__impl_8h_1a3898392e09a1bebd13240c082c6ce816" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_print(CON,<sp/>MOD,<sp/>COLOR,<sp/>LVL,<sp/>FMT,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(CON)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>csp_printf(&quot;[%06d]&lt;&quot;<sp/>LVL<sp/>&quot;&gt;<sp/>&quot;FMT&quot;\r\n&quot;,<sp/>(unsigned)aos_now_ms(),<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="log__impl_8h_1a80ffa8067a17fce16c75107d7e073657" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>void_func(fmt,<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>os_printf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>csp_printf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" kindref="member">csp_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" kindref="member">csp_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" kindref="member">csp_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOGF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOGW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOGI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOGD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="log__impl_8h_1ad2ddc7261600d1a356896072632ee519" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_IMPL(fmt,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_print(1,<sp/>&quot;AOS&quot;,<sp/>COL_DEF,<sp/>&quot;V&quot;,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NDEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_LOGMACRO_SILENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGD_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_print(AOS_LOG_LEVEL<sp/>&amp;<sp/>AOS_LL_V_DEBUG,<sp/>mod,<sp/>COL_WHE,<sp/>&quot;D&quot;,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="log__impl_8h_1ad2c421cdb04bb625d04819febb3ac951" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGD_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>void_func(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_LOGMACRO_SILENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGF_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>void_func(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGE_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>void_func(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGW_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>void_func(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGI_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>void_func(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="log__impl_8h_1a9258df246c14776566d9d3c8bb311425" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGF_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_print(AOS_LOG_LEVEL<sp/>&amp;<sp/>AOS_LL_V_FATAL,<sp/>mod,<sp/>COL_RED,<sp/>&quot;F&quot;,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="log__impl_8h_1a372bc53d0eaf1b108a89e95eb1d323bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGE_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_print(AOS_LOG_LEVEL<sp/>&amp;<sp/>AOS_LL_V_ERROR,<sp/>mod,<sp/>COL_YEL,<sp/>&quot;E&quot;,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="log__impl_8h_1a69e38bb28b849f032de3a3da88577805" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGW_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_print(AOS_LOG_LEVEL<sp/>&amp;<sp/>AOS_LL_V_WARN,<sp/>mod,<sp/>COL_BLU,<sp/>&quot;W&quot;,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="log__impl_8h_1a11c506b1d4a87801d46c9062c5fc1f58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGI_IMPL(mod,<sp/>fmt,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_print(AOS_LOG_LEVEL<sp/>&amp;<sp/>AOS_LL_V_INFO,<sp/>mod,<sp/>COL_GRE,<sp/>&quot;I&quot;,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_LOGMACRO_SILENT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_LOG_IMPL_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/log_impl.h"/>
+  </compounddef>
+</doxygen>

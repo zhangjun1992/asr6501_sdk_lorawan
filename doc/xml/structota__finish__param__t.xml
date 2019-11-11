@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structota__finish__param__t" kind="struct" language="C++" prot="public">
+    <compoundname>ota_finish_param_t</compoundname>
+    <includes refid="ota_8h" local="yes">ota.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structota__finish__param__t_1aa15407c786405496a73e48c15f73c4d9" prot="public" static="no" mutable="no">
+        <type><ref refid="ota_8h_1ad9cb2baa250d884bb9baa6bbf719a1f3" kindref="member">OTA_ENUM_UPDATE_TYPE</ref></type>
+        <definition>OTA_ENUM_UPDATE_TYPE ota_finish_param_t::update_type</definition>
+        <argsstring></argsstring>
+        <name>update_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="35" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structota__finish__param__t_1a833598b278db89d6793f2206baa8f1b9" prot="public" static="no" mutable="no">
+        <type><ref refid="ota_8h_1a4759521d6f281094f72d6d8d2968b0f8" kindref="member">OTA_ENUM_RESULT_TYPE</ref></type>
+        <definition>OTA_ENUM_RESULT_TYPE ota_finish_param_t::result_type</definition>
+        <argsstring></argsstring>
+        <name>result_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="36" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="157">
+        <label>ota_finish_param_t</label>
+        <link refid="structota__finish__param__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="34" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="34" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structota__finish__param__t_1a833598b278db89d6793f2206baa8f1b9" prot="public" virt="non-virtual"><scope>ota_finish_param_t</scope><name>result_type</name></member>
+      <member refid="structota__finish__param__t_1aa15407c786405496a73e48c15f73c4d9" prot="public" virt="non-virtual"><scope>ota_finish_param_t</scope><name>update_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

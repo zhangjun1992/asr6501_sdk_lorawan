@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="kv_8h" kind="file" language="C++">
+    <compoundname>kv.h</compoundname>
+    <includes refid="types_8h" local="no">aos/types.h</includes>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <incdepgraph>
+      <node id="135">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="128">
+        <label>aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>stdint.h</label>
+      </node>
+      <node id="133">
+        <label>poll.h</label>
+      </node>
+      <node id="132">
+        <label>fcntl.h</label>
+      </node>
+      <node id="130">
+        <label>stddef.h</label>
+      </node>
+      <node id="127">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>sys/types.h</label>
+      </node>
+      <node id="131">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="137">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="140">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="144">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="kv_8h_1a18e25fc9b6cc24c1fddfcc11d8726087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_kv_set</definition>
+        <argsstring>(const char *key, const void *value, int len, int sync)</argsstring>
+        <name>aos_kv_set</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new KV pair.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key of the KV pair. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the KV pair. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the length of the value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>save the KV pair to flash right now (should always be 1).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kv_8h_1afa4c842f059c069a6ca43de194f78d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_kv_get</definition>
+        <argsstring>(const char *key, void *buffer, int *buffer_len)</argsstring>
+        <name>aos_kv_get</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>buffer_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the KV pair&apos;s value stored in buffer by its key.</para><para><simplesect kind="note"><para>: the buffer_len should be larger than the real length of the value, otherwise buffer would be NULL.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key of the KV pair to get. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the memory to store the value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="kv_8h_1a711e19ff624c05b9b41d3c11e2ac44fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_kv_del</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>aos_kv_del</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete the KV pair by its key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key of the KV pair to delete.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_KV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_KV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">aos/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kv_8h_1a18e25fc9b6cc24c1fddfcc11d8726087" kindref="member">aos_kv_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sync);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kv_8h_1afa4c842f059c069a6ca43de194f78d05" kindref="member">aos_kv_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*buffer_len);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kv_8h_1a711e19ff624c05b9b41d3c11e2ac44fe" kindref="member">aos_kv_del</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_KV_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h"/>
+  </compounddef>
+</doxygen>

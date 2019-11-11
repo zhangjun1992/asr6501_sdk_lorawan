@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structaos__hdl__t" kind="struct" language="C++" prot="public">
+    <compoundname>aos_hdl_t</compoundname>
+    <includes refid="kernel_8h" local="yes">kernel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaos__hdl__t_1aeb48605dca77e2ab6c6571a9b251fad9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* aos_hdl_t::hdl</definition>
+        <argsstring></argsstring>
+        <name>hdl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="20" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="70">
+        <label>aos_hdl_t</label>
+        <link refid="structaos__hdl__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="19" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="19" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structaos__hdl__t_1aeb48605dca77e2ab6c6571a9b251fad9" prot="public" virt="non-virtual"><scope>aos_hdl_t</scope><name>hdl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

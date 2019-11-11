@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="rng_8h" kind="file" language="C++">
+    <compoundname>rng.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="519">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="518">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h</label>
+        <link refid="rng_8h"/>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrandom__dev__t" prot="public">random_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rng_8h_1ab005da730da0f1aafe9efe965334a72a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_random_num_read</definition>
+        <argsstring>(random_dev_t random, void *buf, int32_t bytes)</argsstring>
+        <name>hal_random_num_read</name>
+        <param>
+          <type><ref refid="structrandom__dev__t" kindref="compound">random_dev_t</ref></type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill in a memory buffer with random data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the random device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">inBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to a valid memory buffer, this function will fill in this memory with random numbers after executed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inByteCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the memory buffer (bytes)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" line="23" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_RNG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_RNG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structrandom__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structrandom__dev__t_1a2a6242cf140d666e98d0a6ce149bf5d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrandom__dev__t_1a2a6242cf140d666e98d0a6ce149bf5d1" kindref="member">port</ref>;<sp/></highlight><highlight class="comment">/*<sp/>random<sp/>device<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structrandom__dev__t_1a3cb7ab4c80c3e1dd58234005b1882995" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>*<ref refid="structrandom__dev__t_1a3cb7ab4c80c3e1dd58234005b1882995" kindref="member">priv</ref>;<sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><ref refid="structrandom__dev__t" kindref="compound">random_dev_t</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">int32_t<sp/><ref refid="rng_8h_1ab005da730da0f1aafe9efe965334a72a" kindref="member">hal_random_num_read</ref>(<ref refid="structrandom__dev__t" kindref="compound">random_dev_t</ref><sp/>random,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/>int32_t<sp/>bytes);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_RNG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h"/>
+  </compounddef>
+</doxygen>

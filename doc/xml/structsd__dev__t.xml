@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structsd__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>sd_dev_t</compoundname>
+    <includes refid="sd_8h" local="yes">sd.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsd__dev__t_1a08e8cf73cb1df946634e9a51ab42e217" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sd_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="33" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__dev__t_1a0375b5afc4ebb2217971c22673cb4600" prot="public" static="no" mutable="no">
+        <type><ref refid="structsd__config__t" kindref="compound">sd_config_t</ref></type>
+        <definition>sd_config_t sd_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="34" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__dev__t_1a792c59c2444820c786248e382cf09a76" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* sd_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="35" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="182">
+        <label>sd_dev_t</label>
+        <link refid="structsd__dev__t"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+      <node id="183">
+        <label>sd_config_t</label>
+        <link refid="structsd__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="32" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structsd__dev__t_1a0375b5afc4ebb2217971c22673cb4600" prot="public" virt="non-virtual"><scope>sd_dev_t</scope><name>config</name></member>
+      <member refid="structsd__dev__t_1a08e8cf73cb1df946634e9a51ab42e217" prot="public" virt="non-virtual"><scope>sd_dev_t</scope><name>port</name></member>
+      <member refid="structsd__dev__t_1a792c59c2444820c786248e382cf09a76" prot="public" virt="non-virtual"><scope>sd_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

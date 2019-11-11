@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cli_8h" kind="file" language="C++">
+    <compoundname>cli.h</compoundname>
+    <includes local="yes">k_types.h</includes>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <incdepgraph>
+      <node id="35">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h</label>
+        <link refid="cli_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>k_types.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="38">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h</label>
+        <link refid="cli_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="41">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="45">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcli__command" prot="public">cli_command</innerclass>
+    <innerclass refid="structcli__st" prot="public">cli_st</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cli_8h_1a4b2b20c68bee625b7dc737c4d05699fd" prot="public" static="no">
+        <name>MAX_COMMANDS</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="8" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a6378f14810330164b7fb66f3334b2a27" prot="public" static="no">
+        <name>INBUF_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="9" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a3df829d6427c2cd4fbd387268040cc65" prot="public" static="no">
+        <name>OUTBUF_SIZE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="10" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1af883ec6e2a3e23bba5fcc253718596fe" prot="public" static="no">
+        <name>HIS_SIZE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="11" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a1b65680e007c2f3ce78e650c5c94de64" prot="public" static="no">
+        <name>CLI_MAX_ARG_NUM</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="13" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a18fc679db98605b8ce30c6b4d5c8301e" prot="public" static="no">
+        <name>CLI_MAX_ONCECMD_NUM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="14" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a32dbd9172ae6648a0197494b96925799" prot="public" static="no">
+        <name>CLI_ARGS</name>
+        <initializer>char *pcWriteBuffer, int xWriteBufferLen, int argc, char **argv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="46" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a195767ec31ec406a0c1ee072bbf5929a" prot="public" static="no">
+        <name>cmd_printf</name>
+        <param><defname>...</defname></param>
+        <initializer>do {} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="139" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cli_8h_1a662d65def9c4f45c98c5f59a569a4d6d" prot="public" static="no">
+        <name>aos_cli_printf</name>
+        <initializer><ref refid="log__impl_8h_1a3f07b35189b67e500454b2b818ba1574" kindref="member">csp_printf</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="163" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cli_8h_1aa06bf816f5c8288fa58d8e5fd5bf726f" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* FUNCPTR) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>FUNCPTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="18" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cli_8h_1a14b29f5697c16bd4d27d5b44f19aa27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RHINO_INLINE int</type>
+        <definition>RHINO_INLINE int aos_cli_register_command</definition>
+        <argsstring>(const struct cli_command *command)</argsstring>
+        <name>aos_cli_register_command</name>
+        <param>
+          <type>const struct <ref refid="structcli__command" kindref="compound">cli_command</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="141" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="cli_8h_1a870ef01c799c4065c2f8bd7fa3c29a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RHINO_INLINE int</type>
+        <definition>RHINO_INLINE int aos_cli_unregister_command</definition>
+        <argsstring>(const struct cli_command *command)</argsstring>
+        <name>aos_cli_unregister_command</name>
+        <param>
+          <type>const struct <ref refid="structcli__command" kindref="compound">cli_command</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="146" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="cli_8h_1a02a86697f8c67034bbe20fe5d331eab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RHINO_INLINE int</type>
+        <definition>RHINO_INLINE int aos_cli_register_commands</definition>
+        <argsstring>(const struct cli_command *commands, int num_commands)</argsstring>
+        <name>aos_cli_register_commands</name>
+        <param>
+          <type>const struct <ref refid="structcli__command" kindref="compound">cli_command</ref> *</type>
+          <declname>commands</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="151" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="cli_8h_1aae1a211149a2becb50ea632c65db06ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RHINO_INLINE int</type>
+        <definition>RHINO_INLINE int aos_cli_unregister_commands</definition>
+        <argsstring>(const struct cli_command *commands, int num_commands)</argsstring>
+        <name>aos_cli_unregister_commands</name>
+        <param>
+          <type>const struct <ref refid="structcli__command" kindref="compound">cli_command</ref> *</type>
+          <declname>commands</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="157" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="cli_8h_1ac66a47f678aa6c6a67669a461783eedb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RHINO_INLINE int</type>
+        <definition>RHINO_INLINE int aos_cli_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_cli_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="165" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="cli_8h_1a8384afe191ae34616658a3c31b550418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RHINO_INLINE int</type>
+        <definition>RHINO_INLINE int aos_cli_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_cli_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="170" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_CLI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_CLI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="cli_8h_1a4b2b20c68bee625b7dc737c4d05699fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_COMMANDS<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="cli_8h_1a6378f14810330164b7fb66f3334b2a27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INBUF_SIZE<sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="cli_8h_1a3df829d6427c2cd4fbd387268040cc65" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUTBUF_SIZE<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="cli_8h_1af883ec6e2a3e23bba5fcc253718596fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIS_SIZE<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="cli_8h_1a1b65680e007c2f3ce78e650c5c94de64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLI_MAX_ARG_NUM<sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="cli_8h_1a18fc679db98605b8ce30c6b4d5c8301e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLI_MAX_ONCECMD_NUM<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FUNCPTR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="cli_8h_1aa06bf816f5c8288fa58d8e5fd5bf726f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="cli_8h_1aa06bf816f5c8288fa58d8e5fd5bf726f" kindref="member">FUNCPTR</ref>)(void);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Structure<sp/>for<sp/>registering<sp/>CLI<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structcli__command" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="structcli__command_1a83cc311c7d2e771e1b095e7fe487cd08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structcli__command_1a83cc311c7d2e771e1b095e7fe487cd08" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structcli__command_1aae28593ccc4863d9e56ef0a45d6dfd93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structcli__command_1aae28593ccc4863d9e56ef0a45d6dfd93" kindref="member">help</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structcli__command_1a62db0c7aba24d582e62d5d321e115de1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*</highlight><highlight class="keyword">function</highlight><highlight class="normal">)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pcWriteBuffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xWriteBufferLen,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structcli__st" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcli__st" kindref="compound">cli_st</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="structcli__st_1aa165bb8d705f8162fdef9caf248e9d24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcli__st_1aa165bb8d705f8162fdef9caf248e9d24" kindref="member">initialized</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structcli__st_1a358ff9f628880448c1dcfefa7fe124a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcli__st_1a358ff9f628880448c1dcfefa7fe124a7" kindref="member">echo_disabled</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structcli__st_1ae6267c542eb3ea592f7b84cc3963acce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*commands[<ref refid="cli_8h_1a4b2b20c68bee625b7dc737c4d05699fd" kindref="member">MAX_COMMANDS</ref>];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structcli__st_1a2720d0c5493080bb0de32a08980aa3be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcli__st_1a2720d0c5493080bb0de32a08980aa3be" kindref="member">num_commands</ref>;</highlight></codeline>
+<codeline lineno="36" refid="structcli__st_1a18ec0d6b894c3ca6f69f18ba72193b2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcli__st_1a18ec0d6b894c3ca6f69f18ba72193b2d" kindref="member">bp</ref>;<sp/></highlight><highlight class="comment">/*<sp/>buffer<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structcli__st_1a96b76565516c442eb570f6a0c5f458a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inbuf[<ref refid="cli_8h_1a6378f14810330164b7fb66f3334b2a27" kindref="member">INBUF_SIZE</ref>];</highlight></codeline>
+<codeline lineno="39" refid="structcli__st_1a8cddb6553f21346e722581d363532314" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>outbuf[<ref refid="cli_8h_1a3df829d6427c2cd4fbd387268040cc65" kindref="member">OUTBUF_SIZE</ref>];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structcli__st_1a42abdc4b8bbc6f2c673840b3b983dc3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcli__st_1a42abdc4b8bbc6f2c673840b3b983dc3f" kindref="member">his_idx</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structcli__st_1a5b182f4a6dd8024af004f68efd6ff1a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcli__st_1a5b182f4a6dd8024af004f68efd6ff1a3" kindref="member">his_cur</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structcli__st_1ab9fb031f831158735518ab3e9bc99c0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>history[<ref refid="cli_8h_1af883ec6e2a3e23bba5fcc253718596fe" kindref="member">HIS_SIZE</ref>][<ref refid="cli_8h_1a6378f14810330164b7fb66f3334b2a27" kindref="member">INBUF_SIZE</ref>];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="cli_8h_1a32dbd9172ae6648a0197494b96925799" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLI_ARGS<sp/>char<sp/>*pcWriteBuffer,<sp/>int<sp/>xWriteBufferLen,<sp/>int<sp/>argc,<sp/>char<sp/>**argv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_AOS_CLI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>cmd_printf(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(xWriteBufferLen<sp/>&gt;<sp/>0)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snprintf(pcWriteBuffer,<sp/>xWriteBufferLen,<sp/>__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xWriteBufferLen-=<sp/>os_strlen(pcWriteBuffer);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcWriteBuffer+=<sp/>os_strlen(pcWriteBuffer);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a14b29f5697c16bd4d27d5b44f19aa27f" kindref="member">aos_cli_register_command</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*command);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a870ef01c799c4065c2f8bd7fa3c29a92" kindref="member">aos_cli_unregister_command</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*command);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a02a86697f8c67034bbe20fe5d331eab4" kindref="member">aos_cli_register_commands</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*commands,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_commands);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1aae1a211149a2becb50ea632c65db06ef" kindref="member">aos_cli_unregister_commands</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*commands,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_commands);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor">#if<sp/>defined<sp/>BUILD_BIN<sp/>||<sp/>defined<sp/>BUILD_KERNEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>SINGLEBIN<sp/>or<sp/>KERNEL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a662d65def9c4f45c98c5f59a569a4d6d" kindref="member">aos_cli_printf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buff,<sp/>...);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>FRAMWORK<sp/>or<sp/>APP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>aos_cli_printf(fmt,<sp/>...)<sp/>csp_printf(&quot;%s&quot;<sp/>fmt,<sp/>aos_cli_get_tag(),<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1ac66a47f678aa6c6a67669a461783eedb" kindref="member">aos_cli_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a8384afe191ae34616658a3c31b550418" kindref="member">aos_cli_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*aos_cli_get_tag(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_AOS_CLI<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;k_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="cli_8h_1a195767ec31ec406a0c1ee072bbf5929a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>cmd_printf(...)<sp/>do<sp/>{}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="cli_8h_1a14b29f5697c16bd4d27d5b44f19aa27f" refkind="member"><highlight class="normal">RHINO_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a14b29f5697c16bd4d27d5b44f19aa27f" kindref="member">aos_cli_register_command</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*command)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="cli_8h_1a870ef01c799c4065c2f8bd7fa3c29a92" refkind="member"><highlight class="normal">RHINO_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a870ef01c799c4065c2f8bd7fa3c29a92" kindref="member">aos_cli_unregister_command</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*command)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="cli_8h_1a02a86697f8c67034bbe20fe5d331eab4" refkind="member"><highlight class="normal">RHINO_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a02a86697f8c67034bbe20fe5d331eab4" kindref="member">aos_cli_register_commands</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*commands,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_commands)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="cli_8h_1aae1a211149a2becb50ea632c65db06ef" refkind="member"><highlight class="normal">RHINO_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1aae1a211149a2becb50ea632c65db06ef" kindref="member">aos_cli_unregister_commands</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcli__command" kindref="compound">cli_command</ref><sp/>*commands,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_commands)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="cli_8h_1a662d65def9c4f45c98c5f59a569a4d6d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>aos_cli_printf<sp/>csp_printf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="cli_8h_1ac66a47f678aa6c6a67669a461783eedb" refkind="member"><highlight class="normal">RHINO_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1ac66a47f678aa6c6a67669a461783eedb" kindref="member">aos_cli_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="cli_8h_1a8384afe191ae34616658a3c31b550418" refkind="member"><highlight class="normal">RHINO_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cli_8h_1a8384afe191ae34616658a3c31b550418" kindref="member">aos_cli_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_CLI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h"/>
+  </compounddef>
+</doxygen>

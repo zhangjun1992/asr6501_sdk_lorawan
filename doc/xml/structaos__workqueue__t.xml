@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structaos__workqueue__t" kind="struct" language="C++" prot="public">
+    <compoundname>aos_workqueue_t</compoundname>
+    <includes refid="kernel_8h" local="yes">kernel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaos__workqueue__t_1a536dc4eb26cd55cf55146b7b1e5fbda9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* aos_workqueue_t::hdl</definition>
+        <argsstring></argsstring>
+        <name>hdl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="32" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaos__workqueue__t_1a446b911dfebeae3743dde27ad07b7821" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* aos_workqueue_t::stk</definition>
+        <argsstring></argsstring>
+        <name>stk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="33" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="72">
+        <label>aos_workqueue_t</label>
+        <link refid="structaos__workqueue__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" line="31" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kernel.h" bodystart="31" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structaos__workqueue__t_1a536dc4eb26cd55cf55146b7b1e5fbda9" prot="public" virt="non-virtual"><scope>aos_workqueue_t</scope><name>hdl</name></member>
+      <member refid="structaos__workqueue__t_1a446b911dfebeae3743dde27ad07b7821" prot="public" virt="non-virtual"><scope>aos_workqueue_t</scope><name>stk</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

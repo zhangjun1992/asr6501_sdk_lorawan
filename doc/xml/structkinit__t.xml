@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structkinit__t" kind="struct" language="C++" prot="public">
+    <compoundname>kinit_t</compoundname>
+    <includes refid="init_8h" local="yes">init.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structkinit__t_1aee95edcc59686e2ff0605576edd4995a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int kinit_t::argc</definition>
+        <argsstring></argsstring>
+        <name>argc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" line="12" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkinit__t_1abe3b1d0392bf306678b65c0a650874aa" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** kinit_t::argv</definition>
+        <argsstring></argsstring>
+        <name>argv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkinit__t_1a3ff3a6373a0b12a3acd0037296fa8740" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool kinit_t::cli_enable</definition>
+        <argsstring></argsstring>
+        <name>cli_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" line="15" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="143">
+        <label>kinit_t</label>
+        <link refid="structkinit__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/init.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structkinit__t_1aee95edcc59686e2ff0605576edd4995a" prot="public" virt="non-virtual"><scope>kinit_t</scope><name>argc</name></member>
+      <member refid="structkinit__t_1abe3b1d0392bf306678b65c0a650874aa" prot="public" virt="non-virtual"><scope>kinit_t</scope><name>argv</name></member>
+      <member refid="structkinit__t_1a3ff3a6373a0b12a3acd0037296fa8740" prot="public" virt="non-virtual"><scope>kinit_t</scope><name>cli_enable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structnand__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>nand_config_t</compoundname>
+    <includes refid="nand_8h" local="yes">nand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnand__config__t_1add4d392cdf9e41422a6a695c12222475" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nand_config_t::page_size</definition>
+        <argsstring></argsstring>
+        <name>page_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="9" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__config__t_1aedefd64c7d2fd309fd1d853fa8ebd2c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nand_config_t::spare_area_size</definition>
+        <argsstring></argsstring>
+        <name>spare_area_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="10" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__config__t_1a13ff4164b21b1eb42499f23ef53df6da" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nand_config_t::block_size</definition>
+        <argsstring></argsstring>
+        <name>block_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__config__t_1a8fcef4dbdc9a2017cdfe147764d8455e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nand_config_t::zone_size</definition>
+        <argsstring></argsstring>
+        <name>zone_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="12" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__config__t_1a32f97b2f673f9ff159bbd26d083bbd70" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nand_config_t::zone_number</definition>
+        <argsstring></argsstring>
+        <name>zone_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="147">
+        <label>nand_config_t</label>
+        <link refid="structnand__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="8" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structnand__config__t_1a13ff4164b21b1eb42499f23ef53df6da" prot="public" virt="non-virtual"><scope>nand_config_t</scope><name>block_size</name></member>
+      <member refid="structnand__config__t_1add4d392cdf9e41422a6a695c12222475" prot="public" virt="non-virtual"><scope>nand_config_t</scope><name>page_size</name></member>
+      <member refid="structnand__config__t_1aedefd64c7d2fd309fd1d853fa8ebd2c3" prot="public" virt="non-virtual"><scope>nand_config_t</scope><name>spare_area_size</name></member>
+      <member refid="structnand__config__t_1a32f97b2f673f9ff159bbd26d083bbd70" prot="public" virt="non-virtual"><scope>nand_config_t</scope><name>zone_number</name></member>
+      <member refid="structnand__config__t_1a8fcef4dbdc9a2017cdfe147764d8455e" prot="public" virt="non-virtual"><scope>nand_config_t</scope><name>zone_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

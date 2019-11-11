@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtimer__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>timer_dev_t</compoundname>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtimer__dev__t_1ae07c11608ff216a595f858366819103b" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t timer_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="21" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__dev__t_1a4fe959c3a7c2d61addb4d773f50a3d79" prot="public" static="no" mutable="no">
+        <type><ref refid="structtimer__config__t" kindref="compound">timer_config_t</ref></type>
+        <definition>timer_config_t timer_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__dev__t_1a6bb4d3beb3816dc7bfec75419bf4aa5e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* timer_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="23" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="194">
+        <label>timer_dev_t</label>
+        <link refid="structtimer__dev__t"/>
+        <childnode refid="195" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+      <node id="195">
+        <label>timer_config_t</label>
+        <link refid="structtimer__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="20" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="20" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structtimer__dev__t_1a4fe959c3a7c2d61addb4d773f50a3d79" prot="public" virt="non-virtual"><scope>timer_dev_t</scope><name>config</name></member>
+      <member refid="structtimer__dev__t_1ae07c11608ff216a595f858366819103b" prot="public" virt="non-virtual"><scope>timer_dev_t</scope><name>port</name></member>
+      <member refid="structtimer__dev__t_1a6bb4d3beb3816dc7bfec75419bf4aa5e" prot="public" virt="non-virtual"><scope>timer_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

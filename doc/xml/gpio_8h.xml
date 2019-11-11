@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gpio_8h" kind="file" language="C++">
+    <compoundname>gpio.h</compoundname>
+    <includedby refid="sensor_8h" local="yes">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</includedby>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="483">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="484">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="485" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgpio__dev__t" prot="public">gpio_dev_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385" prot="public" static="no">
+        <name>gpio_config_t</name>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a573555272804ba377743db9aded8d7b7" prot="public">
+          <name>ANALOG_MODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae6cab85e9b31734585efcfc1f9de9963" prot="public">
+          <name>IRQ_MODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a216a93afe99e50de6479ebb0b059b7b7" prot="public">
+          <name>INPUT_PULL_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385abfb3f0ac0be847179f83c296304abe78" prot="public">
+          <name>INPUT_PULL_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae9cfc0d8287c9234a918a79643eaf265" prot="public">
+          <name>INPUT_HIGH_IMPEDANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae09d3850455bcbe93ce8b2aa6b77c7bc" prot="public">
+          <name>OUTPUT_PUSH_PULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a462c61b5b91da95b5d8c353b86884381" prot="public">
+          <name>OUTPUT_OPEN_DRAIN_NO_PULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a73accd40b7649ed9d9d4300af7fd9bf6" prot="public">
+          <name>OUTPUT_OPEN_DRAIN_PULL_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" bodystart="11" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="gpio_8h_1aa3de939093227b362c7ea6d942ecae9d" prot="public" static="no">
+        <name>gpio_irq_trigger_t</name>
+        <enumvalue id="gpio_8h_1aa3de939093227b362c7ea6d942ecae9dac0e144dc26310a2bd05e0653e45e01d7" prot="public">
+          <name>IRQ_TRIGGER_RISING_EDGE</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da0c99d3801feb05a3f02633b7e90f1faf" prot="public">
+          <name>IRQ_TRIGGER_FALLING_EDGE</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da922d6f9ae36e30e15058a9b66d0381f4" prot="public">
+          <name>IRQ_TRIGGER_BOTH_EDGES</name>
+          <initializer>= IRQ_TRIGGER_RISING_EDGE | IRQ_TRIGGER_FALLING_EDGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="41" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" bodystart="41" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="gpio_8h_1a6c24dd1a7635d1d71b38a99ec7f556a9" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* gpio_irq_handler_t) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>gpio_irq_handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="50" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gpio_8h_1ac57ec79537271096af3777e1c45c544b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_init</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_init</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises a GPIO pin</para><para><simplesect kind="note"><para>Prepares a GPIO pin for use.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">configuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A structure containing the required gpio configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1a62e07155dba33b68f93fc1ba59c70e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_output_high</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_output_high</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets an output GPIO pin high</para><para><simplesect kind="note"><para>Using this function on a gpio pin which is set to input mode is undefined.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which should be set high</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1af08f7d3868b152865f233024d03a5cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_output_low</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_output_low</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets an output GPIO pin low</para><para><simplesect kind="note"><para>Using this function on a gpio pin which is set to input mode is undefined.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which should be set low</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1a1e54c6ad05ddbbc3d71a81420f4fe3c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_output_toggle</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_output_toggle</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trigger an output GPIO pin&apos;s output. Using this function on a gpio pin which is set to input mode is undefined.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which should be set low</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1abe4369cadaf2a39bedfe0cd26f55faf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_input_get</definition>
+        <argsstring>(gpio_dev_t *gpio, uint32_t *value)</argsstring>
+        <name>hal_gpio_input_get</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of an input GPIO pin. Using this function on a gpio pin which is set to output mode will return an undefined value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which should be read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1ac4c46681d4431397cf3780d29ee49810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_enable_irq</definition>
+        <argsstring>(gpio_dev_t *gpio, gpio_irq_trigger_t trigger, gpio_irq_handler_t handler, void *arg)</argsstring>
+        <name>hal_gpio_enable_irq</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <param>
+          <type><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9d" kindref="member">gpio_irq_trigger_t</ref></type>
+          <declname>trigger</declname>
+        </param>
+        <param>
+          <type><ref refid="gpio_8h_1a6c24dd1a7635d1d71b38a99ec7f556a9" kindref="member">gpio_irq_handler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables an interrupt trigger for an input GPIO pin. Using this function on a gpio pin which is set to output mode is undefined.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which will provide the interrupt trigger </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of trigger (rising/falling edge) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer to the interrupt handler </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an argument that will be passed to the interrupt handler</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1a59745b705cd8ca10a0618eb98250f6ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_disable_irq</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_disable_irq</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disables an interrupt trigger for an input GPIO pin. Using this function on a gpio pin which has not been set up using hal_gpio_input_irq_enable is undefined.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which provided the interrupt trigger</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1aba2eed8dca6ec95f136ce990d64912ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_clear_irq</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_clear_irq</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disables an interrupt trigger for an input GPIO pin. Using this function on a gpio pin which has not been set up using hal_gpio_input_irq_enable is undefined.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which provided the interrupt trigger</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8h_1a9e97bba47999735b48c7e35e1d786ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_gpio_finalize</definition>
+        <argsstring>(gpio_dev_t *gpio)</argsstring>
+        <name>hal_gpio_finalize</name>
+        <param>
+          <type><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a GPIO pin in default state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio pin which should be deinitialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h" line="151" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_GPIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_GPIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Pin<sp/>configuration</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a573555272804ba377743db9aded8d7b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a573555272804ba377743db9aded8d7b7" kindref="member">ANALOG_MODE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Used<sp/>as<sp/>a<sp/>function<sp/>pin,<sp/>input<sp/>and<sp/>output<sp/>analog<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae6cab85e9b31734585efcfc1f9de9963" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae6cab85e9b31734585efcfc1f9de9963" kindref="member">IRQ_MODE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Used<sp/>to<sp/>trigger<sp/>interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a216a93afe99e50de6479ebb0b059b7b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a216a93afe99e50de6479ebb0b059b7b7" kindref="member">INPUT_PULL_UP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Input<sp/>with<sp/>an<sp/>internal<sp/>pull-up<sp/>resistor<sp/>-<sp/>use<sp/>with<sp/>devices</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>that<sp/>actively<sp/>drive<sp/>the<sp/>signal<sp/>low<sp/>-<sp/>e.g.<sp/>button<sp/>connected<sp/>to<sp/>ground<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385abfb3f0ac0be847179f83c296304abe78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385abfb3f0ac0be847179f83c296304abe78" kindref="member">INPUT_PULL_DOWN</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Input<sp/>with<sp/>an<sp/>internal<sp/>pull-down<sp/>resistor<sp/>-<sp/>use<sp/>with<sp/>devices</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>that<sp/>actively<sp/>drive<sp/>the<sp/>signal<sp/>high<sp/>-<sp/>e.g.<sp/>button<sp/>connected<sp/>to<sp/>a<sp/>power<sp/>rail<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae9cfc0d8287c9234a918a79643eaf265" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae9cfc0d8287c9234a918a79643eaf265" kindref="member">INPUT_HIGH_IMPEDANCE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Input<sp/>-<sp/>must<sp/>always<sp/>be<sp/>driven,<sp/>either<sp/>actively<sp/>or<sp/>by<sp/>an<sp/>external<sp/>pullup<sp/>resistor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae09d3850455bcbe93ce8b2aa6b77c7bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385ae09d3850455bcbe93ce8b2aa6b77c7bc" kindref="member">OUTPUT_PUSH_PULL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Output<sp/>actively<sp/>driven<sp/>high<sp/>and<sp/>actively<sp/>driven<sp/>low<sp/>-</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>must<sp/>not<sp/>be<sp/>connected<sp/>to<sp/>other<sp/>active<sp/>outputs<sp/>-<sp/>e.g.<sp/>LED<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a462c61b5b91da95b5d8c353b86884381" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a462c61b5b91da95b5d8c353b86884381" kindref="member">OUTPUT_OPEN_DRAIN_NO_PULL</ref>,<sp/></highlight><highlight class="comment">/*<sp/>Output<sp/>actively<sp/>driven<sp/>low<sp/>but<sp/>is<sp/>high-impedance<sp/>when<sp/>set<sp/>high<sp/>-</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can<sp/>be<sp/>connected<sp/>to<sp/>other<sp/>open-drain/open-collector<sp/>outputs.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Needs<sp/>an<sp/>external<sp/>pull-up<sp/>resistor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a73accd40b7649ed9d9d4300af7fd9bf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385a73accd40b7649ed9d9d4300af7fd9bf6" kindref="member">OUTPUT_OPEN_DRAIN_PULL_UP</ref>,<sp/></highlight><highlight class="comment">/*<sp/>Output<sp/>actively<sp/>driven<sp/>low<sp/>and<sp/>is<sp/>pulled<sp/>high</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/>an<sp/>internal<sp/>resistor<sp/>when<sp/>set<sp/>high<sp/>-</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can<sp/>be<sp/>connected<sp/>to<sp/>other<sp/>open-drain/open-collector<sp/>outputs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385" kindref="member">gpio_config_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>GPIO<sp/>dev<sp/>struct</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structgpio__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33" refid="structgpio__dev__t_1ae39e80b64c13f46536b46b6ad404d0a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgpio__dev__t_1ae39e80b64c13f46536b46b6ad404d0a1" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>gpio<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structgpio__dev__t_1a62fb19cb05198974e6f6a26da8f12762" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a9f109d20988917f140f5d55ed9a71385" kindref="member">gpio_config_t</ref><sp/><ref refid="structgpio__dev__t_1a62fb19cb05198974e6f6a26da8f12762" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>gpio<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structgpio__dev__t_1a957b1c60e7e9f4c990519ea353e9d63f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structgpio__dev__t_1a957b1c60e7e9f4c990519ea353e9d63f" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>GPIO<sp/>interrupt<sp/>trigger</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9dac0e144dc26310a2bd05e0653e45e01d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9dac0e144dc26310a2bd05e0653e45e01d7" kindref="member">IRQ_TRIGGER_RISING_EDGE</ref><sp/><sp/>=<sp/>0x1,<sp/></highlight><highlight class="comment">/*<sp/>Interrupt<sp/>triggered<sp/>at<sp/>input<sp/>signal&apos;s<sp/>rising<sp/>edge<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da0c99d3801feb05a3f02633b7e90f1faf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da0c99d3801feb05a3f02633b7e90f1faf" kindref="member">IRQ_TRIGGER_FALLING_EDGE</ref><sp/>=<sp/>0x2,<sp/></highlight><highlight class="comment">/*<sp/>Interrupt<sp/>triggered<sp/>at<sp/>input<sp/>signal&apos;s<sp/>falling<sp/>edge<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da922d6f9ae36e30e15058a9b66d0381f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da922d6f9ae36e30e15058a9b66d0381f4" kindref="member">IRQ_TRIGGER_BOTH_EDGES</ref><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9dac0e144dc26310a2bd05e0653e45e01d7" kindref="member">IRQ_TRIGGER_RISING_EDGE</ref><sp/>|<sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9da0c99d3801feb05a3f02633b7e90f1faf" kindref="member">IRQ_TRIGGER_FALLING_EDGE</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}<sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9d" kindref="member">gpio_irq_trigger_t</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>GPIO<sp/>interrupt<sp/>callback<sp/>handler</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="gpio_8h_1a6c24dd1a7635d1d71b38a99ec7f556a9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="gpio_8h_1a6c24dd1a7635d1d71b38a99ec7f556a9" kindref="member">gpio_irq_handler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1ac57ec79537271096af3777e1c45c544b" kindref="member">hal_gpio_init</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1a62e07155dba33b68f93fc1ba59c70e01" kindref="member">hal_gpio_output_high</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1af08f7d3868b152865f233024d03a5cbf" kindref="member">hal_gpio_output_low</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1a1e54c6ad05ddbbc3d71a81420f4fe3c9" kindref="member">hal_gpio_output_toggle</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1abe4369cadaf2a39bedfe0cd26f55faf3" kindref="member">hal_gpio_input_get</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio,<sp/>uint32_t<sp/>*value);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1ac4c46681d4431397cf3780d29ee49810" kindref="member">hal_gpio_enable_irq</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio,<sp/><ref refid="gpio_8h_1aa3de939093227b362c7ea6d942ecae9d" kindref="member">gpio_irq_trigger_t</ref><sp/>trigger,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a6c24dd1a7635d1d71b38a99ec7f556a9" kindref="member">gpio_irq_handler_t</ref><sp/>handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1a59745b705cd8ca10a0618eb98250f6ac" kindref="member">hal_gpio_disable_irq</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1aba2eed8dca6ec95f136ce990d64912ac" kindref="member">hal_gpio_clear_irq</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">int32_t<sp/><ref refid="gpio_8h_1a9e97bba47999735b48c7e35e1d786ca1" kindref="member">hal_gpio_finalize</ref>(<ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_GPIO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/gpio.h"/>
+  </compounddef>
+</doxygen>

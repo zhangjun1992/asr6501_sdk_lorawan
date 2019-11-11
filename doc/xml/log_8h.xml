@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="log_8h" kind="file" language="C++">
+    <compoundname>log.h</compoundname>
+    <includes refid="log__impl_8h" local="no">aos/internal/log_impl.h</includes>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <incdepgraph>
+      <node id="158">
+        <label>stddef.h</label>
+      </node>
+      <node id="159">
+        <label>sys/types.h</label>
+      </node>
+      <node id="156">
+        <label>aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="161">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="164">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="168">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="log_8h_1acb7268fb6c63c18aa7d372642e9c9994" prot="public" static="no">
+        <name>LOGF</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a9258df246c14776566d9d3c8bb311425" kindref="member">LOGF_IMPL</ref>(mod, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="44" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a0d0173d9a0b62a413f2b6dc5cb45b68d" prot="public" static="no">
+        <name>LOGE</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a372bc53d0eaf1b108a89e95eb1d323bb" kindref="member">LOGE_IMPL</ref>(mod, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="52" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1ad10099153d2aa027c77b7109f9c82b68" prot="public" static="no">
+        <name>LOGW</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a69e38bb28b849f032de3a3da88577805" kindref="member">LOGW_IMPL</ref>(mod, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="60" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a834da07fe3197a064a151e6972ecb9ae" prot="public" static="no">
+        <name>LOGI</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1a11c506b1d4a87801d46c9062c5fc1f58" kindref="member">LOGI_IMPL</ref>(mod, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="68" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1ab2bb4d01d7fa560ad13a9cfc3b32fcbc" prot="public" static="no">
+        <name>LOGD</name>
+        <param><defname>mod</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1ad2c421cdb04bb625d04819febb3ac951" kindref="member">LOGD_IMPL</ref>(mod, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="76" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a388edf12256bf73c3a8ee9734c3bd841" prot="public" static="no">
+        <name>LOG</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="log__impl_8h_1ad2ddc7261600d1a356896072632ee519" kindref="member">LOG_IMPL</ref>(fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="83" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16" prot="public" static="no">
+        <name>aos_log_level_t</name>
+        <enumvalue id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a3d3817cf3437c7e4d2bd76c00c1e0dfb" prot="public">
+          <name>AOS_LL_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16adbd5e767489ec45919a809f3aad0a7af" prot="public">
+          <name>AOS_LL_FATAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a255814b1df4f22bc3a77520d6fd5369d" prot="public">
+          <name>AOS_LL_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a1af960ee8037c2934c6ba732dcdfe164" prot="public">
+          <name>AOS_LL_WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a23dea4909200c215b6c7d339cb7ad2f1" prot="public">
+          <name>AOS_LL_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a9baa99965557842c0816d965acc07907" prot="public">
+          <name>AOS_LL_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="14" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="log_8h_1af4a360f03ad24d5a41835dcc3cf71272" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int aos_log_level</definition>
+        <argsstring></argsstring>
+        <name>aos_log_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="23" column="1"/>
+        <referencedby refid="log_8h_1ade2ce7eabba9de02a5ad112d80aa3d88" compoundref="log_8h" startline="27" endline="29">aos_get_log_level</referencedby>
+        <referencedby refid="log__impl_8h_1a24579a47d3fe3782ad920fa667a41d6d" compoundref="log__impl_8h" startline="13" endline="16">aos_log_get_level</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="log_8h_1ade2ce7eabba9de02a5ad112d80aa3d88" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int aos_get_log_level</definition>
+        <argsstring>(void)</argsstring>
+        <name>aos_get_log_level</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log level. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="27" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" bodystart="27" bodyend="29"/>
+        <references refid="log_8h_1af4a360f03ad24d5a41835dcc3cf71272">aos_log_level</references>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1ae17ac5be96340be7f2ad09073f5f2438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aos_set_log_level</definition>
+        <argsstring>(aos_log_level_t log_level)</argsstring>
+        <name>aos_set_log_level</name>
+        <param>
+          <type><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16" kindref="member">aos_log_level_t</ref></type>
+          <declname>log_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the log level.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">log_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>level to be set,must be one of AOS_LL_NONE,AOS_LL_FATAL,AOS_LL_ERROR,AOS_LL_WARN,AOS_LL_INFO or AOS_LL_DEBUG. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_LOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="log__impl_8h" kindref="compound">aos/internal/log_impl.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a3d3817cf3437c7e4d2bd76c00c1e0dfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a3d3817cf3437c7e4d2bd76c00c1e0dfb" kindref="member">AOS_LL_NONE</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>disable<sp/>log<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16adbd5e767489ec45919a809f3aad0a7af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16adbd5e767489ec45919a809f3aad0a7af" kindref="member">AOS_LL_FATAL</ref>,<sp/></highlight><highlight class="comment">/*<sp/>fatal<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a255814b1df4f22bc3a77520d6fd5369d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a255814b1df4f22bc3a77520d6fd5369d" kindref="member">AOS_LL_ERROR</ref>,<sp/></highlight><highlight class="comment">/*<sp/>fatal<sp/>+<sp/>error<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a1af960ee8037c2934c6ba732dcdfe164" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a1af960ee8037c2934c6ba732dcdfe164" kindref="member">AOS_LL_WARN</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>fatal<sp/>+<sp/>warn<sp/>+<sp/>error<sp/>log<sp/>will<sp/>output(default<sp/>level)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a23dea4909200c215b6c7d339cb7ad2f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a23dea4909200c215b6c7d339cb7ad2f1" kindref="member">AOS_LL_INFO</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>info<sp/>+<sp/>warn<sp/>+<sp/>error<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a9baa99965557842c0816d965acc07907" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16a9baa99965557842c0816d965acc07907" kindref="member">AOS_LL_DEBUG</ref>,<sp/></highlight><highlight class="comment">/*<sp/>debug<sp/>+<sp/>info<sp/>+<sp/>warn<sp/>+<sp/>error<sp/>+<sp/>fatal<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="log_8h_1ab5415466dbe3b11b98f39d2c428bac16" kindref="member">aos_log_level_t</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log_8h_1af4a360f03ad24d5a41835dcc3cf71272" kindref="member">aos_log_level</ref>;</highlight></codeline>
+<codeline lineno="27" refid="log_8h_1ade2ce7eabba9de02a5ad112d80aa3d88" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="log_8h_1ade2ce7eabba9de02a5ad112d80aa3d88" kindref="member">aos_get_log_level</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="log_8h_1af4a360f03ad24d5a41835dcc3cf71272" kindref="member">aos_log_level</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="log_8h_1ae17ac5be96340be7f2ad09073f5f2438" kindref="member">aos_set_log_level</ref>(aos_log_level_t<sp/>log_level);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>Log<sp/>at<sp/>fatal<sp/>level.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>mod<sp/><sp/>string<sp/>description<sp/>of<sp/>module.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>fmt<sp/><sp/>same<sp/>as<sp/>printf()<sp/>usage.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="log_8h_1acb7268fb6c63c18aa7d372642e9c9994" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGF(mod,<sp/>fmt,<sp/>...)<sp/>LOGF_IMPL(mod,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>Log<sp/>at<sp/>error<sp/>level.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>mod<sp/><sp/>string<sp/>description<sp/>of<sp/>module.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>fmt<sp/><sp/>same<sp/>as<sp/>printf()<sp/>usage.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="log_8h_1a0d0173d9a0b62a413f2b6dc5cb45b68d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGE(mod,<sp/>fmt,<sp/>...)<sp/>LOGE_IMPL(mod,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>Log<sp/>at<sp/>warning<sp/>level.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>mod<sp/><sp/>string<sp/>description<sp/>of<sp/>module.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>fmt<sp/><sp/>same<sp/>as<sp/>printf()<sp/>usage.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="log_8h_1ad10099153d2aa027c77b7109f9c82b68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGW(mod,<sp/>fmt,<sp/>...)<sp/>LOGW_IMPL(mod,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>Log<sp/>at<sp/>info<sp/>level.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>mod<sp/><sp/>string<sp/>description<sp/>of<sp/>module.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>fmt<sp/><sp/>same<sp/>as<sp/>printf()<sp/>usage.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="log_8h_1a834da07fe3197a064a151e6972ecb9ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGI(mod,<sp/>fmt,<sp/>...)<sp/>LOGI_IMPL(mod,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>Log<sp/>at<sp/>debug<sp/>level.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>mod<sp/><sp/>string<sp/>description<sp/>of<sp/>module.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>fmt<sp/><sp/>same<sp/>as<sp/>printf()<sp/>usage.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="log_8h_1ab2bb4d01d7fa560ad13a9cfc3b32fcbc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGD(mod,<sp/>fmt,<sp/>...)<sp/>LOGD_IMPL(mod,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>Log<sp/>at<sp/>the<sp/>level<sp/>set<sp/>by<sp/>aos_set_log_level().</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>fmt<sp/><sp/>same<sp/>as<sp/>printf()<sp/>usage.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="log_8h_1a388edf12256bf73c3a8ee9734c3bd841" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG(fmt,<sp/>...)<sp/>LOG_IMPL(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_LOG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/log.h"/>
+  </compounddef>
+</doxygen>

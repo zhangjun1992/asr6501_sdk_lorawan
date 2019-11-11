@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sd_8h" kind="file" language="C++">
+    <compoundname>sd.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="529">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="531">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+      </node>
+      <node id="528">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h</label>
+        <link refid="sd_8h"/>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhal__sd__info__t" prot="public">hal_sd_info_t</innerclass>
+    <innerclass refid="structsd__config__t" prot="public">sd_config_t</innerclass>
+    <innerclass refid="structsd__dev__t" prot="public">sd_dev_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="sd_8h_1a0172b286725d2bce4dbc223efe7f613f" prot="public" static="no">
+        <name>hal_sd_stat</name>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fab1ccd06d47d1ea1e946ab32d5b35be7a" prot="public">
+          <name>SD_STAT_RESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fad53a18a221021af84cf692b7295cea83" prot="public">
+          <name>SD_STAT_READY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fab04698ea6e5fd60e19ef48d08179c55c" prot="public">
+          <name>SD_STAT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa90a06d49bbc5efcef28dccecdf21584c" prot="public">
+          <name>SD_STAT_BUSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa5832b1f85b22f896e01266cc82f9f98e" prot="public">
+          <name>SD_STAT_PROGRAMMING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa4506fd7320cb85acf2f8597e9ea8428e" prot="public">
+          <name>SD_STAT_RECEIVING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613faea1efa6ea4468fa086572c0a0ddbb2d9" prot="public">
+          <name>SD_STAT_TRANSFER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa4e2496be7c75da6bdce1f3bbf11187a7" prot="public">
+          <name>SD_STAT_ERR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="8" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sd_8h_1a94e0abd58687474ddd06628226e09d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_init</definition>
+        <argsstring>(sd_dev_t *sd)</argsstring>
+        <name>hal_sd_init</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises a sd interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sd_8h_1a326d9ee1bd55ef77e13f92da3e016444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_blks_read</definition>
+        <argsstring>(sd_dev_t *sd, uint8_t *data, uint32_t blk_addr, uint32_t blks, uint32_t timeout)</argsstring>
+        <name>hal_sd_blks_read</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>blk_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>blks</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read sd blocks</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blk_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sd blk addr </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sd blks </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milisecond</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sd_8h_1a3703b5eb199204e482e30977f789f2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_blks_write</definition>
+        <argsstring>(sd_dev_t *sd, uint8_t *data, uint32_t blk_addr, uint32_t blks, uint32_t timeout)</argsstring>
+        <name>hal_sd_blks_write</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>blk_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>blks</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write sd blocks</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blk_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sd blk addr </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sd blks </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milisecond</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sd_8h_1ad33da045d6cc72c29503b26075ac7103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_erase</definition>
+        <argsstring>(sd_dev_t *sd, uint32_t blk_start_addr, uint32_t blk_end_addr)</argsstring>
+        <name>hal_sd_erase</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>blk_start_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>blk_end_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Erase sd blocks</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blk_start_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sd blocks start addr </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blk_end_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sd blocks end addr</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sd_8h_1a695f8926b4ef87b8cf78616928159676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_stat_get</definition>
+        <argsstring>(sd_dev_t *sd, hal_sd_stat *stat)</argsstring>
+        <name>hal_sd_stat_get</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613f" kindref="member">hal_sd_stat</ref> *</type>
+          <declname>stat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get sd state</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">stat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sd_8h_1a0ac5fdd92733eb777324851dd11f7a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_info_get</definition>
+        <argsstring>(sd_dev_t *sd, hal_sd_info_t *info)</argsstring>
+        <name>hal_sd_info_get</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type><ref refid="structhal__sd__info__t" kindref="compound">hal_sd_info_t</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get sd info</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">stat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sd_8h_1aa7fcb590638a063aabe18ea613a2958a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_sd_finalize</definition>
+        <argsstring>(sd_dev_t *sd)</argsstring>
+        <name>hal_sd_finalize</name>
+        <param>
+          <type><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialises a sd interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="113" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_SD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fab1ccd06d47d1ea1e946ab32d5b35be7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fab1ccd06d47d1ea1e946ab32d5b35be7a" kindref="member">SD_STAT_RESET</ref>,</highlight></codeline>
+<codeline lineno="10" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fad53a18a221021af84cf692b7295cea83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fad53a18a221021af84cf692b7295cea83" kindref="member">SD_STAT_READY</ref>,</highlight></codeline>
+<codeline lineno="11" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fab04698ea6e5fd60e19ef48d08179c55c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fab04698ea6e5fd60e19ef48d08179c55c" kindref="member">SD_STAT_TIMEOUT</ref>,</highlight></codeline>
+<codeline lineno="12" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa90a06d49bbc5efcef28dccecdf21584c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa90a06d49bbc5efcef28dccecdf21584c" kindref="member">SD_STAT_BUSY</ref>,</highlight></codeline>
+<codeline lineno="13" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa5832b1f85b22f896e01266cc82f9f98e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa5832b1f85b22f896e01266cc82f9f98e" kindref="member">SD_STAT_PROGRAMMING</ref>,</highlight></codeline>
+<codeline lineno="14" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa4506fd7320cb85acf2f8597e9ea8428e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa4506fd7320cb85acf2f8597e9ea8428e" kindref="member">SD_STAT_RECEIVING</ref>,</highlight></codeline>
+<codeline lineno="15" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613faea1efa6ea4468fa086572c0a0ddbb2d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613faea1efa6ea4468fa086572c0a0ddbb2d9" kindref="member">SD_STAT_TRANSFER</ref>,</highlight></codeline>
+<codeline lineno="16" refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa4e2496be7c75da6bdce1f3bbf11187a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613fa4e2496be7c75da6bdce1f3bbf11187a7" kindref="member">SD_STAT_ERR</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613f" kindref="member">hal_sd_stat</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structhal__sd__info__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="structhal__sd__info__t_1a63670e0e82f789f881bff615666b2455" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structhal__sd__info__t_1a63670e0e82f789f881bff615666b2455" kindref="member">blk_nums</ref>;<sp/></highlight><highlight class="comment">/*<sp/>sd<sp/>total<sp/>block<sp/>nums<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structhal__sd__info__t_1a64682d8509a671382772d5274900154c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structhal__sd__info__t_1a64682d8509a671382772d5274900154c" kindref="member">blk_size</ref>;<sp/></highlight><highlight class="comment">/*<sp/>sd<sp/>block<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><ref refid="structhal__sd__info__t" kindref="compound">hal_sd_info_t</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>UART<sp/>configuration</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structsd__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="structsd__config__t_1a90a95e38c9ff5d400a1882f19bcc9c24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structsd__config__t_1a90a95e38c9ff5d400a1882f19bcc9c24" kindref="member">bus_wide</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>sd<sp/>bus<sp/>wide<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structsd__config__t_1a6b72eb18aacc51a85cea64da138c0e45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structsd__config__t_1a6b72eb18aacc51a85cea64da138c0e45" kindref="member">freq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sd<sp/>freq<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="structsd__config__t" kindref="compound">sd_config_t</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structsd__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33" refid="structsd__dev__t_1a08e8cf73cb1df946634e9a51ab42e217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsd__dev__t_1a08e8cf73cb1df946634e9a51ab42e217" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sd<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structsd__dev__t_1a0375b5afc4ebb2217971c22673cb4600" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsd__config__t" kindref="compound">sd_config_t</ref><sp/><sp/><sp/><ref refid="structsd__dev__t_1a0375b5afc4ebb2217971c22673cb4600" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>sd<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structsd__dev__t_1a792c59c2444820c786248e382cf09a76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structsd__dev__t_1a792c59c2444820c786248e382cf09a76" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1a94e0abd58687474ddd06628226e09d1f" kindref="member">hal_sd_init</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1a326d9ee1bd55ef77e13f92da3e016444" kindref="member">hal_sd_blks_read</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>blk_addr,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>blks,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1a3703b5eb199204e482e30977f789f2fa" kindref="member">hal_sd_blks_write</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>blk_addr,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>blks,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1ad33da045d6cc72c29503b26075ac7103" kindref="member">hal_sd_erase</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd,<sp/>uint32_t<sp/>blk_start_addr,<sp/>uint32_t<sp/>blk_end_addr);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1a695f8926b4ef87b8cf78616928159676" kindref="member">hal_sd_stat_get</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd,<sp/><ref refid="sd_8h_1a0172b286725d2bce4dbc223efe7f613f" kindref="member">hal_sd_stat</ref><sp/>*stat);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1a0ac5fdd92733eb777324851dd11f7a1d" kindref="member">hal_sd_info_get</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd,<sp/><ref refid="structhal__sd__info__t" kindref="compound">hal_sd_info_t</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">int32_t<sp/><ref refid="sd_8h_1aa7fcb590638a063aabe18ea613a2958a" kindref="member">hal_sd_finalize</ref>(<ref refid="structsd__dev__t" kindref="compound">sd_dev_t</ref><sp/>*sd);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_SD_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__manufactory__itf__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_manufactory_itf_t</compoundname>
+    <includes refid="lorawan_8h" local="yes">lorawan.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__manufactory__itf__t_1a47c78cf78e22a3b0695a686b2258aefc" prot="public" static="no" mutable="no">
+        <type>char *(*</type>
+        <definition>char*(* hal_manufactory_itf_t::get_mft_id) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_mft_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="60" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__manufactory__itf__t_1a1da76824517d6602d1c5981cf34739ea" prot="public" static="no" mutable="no">
+        <type>char *(*</type>
+        <definition>char*(* hal_manufactory_itf_t::get_mft_model) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_mft_model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="61" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__manufactory__itf__t_1a75b25bff026f0053cd047c4768ff0f8f" prot="public" static="no" mutable="no">
+        <type>char *(*</type>
+        <definition>char*(* hal_manufactory_itf_t::get_mft_rev) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_mft_rev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="62" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__manufactory__itf__t_1ab732e6f65f501ff8ea24a43d4c199489" prot="public" static="no" mutable="no">
+        <type>char *(*</type>
+        <definition>char*(* hal_manufactory_itf_t::get_mft_sn) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_mft_sn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="63" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__manufactory__itf__t_1a1706d46342673b782d1be10ebbc328fd" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* hal_manufactory_itf_t::set_mft_baud) (uint32_t baud)</definition>
+        <argsstring>)(uint32_t baud)</argsstring>
+        <name>set_mft_baud</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="64" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__manufactory__itf__t_1ab367f8cc13964bb10998fa15452a7ce6" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* hal_manufactory_itf_t::get_mft_baud) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_mft_baud</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="65" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="99">
+        <label>hal_manufactory_itf_t</label>
+        <link refid="structhal__manufactory__itf__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="59" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="59" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structhal__manufactory__itf__t_1ab367f8cc13964bb10998fa15452a7ce6" prot="public" virt="non-virtual"><scope>hal_manufactory_itf_t</scope><name>get_mft_baud</name></member>
+      <member refid="structhal__manufactory__itf__t_1a47c78cf78e22a3b0695a686b2258aefc" prot="public" virt="non-virtual"><scope>hal_manufactory_itf_t</scope><name>get_mft_id</name></member>
+      <member refid="structhal__manufactory__itf__t_1a1da76824517d6602d1c5981cf34739ea" prot="public" virt="non-virtual"><scope>hal_manufactory_itf_t</scope><name>get_mft_model</name></member>
+      <member refid="structhal__manufactory__itf__t_1a75b25bff026f0053cd047c4768ff0f8f" prot="public" virt="non-virtual"><scope>hal_manufactory_itf_t</scope><name>get_mft_rev</name></member>
+      <member refid="structhal__manufactory__itf__t_1ab732e6f65f501ff8ea24a43d4c199489" prot="public" virt="non-virtual"><scope>hal_manufactory_itf_t</scope><name>get_mft_sn</name></member>
+      <member refid="structhal__manufactory__itf__t_1a1706d46342673b782d1be10ebbc328fd" prot="public" virt="non-virtual"><scope>hal_manufactory_itf_t</scope><name>set_mft_baud</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

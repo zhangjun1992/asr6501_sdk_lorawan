@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structrandom__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>random_dev_t</compoundname>
+    <includes refid="rng_8h" local="yes">rng.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrandom__dev__t_1a2a6242cf140d666e98d0a6ce149bf5d1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t random_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" line="9" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom__dev__t_1a3cb7ab4c80c3e1dd58234005b1882995" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* random_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" line="10" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="171">
+        <label>random_dev_t</label>
+        <link refid="structrandom__dev__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rng.h" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structrandom__dev__t_1a2a6242cf140d666e98d0a6ce149bf5d1" prot="public" virt="non-virtual"><scope>random_dev_t</scope><name>port</name></member>
+      <member refid="structrandom__dev__t_1a3cb7ab4c80c3e1dd58234005b1882995" prot="public" virt="non-virtual"><scope>random_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="event__type__code_8h" kind="file" language="C++">
+    <compoundname>event_type_code.h</compoundname>
+    <includedby refid="yloop_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h</includedby>
+    <invincdepgraph>
+      <node id="91">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="94">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="98">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h</label>
+        <link refid="event__type__code_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h</label>
+        <link refid="yloop_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="event__type__code_8h_1a0301dee4a6cd294e5785ceeef1bf350d" prot="public" static="no">
+        <name>EV_RPC</name>
+        <initializer>0x0100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="9" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a76eaa816a287255eb5f1ed14f7d3f8e7" prot="public" static="no">
+        <name>EV_YUNIO</name>
+        <initializer>0x0101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="12" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aba35a26b23239b1c56a9676ee603779e" prot="public" static="no">
+        <name>CODE_YUNIO_CMD_START</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="13" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a47ec5168cdec719a3dbda4fbcfe474c8" prot="public" static="no">
+        <name>CODE_YUNIO_CMD_RETRY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="14" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae4913311e0efbb286e6d2c42987ef048" prot="public" static="no">
+        <name>CODE_YUNIO_CMD_DISCONNECT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="15" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a362b0eb4c8313b25c1453fcc6038fa82" prot="public" static="no">
+        <name>CODE_YUNIO_ON_CONNECTED</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="16" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a1eabd57d7a20736fb8bbbaf83d69f625" prot="public" static="no">
+        <name>CODE_YUNIO_ON_DISCONNECTED</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="17" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a665e9a7ed9e041797f1c7d084c75d635" prot="public" static="no">
+        <name>CODE_YUNIO_ON_CONNECT_FAILED</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="18" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a36dd8c784a3696387fb8a4a41fe5ed0d" prot="public" static="no">
+        <name>CODE_YUNIO_ON_READ_ERROR</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="19" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae67439a6da29b5fedcfcf3df9836c1de" prot="public" static="no">
+        <name>CODE_YUNIO_ON_WRITE_ERROR</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="20" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aa1fdf9296cf62a927e203093be4f65f8" prot="public" static="no">
+        <name>CODE_YUNIO_ON_HEARTBIT_ERROR</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="21" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1acd3a765e3e0a493f8ac75f7b0c24ff98" prot="public" static="no">
+        <name>CODE_YUNIO_PUBLISH_SUCCESS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="22" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a519dd4f2b65cedae88d93f87611272cc" prot="public" static="no">
+        <name>CODE_YUNIO_PUBLISH_TIMEOUT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="23" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a05ca485881a2fca9af8df4ce1a3c7161" prot="public" static="no">
+        <name>EV_OTA</name>
+        <initializer>0x0102</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OTA event define </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="26" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a69134d232ce1a9ec4c8908047432bc5f" prot="public" static="no">
+        <name>CODE_OTA_ON_RESULT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="27" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aa81d53a7a06db605eefbc7eb029adff1" prot="public" static="no">
+        <name>EV_DEVICE_REGISTER</name>
+        <initializer>0x0103</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>register device service </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="30" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1afeab333349391d542547c62a17c7df99" prot="public" static="no">
+        <name>CODE_REGISTER_ON_RESULT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="31" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ab4405c9496ed7b7dc9ccdeba3e71622b" prot="public" static="no">
+        <name>VALUE_REGISTER_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="32" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1acd49d70c2da07796cc6d0a4701764655" prot="public" static="no">
+        <name>EV_ACTIVATE_ID2</name>
+        <initializer>0x0104</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id2 device activate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="35" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae588a3b1506388e1e4000f0e7f1b7f47" prot="public" static="no">
+        <name>CODE_ACTIVATE_ID2_ON_RESULT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="36" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae180ba1eac7475a8fc9ee647b44bdf70" prot="public" static="no">
+        <name>VALUE_ACTIVATE_ID2_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="37" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a7f071a4c27ead5f427f23ac1ffd7a920" prot="public" static="no">
+        <name>VALUE_ACTIVATE_ID2_FAILURE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="38" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a4686104546a71295852ba0d45584d22f" prot="public" static="no">
+        <name>EV_DDA</name>
+        <initializer>0x0105</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="40" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a2c6c90a212b6bea6127fec313b8813d2" prot="public" static="no">
+        <name>CODE_DDA_ON_CONNECTED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="41" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aa9584901daa5b7200abdacdfe218d5a4" prot="public" static="no">
+        <name>EV_KEY</name>
+        <initializer>0x0201</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>General key define </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="44" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aa925181f7645de59a7d218b7c79936b5" prot="public" static="no">
+        <name>CODE_RECORD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="45" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1acc49cc13805369c0190c5aa752d5ca1b" prot="public" static="no">
+        <name>CODE_VOLUME</name>
+        <initializer>2 /* Reserve */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="46" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aed012967e7de26cc18efb7c78cc84039" prot="public" static="no">
+        <name>CODE_VOLUME_INC</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="47" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a38a1d0e2c14589ddb221dffc4bb95d1a" prot="public" static="no">
+        <name>CODE_VOLUME_DEC</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="48" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a26740dd70f77d076e150ed6dc769367a" prot="public" static="no">
+        <name>CODE_PLAY_PAUSE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="49" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aea55db8f253daf6c3df2ccfc12c138a4" prot="public" static="no">
+        <name>CODE_MUTE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="50" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1adf8e4c622814da7db42c0c5a04dd5925" prot="public" static="no">
+        <name>CODE_CHANNEL</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="51" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a337e1658f59196532919c6cffbc84dd5" prot="public" static="no">
+        <name>CODE_NEXT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="52" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a6d8dc80f5c3d65dfceabc76ba072ed96" prot="public" static="no">
+        <name>CODE_RECORD_PRE</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="53" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a18ef3160b336403f58e06ad82cd27b0c" prot="public" static="no">
+        <name>CODE_RESET</name>
+        <initializer>0x1001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="54" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a98a3000197dd30db07eef3ea20e043e8" prot="public" static="no">
+        <name>CODE_STATUS</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="55" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae526abf106427bd8682b2f8a2aa0d4d0" prot="public" static="no">
+        <name>CODE_ELINK</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="56" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a56e6b0a0af7525ebc142be51bc06376b" prot="public" static="no">
+        <name>CODE_BOOT</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="57" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a18c95eac934bcd5f31cbc15e5faa9848" prot="public" static="no">
+        <name>VALUE_KEY_UP</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>General key value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="59" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ad8676fc64fcc50d77cbb30a6f6451602" prot="public" static="no">
+        <name>VALUE_KEY_DOWN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="60" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a2016497eff08711631e0c7f3094cbec5" prot="public" static="no">
+        <name>VALUE_KEY_CLICK</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="61" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a288238de1c198646573c3b4bf22049a7" prot="public" static="no">
+        <name>VALUE_KEY_LTCLICK</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="62" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a5af2139a43b34324c8da361c6de13461" prot="public" static="no">
+        <name>VALUE_KEY_LLTCLICK</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="63" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a4155a36940fea0efc7723e8063dad70a" prot="public" static="no">
+        <name>VALUE_KEY_DBCLICK</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="64" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a6e56c1652de4daef8550d5f84091da04" prot="public" static="no">
+        <name>VALUE_SYS_CHN_CONNECTED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>General channel value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="66" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a6bd67dd198a9429be41e6ae077045d9d" prot="public" static="no">
+        <name>VALUE_SYS_CHN_CONNECTING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="67" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a09e030c8a3742da88ee243d84f9ab4df" prot="public" static="no">
+        <name>VALUE_SYS_CHN_DISCONNECTED</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="68" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a7561835fdc52884ae351f3d1c8707f62" prot="public" static="no">
+        <name>EV_KNOD</name>
+        <initializer>0x0203</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserve event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="71" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aa0cf0d8f26da1e38eae13820a0f918d8" prot="public" static="no">
+        <name>EV_SD</name>
+        <initializer>0x0204</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SD card event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="74" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a8a4d9c6e8d812dffc5b1e3cfca6bffd9" prot="public" static="no">
+        <name>CODE_SD_PLUG</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="75" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1abd13c583e4aed8f9287544b550eac641" prot="public" static="no">
+        <name>VALUE_SD_OUT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="76" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae613a15618fe24a25e4d25af0d8a9bc9" prot="public" static="no">
+        <name>VALUE_SD_IN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="77" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a4418dd932546faa7c76a82551cbf2ec7" prot="public" static="no">
+        <name>EV_LAN</name>
+        <initializer>0x0205</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LAN Driver event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="80" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a97a50f51f457015798b50e267002b02a" prot="public" static="no">
+        <name>VALUE_LAN_OUT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="81" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aea9231d5013b03ae10d322cdf2e04b5a" prot="public" static="no">
+        <name>VALUE_LAN_IN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="82" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1afcc5c1afcb31498d6d6fab5f8d895763" prot="public" static="no">
+        <name>EV_NET</name>
+        <initializer>0x0206</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Net event define </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="85" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a4473f3177039bc46084cf4657ec3eea0" prot="public" static="no">
+        <name>CODE_NET_DHCP_START</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="86" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a51b4d9b5a7c35bdb7d4b1a81d7408ddc" prot="public" static="no">
+        <name>CODE_NET_DHCP_RESULT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="87" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae94777d34b632126e35491a2e46f451e" prot="public" static="no">
+        <name>CODE_NET_IP_STATIC</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="88" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a2fc16177218ab0bf725c58bc78aafd22" prot="public" static="no">
+        <name>CODE_NET_STATUS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="89" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a1af32b66c65117cf5af0d873c92e862e" prot="public" static="no">
+        <name>VALUE_NET_LAN_OK</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="90" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a94e1c51bd2c039a0b17b769672a54c87" prot="public" static="no">
+        <name>VALUE_NET_WIFI_OK</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="91" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a25481c1736533f043bd694c8b8481a49" prot="public" static="no">
+        <name>EV_USB</name>
+        <initializer>0x0207</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Usb driver event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="94" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a3eee9e8af3da5fc738cb1e5fceb753a6" prot="public" static="no">
+        <name>VALUE_USB_OUT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="95" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1af13a9e43c14dbc95c7ee80fded24b54d" prot="public" static="no">
+        <name>VALUE_USB_IN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="96" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ad6e79eabda6d405708ab1da1478b2dcb" prot="public" static="no">
+        <name>EV_PM</name>
+        <initializer>0x0208</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PM event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="99" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ace9af06e9a426f1ff423e476da9eb09a" prot="public" static="no">
+        <name>CODE_PM_ENTER_INFORM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="100" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a9f691c2019efc88b6af8e27218a01457" prot="public" static="no">
+        <name>CODE_PM_ENTER</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="101" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae8b3f4532d3e8ae510feb8f387e25d9e" prot="public" static="no">
+        <name>CODE_PM_DONE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="102" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a18b14bd80e5eb27975aa823ef893cd6c" prot="public" static="no">
+        <name>CODE_PM_QUIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="103" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aec04b475e3d3c1b05829b5cd07127b12" prot="public" static="no">
+        <name>CODE_PM_SHUTDOWN_INFORM</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="104" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a4a86976084db619153264b47c5e4dbf1" prot="public" static="no">
+        <name>CODE_PM_STARTUP_INFORM</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="105" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae34b18ddd5ed57a4f73c21e2f5e17811" prot="public" static="no">
+        <name>CODE_PM_LOWPOWER_INFORM</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="106" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ad8b02cdf5ac9fee21d55901ebd5bf028" prot="public" static="no">
+        <name>CODE_PM_POWERRECOVER_INFORM</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="107" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae565b11624375b038002ce642bc3f6d0" prot="public" static="no">
+        <name>CODE_PM_START_HEARTBEAT_INFORM</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="108" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a53abbce3515afb2393f2cc4226fd3041" prot="public" static="no">
+        <name>CODE_PM_STOP_HEARTBEAT_INFORM</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="109" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a3aac3ca91309689137c5f62beeca7175" prot="public" static="no">
+        <name>VALUE_PM_IDLE_INFORM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="110" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aa9da806c1ccda20fc9efd2f12570570c" prot="public" static="no">
+        <name>VALUE_PM_POWERBUTTON_INFORM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="111" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a50c2573a7958214f358e3e37f9e487e7" prot="public" static="no">
+        <name>EV_FS</name>
+        <initializer>0x0209</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File system event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="114" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a0eb7096243ec8a63c9214041f7b5409e" prot="public" static="no">
+        <name>CODE_FSYS_SD_LOAD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="115" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aad0f91872d01b1d79f068adbfb53e996" prot="public" static="no">
+        <name>CODE_FSYS_UDISK_LOAD</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="116" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1aabdda409bd5e2ef1808f4fdf006c80f3" prot="public" static="no">
+        <name>CODE_FSYS_FLASH_LOAD</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="117" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1afb953c2fd02c23dccdfb83bd7dc0d18c" prot="public" static="no">
+        <name>CODE_FSYS_SD_SPACE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="118" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1adb38130dcf75957a0b20a7998ecf4745" prot="public" static="no">
+        <name>CODE_FSYS_UDISK_SPACE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="119" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a98b3dd57c012289afb4a1bf491651256" prot="public" static="no">
+        <name>CODE_FSYS_FLASH_SPACE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="120" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ad8aeb5ad90a02ca788dc6ef752e521d4" prot="public" static="no">
+        <name>EV_BT</name>
+        <initializer>0x020A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bluetooth </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="123" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a156fe8642b3fa3a7293bee0e641368bb" prot="public" static="no">
+        <name>CODE_BT_DEVICE_CONNECT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="124" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a30eb27a707bdc52401b30f7063515fce" prot="public" static="no">
+        <name>CODE_BT_DEVICE_DISCONNECT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="125" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a3d5d6be2d588ad3f89ba2702c9bc8159" prot="public" static="no">
+        <name>CODE_BT_MODE_ON</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="126" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a92221d85861d6627b1184c2893536734" prot="public" static="no">
+        <name>CODE_BT_MODE_OFF</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="127" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ae8d9c6efe080c9657dfc6ba48f2b4d6a" prot="public" static="no">
+        <name>EV_DLNA</name>
+        <initializer>0x020B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DLNA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="130" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a9d6dbdd9d73ed9b91add2084e53899a7" prot="public" static="no">
+        <name>CODE_DLNA_DEVICE_CONNECT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="131" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a0e421ca3249c21714df46c82094371c5" prot="public" static="no">
+        <name>CODE_DLNA_DEVICE_DISCONNECT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="132" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1adc95490785c84a27bd5e75731fff84d0" prot="public" static="no">
+        <name>CODE_DLNA_MODE_ON</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="133" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a33a7b2fcc4d32b8bb55af607da381386" prot="public" static="no">
+        <name>CODE_DLNA_MODE_OFF</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="134" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a52b6aa120ee216c7743c77e74b8afdd9" prot="public" static="no">
+        <name>EV_AIRPLAY</name>
+        <initializer>0x020C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AIRPLAY </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="137" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a46096186dcea96f7d9712afff415dc78" prot="public" static="no">
+        <name>CODE_AIRPLAY_DEVICE_CONNECT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="138" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ad45bcf356361e76aa11ce20efa4f20e5" prot="public" static="no">
+        <name>CODE_AIRPLAY_DEVICE_DISCONNECT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="139" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a186e513fd1c1a7fd7d139952a24cc862" prot="public" static="no">
+        <name>CODE_AIRPLAY_MODE_ON</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="140" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a4b48d0bdc73bf8f9c7a8769f38a8ec81" prot="public" static="no">
+        <name>CODE_AIRPLAY_MODE_OFF</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="141" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a505471da6154d9a357633655bca8bff4" prot="public" static="no">
+        <name>EV_AT</name>
+        <initializer>0x020D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="144" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a6268b61cd0d39769048e8b4739e429f2" prot="public" static="no">
+        <name>CODE_AT_IF_READY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="145" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ad72385a32c4fd12f50a4f3b54492aeda" prot="public" static="no">
+        <name>CODE_AT_IF_DISAPPEAR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="146" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1ab8ea130567742c84d071baa2d5b47c28" prot="public" static="no">
+        <name>EV_BLE</name>
+        <initializer>0x020E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="149" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="event__type__code_8h_1a30061b66d4b1830b400e3f2d22006d62" prot="public" static="no">
+        <name>CODE_BLE_TX_COMPLETED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" line="150" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_EVENT_TYPE_CODE_API_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_EVENT_TYPE_CODE_API_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>remote<sp/>procedure<sp/>call<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="event__type__code_8h_1a0301dee4a6cd294e5785ceeef1bf350d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EV_RPC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>YunIO<sp/>event<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="event__type__code_8h_1a76eaa816a287255eb5f1ed14f7d3f8e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EV_YUNIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="event__type__code_8h_1aba35a26b23239b1c56a9676ee603779e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_CMD_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="event__type__code_8h_1a47ec5168cdec719a3dbda4fbcfe474c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_CMD_RETRY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="event__type__code_8h_1ae4913311e0efbb286e6d2c42987ef048" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_CMD_DISCONNECT<sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="event__type__code_8h_1a362b0eb4c8313b25c1453fcc6038fa82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_ON_CONNECTED<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="event__type__code_8h_1a1eabd57d7a20736fb8bbbaf83d69f625" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_ON_DISCONNECTED<sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="event__type__code_8h_1a665e9a7ed9e041797f1c7d084c75d635" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_ON_CONNECT_FAILED<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="event__type__code_8h_1a36dd8c784a3696387fb8a4a41fe5ed0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_ON_READ_ERROR<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="event__type__code_8h_1ae67439a6da29b5fedcfcf3df9836c1de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_ON_WRITE_ERROR<sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="event__type__code_8h_1aa1fdf9296cf62a927e203093be4f65f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_ON_HEARTBIT_ERROR<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="event__type__code_8h_1acd3a765e3e0a493f8ac75f7b0c24ff98" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_PUBLISH_SUCCESS<sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="event__type__code_8h_1a519dd4f2b65cedae88d93f87611272cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_YUNIO_PUBLISH_TIMEOUT<sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="event__type__code_8h_1a05ca485881a2fca9af8df4ce1a3c7161" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_OTA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0102</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="event__type__code_8h_1a69134d232ce1a9ec4c8908047432bc5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_OTA_ON_RESULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="event__type__code_8h_1aa81d53a7a06db605eefbc7eb029adff1" refkind="member"><highlight class="preprocessor">#define<sp/>EV_DEVICE_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0103</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="event__type__code_8h_1afeab333349391d542547c62a17c7df99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_REGISTER_ON_RESULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="event__type__code_8h_1ab4405c9496ed7b7dc9ccdeba3e71622b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VALUE_REGISTER_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="event__type__code_8h_1acd49d70c2da07796cc6d0a4701764655" refkind="member"><highlight class="preprocessor">#define<sp/>EV_ACTIVATE_ID2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0104</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="event__type__code_8h_1ae588a3b1506388e1e4000f0e7f1b7f47" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_ACTIVATE_ID2_ON_RESULT<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="event__type__code_8h_1ae180ba1eac7475a8fc9ee647b44bdf70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VALUE_ACTIVATE_ID2_SUCCESS<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="event__type__code_8h_1a7f071a4c27ead5f427f23ac1ffd7a920" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VALUE_ACTIVATE_ID2_FAILURE<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="event__type__code_8h_1a4686104546a71295852ba0d45584d22f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EV_DDA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0105</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="event__type__code_8h_1a2c6c90a212b6bea6127fec313b8813d2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_DDA_ON_CONNECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="event__type__code_8h_1aa9584901daa5b7200abdacdfe218d5a4" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_KEY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0201</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="event__type__code_8h_1aa925181f7645de59a7d218b7c79936b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_RECORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="event__type__code_8h_1acc49cc13805369c0190c5aa752d5ca1b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_VOLUME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/></highlight><highlight class="comment">/*<sp/>Reserve<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="event__type__code_8h_1aed012967e7de26cc18efb7c78cc84039" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_VOLUME_INC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="event__type__code_8h_1a38a1d0e2c14589ddb221dffc4bb95d1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_VOLUME_DEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="event__type__code_8h_1a26740dd70f77d076e150ed6dc769367a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PLAY_PAUSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="event__type__code_8h_1aea55db8f253daf6c3df2ccfc12c138a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_MUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="event__type__code_8h_1adf8e4c622814da7db42c0c5a04dd5925" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_CHANNEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="event__type__code_8h_1a337e1658f59196532919c6cffbc84dd5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_NEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="event__type__code_8h_1a6d8dc80f5c3d65dfceabc76ba072ed96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_RECORD_PRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="event__type__code_8h_1a18ef3160b336403f58e06ad82cd27b0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="event__type__code_8h_1a98a3000197dd30db07eef3ea20e043e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="event__type__code_8h_1ae526abf106427bd8682b2f8a2aa0d4d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_ELINK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="event__type__code_8h_1a56e6b0a0af7525ebc142be51bc06376b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_BOOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="event__type__code_8h_1a18c95eac934bcd5f31cbc15e5faa9848" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>VALUE_KEY_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="event__type__code_8h_1ad8676fc64fcc50d77cbb30a6f6451602" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_KEY_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="event__type__code_8h_1a2016497eff08711631e0c7f3094cbec5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_KEY_CLICK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="event__type__code_8h_1a288238de1c198646573c3b4bf22049a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_KEY_LTCLICK<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="event__type__code_8h_1a5af2139a43b34324c8da361c6de13461" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_KEY_LLTCLICK<sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="event__type__code_8h_1a4155a36940fea0efc7723e8063dad70a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_KEY_DBCLICK<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="event__type__code_8h_1a6e56c1652de4daef8550d5f84091da04" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>VALUE_SYS_CHN_CONNECTED<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="event__type__code_8h_1a6bd67dd198a9429be41e6ae077045d9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_SYS_CHN_CONNECTING<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="event__type__code_8h_1a09e030c8a3742da88ee243d84f9ab4df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_SYS_CHN_DISCONNECTED<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="event__type__code_8h_1a7561835fdc52884ae351f3d1c8707f62" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_KNOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0203</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="event__type__code_8h_1aa0cf0d8f26da1e38eae13820a0f918d8" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_SD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0204</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="event__type__code_8h_1a8a4d9c6e8d812dffc5b1e3cfca6bffd9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_SD_PLUG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="event__type__code_8h_1abd13c583e4aed8f9287544b550eac641" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_SD_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="event__type__code_8h_1ae613a15618fe24a25e4d25af0d8a9bc9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_SD_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="event__type__code_8h_1a4418dd932546faa7c76a82551cbf2ec7" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_LAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0205</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="event__type__code_8h_1a97a50f51f457015798b50e267002b02a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_LAN_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="event__type__code_8h_1aea9231d5013b03ae10d322cdf2e04b5a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_LAN_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="event__type__code_8h_1afcc5c1afcb31498d6d6fab5f8d895763" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_NET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0206</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="event__type__code_8h_1a4473f3177039bc46084cf4657ec3eea0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_NET_DHCP_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="event__type__code_8h_1a51b4d9b5a7c35bdb7d4b1a81d7408ddc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_NET_DHCP_RESULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="event__type__code_8h_1ae94777d34b632126e35491a2e46f451e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_NET_IP_STATIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="event__type__code_8h_1a2fc16177218ab0bf725c58bc78aafd22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_NET_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="event__type__code_8h_1a1af32b66c65117cf5af0d873c92e862e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_NET_LAN_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="event__type__code_8h_1a94e1c51bd2c039a0b17b769672a54c87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_NET_WIFI_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="event__type__code_8h_1a25481c1736533f043bd694c8b8481a49" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_USB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0207</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="event__type__code_8h_1a3eee9e8af3da5fc738cb1e5fceb753a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_USB_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="event__type__code_8h_1af13a9e43c14dbc95c7ee80fded24b54d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_USB_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="event__type__code_8h_1ad6e79eabda6d405708ab1da1478b2dcb" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_PM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0208</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="event__type__code_8h_1ace9af06e9a426f1ff423e476da9eb09a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_ENTER_INFORM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="event__type__code_8h_1a9f691c2019efc88b6af8e27218a01457" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_ENTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="event__type__code_8h_1ae8b3f4532d3e8ae510feb8f387e25d9e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_DONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="event__type__code_8h_1a18b14bd80e5eb27975aa823ef893cd6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_QUIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="event__type__code_8h_1aec04b475e3d3c1b05829b5cd07127b12" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_SHUTDOWN_INFORM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="event__type__code_8h_1a4a86976084db619153264b47c5e4dbf1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_STARTUP_INFORM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="event__type__code_8h_1ae34b18ddd5ed57a4f73c21e2f5e17811" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_LOWPOWER_INFORM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="event__type__code_8h_1ad8b02cdf5ac9fee21d55901ebd5bf028" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_POWERRECOVER_INFORM<sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="event__type__code_8h_1ae565b11624375b038002ce642bc3f6d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_START_HEARTBEAT_INFORM<sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="event__type__code_8h_1a53abbce3515afb2393f2cc4226fd3041" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_PM_STOP_HEARTBEAT_INFORM<sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="event__type__code_8h_1a3aac3ca91309689137c5f62beeca7175" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_PM_IDLE_INFORM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="event__type__code_8h_1aa9da806c1ccda20fc9efd2f12570570c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VALUE_PM_POWERBUTTON_INFORM<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="event__type__code_8h_1a50c2573a7958214f358e3e37f9e487e7" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_FS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0209</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="event__type__code_8h_1a0eb7096243ec8a63c9214041f7b5409e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_FSYS_SD_LOAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="event__type__code_8h_1aad0f91872d01b1d79f068adbfb53e996" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_FSYS_UDISK_LOAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="event__type__code_8h_1aabdda409bd5e2ef1808f4fdf006c80f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_FSYS_FLASH_LOAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="event__type__code_8h_1afb953c2fd02c23dccdfb83bd7dc0d18c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_FSYS_SD_SPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="event__type__code_8h_1adb38130dcf75957a0b20a7998ecf4745" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_FSYS_UDISK_SPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="event__type__code_8h_1a98b3dd57c012289afb4a1bf491651256" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>CODE_FSYS_FLASH_SPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="event__type__code_8h_1ad8aeb5ad90a02ca788dc6ef752e521d4" refkind="member"><highlight class="preprocessor">#define<sp/>EV_BT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x020A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="event__type__code_8h_1a156fe8642b3fa3a7293bee0e641368bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_BT_DEVICE_CONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="event__type__code_8h_1a30eb27a707bdc52401b30f7063515fce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_BT_DEVICE_DISCONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="event__type__code_8h_1a3d5d6be2d588ad3f89ba2702c9bc8159" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_BT_MODE_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="event__type__code_8h_1a92221d85861d6627b1184c2893536734" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_BT_MODE_OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="event__type__code_8h_1ae8d9c6efe080c9657dfc6ba48f2b4d6a" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_DLNA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x020B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="event__type__code_8h_1a9d6dbdd9d73ed9b91add2084e53899a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_DLNA_DEVICE_CONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="event__type__code_8h_1a0e421ca3249c21714df46c82094371c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_DLNA_DEVICE_DISCONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="event__type__code_8h_1adc95490785c84a27bd5e75731fff84d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_DLNA_MODE_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="event__type__code_8h_1a33a7b2fcc4d32b8bb55af607da381386" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_DLNA_MODE_OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="event__type__code_8h_1a52b6aa120ee216c7743c77e74b8afdd9" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EV_AIRPLAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x020C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="event__type__code_8h_1a46096186dcea96f7d9712afff415dc78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_AIRPLAY_DEVICE_CONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="event__type__code_8h_1ad45bcf356361e76aa11ce20efa4f20e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_AIRPLAY_DEVICE_DISCONNECT<sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="event__type__code_8h_1a186e513fd1c1a7fd7d139952a24cc862" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_AIRPLAY_MODE_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="event__type__code_8h_1a4b48d0bdc73bf8f9c7a8769f38a8ec81" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_AIRPLAY_MODE_OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="event__type__code_8h_1a505471da6154d9a357633655bca8bff4" refkind="member"><highlight class="preprocessor">#define<sp/>EV_AT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x020D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="event__type__code_8h_1a6268b61cd0d39769048e8b4739e429f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_AT_IF_READY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="event__type__code_8h_1ad72385a32c4fd12f50a4f3b54492aeda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_AT_IF_DISAPPEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="event__type__code_8h_1ab8ea130567742c84d071baa2d5b47c28" refkind="member"><highlight class="preprocessor">#define<sp/>EV_BLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x020E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="event__type__code_8h_1a30061b66d4b1830b400e3f2d22006d62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_BLE_TX_COMPLETED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_EVENT_TYPE_CODE_API_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal/event_type_code.h"/>
+  </compounddef>
+</doxygen>

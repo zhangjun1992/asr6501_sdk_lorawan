@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">poll.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <includedby refid="kv_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h</includedby>
+    <includedby refid="vfs_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h</includedby>
+    <includedby refid="yloop_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h</includedby>
+    <incdepgraph>
+      <node id="216">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="209">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>stdint.h</label>
+      </node>
+      <node id="214">
+        <label>poll.h</label>
+      </node>
+      <node id="213">
+        <label>fcntl.h</label>
+      </node>
+      <node id="211">
+        <label>stddef.h</label>
+      </node>
+      <node id="215">
+        <label>sys/types.h</label>
+      </node>
+      <node id="212">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="217">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="221">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="225">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/yloop.h</label>
+        <link refid="yloop_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="types_8h_1a9d1ec77671e63e693c2886246f3bdb00" prot="public" static="no">
+        <name>AOS_EXPORT</name>
+        <param><defname>ret</defname></param>
+        <param><defname>fun</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>define the AOS_EXPORT macro* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h" line="34" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a4e18e31b2c5a699a2d419f2e7cbb4460" prot="public" static="no">
+        <name>AOS_COMPONENT_INIT</name>
+        <param><defname>fun</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>define the AOS_COMPONENT_INIT macro </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h" line="42" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1ad0f2f0807c7f902db3a71aa62db89cd3" prot="public" static="no">
+        <name>AOS_TESTCASE</name>
+        <param><defname>fun</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>define the AOS_TESTCASE macro </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h" line="49" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(WITH_LWIP)<sp/>||<sp/>defined(CONFIG_NO_TCPIP)<sp/>||<sp/>defined(WITH_SAL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POLLIN<sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POLLOUT<sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POLLERR<sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pollfd<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>events;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>revents;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;poll.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_EXPORTX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="types_8h_1a9d1ec77671e63e693c2886246f3bdb00" refkind="member"><highlight class="preprocessor">#define<sp/>AOS_EXPORT(ret,<sp/>fun,<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_COMPONENT_INIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="types_8h_1a4e18e31b2c5a699a2d419f2e7cbb4460" refkind="member"><highlight class="preprocessor">#define<sp/>AOS_COMPONENT_INIT(fun,<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_TESTCASE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="types_8h_1ad0f2f0807c7f902db3a71aa62db89cd3" refkind="member"><highlight class="preprocessor">#define<sp/>AOS_TESTCASE(fun,<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_TYPES_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/types.h"/>
+  </compounddef>
+</doxygen>

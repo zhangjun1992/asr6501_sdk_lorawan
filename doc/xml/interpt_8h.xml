@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="interpt_8h" kind="file" language="C++">
+    <compoundname>interpt.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="493">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h</label>
+        <link refid="interpt_8h"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
+      <node id="494">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="496">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhal__interpt__desc__t" prot="public">hal_interpt_desc_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* hal_interpt_t) (int32_t vec, void *para)</definition>
+        <argsstring>)(int32_t vec, void *para)</argsstring>
+        <name>hal_interpt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="interpt_8h_1acbc123f19449de14b483bc78d78c412d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_interpt_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hal_interpt_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vector init</para><para><simplesect kind="return"><para>0 : on success, -1 : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interpt_8h_1a7f62ebf568359ce32b17b52f2cd7323a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_interpt_mask</definition>
+        <argsstring>(int32_t vec)</argsstring>
+        <name>hal_interpt_mask</name>
+        <param>
+          <type>int32_t</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask specified interrupt vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specified interrupt vector</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, -1 : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interpt_8h_1a26b6a22487f60d33261b307835382894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_interpt_umask</definition>
+        <argsstring>(int32_t vec)</argsstring>
+        <name>hal_interpt_umask</name>
+        <param>
+          <type>int32_t</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unmask specified interrupt vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specified interrupt vector</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, -1 : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interpt_8h_1a61e928d421df5d47cca7513831e6f1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_interpt_install</definition>
+        <argsstring>(int32_t vec, hal_interpt_t handler, void *para, char *name)</argsstring>
+        <name>hal_interpt_install</name>
+        <param>
+          <type>int32_t</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type><ref refid="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" kindref="member">hal_interpt_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>para</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Install specified interrupt vector</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specified interrupt vector</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, -1 : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_INTERPT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_INTERPT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" kindref="member">hal_interpt_t</ref>)(int32_t<sp/>vec,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*para);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structhal__interpt__desc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="structhal__interpt__desc__t_1aac35348475924e7c764890df906ed249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" kindref="member">hal_interpt_t</ref><sp/><ref refid="structhal__interpt__desc__t_1aac35348475924e7c764890df906ed249" kindref="member">fun</ref>;</highlight></codeline>
+<codeline lineno="12" refid="structhal__interpt__desc__t_1a339ef1696fdd19ca85bbaf6c44487261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structhal__interpt__desc__t_1a339ef1696fdd19ca85bbaf6c44487261" kindref="member">para</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<sp/><ref refid="structhal__interpt__desc__t" kindref="compound">hal_interpt_desc_t</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">int32_t<sp/><ref refid="interpt_8h_1acbc123f19449de14b483bc78d78c412d" kindref="member">hal_interpt_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">int32_t<sp/><ref refid="interpt_8h_1a7f62ebf568359ce32b17b52f2cd7323a" kindref="member">hal_interpt_mask</ref>(int32_t<sp/>vec);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">int32_t<sp/><ref refid="interpt_8h_1a26b6a22487f60d33261b307835382894" kindref="member">hal_interpt_umask</ref>(int32_t<sp/>vec);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">int32_t<sp/><ref refid="interpt_8h_1a61e928d421df5d47cca7513831e6f1b7" kindref="member">hal_interpt_install</ref>(int32_t<sp/>vec,<sp/><ref refid="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" kindref="member">hal_interpt_t</ref><sp/>handler,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*para,<sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h"/>
+  </compounddef>
+</doxygen>

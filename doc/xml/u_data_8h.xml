@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="u_data_8h" kind="file" language="C++">
+    <compoundname>uData.h</compoundname>
+    <includes local="yes">../../framework/uData/include/uData_com_desc.h</includes>
+    <incdepgraph>
+      <node id="229">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/uData.h</label>
+        <link refid="u_data_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>../../framework/uData/include/uData_com_desc.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="u_data_8h_1a2a9ec12e79fce3a175c287701ac2d5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int uData_report_publish</definition>
+        <argsstring>(input_event_t *event, void *pdata)</argsstring>
+        <name>uData_report_publish</name>
+        <param>
+          <type><ref refid="structinput__event__t" kindref="compound">input_event_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/uData.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="u_data_8h_1abe301ec9d8691c194782a3d6f243005f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int uData_dev_ioctl</definition>
+        <argsstring>(udata_t *pkg, uint8_t cmd, long long parm)</argsstring>
+        <name>uData_dev_ioctl</name>
+        <param>
+          <type>udata_t *</type>
+          <declname>pkg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>parm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/uData.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="u_data_8h_1a68612362e89b5ac41648b996fd027873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int uData_subscribe</definition>
+        <argsstring>(udata_type_e type)</argsstring>
+        <name>uData_subscribe</name>
+        <param>
+          <type>udata_type_e</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/uData.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="u_data_8h_1a802f27411d7cf3c8a0d3f5710c1a9f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int uData_unsubscribe</definition>
+        <argsstring>(udata_type_e type)</argsstring>
+        <name>uData_unsubscribe</name>
+        <param>
+          <type>udata_type_e</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/uData.h" line="14" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UDATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UDATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../framework/uData/include/uData_com_desc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="u_data_8h_1a2a9ec12e79fce3a175c287701ac2d5e0" kindref="member">uData_report_publish</ref>(<ref refid="structinput__event__t" kindref="compound">input_event_t</ref><sp/>*event,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pdata);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="u_data_8h_1abe301ec9d8691c194782a3d6f243005f" kindref="member">uData_dev_ioctl</ref>(udata_t*<sp/>pkg,<sp/>uint8_t<sp/>cmd,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>parm);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="u_data_8h_1a68612362e89b5ac41648b996fd027873" kindref="member">uData_subscribe</ref>(udata_type_e<sp/>type);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="u_data_8h_1a802f27411d7cf3c8a0d3f5710c1a9f63" kindref="member">uData_unsubscribe</ref>(udata_type_e<sp/>type);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*UDATA_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/uData.h"/>
+  </compounddef>
+</doxygen>

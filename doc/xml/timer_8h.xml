@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="timer_8h" kind="file" language="C++">
+    <compoundname>timer.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="561">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="560">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="561" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtimer__config__t" prot="public">timer_config_t</innerclass>
+    <innerclass refid="structtimer__dev__t" prot="public">timer_dev_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="timer_8h_1a3da9858803fe60ee5330b164c02c34c9" prot="public" static="no">
+        <name>TIMER_RELOAD_AUTO</name>
+        <initializer>1  /* timer reload automatic */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="8" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer_8h_1a117ad34b3927eab67cae42013f2ce9a8" prot="public" static="no">
+        <name>TIMER_RELOAD_MANU</name>
+        <initializer>2  /* timer reload manual */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="9" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* hal_timer_cb_t) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>hal_timer_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="timer_8h_1a58bd32fb34c0cfa0fa0684ccb33bebc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_timer_init</definition>
+        <argsstring>(timer_dev_t *tim)</argsstring>
+        <name>hal_timer_init</name>
+        <param>
+          <type><ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref> *</type>
+          <declname>tim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init a hardware timer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tmr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer struct </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>micro seconds for repeat timer trigger </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auto_reoad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to 0, if you just need oneshot timer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to be triggered after useconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer channel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>passed to cb </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="timer_8h_1a5ebdd026421834907dceea979487c4d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_timer_start</definition>
+        <argsstring>(timer_dev_t *tim)</argsstring>
+        <name>hal_timer_start</name>
+        <param>
+          <type><ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref> *</type>
+          <declname>tim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>start a hardware timer</para><para><simplesect kind="return"><para>0 == success, EIO == failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="timer_8h_1ab99f4029ee1d81f5180cf03b98e2be0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_timer_stop</definition>
+        <argsstring>(timer_dev_t *tim)</argsstring>
+        <name>hal_timer_stop</name>
+        <param>
+          <type><ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref> *</type>
+          <declname>tim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stop a hardware timer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tmr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer struct </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to be triggered after useconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>passed to cb </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="timer_8h_1a9bae3ff32ddf27c8ade176e09a0236fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_timer_finalize</definition>
+        <argsstring>(timer_dev_t *tim)</argsstring>
+        <name>hal_timer_finalize</name>
+        <param>
+          <type><ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref> *</type>
+          <declname>tim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initialises an TIMER interface, Turns off an TIMER hardware interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be de-initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_TIMER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_TIMER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="timer_8h_1a3da9858803fe60ee5330b164c02c34c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_RELOAD_AUTO<sp/><sp/>1<sp/><sp/></highlight><highlight class="comment">/*<sp/>timer<sp/>reload<sp/>automatic<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="timer_8h_1a117ad34b3927eab67cae42013f2ce9a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_RELOAD_MANU<sp/><sp/>2<sp/><sp/></highlight><highlight class="comment">/*<sp/>timer<sp/>reload<sp/>manual<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structtimer__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="structtimer__config__t_1a29a91d91167e057631b4122a7d203b95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtimer__config__t_1a29a91d91167e057631b4122a7d203b95" kindref="member">period</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structtimer__config__t_1adb40e6e2ef34d7e373734a2538dc6d83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtimer__config__t_1adb40e6e2ef34d7e373734a2538dc6d83" kindref="member">reload_mode</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structtimer__config__t_1a55763e9c68653828773b6ac1d65f9b3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref><sp/><ref refid="structtimer__config__t_1a55763e9c68653828773b6ac1d65f9b3e" kindref="member">cb</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structtimer__config__t_1a0f4f21e8d9c4206643f5569ec8687316" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structtimer__config__t_1a0f4f21e8d9c4206643f5569ec8687316" kindref="member">arg</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/><ref refid="structtimer__config__t" kindref="compound">timer_config_t</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structtimer__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="structtimer__dev__t_1ae07c11608ff216a595f858366819103b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtimer__dev__t_1ae07c11608ff216a595f858366819103b" kindref="member">port</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>timer<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structtimer__dev__t_1a4fe959c3a7c2d61addb4d773f50a3d79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtimer__config__t" kindref="compound">timer_config_t</ref><sp/><ref refid="structtimer__dev__t_1a4fe959c3a7c2d61addb4d773f50a3d79" kindref="member">config</ref>;<sp/></highlight><highlight class="comment">/*<sp/>timer<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structtimer__dev__t_1a6bb4d3beb3816dc7bfec75419bf4aa5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structtimer__dev__t_1a6bb4d3beb3816dc7bfec75419bf4aa5e" kindref="member">priv</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">int32_t<sp/><ref refid="timer_8h_1a58bd32fb34c0cfa0fa0684ccb33bebc2" kindref="member">hal_timer_init</ref>(<ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref><sp/>*tim);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">int32_t<sp/><ref refid="timer_8h_1a5ebdd026421834907dceea979487c4d4" kindref="member">hal_timer_start</ref>(<ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref><sp/>*tim);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8h_1ab99f4029ee1d81f5180cf03b98e2be0a" kindref="member">hal_timer_stop</ref>(<ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref><sp/>*tim);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">int32_t<sp/><ref refid="timer_8h_1a9bae3ff32ddf27c8ade176e09a0236fa" kindref="member">hal_timer_finalize</ref>(<ref refid="structtimer__dev__t" kindref="compound">timer_dev_t</ref><sp/>*tim);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_TIMER_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h"/>
+  </compounddef>
+</doxygen>

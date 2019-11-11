@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__ota__module__s" kind="struct" language="C++" prot="public">
+    <compoundname>hal_ota_module_s</compoundname>
+    <includes refid="ota_8h" local="yes">ota.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__ota__module__s_1a9ec38a2267572548228c5e248104c580" prot="public" static="no" mutable="no">
+        <type><ref refid="structhal__module__base__t" kindref="compound">hal_module_base_t</ref></type>
+        <definition>hal_module_base_t hal_ota_module_s::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="54" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__ota__module__s_1a1a7677b91d28045fef73901657b9311e" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_ota_module_s::init) (hal_ota_module_t *m, void *something)</definition>
+        <argsstring>)(hal_ota_module_t *m, void *something)</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="57" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__ota__module__s_1ad8a89e8c9e6c19b2a32eafeadf30aa56" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_ota_module_s::ota_write) (hal_ota_module_t *m, volatile uint32_t *off_set, uint8_t *in_buf, uint32_t in_buf_len)</definition>
+        <argsstring>)(hal_ota_module_t *m, volatile uint32_t *off_set, uint8_t *in_buf, uint32_t in_buf_len)</argsstring>
+        <name>ota_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="58" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__ota__module__s_1ada89794cbd309bf7bfd95ebb802161e5" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_ota_module_s::ota_read) (hal_ota_module_t *m, volatile uint32_t *off_set, uint8_t *out_buf, uint32_t out_buf_len)</definition>
+        <argsstring>)(hal_ota_module_t *m, volatile uint32_t *off_set, uint8_t *out_buf, uint32_t out_buf_len)</argsstring>
+        <name>ota_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="60" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__ota__module__s_1a7f44125e7ba0dbbd4a809263bddedfb0" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_ota_module_s::ota_set_boot) (hal_ota_module_t *m, void *something)</definition>
+        <argsstring>)(hal_ota_module_t *m, void *something)</argsstring>
+        <name>ota_set_boot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="62" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="106">
+        <label>dlist_s</label>
+        <link refid="structdlist__s"/>
+        <childnode refid="106" relation="usage">
+          <edgelabel>+prev</edgelabel>
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="105">
+        <label>hal_module_base_t</label>
+        <link refid="structhal__module__base__t"/>
+        <childnode refid="106" relation="usage">
+          <edgelabel>+list</edgelabel>
+        </childnode>
+      </node>
+      <node id="104">
+        <label>hal_ota_module_s</label>
+        <link refid="structhal__ota__module__s"/>
+        <childnode refid="105" relation="usage">
+          <edgelabel>+base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="53" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="53" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structhal__ota__module__s_1a9ec38a2267572548228c5e248104c580" prot="public" virt="non-virtual"><scope>hal_ota_module_s</scope><name>base</name></member>
+      <member refid="structhal__ota__module__s_1a1a7677b91d28045fef73901657b9311e" prot="public" virt="non-virtual"><scope>hal_ota_module_s</scope><name>init</name></member>
+      <member refid="structhal__ota__module__s_1ada89794cbd309bf7bfd95ebb802161e5" prot="public" virt="non-virtual"><scope>hal_ota_module_s</scope><name>ota_read</name></member>
+      <member refid="structhal__ota__module__s_1a7f44125e7ba0dbbd4a809263bddedfb0" prot="public" virt="non-virtual"><scope>hal_ota_module_s</scope><name>ota_set_boot</name></member>
+      <member refid="structhal__ota__module__s_1ad8a89e8c9e6c19b2a32eafeadf30aa56" prot="public" virt="non-virtual"><scope>hal_ota_module_s</scope><name>ota_write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

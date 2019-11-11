@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__dev__gps__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_dev_gps_data_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__dev__gps__data__t_1ac425e27eedae4e010a844a21461f8dd4" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _dev_gps_data_t::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="313" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__gps__data__t_1ad8b6052a4faa52702c7fd0178e43c0ea" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1aeba90184587fa9b27ae46417e7a679ad" kindref="member">gps_time_t</ref></type>
+        <definition>gps_time_t _dev_gps_data_t::utc</definition>
+        <argsstring></argsstring>
+        <name>utc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="314" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__gps__data__t_1a125fabc7e3ae9d2f7469db726c22734d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _dev_gps_data_t::lat</definition>
+        <argsstring></argsstring>
+        <name>lat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="315" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__gps__data__t_1a0e8252dbfec14270c6b64c9aa51131b3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _dev_gps_data_t::lon</definition>
+        <argsstring></argsstring>
+        <name>lon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="316" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__gps__data__t_1ad1ad99073ccafb7c66667731d745539c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _dev_gps_data_t::elv</definition>
+        <argsstring></argsstring>
+        <name>elv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="317" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>_dev_gps_data_t</label>
+        <link refid="struct__dev__gps__data__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+utc</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>_gps_time</label>
+        <link refid="struct__gps__time"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="312" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="312" bodyend="318"/>
+    <listofallmembers>
+      <member refid="struct__dev__gps__data__t_1ad1ad99073ccafb7c66667731d745539c" prot="public" virt="non-virtual"><scope>_dev_gps_data_t</scope><name>elv</name></member>
+      <member refid="struct__dev__gps__data__t_1a125fabc7e3ae9d2f7469db726c22734d" prot="public" virt="non-virtual"><scope>_dev_gps_data_t</scope><name>lat</name></member>
+      <member refid="struct__dev__gps__data__t_1a0e8252dbfec14270c6b64c9aa51131b3" prot="public" virt="non-virtual"><scope>_dev_gps_data_t</scope><name>lon</name></member>
+      <member refid="struct__dev__gps__data__t_1ac425e27eedae4e010a844a21461f8dd4" prot="public" virt="non-virtual"><scope>_dev_gps_data_t</scope><name>timestamp</name></member>
+      <member refid="struct__dev__gps__data__t_1ad8b6052a4faa52702c7fd0178e43c0ea" prot="public" virt="non-virtual"><scope>_dev_gps_data_t</scope><name>utc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

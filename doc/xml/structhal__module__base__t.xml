@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__module__base__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_module_base_t</compoundname>
+    <includes refid="base_8h" local="yes">base.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__module__base__t_1a2432f19946eb8b33b9bcd36bbf79c465" prot="public" static="no" mutable="no">
+        <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref></type>
+        <definition>dlist_t hal_module_base_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__module__base__t_1ab88d0d0666b4a2f394de5c26f2a24a5a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hal_module_base_t::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" line="23" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__module__base__t_1a826df816d4125caccce5b5d86a2a2aaf" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* hal_module_base_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" line="24" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__module__base__t_1a8abdb80f07459b9de7f78533e250a218" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* hal_module_base_t::priv_dev</definition>
+        <argsstring></argsstring>
+        <name>priv_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" line="25" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="102">
+        <label>dlist_s</label>
+        <link refid="structdlist__s"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>+prev</edgelabel>
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>hal_module_base_t</label>
+        <link refid="structhal__module__base__t"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>+list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" line="21" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" bodystart="21" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structhal__module__base__t_1a2432f19946eb8b33b9bcd36bbf79c465" prot="public" virt="non-virtual"><scope>hal_module_base_t</scope><name>list</name></member>
+      <member refid="structhal__module__base__t_1ab88d0d0666b4a2f394de5c26f2a24a5a" prot="public" virt="non-virtual"><scope>hal_module_base_t</scope><name>magic</name></member>
+      <member refid="structhal__module__base__t_1a826df816d4125caccce5b5d86a2a2aaf" prot="public" virt="non-virtual"><scope>hal_module_base_t</scope><name>name</name></member>
+      <member refid="structhal__module__base__t_1a8abdb80f07459b9de7f78533e250a218" prot="public" virt="non-virtual"><scope>hal_module_base_t</scope><name>priv_dev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

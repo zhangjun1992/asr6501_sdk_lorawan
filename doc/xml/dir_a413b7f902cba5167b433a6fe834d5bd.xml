@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a413b7f902cba5167b433a6fe834d5bd" kind="dir">
+    <compoundname>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal</compoundname>
+    <innerdir refid="dir_6ca7be72184a34f0083218303e9fcd86">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc</innerdir>
+    <innerfile refid="ais__ota_8h">ais_ota.h</innerfile>
+    <innerfile refid="atcmd_8h">atcmd.h</innerfile>
+    <innerfile refid="base_8h">base.h</innerfile>
+    <innerfile refid="hal_8h">hal.h</innerfile>
+    <innerfile refid="lorawan_8h">lorawan.h</innerfile>
+    <innerfile refid="ota_8h">ota.h</innerfile>
+    <innerfile refid="sensor_8h">sensor.h</innerfile>
+    <innerfile refid="trace_8h">trace.h</innerfile>
+    <innerfile refid="wifi_8h">wifi.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/"/>
+  </compounddef>
+</doxygen>

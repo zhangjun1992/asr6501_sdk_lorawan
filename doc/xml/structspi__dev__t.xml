@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structspi__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>spi_dev_t</compoundname>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspi__dev__t_1a9ae23abf41d0073e6ffbc5b1d38c4fa3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t spi_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="17" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__dev__t_1ab7c1e4ab2d918c0e87148c9e538dd274" prot="public" static="no" mutable="no">
+        <type><ref refid="structspi__config__t" kindref="compound">spi_config_t</ref></type>
+        <definition>spi_config_t spi_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="18" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__dev__t_1a717f4ad49d8e6dea13cccfbd2c28300c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* spi_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="19" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="190">
+        <label>spi_config_t</label>
+        <link refid="structspi__config__t"/>
+      </node>
+      <node id="189">
+        <label>spi_dev_t</label>
+        <link refid="structspi__dev__t"/>
+        <childnode refid="190" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="16" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="16" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structspi__dev__t_1ab7c1e4ab2d918c0e87148c9e538dd274" prot="public" virt="non-virtual"><scope>spi_dev_t</scope><name>config</name></member>
+      <member refid="structspi__dev__t_1a9ae23abf41d0073e6ffbc5b1d38c4fa3" prot="public" virt="non-virtual"><scope>spi_dev_t</scope><name>port</name></member>
+      <member refid="structspi__dev__t_1a717f4ad49d8e6dea13cccfbd2c28300c" prot="public" virt="non-virtual"><scope>spi_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

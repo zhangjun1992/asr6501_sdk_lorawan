@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="uart_8h" kind="file" language="C++">
+    <compoundname>uart.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="565">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="566" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+      <node id="567">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="568">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="567" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structuart__config__t" prot="public">uart_config_t</innerclass>
+    <innerclass refid="structuart__dev__t" prot="public">uart_dev_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="uart_8h_1a631222ce1f55203f7456a62df1adaeaa" prot="public" static="no">
+        <name>hal_uart_data_width_t</name>
+        <enumvalue id="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa6dc897b322172d74c9b0766f74c4d5a1" prot="public">
+          <name>DATA_WIDTH_5BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa0d0d149f3175487d4ed7df0e328fb2b2" prot="public">
+          <name>DATA_WIDTH_6BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a631222ce1f55203f7456a62df1adaeaaaec8368b7820604d36619d6108f419b63" prot="public">
+          <name>DATA_WIDTH_7BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa68bc1168e7cbfb6d89fae0e13f73f15a" prot="public">
+          <name>DATA_WIDTH_8BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a631222ce1f55203f7456a62df1adaeaaac799d76f241ba6388bbb5cec6fe44911" prot="public">
+          <name>DATA_WIDTH_9BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="enum" id="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25" prot="public" static="no">
+        <name>hal_uart_stop_bits_t</name>
+        <enumvalue id="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25ad5532387a525860bca665f556b235a61" prot="public">
+          <name>STOP_BITS_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25a47dc89ff50980f11f25190d3a05ed055" prot="public">
+          <name>STOP_BITS_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="enum" id="uart_8h_1a33928493a14b4828cb32e778d1af482d" prot="public" static="no">
+        <name>hal_uart_flow_control_t</name>
+        <enumvalue id="uart_8h_1a33928493a14b4828cb32e778d1af482dac7bde4fed0ddacb16b30104f95cdcdf2" prot="public">
+          <name>FLOW_CONTROL_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a33928493a14b4828cb32e778d1af482daa0161b017fd2ca1799809b186301e1ca" prot="public">
+          <name>FLOW_CONTROL_CTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a33928493a14b4828cb32e778d1af482da7b3bf5a6e1bb3f83d09e47feec47f0c8" prot="public">
+          <name>FLOW_CONTROL_RTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a33928493a14b4828cb32e778d1af482daed7725888012c485c51b19bc7686b310" prot="public">
+          <name>FLOW_CONTROL_CTS_RTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="30" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60" prot="public" static="no">
+        <name>hal_uart_parity_t</name>
+        <enumvalue id="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60a4bffe960d7eae89d5b85412e4edfd453" prot="public">
+          <name>NO_PARITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60afe2fed5b602e75007ad71639144b174b" prot="public">
+          <name>ODD_PARITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60ae19a2b096e346d54f83b83723a8af70d" prot="public">
+          <name>EVEN_PARITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="40" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7a" prot="public" static="no">
+        <name>hal_uart_mode_t</name>
+        <enumvalue id="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aa0792e31ca2cf4bd7a6d85fd63213018d" prot="public">
+          <name>MODE_TX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aabf893bbe740b0d6f9619e5821db9b8cb" prot="public">
+          <name>MODE_RX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aa6caf6c8756b6cbeeedb17943e8889bb7" prot="public">
+          <name>MODE_TX_RX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="49" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="uart_8h_1ac1cd14ca3a6309b8415af1e1116162ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_uart_init</definition>
+        <argsstring>(uart_dev_t *uart)</argsstring>
+        <name>hal_uart_init</name>
+        <param>
+          <type><ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref> *</type>
+          <declname>uart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises a UART interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8h_1a3e4cf51ef4f2a9f7f08a9e3a48757853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_uart_send</definition>
+        <argsstring>(uart_dev_t *uart, const void *data, uint32_t size, uint32_t timeout)</argsstring>
+        <name>hal_uart_send</name>
+        <param>
+          <type><ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref> *</type>
+          <declname>uart</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmit data on a UART interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the UART interface </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the start of data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to transmit</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8h_1ab927de03ea5e2df6d8c88eddbf777c2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_uart_recv</definition>
+        <argsstring>(uart_dev_t *uart, void *data, uint32_t expect_size, uint32_t timeout)</argsstring>
+        <name>hal_uart_recv</name>
+        <param>
+          <type><ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref> *</type>
+          <declname>uart</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>expect_size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive data on a UART interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the UART interface </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">expect_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to receive </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milisecond, set this value to HAL_WAIT_FOREVER if you want to wait forever</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8h_1ada82a0bfc3e5782b45b9bc2df0b3a680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_uart_recv_II</definition>
+        <argsstring>(uart_dev_t *uart, void *data, uint32_t expect_size, uint32_t *recv_size, uint32_t timeout)</argsstring>
+        <name>hal_uart_recv_II</name>
+        <param>
+          <type><ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref> *</type>
+          <declname>uart</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>expect_size</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>recv_size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive data on a UART interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the UART interface </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">expect_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to receive </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">recv_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milisecond, set this value to HAL_WAIT_FOREVER if you want to wait forever</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8h_1afd25ecf40a406f15b79534fee86e4271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_uart_finalize</definition>
+        <argsstring>(uart_dev_t *uart)</argsstring>
+        <name>hal_uart_finalize</name>
+        <param>
+          <type><ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref> *</type>
+          <declname>uart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialises a UART interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be deinitialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="129" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_UART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_UART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>UART<sp/>data<sp/>width</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa6dc897b322172d74c9b0766f74c4d5a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa6dc897b322172d74c9b0766f74c4d5a1" kindref="member">DATA_WIDTH_5BIT</ref>,</highlight></codeline>
+<codeline lineno="13" refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa0d0d149f3175487d4ed7df0e328fb2b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa0d0d149f3175487d4ed7df0e328fb2b2" kindref="member">DATA_WIDTH_6BIT</ref>,</highlight></codeline>
+<codeline lineno="14" refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaaec8368b7820604d36619d6108f419b63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaaec8368b7820604d36619d6108f419b63" kindref="member">DATA_WIDTH_7BIT</ref>,</highlight></codeline>
+<codeline lineno="15" refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa68bc1168e7cbfb6d89fae0e13f73f15a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaa68bc1168e7cbfb6d89fae0e13f73f15a" kindref="member">DATA_WIDTH_8BIT</ref>,</highlight></codeline>
+<codeline lineno="16" refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaac799d76f241ba6388bbb5cec6fe44911" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaaac799d76f241ba6388bbb5cec6fe44911" kindref="member">DATA_WIDTH_9BIT</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaa" kindref="member">hal_uart_data_width_t</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>UART<sp/>stop<sp/>bits</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25ad5532387a525860bca665f556b235a61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25ad5532387a525860bca665f556b235a61" kindref="member">STOP_BITS_1</ref>,</highlight></codeline>
+<codeline lineno="24" refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25a47dc89ff50980f11f25190d3a05ed055" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25a47dc89ff50980f11f25190d3a05ed055" kindref="member">STOP_BITS_2</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25" kindref="member">hal_uart_stop_bits_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>UART<sp/>flow<sp/>control</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="uart_8h_1a33928493a14b4828cb32e778d1af482d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="uart_8h_1a33928493a14b4828cb32e778d1af482dac7bde4fed0ddacb16b30104f95cdcdf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482dac7bde4fed0ddacb16b30104f95cdcdf2" kindref="member">FLOW_CONTROL_DISABLED</ref>,</highlight></codeline>
+<codeline lineno="32" refid="uart_8h_1a33928493a14b4828cb32e778d1af482daa0161b017fd2ca1799809b186301e1ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482daa0161b017fd2ca1799809b186301e1ca" kindref="member">FLOW_CONTROL_CTS</ref>,</highlight></codeline>
+<codeline lineno="33" refid="uart_8h_1a33928493a14b4828cb32e778d1af482da7b3bf5a6e1bb3f83d09e47feec47f0c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482da7b3bf5a6e1bb3f83d09e47feec47f0c8" kindref="member">FLOW_CONTROL_RTS</ref>,</highlight></codeline>
+<codeline lineno="34" refid="uart_8h_1a33928493a14b4828cb32e778d1af482daed7725888012c485c51b19bc7686b310" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482daed7725888012c485c51b19bc7686b310" kindref="member">FLOW_CONTROL_CTS_RTS</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482d" kindref="member">hal_uart_flow_control_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>UART<sp/>parity</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60a4bffe960d7eae89d5b85412e4edfd453" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60a4bffe960d7eae89d5b85412e4edfd453" kindref="member">NO_PARITY</ref>,</highlight></codeline>
+<codeline lineno="42" refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60afe2fed5b602e75007ad71639144b174b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60afe2fed5b602e75007ad71639144b174b" kindref="member">ODD_PARITY</ref>,</highlight></codeline>
+<codeline lineno="43" refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60ae19a2b096e346d54f83b83723a8af70d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60ae19a2b096e346d54f83b83723a8af70d" kindref="member">EVEN_PARITY</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><ref refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60" kindref="member">hal_uart_parity_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>UART<sp/>mode</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="50" refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aa0792e31ca2cf4bd7a6d85fd63213018d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aa0792e31ca2cf4bd7a6d85fd63213018d" kindref="member">MODE_TX</ref>,</highlight></codeline>
+<codeline lineno="51" refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aabf893bbe740b0d6f9619e5821db9b8cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aabf893bbe740b0d6f9619e5821db9b8cb" kindref="member">MODE_RX</ref>,</highlight></codeline>
+<codeline lineno="52" refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aa6caf6c8756b6cbeeedb17943e8889bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7aa6caf6c8756b6cbeeedb17943e8889bb7" kindref="member">MODE_TX_RX</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><ref refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7a" kindref="member">hal_uart_mode_t</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>UART<sp/>configuration</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structuart__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59" refid="structuart__config__t_1a988fe3be69cba628a241033f1b16f35e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structuart__config__t_1a988fe3be69cba628a241033f1b16f35e" kindref="member">baud_rate</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structuart__config__t_1a98e3f985aac45435986be5e14fe47b76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaa" kindref="member">hal_uart_data_width_t</ref><sp/><sp/><sp/><ref refid="structuart__config__t_1a98e3f985aac45435986be5e14fe47b76" kindref="member">data_width</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structuart__config__t_1a33b566783011bf57508e65a9b60dc7de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60" kindref="member">hal_uart_parity_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structuart__config__t_1a33b566783011bf57508e65a9b60dc7de" kindref="member">parity</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structuart__config__t_1a24881f4d7db115b05e72b4854ab81767" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25" kindref="member">hal_uart_stop_bits_t</ref><sp/><sp/><sp/><sp/><ref refid="structuart__config__t_1a24881f4d7db115b05e72b4854ab81767" kindref="member">stop_bits</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structuart__config__t_1a8052316f7700cb2f3999cba2019e5d5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482d" kindref="member">hal_uart_flow_control_t</ref><sp/><ref refid="structuart__config__t_1a8052316f7700cb2f3999cba2019e5d5c" kindref="member">flow_control</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structuart__config__t_1a7f871d76a5ea93222aaaac1ba9c31a95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7a" kindref="member">hal_uart_mode_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structuart__config__t_1a7f871d76a5ea93222aaaac1ba9c31a95" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><ref refid="structuart__config__t" kindref="compound">uart_config_t</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structuart__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68" refid="structuart__dev__t_1a87c3a3c5be21833204d5da753d56d8e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structuart__dev__t_1a87c3a3c5be21833204d5da753d56d8e8" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>uart<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structuart__dev__t_1a034bb106fc2ddb2a00821b72255db94b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structuart__config__t" kindref="compound">uart_config_t</ref><sp/><ref refid="structuart__dev__t_1a034bb106fc2ddb2a00821b72255db94b" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>uart<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structuart__dev__t_1accf065585c37d52cea2468640da1014f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structuart__dev__t_1accf065585c37d52cea2468640da1014f" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/><ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">int32_t<sp/><ref refid="uart_8h_1ac1cd14ca3a6309b8415af1e1116162ad" kindref="member">hal_uart_init</ref>(<ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref><sp/>*uart);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">int32_t<sp/><ref refid="uart_8h_1a3e4cf51ef4f2a9f7f08a9e3a48757853" kindref="member">hal_uart_send</ref>(<ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref><sp/>*uart,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">int32_t<sp/><ref refid="uart_8h_1ab927de03ea5e2df6d8c88eddbf777c2a" kindref="member">hal_uart_recv</ref>(<ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref><sp/>*uart,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>expect_size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">int32_t<sp/><ref refid="uart_8h_1ada82a0bfc3e5782b45b9bc2df0b3a680" kindref="member">hal_uart_recv_II</ref>(<ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref><sp/>*uart,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>expect_size,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>*recv_size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">int32_t<sp/><ref refid="uart_8h_1afd25ecf40a406f15b79534fee86e4271" kindref="member">hal_uart_finalize</ref>(<ref refid="structuart__dev__t" kindref="compound">uart_dev_t</ref><sp/>*uart);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_UART_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_100444dbbb64492ab2f8c2b1d8fa817c" kind="dir">
+    <compoundname>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos</compoundname>
+    <innerdir refid="dir_9bb889f36b9407fcf5350f6b23f3d7a3">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/internal</innerdir>
+    <innerfile refid="alink_8h">alink.h</innerfile>
+    <innerfile refid="aos_8h">aos.h</innerfile>
+    <innerfile refid="cli_8h">cli.h</innerfile>
+    <innerfile refid="cloud_8h">cloud.h</innerfile>
+    <innerfile refid="debug_8h">debug.h</innerfile>
+    <innerfile refid="errno_8h">errno.h</innerfile>
+    <innerfile refid="init_8h">init.h</innerfile>
+    <innerfile refid="kernel_8h">kernel.h</innerfile>
+    <innerfile refid="kv_8h">kv.h</innerfile>
+    <innerfile refid="list_8h">list.h</innerfile>
+    <innerfile refid="log_8h">log.h</innerfile>
+    <innerfile refid="mbedtls__ssl_8h">mbedtls_ssl.h</innerfile>
+    <innerfile refid="network_8h">network.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <innerfile refid="u_data_8h">uData.h</innerfile>
+    <innerfile refid="version_8h">version.h</innerfile>
+    <innerfile refid="vfs_8h">vfs.h</innerfile>
+    <innerfile refid="yloop_8h">yloop.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ais__ota_8h" kind="file" language="C++">
+    <compoundname>ais_ota.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">bluetooth/bluetooth.h</includes>
+    <incdepgraph>
+      <node id="280">
+        <label>stdbool.h</label>
+      </node>
+      <node id="279">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h</label>
+        <link refid="ais__ota_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>bluetooth/bluetooth.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18" prot="public" static="no">
+        <name>ali_ota_flash_evt_t</name>
+        <enumvalue id="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a83be16824854e72b34da0d6f7f5c5a3a" prot="public">
+          <name>ALI_OTA_FLASH_ERASE_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a9fe27095f9d8c37267c934a7ceb6e3e2" prot="public">
+          <name>ALI_OTA_FLASH_ERASE_FAIL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18aabb5673a3fb851f45314c0dec831f6e2" prot="public">
+          <name>ALI_OTA_FLASH_STORE_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a30dcb093fc2879f95e960d5288cdd6d1" prot="public">
+          <name>ALI_OTA_FLASH_STORE_FAIL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18ac6e6f29e30454cf338182655b75614e8" prot="public">
+          <name>ALI_OTA_FLASH_ERROR</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="7" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="enum" id="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" prot="public" static="no">
+        <name>ali_ota_flash_err_t</name>
+        <enumvalue id="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035feaa42cf50de6b92af25657fb01737d75568" prot="public">
+          <name>ALI_OTA_FLASH_CODE_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035feaa12fe950d33bcd01173f54589f5d2f8b1" prot="public">
+          <name>ALI_OTA_FLASH_CODE_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="15" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="enum" id="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388" prot="public" static="no">
+        <name>ali_ota_settings_err_t</name>
+        <enumvalue id="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388a5783a6bc915dceaf110179393a43773b" prot="public">
+          <name>ALI_OTA_SETTINGS_CODE_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388a24caf7ac6c7ba7f38a4393a7b375fe98" prot="public">
+          <name>ALI_OTA_SETTINGS_CODE_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="20" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* flash_event_handler_t) (ali_ota_flash_evt_t t)</definition>
+        <argsstring>)(ali_ota_flash_evt_t t)</argsstring>
+        <name>flash_event_handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="25" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ais__ota_8h_1ad7ee21725d7954244162e672a18ee00e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* settings_event_handler_t) (ali_ota_flash_evt_t t)</definition>
+        <argsstring>)(ali_ota_flash_evt_t t)</argsstring>
+        <name>settings_event_handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="26" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ais__ota_8h_1a07876fbb86164b0ed9f2c6f4974d1610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ais_ota_get_setting_fw_offset</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_get_setting_fw_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a86ec5138a21759e2eedf317c314ba7f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ais_ota_set_setting_fw_offset</definition>
+        <argsstring>(uint32_t offset)</argsstring>
+        <name>ais_ota_set_setting_fw_offset</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a670462ec7e472d63bfb04ab541e7fc71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ais_ota_get_page_size</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_get_page_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a0197eaffe401c6c0420a728a66cc330e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" kindref="member">ali_ota_flash_err_t</ref></type>
+        <definition>ali_ota_flash_err_t ais_ota_flash_erase</definition>
+        <argsstring>(uint32_t const *addr, uint32_t num_pages, flash_event_handler_t cb)</argsstring>
+        <name>ais_ota_flash_erase</name>
+        <param>
+          <type>uint32_t const *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>num_pages</declname>
+        </param>
+        <param>
+          <type><ref refid="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" kindref="member">flash_event_handler_t</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1aef7cebdbf5e729f8e62969fb79721d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" kindref="member">ali_ota_flash_err_t</ref></type>
+        <definition>ali_ota_flash_err_t ais_ota_flash_store</definition>
+        <argsstring>(uint32_t const *addr, uint32_t const *p_data, uint16_t len, flash_event_handler_t cb)</argsstring>
+        <name>ais_ota_flash_store</name>
+        <param>
+          <type>uint32_t const *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint32_t const *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" kindref="member">flash_event_handler_t</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a076abd65ccb13e23f038e836e412c799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ais_ota_flash_init</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_flash_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a311075c4874994e45ae7d4ed3a7b6455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ais_ota_settings_init</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_settings_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a956097f1e84a1acb41ca069ad1a610e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t ais_ota_get_dst_addr</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_get_dst_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1ab30f72a1ba2fcef9ac224496b9d0053f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388" kindref="member">ali_ota_settings_err_t</ref></type>
+        <definition>ali_ota_settings_err_t ais_ota_settings_write</definition>
+        <argsstring>(settings_event_handler_t cb)</argsstring>
+        <name>ais_ota_settings_write</name>
+        <param>
+          <type><ref refid="ais__ota_8h_1ad7ee21725d7954244162e672a18ee00e" kindref="member">settings_event_handler_t</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1aa226c4caab9cebd2bf4e815051431531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ais_ota_check_if_resume</definition>
+        <argsstring>(uint8_t *p_data, uint16_t length)</argsstring>
+        <name>ais_ota_check_if_resume</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a6d2343861c717f9cdbe92db5c67a5527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ais_ota_update_fw_version</definition>
+        <argsstring>(uint8_t *p_data, uint16_t length)</argsstring>
+        <name>ais_ota_update_fw_version</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1aec74255ae121aa5c2ba0b868d2a43a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ais_ota_check_if_update_finished</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_check_if_update_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1acb6d9337b91efff8f43c374ec8e25e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ais_ota_update_settings_after_update_finished</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_update_settings_after_update_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1ad08f7659bc031881d1ad642ce0e4507b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ais_ota_update_setting_after_xfer_finished</definition>
+        <argsstring>(uint32_t img_size, uint32_t img_crc)</argsstring>
+        <name>ais_ota_update_setting_after_xfer_finished</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>img_size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>img_crc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a87ea75b59e9777d0edacb7c34116e024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ais_ota_bt_storage_init</definition>
+        <argsstring>()</argsstring>
+        <name>ais_ota_bt_storage_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ais__ota_8h_1a65df90e98686678c3a4c2f6babec2e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ais_ota_get_local_addr</definition>
+        <argsstring>(bt_addr_le_t *addr)</argsstring>
+        <name>ais_ota_get_local_addr</name>
+        <param>
+          <type>bt_addr_le_t *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_AIS_OTA_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_AIS_OTA_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bluetooth/bluetooth.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a83be16824854e72b34da0d6f7f5c5a3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a83be16824854e72b34da0d6f7f5c5a3a" kindref="member">ALI_OTA_FLASH_ERASE_OK</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="9" refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a9fe27095f9d8c37267c934a7ceb6e3e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a9fe27095f9d8c37267c934a7ceb6e3e2" kindref="member">ALI_OTA_FLASH_ERASE_FAIL</ref>,</highlight></codeline>
+<codeline lineno="10" refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18aabb5673a3fb851f45314c0dec831f6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18aabb5673a3fb851f45314c0dec831f6e2" kindref="member">ALI_OTA_FLASH_STORE_OK</ref>,</highlight></codeline>
+<codeline lineno="11" refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a30dcb093fc2879f95e960d5288cdd6d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18a30dcb093fc2879f95e960d5288cdd6d1" kindref="member">ALI_OTA_FLASH_STORE_FAIL</ref>,</highlight></codeline>
+<codeline lineno="12" refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18ac6e6f29e30454cf338182655b75614e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18ac6e6f29e30454cf338182655b75614e8" kindref="member">ALI_OTA_FLASH_ERROR</ref><sp/>=<sp/>0xff</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<sp/><ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18" kindref="member">ali_ota_flash_evt_t</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035feaa42cf50de6b92af25657fb01737d75568" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035feaa42cf50de6b92af25657fb01737d75568" kindref="member">ALI_OTA_FLASH_CODE_SUCCESS</ref>,</highlight></codeline>
+<codeline lineno="17" refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035feaa12fe950d33bcd01173f54589f5d2f8b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035feaa12fe950d33bcd01173f54589f5d2f8b1" kindref="member">ALI_OTA_FLASH_CODE_ERROR</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" kindref="member">ali_ota_flash_err_t</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388a5783a6bc915dceaf110179393a43773b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388a5783a6bc915dceaf110179393a43773b" kindref="member">ALI_OTA_SETTINGS_CODE_SUCCESS</ref>,</highlight></codeline>
+<codeline lineno="22" refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388a24caf7ac6c7ba7f38a4393a7b375fe98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388a24caf7ac6c7ba7f38a4393a7b375fe98" kindref="member">ALI_OTA_SETTINGS_CODE_ERROR</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/><ref refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388" kindref="member">ali_ota_settings_err_t</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" kindref="member">flash_event_handler_t</ref>)(<ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18" kindref="member">ali_ota_flash_evt_t</ref><sp/>t);</highlight></codeline>
+<codeline lineno="26" refid="ais__ota_8h_1ad7ee21725d7954244162e672a18ee00e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="ais__ota_8h_1ad7ee21725d7954244162e672a18ee00e" kindref="member">settings_event_handler_t</ref>)(<ref refid="ais__ota_8h_1a2ffd78846e9a786d2cd7c90d8f664d18" kindref="member">ali_ota_flash_evt_t</ref><sp/>t);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">uint32_t<sp/><ref refid="ais__ota_8h_1a07876fbb86164b0ed9f2c6f4974d1610" kindref="member">ais_ota_get_setting_fw_offset</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1a86ec5138a21759e2eedf317c314ba7f3" kindref="member">ais_ota_set_setting_fw_offset</ref>(uint32_t<sp/>offset);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">uint32_t<sp/><ref refid="ais__ota_8h_1a670462ec7e472d63bfb04ab541e7fc71" kindref="member">ais_ota_get_page_size</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" kindref="member">ali_ota_flash_err_t</ref><sp/><ref refid="ais__ota_8h_1a0197eaffe401c6c0420a728a66cc330e" kindref="member">ais_ota_flash_erase</ref>(uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*addr,<sp/>uint32_t<sp/>num_pages,<sp/><ref refid="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" kindref="member">flash_event_handler_t</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="ais__ota_8h_1a4a2a4a357bdb8fdf6c1465dc69035fea" kindref="member">ali_ota_flash_err_t</ref><sp/><ref refid="ais__ota_8h_1aef7cebdbf5e729f8e62969fb79721d1a" kindref="member">ais_ota_flash_store</ref>(uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*addr,<sp/>uint32_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/>p_data,<sp/>uint16_t<sp/>len,<sp/><ref refid="ais__ota_8h_1ab9b09826b74c30575e1928768834d94b" kindref="member">flash_event_handler_t</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1a076abd65ccb13e23f038e836e412c799" kindref="member">ais_ota_flash_init</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1a311075c4874994e45ae7d4ed3a7b6455" kindref="member">ais_ota_settings_init</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">uint32_t<sp/><ref refid="ais__ota_8h_1a956097f1e84a1acb41ca069ad1a610e6" kindref="member">ais_ota_get_dst_addr</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="ais__ota_8h_1ac4fa312b63f2b389a6b67d0908bd2388" kindref="member">ali_ota_settings_err_t</ref><sp/><ref refid="ais__ota_8h_1ab30f72a1ba2fcef9ac224496b9d0053f" kindref="member">ais_ota_settings_write</ref>(<ref refid="ais__ota_8h_1ad7ee21725d7954244162e672a18ee00e" kindref="member">settings_event_handler_t</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1aa226c4caab9cebd2bf4e815051431531" kindref="member">ais_ota_check_if_resume</ref>(uint8_t<sp/>*<sp/>p_data,<sp/>uint16_t<sp/>length);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1a6d2343861c717f9cdbe92db5c67a5527" kindref="member">ais_ota_update_fw_version</ref>(uint8_t<sp/>*<sp/>p_data,<sp/>uint16_t<sp/>length);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1aec74255ae121aa5c2ba0b868d2a43a9b" kindref="member">ais_ota_check_if_update_finished</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1acb6d9337b91efff8f43c374ec8e25e28" kindref="member">ais_ota_update_settings_after_update_finished</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1ad08f7659bc031881d1ad642ce0e4507b" kindref="member">ais_ota_update_setting_after_xfer_finished</ref>(uint32_t<sp/>img_size,<sp/>uint32_t<sp/>img_crc);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1a87ea75b59e9777d0edacb7c34116e024" kindref="member">ais_ota_bt_storage_init</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ais__ota_8h_1a65df90e98686678c3a4c2f6babec2e75" kindref="member">ais_ota_get_local_addr</ref>(bt_addr_le_t<sp/>*addr);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ais_ota.h"/>
+  </compounddef>
+</doxygen>

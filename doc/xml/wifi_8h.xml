@@ -1,0 +1,1520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="wifi_8h" kind="file" language="C++">
+    <compoundname>wifi.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="base_8h" local="no">hal/base.h</includes>
+    <includedby refid="hal_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</includedby>
+    <incdepgraph>
+      <node id="587">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="603">
+        <label>stdbool.h</label>
+      </node>
+      <node id="581">
+        <label>aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>aos/debug.h</label>
+        <link refid="debug_8h"/>
+      </node>
+      <node id="578">
+        <label>stdint.h</label>
+      </node>
+      <node id="590">
+        <label>aos/cloud.h</label>
+        <link refid="cloud_8h"/>
+      </node>
+      <node id="585">
+        <label>poll.h</label>
+      </node>
+      <node id="584">
+        <label>fcntl.h</label>
+      </node>
+      <node id="588">
+        <label>aos/cli.h</label>
+        <link refid="cli_8h"/>
+        <childnode refid="589" relation="include">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>stddef.h</label>
+      </node>
+      <node id="577">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>aos/errno.h</label>
+        <link refid="errno_8h"/>
+      </node>
+      <node id="593">
+        <label>aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>aos/internal/event_type_code.h</label>
+        <link refid="event__type__code_8h"/>
+      </node>
+      <node id="589">
+        <label>k_types.h</label>
+      </node>
+      <node id="594">
+        <label>aos/list.h</label>
+        <link refid="list_8h"/>
+      </node>
+      <node id="586">
+        <label>sys/types.h</label>
+      </node>
+      <node id="596">
+        <label>aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>aos/init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="603" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="596" relation="include">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>unistd.h</label>
+      </node>
+      <node id="598">
+        <label>aos/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="599">
+        <label>aos/yloop.h</label>
+        <link refid="yloop_8h"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="605">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="604">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structap__list__t" prot="public">ap_list_t</innerclass>
+    <innerclass refid="structhal__wifi__scan__result__t" prot="public">hal_wifi_scan_result_t</innerclass>
+    <innerclass refid="structap__list__adv__t" prot="public">ap_list_adv_t</innerclass>
+    <innerclass refid="structhal__wifi__scan__result__adv__t" prot="public">hal_wifi_scan_result_adv_t</innerclass>
+    <innerclass refid="structhal__wifi__ap__info__adv__t" prot="public">hal_wifi_ap_info_adv_t</innerclass>
+    <innerclass refid="structhal__wifi__init__type__t" prot="public">hal_wifi_init_type_t</innerclass>
+    <innerclass refid="structhal__wifi__init__type__adv__t" prot="public">hal_wifi_init_type_adv_t</innerclass>
+    <innerclass refid="structhal__wifi__ip__stat__t" prot="public">hal_wifi_ip_stat_t</innerclass>
+    <innerclass refid="structhal__wifi__link__stat__t" prot="public">hal_wifi_link_stat_t</innerclass>
+    <innerclass refid="structhal__wifi__link__info__s" prot="public">hal_wifi_link_info_s</innerclass>
+    <innerclass refid="structhal__wifi__event__cb__t" prot="public">hal_wifi_event_cb_t</innerclass>
+    <innerclass refid="structhal__wifi__module__s" prot="public">hal_wifi_module_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827" prot="public" static="no">
+        <name>wlan_sec_type_e</name>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aa6a56c6d11fc3a28d5bc99df222124c4" prot="public">
+          <name>SECURITY_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aa840377baad3641916ef963c22480754" prot="public">
+          <name>SECURITY_TYPE_WEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a0390bdf6c90ba32b6e009321e3389fe3" prot="public">
+          <name>SECURITY_TYPE_WPA_TKIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827ac237710217f5fc3812dd4e8d60836945" prot="public">
+          <name>SECURITY_TYPE_WPA_AES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a69eaf84df9d12469003a07ed352c87a0" prot="public">
+          <name>SECURITY_TYPE_WPA2_TKIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a8e854e4d9cf8564c9cf0d9c262f3bbbd" prot="public">
+          <name>SECURITY_TYPE_WPA2_AES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827acaa2bb82e34e0fbca1519688066b6555" prot="public">
+          <name>SECURITY_TYPE_WPA2_MIXED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aae414b7fbf195e36a81ad685d35d0f25" prot="public">
+          <name>SECURITY_TYPE_AUTO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="16" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="enum" id="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24" prot="public" static="no">
+        <name>hal_wifi_event_t</name>
+        <enumvalue id="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a7966ed0d868f3ec7f660a41bc40dfef2" prot="public">
+          <name>NOTIFY_STATION_UP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a549afe3b8201c898cc8b99186e3723e7" prot="public">
+          <name>NOTIFY_STATION_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24abb086b7154874c86bb37af8b711a0689" prot="public">
+          <name>NOTIFY_AP_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a741c51c76d6ba82e058b589a765fcd16" prot="public">
+          <name>NOTIFY_AP_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="53" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adc" prot="public" static="no">
+        <name>hal_wifi_type_t</name>
+        <enumvalue id="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adca4eda7be227797fad110370edf32f3fdc" prot="public">
+          <name>SOFT_AP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adcabe1ce018b886341a69d81ead8cffc786" prot="public">
+          <name>STATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="112" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="enum" id="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04" prot="public" static="no">
+        <name>@3</name>
+        <enumvalue id="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04ad3f5e9110ef69a435371ed18d4180314" prot="public">
+          <name>DHCP_DISABLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04a0c8e956887810ea2526f3c8ec976d9b3" prot="public">
+          <name>DHCP_CLIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04adec5b2855530bebfeeda9109c32d26e6" prot="public">
+          <name>DHCP_SERVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="117" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="117" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wifi_8h_1a3e6140d0fa050037b266eca946b71749" prot="public" static="no">
+        <type>struct <ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_s</ref></type>
+        <definition>typedef struct hal_wifi_module_s hal_wifi_module_t</definition>
+        <argsstring></argsstring>
+        <name>hal_wifi_module_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="39" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wifi_8h_1a8646af0f7298b7d5e9dfe96bafc5f859" prot="public" static="no">
+        <type>struct <ref refid="structhal__wifi__link__info__s" kindref="compound">hal_wifi_link_info_s</ref></type>
+        <definition>typedef struct hal_wifi_link_info_s  hal_wifi_link_info_t</definition>
+        <argsstring></argsstring>
+        <name>hal_wifi_link_info_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* monitor_data_cb_t) (uint8_t *data, int len, hal_wifi_link_info_t *info)</definition>
+        <argsstring>)(uint8_t *data, int len, hal_wifi_link_info_t *info)</argsstring>
+        <name>monitor_data_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="154" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wifi_8h_1a566b8f91f7325b94b2672af6ee9e9792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+        <definition>hal_wifi_module_t* hal_wifi_get_default_module</definition>
+        <argsstring>(void)</argsstring>
+        <name>hal_wifi_get_default_module</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default wifi instance. The system may have more than one wifi instance, this API returns the default one.</para><para><simplesect kind="return"><para>Instance pointer, or NULL if no instance registered. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1ae63e89d8196178248779fac0acdbddf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_register_module</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_register_module</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regster a wifi instance to the HAL framework.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1ad0f9198f876afee6ec2fa498c853fd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hal_wifi_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize wifi instances.</para><para><simplesect kind="note"><para>This is supposed to be called during system boot, not supposed to be called by user module directly.</para></simplesect>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1afbfa80bf9a55a4428a5b213233f5f493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_get_mac_addr</definition>
+        <argsstring>(hal_wifi_module_t *m, uint8_t *mac)</argsstring>
+        <name>hal_wifi_get_mac_addr</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the MAC address of the specified wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the place to hold the result.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a3488b0f43c0088b2fb02dde4753f6029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_set_mac_addr</definition>
+        <argsstring>(hal_wifi_module_t *m, const uint8_t *mac)</argsstring>
+        <name>hal_wifi_set_mac_addr</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the MAC address of the specified wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mac value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a4fb4774e8247d115d457eed457acb9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_start</definition>
+        <argsstring>(hal_wifi_module_t *m, hal_wifi_init_type_t *init_para)</argsstring>
+        <name>hal_wifi_start</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="structhal__wifi__init__type__t" kindref="compound">hal_wifi_init_type_t</ref> *</type>
+          <declname>init_para</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">init_para</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the config used to start the wifi.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a694965de667c13b1380fda9eedda1601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_start_adv</definition>
+        <argsstring>(hal_wifi_module_t *m, hal_wifi_init_type_adv_t *init_para_adv)</argsstring>
+        <name>hal_wifi_start_adv</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="structhal__wifi__init__type__adv__t" kindref="compound">hal_wifi_init_type_adv_t</ref> *</type>
+          <declname>init_para_adv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the wifi instance in anvanced way (more config specified).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">init_para_adv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the advanced config used to start the wifi.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a05cb0f3bdfcf73dcb862c894aef1c355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_get_ip_stat</definition>
+        <argsstring>(hal_wifi_module_t *m, hal_wifi_ip_stat_t *out_net_para, hal_wifi_type_t wifi_type)</argsstring>
+        <name>hal_wifi_get_ip_stat</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="structhal__wifi__ip__stat__t" kindref="compound">hal_wifi_ip_stat_t</ref> *</type>
+          <declname>out_net_para</declname>
+        </param>
+        <param>
+          <type><ref refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adc" kindref="member">hal_wifi_type_t</ref></type>
+          <declname>wifi_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the status of the specified wifi instance, e.g. the IP, mask, dhcp mode, etc.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_net_para</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the place to hold the results. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wifi_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SOFT_AP or STATION.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1ad21b72cfba15bc51dc232ff1d7b8e3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_get_link_stat</definition>
+        <argsstring>(hal_wifi_module_t *m, hal_wifi_link_stat_t *out_stat)</argsstring>
+        <name>hal_wifi_get_link_stat</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="structhal__wifi__link__stat__t" kindref="compound">hal_wifi_link_stat_t</ref> *</type>
+          <declname>out_stat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the link status of the wifi instance ,e.g. ssid, bssid, channel, rssi, etc.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_stat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the place to hold the results.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a45482258f138aa8dc654a62903cb9cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_start_scan</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_start_scan</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the scanning of the specified wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="291" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a1ee2b973dd8c784d8c7bb0b62b317cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_start_scan_adv</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_start_scan_adv</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the scanning of the specified wifi instance in advanced way.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="298" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a356cb12cb844304ba82baf4fe7b2e39c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_power_off</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_power_off</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power off the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1acb7504fd7489f48484ad465ff8b35889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_power_on</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_power_on</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power on the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="316" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a747082505fd08e36af0b25e819e28731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_suspend</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_suspend</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suspend the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a1e83e196a0be456be4b37f4cee524818" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_suspend_station</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_suspend_station</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suspend the wifi instance in station mode.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a6a47820504b46b4a96baacce00cbd5b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_suspend_soft_ap</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_suspend_soft_ap</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suspend the wifi instance in soft_ap mode.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1af3de80f45f31dd80dbbf0f1dacca0ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_set_channel</definition>
+        <argsstring>(hal_wifi_module_t *m, int ch)</argsstring>
+        <name>hal_wifi_set_channel</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the channel of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="352" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a5d41fe9990341be490374324bfc769b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_get_channel</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_get_channel</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the channel of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 on failure, otherwise current channel number. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a7cffbff6695b7deac8903e8120a5a895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wifi_get_channel_list</definition>
+        <argsstring>(hal_wifi_module_t *m, const uint8_t **chnlist)</argsstring>
+        <name>hal_wifi_get_channel_list</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const uint8_t **</type>
+          <declname>chnlist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the channel list of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">chnlist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel list in array</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 on failure, otherwise number of available channels. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1aa26d3158ef4961dfd5c8359aad7970da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_start_wifi_monitor</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_start_wifi_monitor</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the monitor mode of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a3ad81dbe6f917782f84e404effb49381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_stop_wifi_monitor</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_stop_wifi_monitor</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the monitor mode of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1ab8d8dadf29c391633e02d369ff645ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_register_monitor_cb</definition>
+        <argsstring>(hal_wifi_module_t *m, monitor_data_cb_t fn)</argsstring>
+        <name>hal_wifi_register_monitor_cb</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref></type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register the montior callback on the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="393" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1ae9b555ef2021f87231c09bce508f5c03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wlan_register_mgnt_monitor_cb</definition>
+        <argsstring>(hal_wifi_module_t *m, monitor_data_cb_t fn)</argsstring>
+        <name>hal_wlan_register_mgnt_monitor_cb</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref></type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register management frame montior callback on the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a9d3ea42ce6d6c2c79c94416c4880c8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_wlan_send_80211_raw_frame</definition>
+        <argsstring>(hal_wifi_module_t *m, uint8_t *buf, int len)</argsstring>
+        <name>hal_wlan_send_80211_raw_frame</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send 802.11 raw frame</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of frame buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="410" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a3357287dece311d15428f91e848931ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_start_debug_mode</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_start_debug_mode</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start debug mode of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a7f942f8856082a8deee80b9913d81edb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_stop_debug_mode</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_wifi_stop_debug_mode</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop debug mode of the wifi instance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL if default. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="424" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1abb2676da0387cf522a0a9c4abc9a4210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wifi_install_event</definition>
+        <argsstring>(hal_wifi_module_t *m, const hal_wifi_event_cb_t *cb)</argsstring>
+        <name>hal_wifi_install_event</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhal__wifi__event__cb__t" kindref="compound">hal_wifi_event_cb_t</ref> *</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the event callback function array for the wifi. Please don&apos;t do time consuming work in these callbacks.</para><para><simplesect kind="note"><para>Please don&apos;t do time consuming work in these callbacks.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance, NULL for default. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event callback function info. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="435" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi_8h_1a7994d150ec71e85f08888b07f9c7228a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_umesh_register_wifi</definition>
+        <argsstring>(hal_wifi_module_t *m)</argsstring>
+        <name>hal_umesh_register_wifi</name>
+        <param>
+          <type><ref refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" kindref="member">hal_wifi_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regster a wifi instance to the uMesh</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wifi instance. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="442" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_WIFI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_WIFI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="base_8h" kindref="compound">hal/base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32L475xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32_wifi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="wifi_8h_1a3e6140d0fa050037b266eca946b71749" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_s</ref><sp/><ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827" kindref="member">wlan_sec_type_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aa6a56c6d11fc3a28d5bc99df222124c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aa6a56c6d11fc3a28d5bc99df222124c4" kindref="member">SECURITY_TYPE_NONE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Open<sp/>system.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aa840377baad3641916ef963c22480754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aa840377baad3641916ef963c22480754" kindref="member">SECURITY_TYPE_WEP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wired<sp/>Equivalent<sp/>Privacy.<sp/>WEP<sp/>security.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a0390bdf6c90ba32b6e009321e3389fe3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a0390bdf6c90ba32b6e009321e3389fe3" kindref="member">SECURITY_TYPE_WPA_TKIP</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WPA<sp/>/w<sp/>TKIP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827ac237710217f5fc3812dd4e8d60836945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827ac237710217f5fc3812dd4e8d60836945" kindref="member">SECURITY_TYPE_WPA_AES</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WPA<sp/>/w<sp/>AES<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a69eaf84df9d12469003a07ed352c87a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a69eaf84df9d12469003a07ed352c87a0" kindref="member">SECURITY_TYPE_WPA2_TKIP</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>WPA2<sp/>/w<sp/>TKIP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a8e854e4d9cf8564c9cf0d9c262f3bbbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827a8e854e4d9cf8564c9cf0d9c262f3bbbd" kindref="member">SECURITY_TYPE_WPA2_AES</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WPA2<sp/>/w<sp/>AES<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827acaa2bb82e34e0fbca1519688066b6555" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827acaa2bb82e34e0fbca1519688066b6555" kindref="member">SECURITY_TYPE_WPA2_MIXED</ref>,<sp/></highlight><highlight class="comment">/*<sp/>WPA2<sp/>/w<sp/>AES<sp/>or<sp/>TKIP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aae414b7fbf195e36a81ad685d35d0f25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1afa47b09f4b5246c3b1176fd9c75cf827aae414b7fbf195e36a81ad685d35d0f25" kindref="member">SECURITY_TYPE_AUTO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>It<sp/>is<sp/>used<sp/>when<sp/>calling<sp/>@ref<sp/>micoWlanStartAdv,<sp/>MICO<sp/>read<sp/>security<sp/>type<sp/>from<sp/>scan<sp/>result.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structap__list__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="structap__list__t_1a8d7d5355974edfcd821f92c987104e77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ssid[32];</highlight></codeline>
+<codeline lineno="29" refid="structap__list__t_1abd4559d92b2db872801d086b5050ed24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structap__list__t_1abd4559d92b2db872801d086b5050ed24" kindref="member">ap_power</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="structap__list__t" kindref="compound">ap_list_t</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/>Scan<sp/>result<sp/>using<sp/>normal<sp/>scan.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structhal__wifi__scan__result__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="structhal__wifi__scan__result__t_1a70e7dab9792ab3190a629278ff72fa7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__scan__result__t_1a70e7dab9792ab3190a629278ff72fa7a" kindref="member">ap_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>number<sp/>of<sp/>access<sp/>points<sp/>found<sp/>in<sp/>scanning.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structhal__wifi__scan__result__t_1a28c97ed35d441188d9a0c193c151eadb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structap__list__t" kindref="compound">ap_list_t</ref><sp/>*<ref refid="structhal__wifi__scan__result__t_1a28c97ed35d441188d9a0c193c151eadb" kindref="member">ap_list</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structhal__wifi__scan__result__t" kindref="compound">hal_wifi_scan_result_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structap__list__adv__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41" refid="structap__list__adv__t_1ae2310b60b99d7930e26ed9544bfb0233" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ssid[32];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>SSID<sp/>of<sp/>an<sp/>access<sp/>point.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structap__list__adv__t_1af89db2a7058ce289a851eb2f694a56d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structap__list__adv__t_1af89db2a7058ce289a851eb2f694a56d2" kindref="member">ap_power</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Signal<sp/>strength,<sp/>min:0,<sp/>max:100<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structap__list__adv__t_1a7d10b1e4198fc0ef0dbef77819a16b2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bssid[6];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>BSSID<sp/>of<sp/>an<sp/>access<sp/>point.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structap__list__adv__t_1ad01bf4eab0487ac3d291a2a5394dab49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structap__list__adv__t_1ad01bf4eab0487ac3d291a2a5394dab49" kindref="member">channel</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>RF<sp/>frequency,<sp/>1-13<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structap__list__adv__t_1a7cdeb4a7e8fb817a33d7b6a890678c49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structap__list__adv__t_1a7cdeb4a7e8fb817a33d7b6a890678c49" kindref="member">security</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Security<sp/>type,<sp/>@ref<sp/>wlan_sec_type_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/><ref refid="structap__list__adv__t" kindref="compound">ap_list_adv_t</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structhal__wifi__scan__result__adv__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="structhal__wifi__scan__result__adv__t_1a83cdf51a8e04deccdeae9ed2dabd6f63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__scan__result__adv__t_1a83cdf51a8e04deccdeae9ed2dabd6f63" kindref="member">ap_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>number<sp/>of<sp/>access<sp/>points<sp/>found<sp/>in<sp/>scanning.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structhal__wifi__scan__result__adv__t_1a6c309732002dee731e76825393a44072" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structap__list__adv__t" kindref="compound">ap_list_adv_t</ref><sp/>*<ref refid="structhal__wifi__scan__result__adv__t_1a6c309732002dee731e76825393a44072" kindref="member">ap_list</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structhal__wifi__scan__result__adv__t" kindref="compound">hal_wifi_scan_result_adv_t</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54" refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a7966ed0d868f3ec7f660a41bc40dfef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a7966ed0d868f3ec7f660a41bc40dfef2" kindref="member">NOTIFY_STATION_UP</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="55" refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a549afe3b8201c898cc8b99186e3723e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a549afe3b8201c898cc8b99186e3723e7" kindref="member">NOTIFY_STATION_DOWN</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24abb086b7154874c86bb37af8b711a0689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24abb086b7154874c86bb37af8b711a0689" kindref="member">NOTIFY_AP_UP</ref>,</highlight></codeline>
+<codeline lineno="58" refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a741c51c76d6ba82e058b589a765fcd16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24a741c51c76d6ba82e058b589a765fcd16" kindref="member">NOTIFY_AP_DOWN</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/><ref refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24" kindref="member">hal_wifi_event_t</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structhal__wifi__ap__info__adv__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="structhal__wifi__ap__info__adv__t_1ab97c5edaddbcd747a436b7bc4066e0cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>ssid[32];<sp/></highlight><highlight class="comment">/*<sp/>SSID<sp/>of<sp/>the<sp/>wlan<sp/>that<sp/>needs<sp/>to<sp/>be<sp/>connected.<sp/>Example:<sp/>&quot;SSID<sp/>String&quot;.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structhal__wifi__ap__info__adv__t_1a8713c9dbb1cbdeab82867943e07a3687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>bssid[6];<sp/></highlight><highlight class="comment">/*<sp/>BSSID<sp/>of<sp/>the<sp/>wlan<sp/>needs<sp/>to<sp/>be<sp/>connected.<sp/>Example:<sp/>{0xC8<sp/>0x93<sp/>0x46<sp/>0x11<sp/>0x22<sp/>0x33}.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structhal__wifi__ap__info__adv__t_1aa8ec1977817edd442348b75333bccc1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structhal__wifi__ap__info__adv__t_1aa8ec1977817edd442348b75333bccc1e" kindref="member">channel</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Wlan&apos;s<sp/>RF<sp/>frequency,<sp/>channel<sp/>0-13.<sp/>1-13<sp/>means<sp/>a<sp/>fixed<sp/>channelthat<sp/>can<sp/>speed<sp/>up<sp/>a<sp/>connection<sp/>procedure,</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/>is<sp/>not<sp/>a<sp/>fixed<sp/>input<sp/>means<sp/>all<sp/>channels<sp/>are<sp/>possible*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structhal__wifi__ap__info__adv__t_1ac32e003765458a1353cfcff816fb52f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structhal__wifi__ap__info__adv__t_1ac32e003765458a1353cfcff816fb52f8" kindref="member">security</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><ref refid="structhal__wifi__ap__info__adv__t" kindref="compound">hal_wifi_ap_info_adv_t</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structhal__wifi__init__type__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71" refid="structhal__wifi__init__type__t_1a3d3f2ef140b99762aee445cd74eba664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__init__type__t_1a3d3f2ef140b99762aee445cd74eba664" kindref="member">wifi_mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DHCP<sp/>mode:<sp/>@ref<sp/>wlanInterfaceTypedef.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structhal__wifi__init__type__t_1a92b1d07c6310c6860f3548241d020255" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>wifi_ssid[32<sp/>+<sp/>1];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SSID<sp/>of<sp/>the<sp/>wlan<sp/>needs<sp/>to<sp/>be<sp/>connected.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structhal__wifi__init__type__t_1a6f19dab42534036924d7d78a45cae969" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>wifi_key[64<sp/>+<sp/>1];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Security<sp/>key<sp/>of<sp/>the<sp/>wlan<sp/>needs<sp/>to<sp/>be<sp/>connected,<sp/>ignored<sp/>in<sp/>an<sp/>open<sp/>system.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structhal__wifi__init__type__t_1ad7c8eb2f908bbf0603cb9f8c4202b0d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>local_ip_addr[16];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>Local<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structhal__wifi__init__type__t_1af9009032cd98d42ca02b8431666e4960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>net_mask[16];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>Netmask.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="structhal__wifi__init__type__t_1ab34248637652bff30ec2635767d83ee9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>gateway_ip_addr[16];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>Router<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structhal__wifi__init__type__t_1ac243e0cfa50a6f72ef2e9d9d88f8b37d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dns_server_ip_addr[16];<sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>DNS<sp/>server<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structhal__wifi__init__type__t_1a02bb7f0c46604cc26d0517d6b9ca64a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__init__type__t_1a02bb7f0c46604cc26d0517d6b9ca64a1" kindref="member">dhcp_mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DHCP<sp/>mode,<sp/>@ref<sp/>DHCP_Disable,<sp/>@ref<sp/>DHCP_Client<sp/>and<sp/>@ref<sp/>DHCP_Server.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structhal__wifi__init__type__t_1abc6aff8e1c1ca16e4d0e19ad1af6c0e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reserved[32];</highlight></codeline>
+<codeline lineno="80" refid="structhal__wifi__init__type__t_1af201d372ba47fef48f251e241712377f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="structhal__wifi__init__type__t_1af201d372ba47fef48f251e241712377f" kindref="member">wifi_retry_interval</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Retry<sp/>interval<sp/>if<sp/>an<sp/>error<sp/>is<sp/>occured<sp/>when<sp/>connecting<sp/>an<sp/>access<sp/>point,</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time<sp/>unit<sp/>is<sp/>millisecond.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32L475xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>WIFI_Ecn_t<sp/>access_sec;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/><ref refid="structhal__wifi__init__type__t" kindref="compound">hal_wifi_init_type_t</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structhal__wifi__init__type__adv__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89" refid="structhal__wifi__init__type__adv__t_1a6b7951a00e2c8e9e0f55ec9715895fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__ap__info__adv__t" kindref="compound">hal_wifi_ap_info_adv_t</ref><sp/><ref refid="structhal__wifi__init__type__adv__t_1a6b7951a00e2c8e9e0f55ec9715895fcb" kindref="member">ap_info</ref>;</highlight></codeline>
+<codeline lineno="90" refid="structhal__wifi__init__type__adv__t_1a28b1d5b7f4115ca21abd252dd5588c62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>key[64];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Security<sp/>key<sp/>or<sp/>PMK<sp/>of<sp/>the<sp/>wlan.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structhal__wifi__init__type__adv__t_1a791f3f6cbcf87d291dbefaff7a40d708" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="structhal__wifi__init__type__adv__t_1a791f3f6cbcf87d291dbefaff7a40d708" kindref="member">key_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>length<sp/>of<sp/>the<sp/>key.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structhal__wifi__init__type__adv__t_1a2db049faf64992f223af5aacf503f26a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>local_ip_addr[16];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>Local<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="structhal__wifi__init__type__adv__t_1aa9cc1c0fae9b2c5f0e4895384c697c4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>net_mask[16];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>Netmask.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structhal__wifi__init__type__adv__t_1a8947e0b10f4530d17bc9e82ea5c802c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>gateway_ip_addr[16];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>Router<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structhal__wifi__init__type__adv__t_1a2896b13395bbdd92a87faa72edc7a211" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dns_server_ip_addr[16];<sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>IP<sp/>configuration,<sp/>DNS<sp/>server<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structhal__wifi__init__type__adv__t_1afa1eee67a2d57fb5f8757db3ebf1c0bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__init__type__adv__t_1afa1eee67a2d57fb5f8757db3ebf1c0bf" kindref="member">dhcp_mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DHCP<sp/>mode,<sp/>@ref<sp/>DHCP_Disable,<sp/>@ref<sp/>DHCP_Client<sp/>and<sp/>@ref<sp/>DHCP_Server.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structhal__wifi__init__type__adv__t_1adaa1028b296df8866108bd90ba98848f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reserved[32];</highlight></codeline>
+<codeline lineno="98" refid="structhal__wifi__init__type__adv__t_1ae6cc0791bf3eb8c4f96744bf3292ad69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="structhal__wifi__init__type__adv__t_1ae6cc0791bf3eb8c4f96744bf3292ad69" kindref="member">wifi_retry_interval</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Retry<sp/>interval<sp/>if<sp/>an<sp/>error<sp/>is<sp/>occured<sp/>when<sp/>connecting<sp/>an<sp/>access<sp/>point,<sp/>time<sp/>unit<sp/>is<sp/>millisecond.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/><ref refid="structhal__wifi__init__type__adv__t" kindref="compound">hal_wifi_init_type_adv_t</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="structhal__wifi__ip__stat__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103" refid="structhal__wifi__ip__stat__t_1aed0288ae22808853c57482a7c74b1134" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structhal__wifi__ip__stat__t_1aed0288ae22808853c57482a7c74b1134" kindref="member">dhcp</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DHCP<sp/>mode:<sp/>@ref<sp/>DHCP_Disable,<sp/>@ref<sp/>DHCP_Client,<sp/>@ref<sp/>DHCP_Server.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="structhal__wifi__ip__stat__t_1a47a33fb293f4d0af34252582d9bbf9ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>ip[16];<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Local<sp/>IP<sp/>address<sp/>on<sp/>the<sp/>target<sp/>wlan<sp/>interface:<sp/>@ref<sp/>wlanInterfaceTypedef.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="structhal__wifi__ip__stat__t_1a30168a3c39294acf72b81fe51f5a3688" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>gate[16];<sp/></highlight><highlight class="comment">/*<sp/>Router<sp/>IP<sp/>address<sp/>on<sp/>the<sp/>target<sp/>wlan<sp/>interface:<sp/>@ref<sp/>wlanInterfaceTypedef.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structhal__wifi__ip__stat__t_1a7d42f3ec9463507fdb91103d7384b0e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>mask[16];<sp/></highlight><highlight class="comment">/*<sp/>Netmask<sp/>on<sp/>the<sp/>target<sp/>wlan<sp/>interface:<sp/>@ref<sp/>wlanInterfaceTypedef.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="structhal__wifi__ip__stat__t_1a9858430f7a675cbad3f56470f16a7d73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>dns[16];<sp/><sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>IP<sp/>address.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="structhal__wifi__ip__stat__t_1ae0add659da3b9d229e01a35e57050b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>mac[16];<sp/><sp/></highlight><highlight class="comment">/*<sp/>MAC<sp/>address,<sp/>example:<sp/>&quot;C89346112233&quot;.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="structhal__wifi__ip__stat__t_1a5b56228095ad05461c135e480f65573f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>broadcastip[16];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/><ref refid="structhal__wifi__ip__stat__t" kindref="compound">hal_wifi_ip_stat_t</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="113" refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adca4eda7be227797fad110370edf32f3fdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adca4eda7be227797fad110370edf32f3fdc" kindref="member">SOFT_AP</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>Act<sp/>as<sp/>an<sp/>access<sp/>point,<sp/>and<sp/>other<sp/>station<sp/>can<sp/>connect,<sp/>4<sp/>stations<sp/>Max<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adcabe1ce018b886341a69d81ead8cffc786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adcabe1ce018b886341a69d81ead8cffc786" kindref="member">STATION</ref><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Act<sp/>as<sp/>a<sp/>station<sp/>which<sp/>can<sp/>connect<sp/>to<sp/>an<sp/>access<sp/>point<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/><ref refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adc" kindref="member">hal_wifi_type_t</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="118" refid="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04ad3f5e9110ef69a435371ed18d4180314" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04ad3f5e9110ef69a435371ed18d4180314" kindref="member">DHCP_DISABLE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="119" refid="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04a0c8e956887810ea2526f3c8ec976d9b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04a0c8e956887810ea2526f3c8ec976d9b3" kindref="member">DHCP_CLIENT</ref>,</highlight></codeline>
+<codeline lineno="120" refid="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04adec5b2855530bebfeeda9109c32d26e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1abc6126af1d45847bc59afa0aa3216b04adec5b2855530bebfeeda9109c32d26e6" kindref="member">DHCP_SERVER</ref>,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="structhal__wifi__link__stat__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124" refid="structhal__wifi__link__stat__t_1a916eefdf4f4d8ca8b8df95129c07f8e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__link__stat__t_1a916eefdf4f4d8ca8b8df95129c07f8e4" kindref="member">is_connected</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>link<sp/>to<sp/>wlan<sp/>is<sp/>established<sp/>or<sp/>not,<sp/>0:<sp/>disconnected,<sp/>1:<sp/>connected.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="structhal__wifi__link__stat__t_1a92b5ba3cbcdb4a94ac9483af9133d624" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__link__stat__t_1a92b5ba3cbcdb4a94ac9483af9133d624" kindref="member">wifi_strength</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Signal<sp/>strength<sp/>of<sp/>the<sp/>current<sp/>connected<sp/>AP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="structhal__wifi__link__stat__t_1a32875f213fccbf4cc26f19bbdb83abb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ssid[32];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SSID<sp/>of<sp/>the<sp/>current<sp/>connected<sp/>wlan<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="structhal__wifi__link__stat__t_1a7131883307e268e7c93fc1e1a73722de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bssid[6];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>BSSID<sp/>of<sp/>the<sp/>current<sp/>connected<sp/>wlan<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="structhal__wifi__link__stat__t_1ae5fa184f70eb840afc2d0d5a4d9ca9d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__link__stat__t_1ae5fa184f70eb840afc2d0d5a4d9ca9d7" kindref="member">channel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Channel<sp/>of<sp/>the<sp/>current<sp/>connected<sp/>wlan<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}<sp/><ref refid="structhal__wifi__link__stat__t" kindref="compound">hal_wifi_link_stat_t</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structhal__wifi__link__info__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhal__wifi__link__info__s" kindref="compound">hal_wifi_link_info_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="132" refid="structhal__wifi__link__info__s_1a486b2765504d1783266a9bad89173428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="structhal__wifi__link__info__s_1a486b2765504d1783266a9bad89173428" kindref="member">rssi</ref>;<sp/></highlight><highlight class="comment">/*<sp/>rssi<sp/>value<sp/>of<sp/>received<sp/>packet<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/><ref refid="wifi_8h_1a8646af0f7298b7d5e9dfe96bafc5f859" kindref="member">hal_wifi_link_info_t</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/>The<sp/>event<sp/>call<sp/>back<sp/>function<sp/>called<sp/>at<sp/>specific<sp/>events<sp/>occurred.</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*<sp/>@note<sp/>For<sp/>HAL<sp/>implementors,<sp/>these<sp/>callbacks<sp/>must<sp/>be</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>called<sp/>under<sp/>normal<sp/>task<sp/>context,<sp/>not<sp/>from<sp/>interrupt.</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="structhal__wifi__event__cb__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142" refid="structhal__wifi__event__cb__t_1a9ae38c6f66bbbca462248729ac62bbed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*connect_fail)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="143" refid="structhal__wifi__event__cb__t_1a26e52baf5969a54bf61a4d39d32e8e83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*ip_got)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__ip__stat__t" kindref="compound">hal_wifi_ip_stat_t</ref><sp/>*pnet,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="144" refid="structhal__wifi__event__cb__t_1a5ad9e64a48dbcc03e9ee7c4965142dd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*stat_chg)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="wifi_8h_1a83730d6c7cd3928caaa3cf4aa0415a24" kindref="member">hal_wifi_event_t</ref><sp/>stat,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="145" refid="structhal__wifi__event__cb__t_1a1475767c8c0fe9b0b142ffdec67b2d91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*scan_compeleted)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__scan__result__t" kindref="compound">hal_wifi_scan_result_t</ref><sp/>*result,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="147" refid="structhal__wifi__event__cb__t_1a43a7c08333d37fa391bc7f631afe3b40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*scan_adv_compeleted)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__scan__result__adv__t" kindref="compound">hal_wifi_scan_result_adv_t</ref><sp/>*result,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="149" refid="structhal__wifi__event__cb__t_1ab93fdd5be84b245935e7dfbff14da4b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*para_chg)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__ap__info__adv__t" kindref="compound">hal_wifi_ap_info_adv_t</ref><sp/>*ap_info,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key_len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="151" refid="structhal__wifi__event__cb__t_1ae0bfec3b6833156df75b6dfdffffedaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*fatal_err)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/><ref refid="structhal__wifi__event__cb__t" kindref="compound">hal_wifi_event_cb_t</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref>)(uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/><ref refid="structhal__wifi__link__info__s" kindref="compound">hal_wifi_link_info_t</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="structhal__wifi__module__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="157" refid="structhal__wifi__module__s_1ab84d8d230e40e1209b8150780bb15475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhal__module__base__t" kindref="compound">hal_module_base_t</ref><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__module__s_1ab84d8d230e40e1209b8150780bb15475" kindref="member">base</ref>;</highlight></codeline>
+<codeline lineno="158" refid="structhal__wifi__module__s_1a52fd13db5939109e41a6f11c7b0dd008" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__event__cb__t" kindref="compound">hal_wifi_event_cb_t</ref><sp/>*<ref refid="structhal__wifi__module__s_1a52fd13db5939109e41a6f11c7b0dd008" kindref="member">ev_cb</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="structhal__wifi__module__s_1a95dff476ea204f6870290af9d6b2ad41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a95dff476ea204f6870290af9d6b2ad41" kindref="member">init</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="161" refid="structhal__wifi__module__s_1a04b776a310c14e9912e57ff34a175325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a04b776a310c14e9912e57ff34a175325" kindref="member">get_mac_addr</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/>uint8_t<sp/>*mac);</highlight></codeline>
+<codeline lineno="162" refid="structhal__wifi__module__s_1a0f8bd6940dcb2bc60534c65200025384" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a0f8bd6940dcb2bc60534c65200025384" kindref="member">set_mac_addr</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*mac);</highlight></codeline>
+<codeline lineno="163" refid="structhal__wifi__module__s_1a94e44d2540e692e3d2efc746e86626ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a94e44d2540e692e3d2efc746e86626ea" kindref="member">start</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__init__type__t" kindref="compound">hal_wifi_init_type_t</ref><sp/>*init_para);</highlight></codeline>
+<codeline lineno="164" refid="structhal__wifi__module__s_1a750caaba1f62477871d5217d12f65c1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a750caaba1f62477871d5217d12f65c1f" kindref="member">start_adv</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__init__type__adv__t" kindref="compound">hal_wifi_init_type_adv_t</ref><sp/>*init_para_adv);</highlight></codeline>
+<codeline lineno="166" refid="structhal__wifi__module__s_1a707cadeead0da028b1d6b5243c18900c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a707cadeead0da028b1d6b5243c18900c" kindref="member">get_ip_stat</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__ip__stat__t" kindref="compound">hal_wifi_ip_stat_t</ref><sp/>*out_net_para,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adc" kindref="member">hal_wifi_type_t</ref><sp/>wifi_type);</highlight></codeline>
+<codeline lineno="168" refid="structhal__wifi__module__s_1abb507e301f7f57f953fd26697dec580d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1abb507e301f7f57f953fd26697dec580d" kindref="member">get_link_stat</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__link__stat__t" kindref="compound">hal_wifi_link_stat_t</ref><sp/>*out_stat);</highlight></codeline>
+<codeline lineno="169" refid="structhal__wifi__module__s_1ad48c4c184bba3cc27a586210849a223d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1ad48c4c184bba3cc27a586210849a223d" kindref="member">start_scan</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="170" refid="structhal__wifi__module__s_1a1b84ac2534fc197f67759fb0b6cb6c43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a1b84ac2534fc197f67759fb0b6cb6c43" kindref="member">start_scan_adv</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="171" refid="structhal__wifi__module__s_1a69d0abd8ba10cb784511a358bb7b3bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a69d0abd8ba10cb784511a358bb7b3bb7" kindref="member">power_off</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="172" refid="structhal__wifi__module__s_1a77467283034d025bea6fd53f59412c82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a77467283034d025bea6fd53f59412c82" kindref="member">power_on</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="173" refid="structhal__wifi__module__s_1ac0578fa36fa49585ed9051ad40b70a78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1ac0578fa36fa49585ed9051ad40b70a78" kindref="member">suspend</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="174" refid="structhal__wifi__module__s_1a9c2a49b64de903f670d19d263eda6271" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a9c2a49b64de903f670d19d263eda6271" kindref="member">suspend_station</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="175" refid="structhal__wifi__module__s_1a7a433bfbbe79074a85b87a57f7521ea0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a7a433bfbbe79074a85b87a57f7521ea0" kindref="member">suspend_soft_ap</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="176" refid="structhal__wifi__module__s_1a82214a1288de0e66edc5438ac7e26fb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a82214a1288de0e66edc5438ac7e26fb9" kindref="member">set_channel</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="177" refid="structhal__wifi__module__s_1a179564a3db7eee4a1517988917549de0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a179564a3db7eee4a1517988917549de0" kindref="member">get_channel</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="178" refid="structhal__wifi__module__s_1a3a7d0dd74bab774412f952d36585689f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a3a7d0dd74bab774412f952d36585689f" kindref="member">get_channel_list</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>**chnlist);</highlight></codeline>
+<codeline lineno="179" refid="structhal__wifi__module__s_1a231ec2946d6e261aa51b2f7a3d21bf52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a231ec2946d6e261aa51b2f7a3d21bf52" kindref="member">start_monitor</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="180" refid="structhal__wifi__module__s_1a7b76b2e974e526a25581c5d921a9537e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a7b76b2e974e526a25581c5d921a9537e" kindref="member">stop_monitor</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="181" refid="structhal__wifi__module__s_1a02fbfdbee1e30b6b509dbea8896748ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a02fbfdbee1e30b6b509dbea8896748ac" kindref="member">register_monitor_cb</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref><sp/>fn);</highlight></codeline>
+<codeline lineno="182" refid="structhal__wifi__module__s_1ab40f7b61e9eb6a585c9872d315513006" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1ab40f7b61e9eb6a585c9872d315513006" kindref="member">register_wlan_mgnt_monitor_cb</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref><sp/>fn);</highlight></codeline>
+<codeline lineno="183" refid="structhal__wifi__module__s_1a1c0f13ce75fb7802c3584ed99a78161c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a1c0f13ce75fb7802c3584ed99a78161c" kindref="member">wlan_send_80211_raw_frame</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/>uint8_t<sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>debug<sp/>related<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="structhal__wifi__module__s_1a652a542258eecb507ef7ae088a9a5c06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a652a542258eecb507ef7ae088a9a5c06" kindref="member">start_debug_mode</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="187" refid="structhal__wifi__module__s_1a1d0d8052ddf439981e1571f87917678e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a1d0d8052ddf439981e1571f87917678e" kindref="member">stop_debug_mode</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>mesh<sp/>related<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="structhal__wifi__module__s_1adc0944d05af28c5d88bacf06a8395df0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1adc0944d05af28c5d88bacf06a8395df0" kindref="member">mesh_register_cb</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref><sp/>fn);</highlight></codeline>
+<codeline lineno="191" refid="structhal__wifi__module__s_1a5f3e763677c112f9008df6cd4007b0a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structhal__wifi__module__s_1a5f3e763677c112f9008df6cd4007b0a8" kindref="member">mesh_set_bssid</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*mac);</highlight></codeline>
+<codeline lineno="192" refid="structhal__wifi__module__s_1a0e76bbb11149a0aa8b4d858ae4553f26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a0e76bbb11149a0aa8b4d858ae4553f26" kindref="member">mesh_enable</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="193" refid="structhal__wifi__module__s_1a751243a598d4aa5837e54d6ff81a3f70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a751243a598d4aa5837e54d6ff81a3f70" kindref="member">mesh_disable</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="194" refid="structhal__wifi__module__s_1a7672dca970bc741685fe135b86c2bb05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a7672dca970bc741685fe135b86c2bb05" kindref="member">mesh_radio_sleep</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="195" refid="structhal__wifi__module__s_1a671b996c30e4a7c52bafbbec903a8e03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/>(*<ref refid="structhal__wifi__module__s_1a671b996c30e4a7c52bafbbec903a8e03" kindref="member">mesh_radio_wakeup</ref>)(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*<ref refid="wifi_8h_1a566b8f91f7325b94b2672af6ee9e9792" kindref="member">hal_wifi_get_default_module</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1ae63e89d8196178248779fac0acdbddf4" kindref="member">hal_wifi_register_module</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1ad0f9198f876afee6ec2fa498c853fd2e" kindref="member">hal_wifi_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1afbfa80bf9a55a4428a5b213233f5f493" kindref="member">hal_wifi_get_mac_addr</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/>uint8_t<sp/>*mac);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a3488b0f43c0088b2fb02dde4753f6029" kindref="member">hal_wifi_set_mac_addr</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*mac);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a4fb4774e8247d115d457eed457acb9b6" kindref="member">hal_wifi_start</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__init__type__t" kindref="compound">hal_wifi_init_type_t</ref><sp/>*init_para);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a694965de667c13b1380fda9eedda1601" kindref="member">hal_wifi_start_adv</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__init__type__adv__t" kindref="compound">hal_wifi_init_type_adv_t</ref><sp/>*init_para_adv);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a05cb0f3bdfcf73dcb862c894aef1c355" kindref="member">hal_wifi_get_ip_stat</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__wifi__ip__stat__t" kindref="compound">hal_wifi_ip_stat_t</ref><sp/>*out_net_para,<sp/><ref refid="wifi_8h_1a9c6cd73d1b386384fea4dc5be8a25adc" kindref="member">hal_wifi_type_t</ref><sp/>wifi_type);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1ad21b72cfba15bc51dc232ff1d7b8e3e3" kindref="member">hal_wifi_get_link_stat</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="structhal__wifi__link__stat__t" kindref="compound">hal_wifi_link_stat_t</ref><sp/>*out_stat);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a45482258f138aa8dc654a62903cb9cce" kindref="member">hal_wifi_start_scan</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a1ee2b973dd8c784d8c7bb0b62b317cf9" kindref="member">hal_wifi_start_scan_adv</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a356cb12cb844304ba82baf4fe7b2e39c" kindref="member">hal_wifi_power_off</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1acb7504fd7489f48484ad465ff8b35889" kindref="member">hal_wifi_power_on</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a747082505fd08e36af0b25e819e28731" kindref="member">hal_wifi_suspend</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a1e83e196a0be456be4b37f4cee524818" kindref="member">hal_wifi_suspend_station</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a6a47820504b46b4a96baacce00cbd5b4" kindref="member">hal_wifi_suspend_soft_ap</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1af3de80f45f31dd80dbbf0f1dacca0ec7" kindref="member">hal_wifi_set_channel</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a5d41fe9990341be490374324bfc769b7" kindref="member">hal_wifi_get_channel</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a7cffbff6695b7deac8903e8120a5a895" kindref="member">hal_wifi_get_channel_list</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>**chnlist);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1aa26d3158ef4961dfd5c8359aad7970da" kindref="member">hal_wifi_start_wifi_monitor</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a3ad81dbe6f917782f84e404effb49381" kindref="member">hal_wifi_stop_wifi_monitor</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1ab8d8dadf29c391633e02d369ff645ec3" kindref="member">hal_wifi_register_monitor_cb</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref><sp/>fn);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1ae9b555ef2021f87231c09bce508f5c03" kindref="member">hal_wlan_register_mgnt_monitor_cb</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/><ref refid="wifi_8h_1a42c3d0c8c75e00b79323b460b4ae589c" kindref="member">monitor_data_cb_t</ref><sp/>fn);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a9d3ea42ce6d6c2c79c94416c4880c8c0" kindref="member">hal_wlan_send_80211_raw_frame</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/>uint8_t<sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a3357287dece311d15428f91e848931ed" kindref="member">hal_wifi_start_debug_mode</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a7f942f8856082a8deee80b9913d81edb" kindref="member">hal_wifi_stop_debug_mode</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1abb2676da0387cf522a0a9c4abc9a4210" kindref="member">hal_wifi_install_event</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structhal__wifi__event__cb__t" kindref="compound">hal_wifi_event_cb_t</ref><sp/>*cb);</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi_8h_1a7994d150ec71e85f08888b07f9c7228a" kindref="member">hal_umesh_register_wifi</ref>(<ref refid="structhal__wifi__module__s" kindref="compound">hal_wifi_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_WIFI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h"/>
+  </compounddef>
+</doxygen>

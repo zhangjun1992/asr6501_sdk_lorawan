@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structrtc__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>rtc_config_t</compoundname>
+    <includes refid="rtc_8h" local="yes">rtc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrtc__config__t_1ab0720a115347f33456500c12902a08b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_config_t::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="12" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="173">
+        <label>rtc_config_t</label>
+        <link refid="structrtc__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="11" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structrtc__config__t_1ab0720a115347f33456500c12902a08b4" prot="public" virt="non-virtual"><scope>rtc_config_t</scope><name>format</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

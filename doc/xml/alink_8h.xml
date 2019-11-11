@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="alink_8h" kind="file" language="C++">
+    <compoundname>alink.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="alink_8h_1a24e84b646981469702aabfb6da1e9b5f" prot="public" static="no">
+        <name>ALINK_WAIT_FOREVER</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="54" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="alink_8h_1af17ae4b2877b06aff2343711faadbddb" prot="public" static="no">
+        <name>ALINK_LOG_LEVEL</name>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddba7582a60e65777689ab123dcf58305fc0" prot="public">
+          <name>ALINK_LL_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddba00f200bef9b8fa69d43a99e2d52d789e" prot="public">
+          <name>ALINK_LL_FATAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddba1fc7a0da7acce4d8f91e04fd33cec781" prot="public">
+          <name>ALINK_LL_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddbae9c61ab0813cd72c8ab27281a94bd8a3" prot="public">
+          <name>ALINK_LL_WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddba46988ff679500f39a493301a53836b4f" prot="public">
+          <name>ALINK_LL_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddba0f27b82b96bc8a744614032fca5e1880" prot="public">
+          <name>ALINK_LL_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1af17ae4b2877b06aff2343711faadbddba011c63dadb5973108ea7b5926f8e8929" prot="public">
+          <name>ALINK_LL_TRACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" bodystart="13" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="enum" id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21" prot="public" static="no">
+        <name>ALINK_WIFI_CALLBACK</name>
+        <enumvalue id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a397f8a2bb7f270f7c9c86269171de380" prot="public">
+          <name>ALINK_CLOUD_CONNECTED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21ab774d1addb3ad95e42900f7e2ba883fc" prot="public">
+          <name>ALINK_CLOUD_DISCONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a9674fef5f537f1b882cdffc416f72da0" prot="public">
+          <name>ALINK_GET_DEVICE_STATUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a115d94de3a6bb33638e8123771eaeda6" prot="public">
+          <name>ALINK_SET_DEVICE_STATUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a20fa6fc9ff890cc6d0acf4b00b03183e" prot="public">
+          <name>ALINK_GET_DEVICE_RAWDATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21af358940b6ceebcb0dd41c984104a52c7" prot="public">
+          <name>ALINK_SET_DEVICE_RAWDATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="98" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" bodystart="98" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="alink_8h_1a3779729957441942a2abc98feb002181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alink_set_loglevel</definition>
+        <argsstring>(enum ALINK_LOG_LEVEL loglevel)</argsstring>
+        <name>alink_set_loglevel</name>
+        <param>
+          <type>enum <ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddb" kindref="member">ALINK_LOG_LEVEL</ref></type>
+          <declname>loglevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Log level control</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">loglevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ALINK_LOG_LEVEL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1add42d7fcac8cb0bc0f7c4c23c1fccd9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_enable_sandbox_mode</definition>
+        <argsstring>(void)</argsstring>
+        <name>alink_enable_sandbox_mode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable sandbox mode, for debug</para><para><simplesect kind="return"><para>0 on success, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1aaabf9975f8812dc1a58db3e813763daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_enable_daily_mode</definition>
+        <argsstring>(const char *server_ip, int port)</argsstring>
+        <name>alink_enable_daily_mode</name>
+        <param>
+          <type>const char *</type>
+          <declname>server_ip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable daily mode, for debug</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP Addr </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>server port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1aa51c9013febdbb0b58ab1ac901fea792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>alink_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry function. start alink gateway service.</para><para><simplesect kind="return"><para>0 on success, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a1f5065903c84c98cf02a0f65ccd6e3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_wait_connect</definition>
+        <argsstring>(int timeout_ms)</argsstring>
+        <name>alink_wait_connect</name>
+        <param>
+          <type>int</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Waiting alink connect to aliyun server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time in milliseconds, use ALINK_WAIT_FOREVER to wait until server is connected</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 when connect to server successfully, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a4e4e661d611f8fbc8cb360dda9d6ffb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_end</definition>
+        <argsstring>(void)</argsstring>
+        <name>alink_end</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy alink service and free resources</para><para><simplesect kind="note"><para>this func will block at most 15 seconds to stop all alink related process(thread)</para></simplesect>
+<simplesect kind="return"><para>0 on success, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a95f9d8016cde456e7b7cb9b89acad413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_factory_reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>alink_factory_reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset user account binding.</para><para><simplesect kind="return"><para>0 on success, -1 when params invalid </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a602d3383438261e10b9e6c1f0780aed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_report</definition>
+        <argsstring>(const char *method, const char *json_buffer)</argsstring>
+        <name>alink_report</name>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>json_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Report alink message, it is a fundamental func.</para><para><simplesect kind="note"><para>when connection with server is unstable, this func will block until got response from server or timeout.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alink protocol method, i.e. &quot;postDeviceRawData&quot;, &quot;retrieveDeviceData&quot;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">json_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>json format buffer, like {&quot;OnOff&quot;:&quot;1&quot;, &quot;Light&quot;:&quot;80&quot;}.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 when successfully got response from cloud, otherwise this func will block until timeout and -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a8afdd9c599fe09dad7ff5317c857967c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_report_async</definition>
+        <argsstring>(const char *method, const char *json_buffer, void *(*cb)(void *), void *arg)</argsstring>
+        <name>alink_report_async</name>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>json_buffer</declname>
+        </param>
+        <param>
+          <type>void *(*)(void *)</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a7c9f73105a6ebacc8525ceb4ee2556dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_report_rawdata</definition>
+        <argsstring>(const char *rawdata, int len)</argsstring>
+        <name>alink_report_rawdata</name>
+        <param>
+          <type>const char *</type>
+          <declname>rawdata</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1aa6603f53abf62097c04dda387a0888a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int awss_register_callback</definition>
+        <argsstring>(unsigned char cb_type, void *cb_func)</argsstring>
+        <name>awss_register_callback</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>cb_type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cb_func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a2f49a6c4440868578138dc4e38f10e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alink_register_callback</definition>
+        <argsstring>(unsigned char cb_type, void *cb_func)</argsstring>
+        <name>alink_register_callback</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>cb_type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cb_func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register misc callback</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cb_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb_func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback func pointer, func declaration see related comments.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1a20454ef4cbebf8584d9d071ebd3f898c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int awss_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>awss_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start awss service, block method, block until awss succeed, or timeout(see Note).</para><para><simplesect kind="note"><para>platform_awss_get_timeout_interval_ms() return monitor timeout interval, AP connection timeout is 30s.</para></simplesect>
+<simplesect kind="return"><para>0 on success, otherwise non-zero value will return = 0: connect AP &amp; DHCP success = -1: get ssid &amp; passwd fail = -2: connect AP / DHCP fail </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="alink_8h_1af64ac3d619f49ed0fea96579f984ca17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int awss_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>awss_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calling this func force awss_start exit.</para><para><simplesect kind="return"><para>0 on success, otherwise -1 will return </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h" line="163" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_ALINK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_ALINK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddb" kindref="member">ALINK_LOG_LEVEL</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba7582a60e65777689ab123dcf58305fc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba7582a60e65777689ab123dcf58305fc0" kindref="member">ALINK_LL_NONE</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>disable<sp/>log<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba00f200bef9b8fa69d43a99e2d52d789e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba00f200bef9b8fa69d43a99e2d52d789e" kindref="member">ALINK_LL_FATAL</ref>,<sp/></highlight><highlight class="comment">/*<sp/>fatal<sp/>error<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba1fc7a0da7acce4d8f91e04fd33cec781" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba1fc7a0da7acce4d8f91e04fd33cec781" kindref="member">ALINK_LL_ERROR</ref>,<sp/></highlight><highlight class="comment">/*<sp/>error<sp/>+<sp/>fatal<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddbae9c61ab0813cd72c8ab27281a94bd8a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddbae9c61ab0813cd72c8ab27281a94bd8a3" kindref="member">ALINK_LL_WARN</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>warn<sp/>+<sp/>error<sp/>+<sp/>fatal<sp/>log<sp/>will<sp/>output(default<sp/>level)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba46988ff679500f39a493301a53836b4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba46988ff679500f39a493301a53836b4f" kindref="member">ALINK_LL_INFO</ref>,<sp/><sp/></highlight><highlight class="comment">/*<sp/>info<sp/>+<sp/>warn<sp/>+<sp/>error<sp/>+<sp/>fatal<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba0f27b82b96bc8a744614032fca5e1880" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba0f27b82b96bc8a744614032fca5e1880" kindref="member">ALINK_LL_DEBUG</ref>,<sp/></highlight><highlight class="comment">/*<sp/>debug<sp/>+<sp/>info<sp/>+<sp/>warn<sp/>+<sp/>error<sp/>+<sp/>fatal<sp/>log<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba011c63dadb5973108ea7b5926f8e8929" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddba011c63dadb5973108ea7b5926f8e8929" kindref="member">ALINK_LL_TRACE</ref>,<sp/></highlight><highlight class="comment">/*<sp/>trace<sp/>+<sp/>debug<sp/>+<sp/>info<sp/>+<sp/>warn<sp/>+<sp/>error<sp/>+<sp/>fatal<sp/>will<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a3779729957441942a2abc98feb002181" kindref="member">alink_set_loglevel</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1af17ae4b2877b06aff2343711faadbddb" kindref="member">ALINK_LOG_LEVEL</ref><sp/>loglevel);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1add42d7fcac8cb0bc0f7c4c23c1fccd9b" kindref="member">alink_enable_sandbox_mode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1aaabf9975f8812dc1a58db3e813763daf" kindref="member">alink_enable_daily_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*server_ip,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1aa51c9013febdbb0b58ab1ac901fea792" kindref="member">alink_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="alink_8h_1a24e84b646981469702aabfb6da1e9b5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALINK_WAIT_FOREVER<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a1f5065903c84c98cf02a0f65ccd6e3f6" kindref="member">alink_wait_connect</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_ms);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a4e4e661d611f8fbc8cb360dda9d6ffb0" kindref="member">alink_end</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a95f9d8016cde456e7b7cb9b89acad413" kindref="member">alink_factory_reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a602d3383438261e10b9e6c1f0780aed2" kindref="member">alink_report</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json_buffer);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a8afdd9c599fe09dad7ff5317c857967c" kindref="member">alink_report_async</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json_buffer,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*(*cb)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a7c9f73105a6ebacc8525ceb4ee2556dc" kindref="member">alink_report_rawdata</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rawdata,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21" kindref="member">ALINK_WIFI_CALLBACK</ref><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>void<sp/>callback_cloud_connected(void)</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@n@n<sp/>called<sp/>each<sp/>time<sp/>when<sp/>gateway<sp/>successfully<sp/>connect(or<sp/>reconnect)</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>to<sp/>aliyun<sp/>server</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a397f8a2bb7f270f7c9c86269171de380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a397f8a2bb7f270f7c9c86269171de380" kindref="member">ALINK_CLOUD_CONNECTED</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>void<sp/>callback_cloud_disconnected(void)</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@n@n<sp/>called<sp/>each<sp/>time<sp/>when<sp/>gateway<sp/>lose<sp/>connection<sp/>with<sp/>aliyun<sp/>server</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21ab774d1addb3ad95e42900f7e2ba883fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21ab774d1addb3ad95e42900f7e2ba883fc" kindref="member">ALINK_CLOUD_DISCONNECTED</ref>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>int<sp/>callback_read_device_status(const<sp/>char<sp/>*params)</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@n@nuccessfully</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a9674fef5f537f1b882cdffc416f72da0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a9674fef5f537f1b882cdffc416f72da0" kindref="member">ALINK_GET_DEVICE_STATUS</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>void<sp/>callback_write_device_status(const<sp/>char<sp/>*params)</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a115d94de3a6bb33638e8123771eaeda6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a115d94de3a6bb33638e8123771eaeda6" kindref="member">ALINK_SET_DEVICE_STATUS</ref>,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>int<sp/>callback_read_device_rawdata(const<sp/>char<sp/>*params)</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@n@nuccessfully</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a20fa6fc9ff890cc6d0acf4b00b03183e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21a20fa6fc9ff890cc6d0acf4b00b03183e" kindref="member">ALINK_GET_DEVICE_RAWDATA</ref>,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>void<sp/>callback_write_device_rawdata(const<sp/>char<sp/>*params)</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21af358940b6ceebcb0dd41c984104a52c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="alink_8h_1a3b5fd33d4b23fc88f44e05173ecd2f21af358940b6ceebcb0dd41c984104a52c7" kindref="member">ALINK_SET_DEVICE_RAWDATA</ref>,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1aa6603f53abf62097c04dda387a0888a9" kindref="member">awss_register_callback</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cb_type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cb_func);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a2f49a6c4440868578138dc4e38f10e74" kindref="member">alink_register_callback</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cb_type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cb_func);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1a20454ef4cbebf8584d9d071ebd3f898c" kindref="member">awss_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="alink_8h_1af64ac3d619f49ed0fea96579f984ca17" kindref="member">awss_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_ALINK_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/alink.h"/>
+  </compounddef>
+</doxygen>

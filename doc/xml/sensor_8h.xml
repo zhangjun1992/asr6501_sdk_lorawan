@@ -1,0 +1,1892 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sensor_8h" kind="file" language="C++">
+    <compoundname>sensor.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="base_8h" local="no">hal/base.h</includes>
+    <includes refid="soc_8h" local="yes">hal/soc/soc.h</includes>
+    <includes refid="gpio_8h" local="yes">hal/soc/gpio.h</includes>
+    <includes refid="i2c_8h" local="yes">hal/soc/i2c.h</includes>
+    <includedby refid="hal_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</includedby>
+    <incdepgraph>
+      <node id="436">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="452">
+        <label>stdbool.h</label>
+      </node>
+      <node id="430">
+        <label>aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>hal/soc/uart.h</label>
+        <link refid="uart_8h"/>
+      </node>
+      <node id="440">
+        <label>aos/debug.h</label>
+        <link refid="debug_8h"/>
+      </node>
+      <node id="427">
+        <label>stdint.h</label>
+      </node>
+      <node id="468">
+        <label>hal/soc/wdg.h</label>
+        <link refid="wdg_8h"/>
+      </node>
+      <node id="469">
+        <label>hal/soc/interpt.h</label>
+        <link refid="interpt_8h"/>
+      </node>
+      <node id="439">
+        <label>aos/cloud.h</label>
+        <link refid="cloud_8h"/>
+      </node>
+      <node id="434">
+        <label>poll.h</label>
+      </node>
+      <node id="433">
+        <label>fcntl.h</label>
+      </node>
+      <node id="437">
+        <label>aos/cli.h</label>
+        <link refid="cli_8h"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>hal/soc/gpio.h</label>
+        <link refid="gpio_8h"/>
+      </node>
+      <node id="453">
+        <label>hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>hal/soc/rng.h</label>
+        <link refid="rng_8h"/>
+      </node>
+      <node id="454">
+        <label>hal/soc/adc.h</label>
+        <link refid="adc_8h"/>
+      </node>
+      <node id="461">
+        <label>hal/soc/qspi.h</label>
+        <link refid="qspi_8h"/>
+      </node>
+      <node id="431">
+        <label>stddef.h</label>
+      </node>
+      <node id="466">
+        <label>hal/soc/timer.h</label>
+        <link refid="timer_8h"/>
+      </node>
+      <node id="428">
+        <label>hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>aos/errno.h</label>
+        <link refid="errno_8h"/>
+      </node>
+      <node id="442">
+        <label>aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>aos/internal/event_type_code.h</label>
+        <link refid="event__type__code_8h"/>
+      </node>
+      <node id="438">
+        <label>k_types.h</label>
+      </node>
+      <node id="443">
+        <label>aos/list.h</label>
+        <link refid="list_8h"/>
+      </node>
+      <node id="435">
+        <label>sys/types.h</label>
+      </node>
+      <node id="445">
+        <label>aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>aos/init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>unistd.h</label>
+      </node>
+      <node id="447">
+        <label>aos/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="448">
+        <label>aos/yloop.h</label>
+        <link refid="yloop_8h"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>hal/soc/flash.h</label>
+        <link refid="flash_8h"/>
+      </node>
+      <node id="446">
+        <label>aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>hal/soc/sd.h</label>
+        <link refid="sd_8h"/>
+      </node>
+      <node id="465">
+        <label>hal/soc/spi.h</label>
+        <link refid="spi_8h"/>
+      </node>
+      <node id="459">
+        <label>hal/soc/nor.h</label>
+        <link refid="nor_8h"/>
+      </node>
+      <node id="458">
+        <label>hal/soc/nand.h</label>
+        <link refid="nand_8h"/>
+      </node>
+      <node id="457">
+        <label>hal/soc/i2c.h</label>
+        <link refid="i2c_8h"/>
+      </node>
+      <node id="463">
+        <label>hal/soc/rtc.h</label>
+        <link refid="rtc_8h"/>
+      </node>
+      <node id="460">
+        <label>hal/soc/pwm.h</label>
+        <link refid="pwm_8h"/>
+      </node>
+      <node id="441">
+        <label>aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="471">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="470">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__dev__accel__data__t" prot="public">_dev_accel_data_t</innerclass>
+    <innerclass refid="struct__dev__gyro__data__t" prot="public">_dev_gyro_data_t</innerclass>
+    <innerclass refid="struct__dev__mag__data__t" prot="public">_dev_mag_data_t</innerclass>
+    <innerclass refid="struct__dev__barometer__data__t" prot="public">_dev_barometer_data_t</innerclass>
+    <innerclass refid="struct__dev__temperature__data__t" prot="public">_dev_temperature_data_t</innerclass>
+    <innerclass refid="struct__dev__humidity__data__t" prot="public">_dev_humidity_data_t</innerclass>
+    <innerclass refid="struct__dev__als__data__t" prot="public">_dev_als_data_t</innerclass>
+    <innerclass refid="struct__dev__uv__data__t" prot="public">_dev_uv_data_t</innerclass>
+    <innerclass refid="struct__dev__proximity__data__t" prot="public">_dev_proximity_data_t</innerclass>
+    <innerclass refid="struct__dev__hall__data__t" prot="public">_dev_hall_data_t</innerclass>
+    <innerclass refid="struct__dev__rgb__data__t" prot="public">_dev_rgb_data_t</innerclass>
+    <innerclass refid="struct__dev__ir__data__t" prot="public">_dev_ir_data_t</innerclass>
+    <innerclass refid="struct__dev__ecg__data__t" prot="public">_dev_ecg_data_t</innerclass>
+    <innerclass refid="struct__dev__heart__rate__data__t" prot="public">_dev_heart_rate_data_t</innerclass>
+    <innerclass refid="struct__dev__blood__pressure__data__t" prot="public">_dev_blood_pressure_data_t</innerclass>
+    <innerclass refid="struct__dev__sensor__config__t" prot="public">_dev_sensor_config_t</innerclass>
+    <innerclass refid="struct__sensor__list__t" prot="public">_sensor_list_t</innerclass>
+    <innerclass refid="struct__dev__sensor__info__t" prot="public">_dev_sensor_info_t</innerclass>
+    <innerclass refid="struct__dev__sensor__full__info__t" prot="public">_dev_sensor_full_info_t</innerclass>
+    <innerclass refid="struct__dev__sensor__data__t" prot="public">_dev_sensor_data_t</innerclass>
+    <innerclass refid="struct__dev__sensor__pkg__t" prot="public">_dev_sensor_pkg_t</innerclass>
+    <innerclass refid="struct__sensor__obj__t" prot="public">_sensor_obj_t</innerclass>
+    <innerclass refid="struct__sensor__node__t" prot="public">_sensor_node_t</innerclass>
+    <innerclass refid="struct__gps__time" prot="public">_gps_time</innerclass>
+    <innerclass refid="struct__dev__gps__data__t" prot="public">_dev_gps_data_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sensor_8h_1a1540a0e55fa3b3ba5df2a23bb5ff87bb" prot="public" static="no">
+        <name>I2C_REG_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="17" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1af284c924eb6ba85f047eea43a6ea8c73" prot="public" static="no">
+        <name>I2C_DATA_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="18" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1acddc25e324b5e592de0a5fc7d0c20926" prot="public" static="no">
+        <name>I2C_OP_RETRIES</name>
+        <initializer><ref refid="kernel_8h_1ace7b5d4663ba617a23da0ac13acd6ea9" kindref="member">AOS_WAIT_FOREVER</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="19" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a8511e4e78126f49c10752120dd13a9ef" prot="public" static="no">
+        <name>SENSOR_IOCTL_ODR_SET</name>
+        <initializer>(0x01&lt;&lt;0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="22" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a758969ed98e314a8cc0da36a1df910b0" prot="public" static="no">
+        <name>SENSOR_IOCTL_RANGE_SET</name>
+        <initializer>(0x01&lt;&lt;1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="23" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a4847504ff23f67df96f4c3135be2d4e6" prot="public" static="no">
+        <name>SENSOR_IOCTL_GET_INFO</name>
+        <initializer>(0x01&lt;&lt;2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="24" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a693ce3003c5fa39f170121d9ae5b7972" prot="public" static="no">
+        <name>SENSOR_IOCTL_BIST_PROCESS</name>
+        <initializer>(0x01&lt;&lt;3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="25" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1aee63c7ec7af68540e80e4dd5e1971d6c" prot="public" static="no">
+        <name>SENSOR_IOCTL_WHO_AM_I</name>
+        <initializer>(0x01&lt;&lt;4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="26" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a37a5dc9e3354faf6225f4fb5fee8fd5e" prot="public" static="no">
+        <name>SENSOR_IOCTL_SET_POWER</name>
+        <initializer>(0x01&lt;&lt;5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="27" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a7f584dc6d28f4a06559db9c96b4b3331" prot="public" static="no">
+        <name>SENSOR_IOCTL_GET_SENSOR_LIST</name>
+        <initializer>(0x01&lt;&lt;6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="28" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a217a0bd562b98ae8c2ffce44935351e1" prot="public" static="no">
+        <name>likely</name>
+        <param><defname>x</defname></param>
+        <initializer>__builtin_expect(!!(x), 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="31" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1ac6c45889010c1bd68631771b64f18101" prot="public" static="no">
+        <name>unlikely</name>
+        <param><defname>x</defname></param>
+        <initializer>__builtin_expect(!!(x), 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="34" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a06fc84a5b079a7fe3be9cb630208056c" prot="public" static="no">
+        <name>DATA_AXIS_X</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="38" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a95c1aaf69816da8f612de576edbb9abd" prot="public" static="no">
+        <name>DATA_AXIS_Y</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="39" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a2b7781d748aa0c042ca9ce9ea3f7d40a" prot="public" static="no">
+        <name>DATA_AXIS_Z</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="40" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a6aaf59a0a9237e73cd4a2058b2be8b08" prot="public" static="no">
+        <name>dev_acc_path</name>
+        <initializer>&quot;/dev/acc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="42" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1ae1256fd38a45568187c1c46e6e52414e" prot="public" static="no">
+        <name>dev_mag_path</name>
+        <initializer>&quot;/dev/mag&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="43" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a9c10d7f3b1ea46c7d88d1c1bce65d87e" prot="public" static="no">
+        <name>dev_gyro_path</name>
+        <initializer>&quot;/dev/gyro&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="44" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1ad50872ed71d436788e204249d55c9ba7" prot="public" static="no">
+        <name>dev_als_path</name>
+        <initializer>&quot;/dev/als&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="45" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a1c578595707c84a969d0fda2c5545453" prot="public" static="no">
+        <name>dev_ps_path</name>
+        <initializer>&quot;/dev/ps&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="46" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1aa6d14484a94f7ac86aff448138d64bc0" prot="public" static="no">
+        <name>dev_baro_path</name>
+        <initializer>&quot;/dev/baro&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="47" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a71dabf65c531cb6bf41d9ce43fcc8abf" prot="public" static="no">
+        <name>dev_temp_path</name>
+        <initializer>&quot;/dev/temp&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="48" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a9726fdfa294b7f72d10cf708d1069302" prot="public" static="no">
+        <name>dev_uv_path</name>
+        <initializer>&quot;/dev/uv&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="49" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a2541b8deecdebd567ed4dd0b608919f5" prot="public" static="no">
+        <name>dev_humi_path</name>
+        <initializer>&quot;/dev/humi&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="50" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a678844ad4f8f34cc413e9dbcd405a678" prot="public" static="no">
+        <name>dev_hall_path</name>
+        <initializer>&quot;/dev/hall&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="51" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a78e9b135a79376fde3769049539da5b5" prot="public" static="no">
+        <name>dev_hr_path</name>
+        <initializer>&quot;/dev/hr&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="52" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a8b15e4e765e7dc0e83d0bc76eaa240b8" prot="public" static="no">
+        <name>dev_gps_path</name>
+        <initializer>&quot;/dev/gps&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="53" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1ad779360505d1213912507e2efdf7e8d9" prot="public" static="no">
+        <name>sensor_node_path</name>
+        <initializer>&quot;/dev/sensor&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="55" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a319f56b49b357ce1291cdb8040763fdc" prot="public" static="no">
+        <name>gps_node_path</name>
+        <initializer>&quot;/dev/nodegps&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="56" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1ad3ca708455d86822f33226829d443599" prot="public" static="no">
+        <name>GPS_STR</name>
+        <initializer>&quot;gps: &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="58" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1aa4190339b2e98cd8e022ae83caecb441" prot="public" static="no">
+        <name>SENSOR_STR</name>
+        <initializer>&quot;sensor: &quot;   /* sensor debug header */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="59" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1aa8eb0ea69576396000ea9a91bdbeeba5" prot="public" static="no">
+        <name>ERROR_LINE</name>
+        <initializer>&quot;error on line is &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="60" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1affba7751bdee8398b0bb2bfb1c090ffd" prot="public" static="no">
+        <name>ACCELEROMETER_UNIT_FACTOR</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="62" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a0db1193302f672c1bf100fca58951eb1" prot="public" static="no">
+        <name>MAGNETOMETER_UNIT_FACTOR</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="63" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sensor_8h_1a05c1abb63c4aea34a92d7cd539ab71b1" prot="public" static="no">
+        <name>GYROSCOPE_UNIT_FACTOR</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="64" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" prot="public" static="no">
+        <name>sensor_tag_e</name>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a351e6c23e8eec19ff17a917ac5f8d3fa" prot="public">
+          <name>TAG_DEV_ACC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524abd0a4cb443cf591b7a8e2fb1651b8073" prot="public">
+          <name>TAG_DEV_MAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a9653074604b92cd0661c69714c385234" prot="public">
+          <name>TAG_DEV_GYRO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524aa58b695a22d33a8796b73e3ee076bc6b" prot="public">
+          <name>TAG_DEV_ALS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ac40ca7d1e2c5116dfc0ce6eb94f0c099" prot="public">
+          <name>TAG_DEV_PS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a9187ba668ae8a8b9d66e2481135959de" prot="public">
+          <name>TAG_DEV_BARO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a840590388e5bd1d8bafd59435c867834" prot="public">
+          <name>TAG_DEV_TEMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a994b0fcabbabb48ca81ba1b168fac0da" prot="public">
+          <name>TAG_DEV_UV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a60c998c8edb11da98b5e0c4c5a95b9ca" prot="public">
+          <name>TAG_DEV_HUMI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a358efcb65d0f7a08fd79ead2f98bb0e9" prot="public">
+          <name>TAG_DEV_HALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a5a1d398cea68e3ecd8f2f564242cba49" prot="public">
+          <name>TAG_DEV_HR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ae38ffdeb7cf792acd57a79adc7dbe52e" prot="public">
+          <name>TAG_DEV_GPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ad2967d42944fc323e8bf2f5c74237776" prot="public">
+          <name>TAG_DEV_SENSOR_NUM_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="67" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="67" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6b" prot="public" static="no">
+        <name>vendor_id_e</name>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba3462a905f68581cc36b102f6cfe32c34" prot="public">
+          <name>DEV_SENSOR_VENDOR_STM</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6bab2115183e211a489da376d4ec8c1f64c" prot="public">
+          <name>DEV_SENSOR_VENDOR_SEMTECH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6badda6d811a66d194efa6617f5c274a916" prot="public">
+          <name>DEV_SENSOR_VENDOR_AKM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baf3ada00f59f76fa88199ad0d49235802" prot="public">
+          <name>DEV_SENSOR_VENDOR_CAPELLA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6bae3385957944c5002697147b098e46907" prot="public">
+          <name>DEV_SENSOR_VENDOR_INVENSENSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba2b2a9fbf16fad55b41edf163cb09893e" prot="public">
+          <name>DEV_SENSOR_VENDOR_ROHM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba0581ba254131cf2214f108f8d3f3c24e" prot="public">
+          <name>DEV_SENSOR_VENDOR_BOSCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba50d91206090602b66df2955b1fed0257" prot="public">
+          <name>DEV_SENSOR_VENDOR_KIONIX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baba22ccf3e3a1eaa900dad6c883744f20" prot="public">
+          <name>DEV_SENSOR_VENDOR_LITEON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baf93986b981d228100ad633fed83c40e8" prot="public">
+          <name>DEV_SENSOR_VENDOR_AMS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba30a27a71e36159c41cb5815d6b6cbda0" prot="public">
+          <name>DEV_SENSOR_VENDOR_CNT_MAXIM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="84" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580" prot="public" static="no">
+        <name>dev_io_port_e</name>
+        <enumvalue id="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580ae2950038fbdd8ec09bbdca18951868b4" prot="public">
+          <name>I2C_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580a55fb0837a2af39ef0dbf6e93cd7da5f1" prot="public">
+          <name>SPI_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580ad50d936bb9d89ea868cff448df97913a" prot="public">
+          <name>I2S_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580a9eb5c43b6d99880c5be6e2a33c3268b4" prot="public">
+          <name>UART_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="98" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1a4e0629ead33befddc818a81f731af7c0" prot="public" static="no">
+        <name>dev_power_mode_e</name>
+        <enumvalue id="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a791131665a10788b88450c44a8dd144d" prot="public">
+          <name>DEV_POWER_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a59221485cee66f51b375f8e53c977ca1" prot="public">
+          <name>DEV_POWER_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a4aea5eea9ba4aaee1edf1439950959df" prot="public">
+          <name>DEV_SLEEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a4e0629ead33befddc818a81f731af7c0af24099ca2ed5dd3fbeed1a97b72bb9c7" prot="public">
+          <name>DEV_SUSPEND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a74741b665ec43e2d5190db5ae4e0d389" prot="public">
+          <name>DEV_DEEP_SUSPEND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="105" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="105" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971" prot="public" static="no">
+        <name>dev_health_state_e</name>
+        <enumvalue id="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971a74f780e10aabedc1531f772b3eed790a" prot="public">
+          <name>DEV_HEALTH_GOOD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971a4dfd17e81b2a5f46aaa2e0c39b85fe47" prot="public">
+          <name>DEV_HEALTH_SICK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="113" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1ad245576a63ccad08bc7a42819148d055" prot="public" static="no">
+        <name>work_mode_e</name>
+        <enumvalue id="sensor_8h_1ad245576a63ccad08bc7a42819148d055acd3bb3d121f76896c2c51b609f7dd661" prot="public">
+          <name>DEV_POLLING</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad245576a63ccad08bc7a42819148d055a44fefcb158ca44dbc2b085c48574474b" prot="public">
+          <name>DEV_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad245576a63ccad08bc7a42819148d055a5f7dafcc53a7eebc3b137049d766f41e" prot="public">
+          <name>DEV_DATA_READY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad245576a63ccad08bc7a42819148d055a53ff22031f5ee4f52c9ee338ce149254" prot="public">
+          <name>DEV_FIFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1ad245576a63ccad08bc7a42819148d055ab71e3a52bd4b9e765c2199cdf3b6ab08" prot="public">
+          <name>DEV_MODE_INV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="119" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1abdc6360148df063c4c119b584ec7146d" prot="public" static="no">
+        <name>value_unit_e</name>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da58c4835d62247124669060277fdb280c" prot="public">
+          <name>mg</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146daf9450a550edf8479be8e3098d8a926de" prot="public">
+          <name>uGauss</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da2a560fbbce2aca43d9a295e30dfcc9b9" prot="public">
+          <name>udps</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146dad121778696814ec1ff4ac40a1df4976b" prot="public">
+          <name>lux</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da298e66f2fa17989b011c1d6d2a32856c" prot="public">
+          <name>cm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da18b7e212fdac381b48cc5ac464c0d38b" prot="public">
+          <name>pa</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da963a6463bd651650981260bb549d35a2" prot="public">
+          <name>permillage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da72a3830f9ff2302ae9071c30905250fc" prot="public">
+          <name>bpm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1abdc6360148df063c4c119b584ec7146da24a497cfe29c4969b1a852417604a91b" prot="public">
+          <name>dCelsius</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="127" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="127" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271" prot="public" static="no">
+        <name>acc_range_e</name>
+        <enumvalue id="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a84158f84eb5607b538fc37d3ef77de9d" prot="public">
+          <name>ACC_RANGE_2G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a72d083371e617372611eb37b36163e83" prot="public">
+          <name>ACC_RANGE_4G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a0c8db4ad9162a1d96be71279a8159521" prot="public">
+          <name>ACC_RANGE_8G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a78916ef4ba39aed45e795dc4d47a5464" prot="public">
+          <name>ACC_RANGE_16G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271ad9e0c83d9cbc31d4d36c773531ee3abc" prot="public">
+          <name>ACC_RANGE_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="282" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="282" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="enum" id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95e" prot="public" static="no">
+        <name>gyro_range_e</name>
+        <enumvalue id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ead3e29a945f08db37d50a51be06e06537" prot="public">
+          <name>GYRO_RANGE_125DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea48e989836555c00f1ef22f496e3ed253" prot="public">
+          <name>GYRO_RANGE_250DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95eac1fe6948a3d54f8b34def61edbed8c11" prot="public">
+          <name>GYRO_RANGE_500DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea1fdbddf7dfa338f2327022bfc5961657" prot="public">
+          <name>GYRO_RANGE_1000DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea1c12697ff4f35e609688d5bdd873de02" prot="public">
+          <name>GYRO_RANGE_2000DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea53210b4c9291676c2ee96d24276ff10d" prot="public">
+          <name>GYRO_RANGE_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="290" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="290" bodyend="297"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="sensor_8h_1a5fc410a04216950975eef9d917a84939" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__accel__data__t" kindref="compound">_dev_accel_data_t</ref></type>
+        <definition>typedef struct _dev_accel_data_t accel_data_t</definition>
+        <argsstring></argsstring>
+        <name>accel_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1af8f9f56742de1e56198dee6d4233fd7f" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__gyro__data__t" kindref="compound">_dev_gyro_data_t</ref></type>
+        <definition>typedef struct _dev_gyro_data_t gyro_data_t</definition>
+        <argsstring></argsstring>
+        <name>gyro_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a25dab1755c8f14752c95f0e193d15e73" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__mag__data__t" kindref="compound">_dev_mag_data_t</ref></type>
+        <definition>typedef struct _dev_mag_data_t mag_data_t</definition>
+        <argsstring></argsstring>
+        <name>mag_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a31476c92b92f58dcd87ff4e23c5e5935" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__barometer__data__t" kindref="compound">_dev_barometer_data_t</ref></type>
+        <definition>typedef struct _dev_barometer_data_t barometer_data_t</definition>
+        <argsstring></argsstring>
+        <name>barometer_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a87919c4ca3155dd2a2a98118ccb4c096" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__temperature__data__t" kindref="compound">_dev_temperature_data_t</ref></type>
+        <definition>typedef struct _dev_temperature_data_t temperature_data_t</definition>
+        <argsstring></argsstring>
+        <name>temperature_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a36372615d7a54d0be2706f3ed067e521" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__humidity__data__t" kindref="compound">_dev_humidity_data_t</ref></type>
+        <definition>typedef struct _dev_humidity_data_t humidity_data_t</definition>
+        <argsstring></argsstring>
+        <name>humidity_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1affba08de40eb005b7e4d52de151a2c61" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__als__data__t" kindref="compound">_dev_als_data_t</ref></type>
+        <definition>typedef struct _dev_als_data_t als_data_t</definition>
+        <argsstring></argsstring>
+        <name>als_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1aa19fe8abe2ed389811af05bbff66788b" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__uv__data__t" kindref="compound">_dev_uv_data_t</ref></type>
+        <definition>typedef struct _dev_uv_data_t uv_data_t</definition>
+        <argsstring></argsstring>
+        <name>uv_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1aa8daa569f582ae8cf0d86701d5714d6b" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__proximity__data__t" kindref="compound">_dev_proximity_data_t</ref></type>
+        <definition>typedef struct _dev_proximity_data_t proximity_data_t</definition>
+        <argsstring></argsstring>
+        <name>proximity_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a9aceec788ed2b7c0248633751e223a26" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__hall__data__t" kindref="compound">_dev_hall_data_t</ref></type>
+        <definition>typedef struct _dev_hall_data_t hall_data_t</definition>
+        <argsstring></argsstring>
+        <name>hall_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a075b73fb24829f190432cb1769181ee8" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__rgb__data__t" kindref="compound">_dev_rgb_data_t</ref></type>
+        <definition>typedef struct _dev_rgb_data_t rgb_data_t</definition>
+        <argsstring></argsstring>
+        <name>rgb_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1ad21bd5ae0b8bfff096a610fc2cab82b8" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__ir__data__t" kindref="compound">_dev_ir_data_t</ref></type>
+        <definition>typedef struct _dev_ir_data_t ir_data_t</definition>
+        <argsstring></argsstring>
+        <name>ir_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1aef8ed755829d8a4b531abf2a6a8f3fdd" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__ecg__data__t" kindref="compound">_dev_ecg_data_t</ref></type>
+        <definition>typedef struct _dev_ecg_data_t ecg_data_t</definition>
+        <argsstring></argsstring>
+        <name>ecg_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a3a63e337111de2fc11b773fb231d63f5" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__heart__rate__data__t" kindref="compound">_dev_heart_rate_data_t</ref></type>
+        <definition>typedef struct _dev_heart_rate_data_t heart_rate_data_t</definition>
+        <argsstring></argsstring>
+        <name>heart_rate_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a8c19de311ef01018b70a76d979fcd677" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__blood__pressure__data__t" kindref="compound">_dev_blood_pressure_data_t</ref></type>
+        <definition>typedef struct _dev_blood_pressure_data_t blood_pressure_t</definition>
+        <argsstring></argsstring>
+        <name>blood_pressure_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1aebac9839ff3a2f8c943c139a5543df69" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__sensor__config__t" kindref="compound">_dev_sensor_config_t</ref></type>
+        <definition>typedef struct _dev_sensor_config_t dev_sensor_config_t</definition>
+        <argsstring></argsstring>
+        <name>dev_sensor_config_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a88171ae7e2879709d6f25cdd184b174e" prot="public" static="no">
+        <type>struct <ref refid="struct__sensor__list__t" kindref="compound">_sensor_list_t</ref></type>
+        <definition>typedef struct _sensor_list_t sensor_list_t</definition>
+        <argsstring></argsstring>
+        <name>sensor_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a15d91b8dc735b2ae99308bacb3efdf11" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__sensor__info__t" kindref="compound">_dev_sensor_info_t</ref></type>
+        <definition>typedef struct _dev_sensor_info_t dev_sensor_info_t</definition>
+        <argsstring></argsstring>
+        <name>dev_sensor_info_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a14318e5f65e03c6a40c34cfb1f7a748c" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__sensor__full__info__t" kindref="compound">_dev_sensor_full_info_t</ref></type>
+        <definition>typedef struct _dev_sensor_full_info_t dev_sensor_full_info_t</definition>
+        <argsstring></argsstring>
+        <name>dev_sensor_full_info_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1af47d40763bf7856fb8ea76c314658bad" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__sensor__data__t" kindref="compound">_dev_sensor_data_t</ref></type>
+        <definition>typedef struct _dev_sensor_data_t dev_sensor_data_t</definition>
+        <argsstring></argsstring>
+        <name>dev_sensor_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a1c69e13a63c73d5d4ba649ccdb67b2e1" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__sensor__pkg__t" kindref="compound">_dev_sensor_pkg_t</ref></type>
+        <definition>typedef struct _dev_sensor_pkg_t dev_sensor_pkg_t</definition>
+        <argsstring></argsstring>
+        <name>dev_sensor_pkg_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1a920a46e2013a28830701544d17e6f4ff" prot="public" static="no">
+        <type>struct <ref refid="struct__sensor__obj__t" kindref="compound">_sensor_obj_t</ref></type>
+        <definition>typedef struct _sensor_obj_t sensor_obj_t</definition>
+        <argsstring></argsstring>
+        <name>sensor_obj_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1aea92630fe9f24b04d4c6863afabdc0ae" prot="public" static="no">
+        <type>struct <ref refid="struct__sensor__node__t" kindref="compound">_sensor_node_t</ref></type>
+        <definition>typedef struct _sensor_node_t  sensor_node_t</definition>
+        <argsstring></argsstring>
+        <name>sensor_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="280" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1aeba90184587fa9b27ae46417e7a679ad" prot="public" static="no">
+        <type>struct <ref refid="struct__gps__time" kindref="compound">_gps_time</ref></type>
+        <definition>typedef struct _gps_time  gps_time_t</definition>
+        <argsstring></argsstring>
+        <name>gps_time_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1ac96ecb70e112f72ffa45392cacb2da56" prot="public" static="no">
+        <type>struct <ref refid="struct__dev__gps__data__t" kindref="compound">_dev_gps_data_t</ref></type>
+        <definition>typedef struct _dev_gps_data_t gps_data_t</definition>
+        <argsstring></argsstring>
+        <name>gps_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="318" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/><sp/>sensor<sp/>hal</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="base_8h" kindref="compound">hal/base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="soc_8h" kindref="compound">hal/soc/soc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound">hal/soc/gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="i2c_8h" kindref="compound">hal/soc/i2c.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="sensor_8h_1a1540a0e55fa3b3ba5df2a23bb5ff87bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_REG_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="sensor_8h_1af284c924eb6ba85f047eea43a6ea8c73" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_DATA_LEN<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="sensor_8h_1acddc25e324b5e592de0a5fc7d0c20926" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_OP_RETRIES<sp/><sp/><sp/><sp/>AOS_WAIT_FOREVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ioctl<sp/>cmd<sp/>list<sp/>for<sp/>sensor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="sensor_8h_1a8511e4e78126f49c10752120dd13a9ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_ODR_SET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="sensor_8h_1a758969ed98e314a8cc0da36a1df910b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_RANGE_SET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="sensor_8h_1a4847504ff23f67df96f4c3135be2d4e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_GET_INFO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="sensor_8h_1a693ce3003c5fa39f170121d9ae5b7972" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_BIST_PROCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="sensor_8h_1aee63c7ec7af68540e80e4dd5e1971d6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_WHO_AM_I<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="sensor_8h_1a37a5dc9e3354faf6225f4fb5fee8fd5e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_SET_POWER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="sensor_8h_1a7f584dc6d28f4a06559db9c96b4b3331" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_IOCTL_GET_SENSOR_LIST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01&lt;&lt;6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>likely</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="sensor_8h_1a217a0bd562b98ae8c2ffce44935351e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>likely(x)<sp/>__builtin_expect(!!(x),<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>unlikely</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="sensor_8h_1ac6c45889010c1bd68631771b64f18101" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>unlikely(x)<sp/>__builtin_expect(!!(x),<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Physical<sp/>generic<sp/>sensor<sp/>data<sp/>defs<sp/>generic<sp/>structs<sp/>here*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="sensor_8h_1a06fc84a5b079a7fe3be9cb630208056c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_AXIS_X<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="sensor_8h_1a95c1aaf69816da8f612de576edbb9abd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_AXIS_Y<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="sensor_8h_1a2b7781d748aa0c042ca9ce9ea3f7d40a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_AXIS_Z<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="sensor_8h_1a6aaf59a0a9237e73cd4a2058b2be8b08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_acc_path<sp/><sp/><sp/><sp/><sp/>&quot;/dev/acc&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="sensor_8h_1ae1256fd38a45568187c1c46e6e52414e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_mag_path<sp/><sp/><sp/><sp/><sp/>&quot;/dev/mag&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="sensor_8h_1a9c10d7f3b1ea46c7d88d1c1bce65d87e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_gyro_path<sp/><sp/><sp/><sp/>&quot;/dev/gyro&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="sensor_8h_1ad50872ed71d436788e204249d55c9ba7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_als_path<sp/><sp/><sp/><sp/><sp/>&quot;/dev/als&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="sensor_8h_1a1c578595707c84a969d0fda2c5545453" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_ps_path<sp/><sp/><sp/><sp/><sp/><sp/>&quot;/dev/ps&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="sensor_8h_1aa6d14484a94f7ac86aff448138d64bc0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_baro_path<sp/><sp/><sp/><sp/>&quot;/dev/baro&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="sensor_8h_1a71dabf65c531cb6bf41d9ce43fcc8abf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_temp_path<sp/><sp/><sp/><sp/>&quot;/dev/temp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="sensor_8h_1a9726fdfa294b7f72d10cf708d1069302" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_uv_path<sp/><sp/><sp/><sp/><sp/><sp/>&quot;/dev/uv&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="sensor_8h_1a2541b8deecdebd567ed4dd0b608919f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_humi_path<sp/><sp/><sp/><sp/>&quot;/dev/humi&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="sensor_8h_1a678844ad4f8f34cc413e9dbcd405a678" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_hall_path<sp/><sp/><sp/><sp/>&quot;/dev/hall&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="sensor_8h_1a78e9b135a79376fde3769049539da5b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_hr_path<sp/><sp/><sp/><sp/><sp/><sp/>&quot;/dev/hr&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="sensor_8h_1a8b15e4e765e7dc0e83d0bc76eaa240b8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dev_gps_path<sp/><sp/><sp/><sp/><sp/>&quot;/dev/gps&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="sensor_8h_1ad779360505d1213912507e2efdf7e8d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sensor_node_path<sp/>&quot;/dev/sensor&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="sensor_8h_1a319f56b49b357ce1291cdb8040763fdc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gps_node_path<sp/><sp/><sp/><sp/>&quot;/dev/nodegps&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="sensor_8h_1ad3ca708455d86822f33226829d443599" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPS_STR<sp/><sp/><sp/><sp/><sp/>&quot;gps:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="sensor_8h_1aa4190339b2e98cd8e022ae83caecb441" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_STR<sp/><sp/>&quot;sensor:<sp/>&quot;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sensor<sp/>debug<sp/>header<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="sensor_8h_1aa8eb0ea69576396000ea9a91bdbeeba5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERROR_LINE<sp/><sp/>&quot;error<sp/>on<sp/>line<sp/>is<sp/>&quot;<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="sensor_8h_1affba7751bdee8398b0bb2bfb1c090ffd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCELEROMETER_UNIT_FACTOR<sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/>//mg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="sensor_8h_1a0db1193302f672c1bf100fca58951eb1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAGNETOMETER_UNIT_FACTOR<sp/><sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/>//mGauss</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="sensor_8h_1a05c1abb63c4aea34a92d7cd539ab71b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYROSCOPE_UNIT_FACTOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000000<sp/>//uDPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>add<sp/>the<sp/>new<sp/>sensor<sp/>type<sp/>into<sp/>the<sp/>last<sp/>postion<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a351e6c23e8eec19ff17a917ac5f8d3fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a351e6c23e8eec19ff17a917ac5f8d3fa" kindref="member">TAG_DEV_ACC</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Accelerometer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524abd0a4cb443cf591b7a8e2fb1651b8073" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524abd0a4cb443cf591b7a8e2fb1651b8073" kindref="member">TAG_DEV_MAG</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Magnetometer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a9653074604b92cd0661c69714c385234" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a9653074604b92cd0661c69714c385234" kindref="member">TAG_DEV_GYRO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Gyroscope<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524aa58b695a22d33a8796b73e3ee076bc6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524aa58b695a22d33a8796b73e3ee076bc6b" kindref="member">TAG_DEV_ALS</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Ambient<sp/>light<sp/>sensor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ac40ca7d1e2c5116dfc0ce6eb94f0c099" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ac40ca7d1e2c5116dfc0ce6eb94f0c099" kindref="member">TAG_DEV_PS</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Proximity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a9187ba668ae8a8b9d66e2481135959de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a9187ba668ae8a8b9d66e2481135959de" kindref="member">TAG_DEV_BARO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Barometer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a840590388e5bd1d8bafd59435c867834" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a840590388e5bd1d8bafd59435c867834" kindref="member">TAG_DEV_TEMP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Temperature<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a994b0fcabbabb48ca81ba1b168fac0da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a994b0fcabbabb48ca81ba1b168fac0da" kindref="member">TAG_DEV_UV</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Ultraviolet<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a60c998c8edb11da98b5e0c4c5a95b9ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a60c998c8edb11da98b5e0c4c5a95b9ca" kindref="member">TAG_DEV_HUMI</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Humidity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a358efcb65d0f7a08fd79ead2f98bb0e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a358efcb65d0f7a08fd79ead2f98bb0e9" kindref="member">TAG_DEV_HALL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>HALL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a5a1d398cea68e3ecd8f2f564242cba49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524a5a1d398cea68e3ecd8f2f564242cba49" kindref="member">TAG_DEV_HR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Heart<sp/>Rate<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ae38ffdeb7cf792acd57a79adc7dbe52e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ae38ffdeb7cf792acd57a79adc7dbe52e" kindref="member">TAG_DEV_GPS</ref>,</highlight></codeline>
+<codeline lineno="80" refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ad2967d42944fc323e8bf2f5c74237776" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ad2967d42944fc323e8bf2f5c74237776" kindref="member">TAG_DEV_SENSOR_NUM_MAX</ref>,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" kindref="member">sensor_tag_e</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba3462a905f68581cc36b102f6cfe32c34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba3462a905f68581cc36b102f6cfe32c34" kindref="member">DEV_SENSOR_VENDOR_STM</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="86" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6bab2115183e211a489da376d4ec8c1f64c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6bab2115183e211a489da376d4ec8c1f64c" kindref="member">DEV_SENSOR_VENDOR_SEMTECH</ref>,</highlight></codeline>
+<codeline lineno="87" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6badda6d811a66d194efa6617f5c274a916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6badda6d811a66d194efa6617f5c274a916" kindref="member">DEV_SENSOR_VENDOR_AKM</ref>,</highlight></codeline>
+<codeline lineno="88" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baf3ada00f59f76fa88199ad0d49235802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baf3ada00f59f76fa88199ad0d49235802" kindref="member">DEV_SENSOR_VENDOR_CAPELLA</ref>,</highlight></codeline>
+<codeline lineno="89" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6bae3385957944c5002697147b098e46907" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6bae3385957944c5002697147b098e46907" kindref="member">DEV_SENSOR_VENDOR_INVENSENSE</ref>,</highlight></codeline>
+<codeline lineno="90" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba2b2a9fbf16fad55b41edf163cb09893e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba2b2a9fbf16fad55b41edf163cb09893e" kindref="member">DEV_SENSOR_VENDOR_ROHM</ref>,</highlight></codeline>
+<codeline lineno="91" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba0581ba254131cf2214f108f8d3f3c24e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba0581ba254131cf2214f108f8d3f3c24e" kindref="member">DEV_SENSOR_VENDOR_BOSCH</ref>,</highlight></codeline>
+<codeline lineno="92" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba50d91206090602b66df2955b1fed0257" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba50d91206090602b66df2955b1fed0257" kindref="member">DEV_SENSOR_VENDOR_KIONIX</ref>,</highlight></codeline>
+<codeline lineno="93" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baba22ccf3e3a1eaa900dad6c883744f20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baba22ccf3e3a1eaa900dad6c883744f20" kindref="member">DEV_SENSOR_VENDOR_LITEON</ref>,</highlight></codeline>
+<codeline lineno="94" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baf93986b981d228100ad633fed83c40e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6baf93986b981d228100ad633fed83c40e8" kindref="member">DEV_SENSOR_VENDOR_AMS</ref>,</highlight></codeline>
+<codeline lineno="95" refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba30a27a71e36159c41cb5815d6b6cbda0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6ba30a27a71e36159c41cb5815d6b6cbda0" kindref="member">DEV_SENSOR_VENDOR_CNT_MAXIM</ref>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}<sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6b" kindref="member">vendor_id_e</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/></highlight></codeline>
+<codeline lineno="99" refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580ae2950038fbdd8ec09bbdca18951868b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580ae2950038fbdd8ec09bbdca18951868b4" kindref="member">I2C_PORT</ref>,</highlight></codeline>
+<codeline lineno="100" refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580a55fb0837a2af39ef0dbf6e93cd7da5f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580a55fb0837a2af39ef0dbf6e93cd7da5f1" kindref="member">SPI_PORT</ref>,</highlight></codeline>
+<codeline lineno="101" refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580ad50d936bb9d89ea868cff448df97913a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580ad50d936bb9d89ea868cff448df97913a" kindref="member">I2S_PORT</ref>,</highlight></codeline>
+<codeline lineno="102" refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580a9eb5c43b6d99880c5be6e2a33c3268b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580a9eb5c43b6d99880c5be6e2a33c3268b4" kindref="member">UART_PORT</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/><ref refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580" kindref="member">dev_io_port_e</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="106" refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a791131665a10788b88450c44a8dd144d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a791131665a10788b88450c44a8dd144d" kindref="member">DEV_POWER_OFF</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="107" refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a59221485cee66f51b375f8e53c977ca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a59221485cee66f51b375f8e53c977ca1" kindref="member">DEV_POWER_ON</ref>,</highlight></codeline>
+<codeline lineno="108" refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a4aea5eea9ba4aaee1edf1439950959df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a4aea5eea9ba4aaee1edf1439950959df" kindref="member">DEV_SLEEP</ref>,</highlight></codeline>
+<codeline lineno="109" refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0af24099ca2ed5dd3fbeed1a97b72bb9c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0af24099ca2ed5dd3fbeed1a97b72bb9c7" kindref="member">DEV_SUSPEND</ref>,</highlight></codeline>
+<codeline lineno="110" refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a74741b665ec43e2d5190db5ae4e0d389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0a74741b665ec43e2d5190db5ae4e0d389" kindref="member">DEV_DEEP_SUSPEND</ref>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0" kindref="member">dev_power_mode_e</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="114" refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971a74f780e10aabedc1531f772b3eed790a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971a74f780e10aabedc1531f772b3eed790a" kindref="member">DEV_HEALTH_GOOD</ref>,</highlight></codeline>
+<codeline lineno="115" refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971a4dfd17e81b2a5f46aaa2e0c39b85fe47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971a4dfd17e81b2a5f46aaa2e0c39b85fe47" kindref="member">DEV_HEALTH_SICK</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}<sp/><ref refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971" kindref="member">dev_health_state_e</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="120" refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055acd3bb3d121f76896c2c51b609f7dd661" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055acd3bb3d121f76896c2c51b609f7dd661" kindref="member">DEV_POLLING</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="121" refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055a44fefcb158ca44dbc2b085c48574474b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055a44fefcb158ca44dbc2b085c48574474b" kindref="member">DEV_INT</ref>,</highlight></codeline>
+<codeline lineno="122" refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055a5f7dafcc53a7eebc3b137049d766f41e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055a5f7dafcc53a7eebc3b137049d766f41e" kindref="member">DEV_DATA_READY</ref>,</highlight></codeline>
+<codeline lineno="123" refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055a53ff22031f5ee4f52c9ee338ce149254" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055a53ff22031f5ee4f52c9ee338ce149254" kindref="member">DEV_FIFO</ref>,</highlight></codeline>
+<codeline lineno="124" refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055ab71e3a52bd4b9e765c2199cdf3b6ab08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055ab71e3a52bd4b9e765c2199cdf3b6ab08" kindref="member">DEV_MODE_INV</ref></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}<sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055" kindref="member">work_mode_e</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="128" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da58c4835d62247124669060277fdb280c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da58c4835d62247124669060277fdb280c" kindref="member">mg</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="129" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146daf9450a550edf8479be8e3098d8a926de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146daf9450a550edf8479be8e3098d8a926de" kindref="member">uGauss</ref>,</highlight></codeline>
+<codeline lineno="130" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da2a560fbbce2aca43d9a295e30dfcc9b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da2a560fbbce2aca43d9a295e30dfcc9b9" kindref="member">udps</ref>,</highlight></codeline>
+<codeline lineno="131" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146dad121778696814ec1ff4ac40a1df4976b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146dad121778696814ec1ff4ac40a1df4976b" kindref="member">lux</ref>,</highlight></codeline>
+<codeline lineno="132" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da298e66f2fa17989b011c1d6d2a32856c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da298e66f2fa17989b011c1d6d2a32856c" kindref="member">cm</ref>,</highlight></codeline>
+<codeline lineno="133" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da18b7e212fdac381b48cc5ac464c0d38b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da18b7e212fdac381b48cc5ac464c0d38b" kindref="member">pa</ref>,</highlight></codeline>
+<codeline lineno="134" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da963a6463bd651650981260bb549d35a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da963a6463bd651650981260bb549d35a2" kindref="member">permillage</ref>,</highlight></codeline>
+<codeline lineno="135" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da72a3830f9ff2302ae9071c30905250fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da72a3830f9ff2302ae9071c30905250fc" kindref="member">bpm</ref>,</highlight></codeline>
+<codeline lineno="136" refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da24a497cfe29c4969b1a852417604a91b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146da24a497cfe29c4969b1a852417604a91b" kindref="member">dCelsius</ref>,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146d" kindref="member">value_unit_e</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="struct__dev__accel__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__accel__data__t" kindref="compound">_dev_accel_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="141" refid="struct__dev__accel__data__t_1a34484149a5258de2fdc8d376bcc806ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__accel__data__t_1a34484149a5258de2fdc8d376bcc806ba" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="142" refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><ref refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" kindref="member">data</ref>[3];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>AOS_SENSOR_ACC_SUPPORT_STEP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>step;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}<ref refid="sensor_8h_1a5fc410a04216950975eef9d917a84939" kindref="member">accel_data_t</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="struct__dev__gyro__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__gyro__data__t" kindref="compound">_dev_gyro_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="149" refid="struct__dev__gyro__data__t_1af82c4cf7891ec2a406875ec9af57d73b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__gyro__data__t_1af82c4cf7891ec2a406875ec9af57d73b" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="150" refid="struct__dev__gyro__data__t_1a96c10592841623a0330dfaf7aca6fa52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><ref refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" kindref="member">data</ref>[3];</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<ref refid="sensor_8h_1af8f9f56742de1e56198dee6d4233fd7f" kindref="member">gyro_data_t</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="struct__dev__mag__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__mag__data__t" kindref="compound">_dev_mag_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="154" refid="struct__dev__mag__data__t_1a1a55bcdfd095f6deeaf7a93a27fd9caf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__mag__data__t_1a1a55bcdfd095f6deeaf7a93a27fd9caf" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="155" refid="struct__dev__mag__data__t_1a95b7102bcfa7bd5ff19e8202a9fc1964" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><ref refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" kindref="member">data</ref>[3];</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}<ref refid="sensor_8h_1a25dab1755c8f14752c95f0e193d15e73" kindref="member">mag_data_t</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="struct__dev__barometer__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__barometer__data__t" kindref="compound">_dev_barometer_data_t</ref>{</highlight></codeline>
+<codeline lineno="159" refid="struct__dev__barometer__data__t_1a323882d54852ffc37737f10b7c8487e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__barometer__data__t_1a323882d54852ffc37737f10b7c8487e1" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="160" refid="struct__dev__barometer__data__t_1a9b9903edb81c1b8dae3253c78b998054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__dev__barometer__data__t_1a9b9903edb81c1b8dae3253c78b998054" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}<ref refid="sensor_8h_1a31476c92b92f58dcd87ff4e23c5e5935" kindref="member">barometer_data_t</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="struct__dev__temperature__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__temperature__data__t" kindref="compound">_dev_temperature_data_t</ref>{</highlight></codeline>
+<codeline lineno="164" refid="struct__dev__temperature__data__t_1a3e3ca948d29b8a307c976ddd807b499a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__temperature__data__t_1a3e3ca948d29b8a307c976ddd807b499a" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="165" refid="struct__dev__temperature__data__t_1a52af15e1fac20940025146162a6a4a41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><ref refid="struct__dev__temperature__data__t_1a52af15e1fac20940025146162a6a4a41" kindref="member">t</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}<ref refid="sensor_8h_1a87919c4ca3155dd2a2a98118ccb4c096" kindref="member">temperature_data_t</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="struct__dev__humidity__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__humidity__data__t" kindref="compound">_dev_humidity_data_t</ref>{</highlight></codeline>
+<codeline lineno="169" refid="struct__dev__humidity__data__t_1afffe0428609f00e15b71e28846dc6904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__humidity__data__t_1afffe0428609f00e15b71e28846dc6904" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="170" refid="struct__dev__humidity__data__t_1a54e71626bff7604b004d122ad83cf335" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__dev__humidity__data__t_1a54e71626bff7604b004d122ad83cf335" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<ref refid="sensor_8h_1a36372615d7a54d0be2706f3ed067e521" kindref="member">humidity_data_t</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="struct__dev__als__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__als__data__t" kindref="compound">_dev_als_data_t</ref>{</highlight></codeline>
+<codeline lineno="174" refid="struct__dev__als__data__t_1ae35cb16ec6b30f158cc5fd2767f7f2a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__als__data__t_1ae35cb16ec6b30f158cc5fd2767f7f2a1" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="175" refid="struct__dev__als__data__t_1ab8e3fa027bcc82e6388e2350c0b6ae0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__dev__als__data__t_1ab8e3fa027bcc82e6388e2350c0b6ae0b" kindref="member">lux</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}<ref refid="sensor_8h_1affba08de40eb005b7e4d52de151a2c61" kindref="member">als_data_t</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="struct__dev__uv__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__uv__data__t" kindref="compound">_dev_uv_data_t</ref>{</highlight></codeline>
+<codeline lineno="179" refid="struct__dev__uv__data__t_1a7befbfcb762fce1ec7bd3c6cd8ed8d1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__uv__data__t_1a7befbfcb762fce1ec7bd3c6cd8ed8d1d" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="180" refid="struct__dev__uv__data__t_1a8e772a9cbf724523ad7ae8f3eb37530f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct__dev__uv__data__t_1a8e772a9cbf724523ad7ae8f3eb37530f" kindref="member">uvi</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}<ref refid="sensor_8h_1aa19fe8abe2ed389811af05bbff66788b" kindref="member">uv_data_t</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="struct__dev__proximity__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__proximity__data__t" kindref="compound">_dev_proximity_data_t</ref>{</highlight></codeline>
+<codeline lineno="184" refid="struct__dev__proximity__data__t_1afbaf9eef31ec21a3916ba9dc6d7e21ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__proximity__data__t_1afbaf9eef31ec21a3916ba9dc6d7e21ec" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="185" refid="struct__dev__proximity__data__t_1aa0d6c830436f77b5a41c7a155a0513a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><ref refid="struct__dev__proximity__data__t_1aa0d6c830436f77b5a41c7a155a0513a2" kindref="member">present</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}<ref refid="sensor_8h_1aa8daa569f582ae8cf0d86701d5714d6b" kindref="member">proximity_data_t</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="struct__dev__hall__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__hall__data__t" kindref="compound">_dev_hall_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="189" refid="struct__dev__hall__data__t_1a37266226255a1f51b386cbc1108c2ef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__hall__data__t_1a37266226255a1f51b386cbc1108c2ef2" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="190" refid="struct__dev__hall__data__t_1a77c648e8fa504364bdafd19c170ddd41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="struct__dev__hall__data__t_1a77c648e8fa504364bdafd19c170ddd41" kindref="member">hall_level</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<ref refid="sensor_8h_1a9aceec788ed2b7c0248633751e223a26" kindref="member">hall_data_t</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="struct__dev__rgb__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__rgb__data__t" kindref="compound">_dev_rgb_data_t</ref>{</highlight></codeline>
+<codeline lineno="194" refid="struct__dev__rgb__data__t_1a6489e21e588b08bc7b7fde01eac43b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__rgb__data__t_1a6489e21e588b08bc7b7fde01eac43b48" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="195" refid="struct__dev__rgb__data__t_1a2cd06be1675984c3f43ce4b8cfb7c798" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" kindref="member">data</ref>[3];</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}<ref refid="sensor_8h_1a075b73fb24829f190432cb1769181ee8" kindref="member">rgb_data_t</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="struct__dev__ir__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__ir__data__t" kindref="compound">_dev_ir_data_t</ref>{</highlight></codeline>
+<codeline lineno="199" refid="struct__dev__ir__data__t_1a901058b4f1e8087a8dc2862f73feb86b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__ir__data__t_1a901058b4f1e8087a8dc2862f73feb86b" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="200" refid="struct__dev__ir__data__t_1ab69ef09a1a1c97938418c2a53ad2e5b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct__dev__ir__data__t_1ab69ef09a1a1c97938418c2a53ad2e5b7" kindref="member">ir</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}<ref refid="sensor_8h_1ad21bd5ae0b8bfff096a610fc2cab82b8" kindref="member">ir_data_t</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="struct__dev__ecg__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__ecg__data__t" kindref="compound">_dev_ecg_data_t</ref>{</highlight></codeline>
+<codeline lineno="204" refid="struct__dev__ecg__data__t_1a5102422089f6d17c7df62c9e9b80cbbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><sp/><ref refid="struct__dev__ecg__data__t_1a5102422089f6d17c7df62c9e9b80cbbe" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="205" refid="struct__dev__ecg__data__t_1a2d0edda5a2e341898dd4c71daff69cff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><sp/><sp/><ref refid="struct__dev__ecg__data__t_1a2d0edda5a2e341898dd4c71daff69cff" kindref="member">raw_data</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}<ref refid="sensor_8h_1aef8ed755829d8a4b531abf2a6a8f3fdd" kindref="member">ecg_data_t</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="struct__dev__heart__rate__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__heart__rate__data__t" kindref="compound">_dev_heart_rate_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="209" refid="struct__dev__heart__rate__data__t_1aa08e6e9362fac63079c7ae87c04af0f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__heart__rate__data__t_1aa08e6e9362fac63079c7ae87c04af0f8" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="210" refid="struct__dev__heart__rate__data__t_1a6ff36bd887e9ff9a4760dfefdd6f791f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="struct__dev__heart__rate__data__t_1a6ff36bd887e9ff9a4760dfefdd6f791f" kindref="member">hear_rate</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}<ref refid="sensor_8h_1a3a63e337111de2fc11b773fb231d63f5" kindref="member">heart_rate_data_t</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="struct__dev__blood__pressure__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__blood__pressure__data__t" kindref="compound">_dev_blood_pressure_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="214" refid="struct__dev__blood__pressure__data__t_1a95f8d18df160e87c9d3f23fb10292261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__dev__blood__pressure__data__t_1a95f8d18df160e87c9d3f23fb10292261" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="215" refid="struct__dev__blood__pressure__data__t_1aa1c66683358af12ce1f3d39778c64129" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct__dev__blood__pressure__data__t_1aa1c66683358af12ce1f3d39778c64129" kindref="member">systolic</ref>;</highlight></codeline>
+<codeline lineno="216" refid="struct__dev__blood__pressure__data__t_1a7b34e29087071587692f6186289d26bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct__dev__blood__pressure__data__t_1a7b34e29087071587692f6186289d26bc" kindref="member">diastolic</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<ref refid="sensor_8h_1a8c19de311ef01018b70a76d979fcd677" kindref="member">blood_pressure_t</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="struct__dev__sensor__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__sensor__config__t" kindref="compound">_dev_sensor_config_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="220" refid="struct__dev__sensor__config__t_1ad8e93a08e270b9925f1542cfe78295c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__config__t_1ad8e93a08e270b9925f1542cfe78295c1" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="221" refid="struct__dev__sensor__config__t_1a1d18878455a749b11f41033d2e565e82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__config__t_1a1d18878455a749b11f41033d2e565e82" kindref="member">range</ref>;</highlight></codeline>
+<codeline lineno="222" refid="struct__dev__sensor__config__t_1ab13ec060e6c8552bf546dfcb986e7cf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__config__t_1ab13ec060e6c8552bf546dfcb986e7cf4" kindref="member">odr</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}<ref refid="sensor_8h_1aebac9839ff3a2f8c943c139a5543df69" kindref="member">dev_sensor_config_t</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="struct__sensor__list__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__sensor__list__t" kindref="compound">_sensor_list_t</ref>{</highlight></codeline>
+<codeline lineno="226" refid="struct__sensor__list__t_1a0147bcda803936d61022a6a0970f85fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="struct__sensor__list__t_1a0147bcda803936d61022a6a0970f85fe" kindref="member">cnt</ref>;</highlight></codeline>
+<codeline lineno="227" refid="struct__sensor__list__t_1a9f789ed1e9c0946de84a1fc95b61db3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>list[<ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524ad2967d42944fc323e8bf2f5c74237776" kindref="member">TAG_DEV_SENSOR_NUM_MAX</ref>];</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}<ref refid="sensor_8h_1a88171ae7e2879709d6f25cdd184b174e" kindref="member">sensor_list_t</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="struct__dev__sensor__info__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__sensor__info__t" kindref="compound">_dev_sensor_info_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="231" refid="struct__dev__sensor__info__t_1ade135e4653f3e5f725564e018c3d0283" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6b" kindref="member">vendor_id_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t_1ade135e4653f3e5f725564e018c3d0283" kindref="member">vendor</ref>;</highlight></codeline>
+<codeline lineno="232" refid="struct__dev__sensor__info__t_1a99af6e5fb4d0d3725965f8580334d3ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t_1a99af6e5fb4d0d3725965f8580334d3ab" kindref="member">model</ref>;</highlight></codeline>
+<codeline lineno="233" refid="struct__dev__sensor__info__t_1afbabd76e4c8634d5a35eaba32691153d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146d" kindref="member">value_unit_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t_1afbabd76e4c8634d5a35eaba32691153d" kindref="member">unit</ref>;</highlight></codeline>
+<codeline lineno="234" refid="struct__dev__sensor__info__t_1a500acdae77fb0cdf37ef3b1d375f1e3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t_1a500acdae77fb0cdf37ef3b1d375f1e3e" kindref="member">range_max</ref>;</highlight></codeline>
+<codeline lineno="235" refid="struct__dev__sensor__info__t_1a3a881b3967251ab0d098a291ed37aa5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t_1a3a881b3967251ab0d098a291ed37aa5c" kindref="member">range_min</ref>;</highlight></codeline>
+<codeline lineno="236" refid="struct__dev__sensor__info__t_1ac0c30e50f96e0683c9c93c6d9c722e0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971" kindref="member">dev_health_state_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t_1ac0c30e50f96e0683c9c93c6d9c722e0d" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sensor_list_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}<ref refid="sensor_8h_1a15d91b8dc735b2ae99308bacb3efdf11" kindref="member">dev_sensor_info_t</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="struct__dev__sensor__full__info__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__sensor__full__info__t" kindref="compound">_dev_sensor_full_info_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="241" refid="struct__dev__sensor__full__info__t_1a5ab1e6faae79ce09a9603f6f0931967a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t" kindref="compound">dev_sensor_info_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__full__info__t_1a5ab1e6faae79ce09a9603f6f0931967a" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="242" refid="struct__dev__sensor__full__info__t_1ab0eefa2334bbfc5e2c4642c7c256eaa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__config__t" kindref="compound">dev_sensor_config_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__full__info__t_1ab0eefa2334bbfc5e2c4642c7c256eaa1" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}<ref refid="sensor_8h_1a14318e5f65e03c6a40c34cfb1f7a748c" kindref="member">dev_sensor_full_info_t</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="struct__dev__sensor__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__sensor__data__t" kindref="compound">_dev_sensor_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="246" refid="struct__dev__sensor__data__t_1a6f1e395aa55e23679b721a25c5d8a101" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__data__t_1a6f1e395aa55e23679b721a25c5d8a101" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="247" refid="struct__dev__sensor__data__t_1aaea54e9b0c156a5c2a3bccea83b8feba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" kindref="member">data</ref>[3];</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}<ref refid="sensor_8h_1af47d40763bf7856fb8ea76c314658bad" kindref="member">dev_sensor_data_t</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="struct__dev__sensor__pkg__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__sensor__pkg__t" kindref="compound">_dev_sensor_pkg_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="251" refid="struct__dev__sensor__pkg__t_1a23ed61169f5d69121bb9b9c3a4c0dba4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" kindref="member">sensor_tag_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__pkg__t_1a23ed61169f5d69121bb9b9c3a4c0dba4" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="253" refid="struct__dev__sensor__pkg__t_1ad7baced7a7fda4b29928992c7cbce9a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__info__t" kindref="compound">dev_sensor_info_t</ref><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__pkg__t_1ad7baced7a7fda4b29928992c7cbce9a8" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="254" refid="struct__dev__sensor__pkg__t_1a8f5534aa8404fa2dc053df3080f074d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__config__t" kindref="compound">dev_sensor_config_t</ref><sp/><sp/><ref refid="struct__dev__sensor__pkg__t_1a8f5534aa8404fa2dc053df3080f074d7" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="255" refid="struct__dev__sensor__pkg__t_1a85f16d935c5e05f1de09ea0121aeac74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__data__t" kindref="compound">dev_sensor_data_t</ref><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__pkg__t_1a85f16d935c5e05f1de09ea0121aeac74" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}allocator;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}<ref refid="sensor_8h_1a1c69e13a63c73d5d4ba649ccdb67b2e1" kindref="member">dev_sensor_pkg_t</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="struct__sensor__obj__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__sensor__obj__t" kindref="compound">_sensor_obj_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="260" refid="struct__sensor__obj__t_1a90ad45189811a1a58fca8ca53c22fb6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1a90ad45189811a1a58fca8ca53c22fb6a" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="261" refid="struct__sensor__obj__t_1a0e9acb8c14eed3faa19e5e3ccb6a7aab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" kindref="member">sensor_tag_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1a0e9acb8c14eed3faa19e5e3ccb6a7aab" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="262" refid="struct__sensor__obj__t_1a1bccf914e6c3a8166a906c3a246bf69d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad9332e2e68f211aa1445d3cbe9e5a580" kindref="member">dev_io_port_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1a1bccf914e6c3a8166a906c3a246bf69d" kindref="member">io_port</ref>;</highlight></codeline>
+<codeline lineno="263" refid="struct__sensor__obj__t_1abb3e69c5349ec5975fd266afd896f279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1ad245576a63ccad08bc7a42819148d055" kindref="member">work_mode_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1abb3e69c5349ec5975fd266afd896f279" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="264" refid="struct__sensor__obj__t_1a9b890fee3af00011298949f3b28f7abe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a4e0629ead33befddc818a81f731af7c0" kindref="member">dev_power_mode_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1a9b890fee3af00011298949f3b28f7abe" kindref="member">power</ref>;</highlight></codeline>
+<codeline lineno="265" refid="struct__sensor__obj__t_1a68705608ee165cf62cc53a363c5aa1cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgpio__dev__t" kindref="compound">gpio_dev_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1a68705608ee165cf62cc53a363c5aa1cf" kindref="member">gpio</ref>;</highlight></codeline>
+<codeline lineno="266" refid="struct__sensor__obj__t_1a81f48ce68f966089d6c785b2a16fa279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__dev__sensor__full__info__t" kindref="compound">dev_sensor_full_info_t</ref><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1a81f48ce68f966089d6c785b2a16fa279" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="267" refid="struct__sensor__obj__t_1ad6b2bcf09c9ef36105995c92d9073997" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__obj__t_1ad6b2bcf09c9ef36105995c92d9073997" kindref="member">ref</ref>;</highlight></codeline>
+<codeline lineno="268" refid="struct__sensor__obj__t_1a34d94480bb3c4be267260a2e02de9b14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*open)(void);</highlight></codeline>
+<codeline lineno="269" refid="struct__sensor__obj__t_1aa1b2f5a900b61d4f697863f5beaa125d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*close)(void);</highlight></codeline>
+<codeline lineno="270" refid="struct__sensor__obj__t_1acaf71d41a9ba99e03721e639b7e3e04e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*read)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/>size_t);</highlight></codeline>
+<codeline lineno="271" refid="struct__sensor__obj__t_1a45b49f2e5d476178fc69b7cf4c01d410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*write)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="272" refid="struct__sensor__obj__t_1a89b1e64d4847b1b211d0e044b7c92d43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*ioctl)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmd,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>arg);</highlight></codeline>
+<codeline lineno="273" refid="struct__sensor__obj__t_1a5f30b6bb515efdaaa4001fdf66ca1d4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void(*irq_handle)(void);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}<ref refid="sensor_8h_1a920a46e2013a28830701544d17e6f4ff" kindref="member">sensor_obj_t</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="struct__sensor__node__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__sensor__node__t" kindref="compound">_sensor_node_t</ref>{</highlight></codeline>
+<codeline lineno="277" refid="struct__sensor__node__t_1aa944c5ba35deb514b694a5dc4cac806a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" kindref="member">sensor_tag_e</ref><sp/><sp/><ref refid="struct__sensor__node__t_1aa944c5ba35deb514b694a5dc4cac806a" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="278" refid="struct__sensor__node__t_1aad03e140cb1372009f97b437175d2993" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct__sensor__node__t_1aad03e140cb1372009f97b437175d2993" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="279" refid="struct__sensor__node__t_1a1ed9728890e7cc41c4cf18071528a7af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__sensor__node__t_1a1ed9728890e7cc41c4cf18071528a7af" kindref="member">fd</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}<sp/><ref refid="sensor_8h_1aea92630fe9f24b04d4c6863afabdc0ae" kindref="member">sensor_node_t</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="283" refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a84158f84eb5607b538fc37d3ef77de9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a84158f84eb5607b538fc37d3ef77de9d" kindref="member">ACC_RANGE_2G</ref>,</highlight></codeline>
+<codeline lineno="284" refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a72d083371e617372611eb37b36163e83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a72d083371e617372611eb37b36163e83" kindref="member">ACC_RANGE_4G</ref>,</highlight></codeline>
+<codeline lineno="285" refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a0c8db4ad9162a1d96be71279a8159521" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a0c8db4ad9162a1d96be71279a8159521" kindref="member">ACC_RANGE_8G</ref>,</highlight></codeline>
+<codeline lineno="286" refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a78916ef4ba39aed45e795dc4d47a5464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271a78916ef4ba39aed45e795dc4d47a5464" kindref="member">ACC_RANGE_16G</ref>,</highlight></codeline>
+<codeline lineno="287" refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271ad9e0c83d9cbc31d4d36c773531ee3abc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271ad9e0c83d9cbc31d4d36c773531ee3abc" kindref="member">ACC_RANGE_MAX</ref></highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}<ref refid="sensor_8h_1a2c30e1e27b2a74ea08cbffca6519b271" kindref="member">acc_range_e</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ead3e29a945f08db37d50a51be06e06537" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ead3e29a945f08db37d50a51be06e06537" kindref="member">GYRO_RANGE_125DPS</ref>,</highlight></codeline>
+<codeline lineno="292" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea48e989836555c00f1ef22f496e3ed253" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea48e989836555c00f1ef22f496e3ed253" kindref="member">GYRO_RANGE_250DPS</ref>,</highlight></codeline>
+<codeline lineno="293" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95eac1fe6948a3d54f8b34def61edbed8c11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95eac1fe6948a3d54f8b34def61edbed8c11" kindref="member">GYRO_RANGE_500DPS</ref>,</highlight></codeline>
+<codeline lineno="294" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea1fdbddf7dfa338f2327022bfc5961657" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea1fdbddf7dfa338f2327022bfc5961657" kindref="member">GYRO_RANGE_1000DPS</ref>,</highlight></codeline>
+<codeline lineno="295" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea1c12697ff4f35e609688d5bdd873de02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea1c12697ff4f35e609688d5bdd873de02" kindref="member">GYRO_RANGE_2000DPS</ref>,</highlight></codeline>
+<codeline lineno="296" refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea53210b4c9291676c2ee96d24276ff10d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95ea53210b4c9291676c2ee96d24276ff10d" kindref="member">GYRO_RANGE_MAX</ref></highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}<ref refid="sensor_8h_1a2cd57d5ab944914011f3e19787cea95e" kindref="member">gyro_range_e</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="struct__gps__time" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__gps__time" kindref="compound">_gps_time</ref></highlight></codeline>
+<codeline lineno="301"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="302" refid="struct__gps__time_1a479512fd09e6afc500dff8830f884011" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1a479512fd09e6afc500dff8830f884011" kindref="member">year</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="303" refid="struct__gps__time_1a4e5ca03b8431c06670f2f34d1cc154c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1a4e5ca03b8431c06670f2f34d1cc154c1" kindref="member">mon</ref>;</highlight></codeline>
+<codeline lineno="304" refid="struct__gps__time_1a928de964873f4b852f84dac919e54262" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1a928de964873f4b852f84dac919e54262" kindref="member">day</ref>;</highlight></codeline>
+<codeline lineno="305" refid="struct__gps__time_1a8ca5b4519b473346e3cc5580ae8031a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1a8ca5b4519b473346e3cc5580ae8031a3" kindref="member">hour</ref>;</highlight></codeline>
+<codeline lineno="306" refid="struct__gps__time_1aa070321f4a903a2a92b7eb3eadea73f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1aa070321f4a903a2a92b7eb3eadea73f2" kindref="member">min</ref>;</highlight></codeline>
+<codeline lineno="307" refid="struct__gps__time_1a750dd4dee4770a571845951ab76d2aa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1a750dd4dee4770a571845951ab76d2aa2" kindref="member">sec</ref>;</highlight></codeline>
+<codeline lineno="308" refid="struct__gps__time_1a0c396fd4cbfb4c0c44f5f3909cda2be2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct__gps__time_1a0c396fd4cbfb4c0c44f5f3909cda2be2" kindref="member">hsec</ref>;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}<sp/><ref refid="sensor_8h_1aeba90184587fa9b27ae46417e7a679ad" kindref="member">gps_time_t</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="struct__dev__gps__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dev__gps__data__t" kindref="compound">_dev_gps_data_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="313" refid="struct__dev__gps__data__t_1ac425e27eedae4e010a844a21461f8dd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><sp/><sp/><sp/><ref refid="struct__dev__gps__data__t_1ac425e27eedae4e010a844a21461f8dd4" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="314" refid="struct__dev__gps__data__t_1ad8b6052a4faa52702c7fd0178e43c0ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__gps__time" kindref="compound">gps_time_t</ref><sp/><sp/><ref refid="struct__dev__gps__data__t_1ad8b6052a4faa52702c7fd0178e43c0ea" kindref="member">utc</ref>;</highlight></codeline>
+<codeline lineno="315" refid="struct__dev__gps__data__t_1a125fabc7e3ae9d2f7469db726c22734d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><ref refid="struct__dev__gps__data__t_1a125fabc7e3ae9d2f7469db726c22734d" kindref="member">lat</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="316" refid="struct__dev__gps__data__t_1a0e8252dbfec14270c6b64c9aa51131b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><ref refid="struct__dev__gps__data__t_1a0e8252dbfec14270c6b64c9aa51131b3" kindref="member">lon</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="317" refid="struct__dev__gps__data__t_1ad1ad99073ccafb7c66667731d745539c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><ref refid="struct__dev__gps__data__t_1ad1ad99073ccafb7c66667731d745539c" kindref="member">elv</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}<ref refid="sensor_8h_1ac96ecb70e112f72ffa45392cacb2da56" kindref="member">gps_data_t</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_SENSOR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h"/>
+  </compounddef>
+</doxygen>

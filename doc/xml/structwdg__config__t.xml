@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structwdg__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>wdg_config_t</compoundname>
+    <includes refid="wdg_8h" local="yes">wdg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwdg__config__t_1a516d44bf98c4ba69400135bb732d897e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wdg_config_t::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" line="9" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="202">
+        <label>wdg_config_t</label>
+        <link refid="structwdg__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" bodystart="8" bodyend="10"/>
+    <listofallmembers>
+      <member refid="structwdg__config__t_1a516d44bf98c4ba69400135bb732d897e" prot="public" virt="non-virtual"><scope>wdg_config_t</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

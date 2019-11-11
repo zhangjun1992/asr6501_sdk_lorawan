@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structqspi__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>qspi_dev_t</compoundname>
+    <includes refid="qspi_8h" local="yes">qspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structqspi__dev__t_1aa03bc4eccea123f4676bf139f30aec71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t qspi_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqspi__dev__t_1a9911822b0fded42ce229f2fcce4a43d5" prot="public" static="no" mutable="no">
+        <type><ref refid="structqspi__config__t" kindref="compound">qspi_config_t</ref></type>
+        <definition>qspi_config_t qspi_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="14" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqspi__dev__t_1a6e186a4e6d5ca754603a867c8f3ebac4" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* qspi_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="15" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="169">
+        <label>qspi_config_t</label>
+        <link refid="structqspi__config__t"/>
+      </node>
+      <node id="168">
+        <label>qspi_dev_t</label>
+        <link refid="structqspi__dev__t"/>
+        <childnode refid="169" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="12" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structqspi__dev__t_1a9911822b0fded42ce229f2fcce4a43d5" prot="public" virt="non-virtual"><scope>qspi_dev_t</scope><name>config</name></member>
+      <member refid="structqspi__dev__t_1aa03bc4eccea123f4676bf139f30aec71" prot="public" virt="non-virtual"><scope>qspi_dev_t</scope><name>port</name></member>
+      <member refid="structqspi__dev__t_1a6e186a4e6d5ca754603a867c8f3ebac4" prot="public" virt="non-virtual"><scope>qspi_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structnor__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>nor_config_t</compoundname>
+    <includes refid="nor_8h" local="yes">nor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnor__config__t_1ae885923cc8d310b20f8fd4d8a2a0da82" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nor_config_t::block_size</definition>
+        <argsstring></argsstring>
+        <name>block_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="9" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnor__config__t_1ade7d6b013e51382d190101226e4d99ca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nor_config_t::chip_size</definition>
+        <argsstring></argsstring>
+        <name>chip_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="10" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="152">
+        <label>nor_config_t</label>
+        <link refid="structnor__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structnor__config__t_1ae885923cc8d310b20f8fd4d8a2a0da82" prot="public" virt="non-virtual"><scope>nor_config_t</scope><name>block_size</name></member>
+      <member refid="structnor__config__t_1ade7d6b013e51382d190101226e4d99ca" prot="public" virt="non-virtual"><scope>nor_config_t</scope><name>chip_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__wifi__event__cb__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_wifi_event_cb_t</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1a9ae38c6f66bbbca462248729ac62bbed" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::connect_fail) (hal_wifi_module_t *m, int err, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, int err, void *arg)</argsstring>
+        <name>connect_fail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="142" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1a26e52baf5969a54bf61a4d39d32e8e83" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::ip_got) (hal_wifi_module_t *m, hal_wifi_ip_stat_t *pnet, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_ip_stat_t *pnet, void *arg)</argsstring>
+        <name>ip_got</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="143" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1a5ad9e64a48dbcc03e9ee7c4965142dd8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::stat_chg) (hal_wifi_module_t *m, hal_wifi_event_t stat, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_event_t stat, void *arg)</argsstring>
+        <name>stat_chg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="144" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1a1475767c8c0fe9b0b142ffdec67b2d91" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::scan_compeleted) (hal_wifi_module_t *m, hal_wifi_scan_result_t *result, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_scan_result_t *result, void *arg)</argsstring>
+        <name>scan_compeleted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="145" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1a43a7c08333d37fa391bc7f631afe3b40" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::scan_adv_compeleted) (hal_wifi_module_t *m, hal_wifi_scan_result_adv_t *result, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_scan_result_adv_t *result, void *arg)</argsstring>
+        <name>scan_adv_compeleted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="147" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1ab93fdd5be84b245935e7dfbff14da4b1" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::para_chg) (hal_wifi_module_t *m, hal_wifi_ap_info_adv_t *ap_info, char *key, int key_len, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_ap_info_adv_t *ap_info, char *key, int key_len, void *arg)</argsstring>
+        <name>para_chg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="149" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__event__cb__t_1ae0bfec3b6833156df75b6dfdffffedaf" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_event_cb_t::fatal_err) (hal_wifi_module_t *m, void *arg)</definition>
+        <argsstring>)(hal_wifi_module_t *m, void *arg)</argsstring>
+        <name>fatal_err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="151" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="112">
+        <label>hal_wifi_event_cb_t</label>
+        <link refid="structhal__wifi__event__cb__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="141" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="141" bodyend="152"/>
+    <listofallmembers>
+      <member refid="structhal__wifi__event__cb__t_1a9ae38c6f66bbbca462248729ac62bbed" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>connect_fail</name></member>
+      <member refid="structhal__wifi__event__cb__t_1ae0bfec3b6833156df75b6dfdffffedaf" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>fatal_err</name></member>
+      <member refid="structhal__wifi__event__cb__t_1a26e52baf5969a54bf61a4d39d32e8e83" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>ip_got</name></member>
+      <member refid="structhal__wifi__event__cb__t_1ab93fdd5be84b245935e7dfbff14da4b1" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>para_chg</name></member>
+      <member refid="structhal__wifi__event__cb__t_1a43a7c08333d37fa391bc7f631afe3b40" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>scan_adv_compeleted</name></member>
+      <member refid="structhal__wifi__event__cb__t_1a1475767c8c0fe9b0b142ffdec67b2d91" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>scan_compeleted</name></member>
+      <member refid="structhal__wifi__event__cb__t_1a5ad9e64a48dbcc03e9ee7c4965142dd8" prot="public" virt="non-virtual"><scope>hal_wifi_event_cb_t</scope><name>stat_chg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

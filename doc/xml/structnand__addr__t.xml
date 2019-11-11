@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structnand__addr__t" kind="struct" language="C++" prot="public">
+    <compoundname>nand_addr_t</compoundname>
+    <includes refid="nand_8h" local="yes">nand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnand__addr__t_1ac41455d4d78495defb47d4029d6dde02" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t nand_addr_t::page</definition>
+        <argsstring></argsstring>
+        <name>page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="17" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__addr__t_1a7d73467e6ab83dc27d4ea43f2f1252fa" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t nand_addr_t::block</definition>
+        <argsstring></argsstring>
+        <name>block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="18" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnand__addr__t_1abfaf6e8b5db5d7391a4655c74ec629e0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t nand_addr_t::zone</definition>
+        <argsstring></argsstring>
+        <name>zone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="19" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="145">
+        <label>nand_addr_t</label>
+        <link refid="structnand__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="16" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" bodystart="16" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structnand__addr__t_1a7d73467e6ab83dc27d4ea43f2f1252fa" prot="public" virt="non-virtual"><scope>nand_addr_t</scope><name>block</name></member>
+      <member refid="structnand__addr__t_1ac41455d4d78495defb47d4029d6dde02" prot="public" virt="non-virtual"><scope>nand_addr_t</scope><name>page</name></member>
+      <member refid="structnand__addr__t_1abfaf6e8b5db5d7391a4655c74ec629e0" prot="public" virt="non-virtual"><scope>nand_addr_t</scope><name>zone</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

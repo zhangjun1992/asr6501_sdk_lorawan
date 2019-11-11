@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__lrwan__radio__ctrl__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_lrwan_radio_ctrl_t</compoundname>
+    <includes refid="lorawan_8h" local="yes">lorawan.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__lrwan__radio__ctrl__t_1acf5e2e4cf8970652b87dc20a8dedd439" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_radio_ctrl_t::radio_reset) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>radio_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="51" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__radio__ctrl__t_1a9ca73f5730e063f7f70cbcba26e97877" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_radio_ctrl_t::radio_reset_cfg_input) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>radio_reset_cfg_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="52" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__radio__ctrl__t_1a5b31ceccf79004ec45fd20d765fc88a2" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_radio_ctrl_t::radio_rw_en) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>radio_rw_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="53" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__radio__ctrl__t_1ac5c628f2702a50df60a6429997efa508" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_radio_ctrl_t::radio_rw_dis) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>radio_rw_dis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="54" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__radio__ctrl__t_1a0805fd1077ab26b1a74cda8de5453d1b" prot="public" static="no" mutable="no">
+        <type>uint16_t(*</type>
+        <definition>uint16_t(* hal_lrwan_radio_ctrl_t::radio_rw) (uint16_t tx_data)</definition>
+        <argsstring>)(uint16_t tx_data)</argsstring>
+        <name>radio_rw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="55" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="95">
+        <label>hal_lrwan_radio_ctrl_t</label>
+        <link refid="structhal__lrwan__radio__ctrl__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="50" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="49" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structhal__lrwan__radio__ctrl__t_1acf5e2e4cf8970652b87dc20a8dedd439" prot="public" virt="non-virtual"><scope>hal_lrwan_radio_ctrl_t</scope><name>radio_reset</name></member>
+      <member refid="structhal__lrwan__radio__ctrl__t_1a9ca73f5730e063f7f70cbcba26e97877" prot="public" virt="non-virtual"><scope>hal_lrwan_radio_ctrl_t</scope><name>radio_reset_cfg_input</name></member>
+      <member refid="structhal__lrwan__radio__ctrl__t_1a0805fd1077ab26b1a74cda8de5453d1b" prot="public" virt="non-virtual"><scope>hal_lrwan_radio_ctrl_t</scope><name>radio_rw</name></member>
+      <member refid="structhal__lrwan__radio__ctrl__t_1ac5c628f2702a50df60a6429997efa508" prot="public" virt="non-virtual"><scope>hal_lrwan_radio_ctrl_t</scope><name>radio_rw_dis</name></member>
+      <member refid="structhal__lrwan__radio__ctrl__t_1a5b31ceccf79004ec45fd20d765fc88a2" prot="public" virt="non-virtual"><scope>hal_lrwan_radio_ctrl_t</scope><name>radio_rw_en</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

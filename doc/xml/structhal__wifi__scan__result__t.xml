@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__wifi__scan__result__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_wifi_scan_result_t</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__wifi__scan__result__t_1a70e7dab9792ab3190a629278ff72fa7a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hal_wifi_scan_result_t::ap_num</definition>
+        <argsstring></argsstring>
+        <name>ap_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="36" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__t_1a28c97ed35d441188d9a0c193c151eadb" prot="public" static="no" mutable="no">
+        <type><ref refid="structap__list__t" kindref="compound">ap_list_t</ref> *</type>
+        <definition>ap_list_t* hal_wifi_scan_result_t::ap_list</definition>
+        <argsstring></argsstring>
+        <name>ap_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="37" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="133">
+        <label>hal_wifi_scan_result_t</label>
+        <link refid="structhal__wifi__scan__result__t"/>
+        <childnode refid="134" relation="usage">
+          <edgelabel>+ap_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="134">
+        <label>ap_list_t</label>
+        <link refid="structap__list__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="35" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="35" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structhal__wifi__scan__result__t_1a28c97ed35d441188d9a0c193c151eadb" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_t</scope><name>ap_list</name></member>
+      <member refid="structhal__wifi__scan__result__t_1a70e7dab9792ab3190a629278ff72fa7a" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_t</scope><name>ap_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1012 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="list_8h" kind="file" language="C++">
+    <compoundname>list.h</compoundname>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <invincdepgraph>
+      <node id="147">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="150">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="154">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdlist__s" prot="public">dlist_s</innerclass>
+    <innerclass refid="structslist__s" prot="public">slist_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="list_8h_1a8cc696677b989b172f5ab8a938b06d1b" prot="public" static="no">
+        <name>aos_offsetof</name>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>((size_t)&amp;(((type *)0)-&gt;member))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="18" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1ab351f3482972778a52453d4cf00f273c" prot="public" static="no">
+        <name>aos_container_of</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>((type *) ((char *) (ptr) - <ref refid="list_8h_1a8cc696677b989b172f5ab8a938b06d1b" kindref="member">aos_offsetof</ref>(type, member)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="27" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1aa90e0ac71281846733410d0625524d02" prot="public" static="no">
+        <name>dlist_entry</name>
+        <param><defname>addr</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>((type *)((long)addr - <ref refid="list_8h_1a8cc696677b989b172f5ab8a938b06d1b" kindref="member">aos_offsetof</ref>(type, member)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="52" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1ad84316f170c0ed94abff6bee5ca3986d" prot="public" static="no">
+        <name>AOS_DLIST_INIT</name>
+        <param><defname>list</defname></param>
+        <initializer>{&amp;(list), &amp;(list)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="96" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1af1a183b22309a4a18139101e0b8dc5be" prot="public" static="no">
+        <name>dlist_first_entry</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer><ref refid="list_8h_1aa90e0ac71281846733410d0625524d02" kindref="member">dlist_entry</ref>((ptr)-&gt;next, type, member)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="105" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a85c0c0944bdf6463f332c38d02ee1b69" prot="public" static="no">
+        <name>dlist_for_each</name>
+        <param><defname>pos</defname></param>
+        <param><defname>head</defname></param>
+        <initializer>for (pos = (head)-&gt;next; pos != (head); pos = pos-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="114" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a3b0134cd9d9839dbf4188a814fe19bd2" prot="public" static="no">
+        <name>dlist_for_each_safe</name>
+        <param><defname>pos</defname></param>
+        <param><defname>n</defname></param>
+        <param><defname>head</defname></param>
+        <initializer>for (pos = (head)-&gt;next, n = pos-&gt;next; pos != (head); \
+    pos = n, n = pos-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="124" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1ac613bf70e3c79057a81c158113c50455" prot="public" static="no">
+        <name>dlist_for_each_entry</name>
+        <param><defname>queue</defname></param>
+        <param><defname>node</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>((queue)-&gt;next, type, member); \
+         &amp;node-&gt;member != (queue); \
+         node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>(node-&gt;member.next, type, member))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="136" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a32b2914cd25f6124306ae66c046deb1d" prot="public" static="no">
+        <name>dlist_for_each_entry_safe</name>
+        <param><defname>queue</defname></param>
+        <param><defname>n</defname></param>
+        <param><defname>node</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>((queue)-&gt;next, type, member),  \
+         n = (queue)-&gt;next ? (queue)-&gt;next-&gt;next : NULL;        \
+         &amp;node-&gt;member != (queue);                              \
+         node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>(n, type, member), n = n ? n-&gt;next : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="150" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a26c976b7f654e70df318c1843e5094de" prot="public" static="no">
+        <name>list_entry</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer><ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>(ptr, type, member)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="162" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1aaa882b0cf8af3cc7245e51a6b1095f4c" prot="public" static="no">
+        <name>dlist_for_each_entry_reverse</name>
+        <param><defname>pos</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>member</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>for (pos = <ref refid="list_8h_1a26c976b7f654e70df318c1843e5094de" kindref="member">list_entry</ref>((head)-&gt;prev, type, member);        \
+         &amp;pos-&gt;member != (head);                              \
+         pos = <ref refid="list_8h_1a26c976b7f654e70df318c1843e5094de" kindref="member">list_entry</ref>(pos-&gt;member.prev, type, member))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="174" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1ae00de76a37aadf228d5da0e6295736af" prot="public" static="no">
+        <name>AOS_DLIST_HEAD_INIT</name>
+        <param><defname>name</defname></param>
+        <initializer>{ &amp;(name), &amp;(name) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="202" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a6707b3b791b349124111c7c9e5b777dd" prot="public" static="no">
+        <name>AOS_DLIST_HEAD</name>
+        <param><defname>name</defname></param>
+        <initializer><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> name = <ref refid="list_8h_1ae00de76a37aadf228d5da0e6295736af" kindref="member">AOS_DLIST_HEAD_INIT</ref>(name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="209" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a2b49a24c73d18c6175de98419869d1ac" prot="public" static="no">
+        <name>slist_for_each_entry</name>
+        <param><defname>queue</defname></param>
+        <param><defname>node</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>((queue)-&gt;next, type, member); \
+         &amp;node-&gt;member;                                        \
+         node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>(node-&gt;member.next, type, member))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="262" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1aff7c0edb74de8e67a0c1cc15c4b06e8e" prot="public" static="no">
+        <name>slist_for_each_entry_safe</name>
+        <param><defname>queue</defname></param>
+        <param><defname>tmp</defname></param>
+        <param><defname>node</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>((queue)-&gt;next, type, member),    \
+         tmp = (queue)-&gt;next ? (queue)-&gt;next-&gt;next : NULL;        \
+         &amp;node-&gt;member;                                           \
+         node = <ref refid="list_8h_1ab351f3482972778a52453d4cf00f273c" kindref="member">aos_container_of</ref>(tmp, type, member), tmp = tmp ? tmp-&gt;next : tmp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="276" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1afc7b63732b51ec4d92227018f6d71494" prot="public" static="no">
+        <name>AOS_SLIST_HEAD_INIT</name>
+        <param><defname>name</defname></param>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="287" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a350fd389591b7bf3da3e81baed9fbbee" prot="public" static="no">
+        <name>AOS_SLIST_HEAD</name>
+        <param><defname>name</defname></param>
+        <initializer><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> name = <ref refid="list_8h_1afc7b63732b51ec4d92227018f6d71494" kindref="member">AOS_SLIST_HEAD_INIT</ref>(name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="294" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a7345be2c3717197378d0c294603a92f9" prot="public" static="no">
+        <name>slist_entry</name>
+        <param><defname>addr</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>(                                   \
+    addr ? (type *)((long)addr - <ref refid="list_8h_1a8cc696677b989b172f5ab8a938b06d1b" kindref="member">aos_offsetof</ref>(type, member)) : (type *)addr \
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="303" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1af97027b393b390597759c365c6820c0f" prot="public" static="no">
+        <name>slist_first_entry</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer><ref refid="list_8h_1a7345be2c3717197378d0c294603a92f9" kindref="member">slist_entry</ref>((ptr)-&gt;next, type, member)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="314" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" prot="public" static="no">
+        <type>struct <ref refid="structdlist__s" kindref="compound">dlist_s</ref></type>
+        <definition>typedef struct dlist_s  dlist_t</definition>
+        <argsstring></argsstring>
+        <name>dlist_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="list_8h_1adeee7753df41046b42a3cc5f094ff098" prot="public" static="no">
+        <type>struct <ref refid="structslist__s" kindref="compound">slist_s</ref></type>
+        <definition>typedef struct slist_s  slist_t</definition>
+        <argsstring></argsstring>
+        <name>slist_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="215" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="list_8h_1acfac6035fb611ca4b1653183d1a1d268" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __dlist_add</definition>
+        <argsstring>(dlist_t *node, dlist_t *prev, dlist_t *next)</argsstring>
+        <name>__dlist_add</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>prev</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="36" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="36" bodyend="43"/>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+        <references refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" compoundref="list_8h" startline="32">dlist_s::prev</references>
+        <referencedby refid="list_8h_1ab5fd92793cd02313e7a6e9f78d16bd57" compoundref="list_8h" startline="56" endline="59">dlist_add</referencedby>
+        <referencedby refid="list_8h_1a7c8b4b86bc1355262e8cf9754d5e7ad6" compoundref="list_8h" startline="61" endline="64">dlist_add_tail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1ab5fd92793cd02313e7a6e9f78d16bd57" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dlist_add</definition>
+        <argsstring>(dlist_t *node, dlist_t *queue)</argsstring>
+        <name>dlist_add</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="56" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="56" bodyend="59"/>
+        <references refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" compoundref="list_8h" startline="36" endline="43">__dlist_add</references>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a7c8b4b86bc1355262e8cf9754d5e7ad6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dlist_add_tail</definition>
+        <argsstring>(dlist_t *node, dlist_t *queue)</argsstring>
+        <name>dlist_add_tail</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="61" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="61" bodyend="64"/>
+        <references refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" compoundref="list_8h" startline="36" endline="43">__dlist_add</references>
+        <references refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" compoundref="list_8h" startline="32">dlist_s::prev</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dlist_del</definition>
+        <argsstring>(dlist_t *node)</argsstring>
+        <name>dlist_del</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="66" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="66" bodyend="73"/>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+        <references refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" compoundref="list_8h" startline="32">dlist_s::prev</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1afb5ee572477c0667e9c24a8103ae5703" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dlist_init</definition>
+        <argsstring>(dlist_t *node)</argsstring>
+        <name>dlist_init</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="75" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="75" bodyend="78"/>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+        <references refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" compoundref="list_8h" startline="32">dlist_s::prev</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void INIT_AOS_DLIST_HEAD</definition>
+        <argsstring>(dlist_t *list)</argsstring>
+        <name>INIT_AOS_DLIST_HEAD</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="80" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="80" bodyend="84"/>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+        <references refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" compoundref="list_8h" startline="32">dlist_s::prev</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a90536260cd9ef225666f9722ebcd6737" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int dlist_empty</definition>
+        <argsstring>(const dlist_t *head)</argsstring>
+        <name>dlist_empty</name>
+        <param>
+          <type>const <ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="86" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="86" bodyend="89"/>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a91305a38743e579d91856140c66be2f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int dlist_entry_number</definition>
+        <argsstring>(dlist_t *queue)</argsstring>
+        <name>dlist_entry_number</name>
+        <param>
+          <type><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="185" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="185" bodyend="193"/>
+        <references refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" compoundref="list_8h" startline="33">dlist_s::next</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a48d4ba068d5100a34df0cb301ef931b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void slist_add</definition>
+        <argsstring>(slist_t *node, slist_t *head)</argsstring>
+        <name>slist_add</name>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="217" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="217" bodyend="221"/>
+        <references refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" compoundref="list_8h" startline="214">slist_s::next</references>
+        <referencedby refid="list_8h_1aede1ac1e67d228efdfd4f8b44683fef0" compoundref="list_8h" startline="223" endline="230">slist_add_tail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1aede1ac1e67d228efdfd4f8b44683fef0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void slist_add_tail</definition>
+        <argsstring>(slist_t *node, slist_t *head)</argsstring>
+        <name>slist_add_tail</name>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="223" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="223" bodyend="230"/>
+        <references refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" compoundref="list_8h" startline="214">slist_s::next</references>
+        <references refid="list_8h_1a48d4ba068d5100a34df0cb301ef931b9" compoundref="list_8h" startline="217" endline="221">slist_add</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1ac077ea4258f54c8e970b2007a3b4f770" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void slist_del</definition>
+        <argsstring>(slist_t *node, slist_t *head)</argsstring>
+        <name>slist_del</name>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="232" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="232" bodyend="242"/>
+        <references refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" compoundref="list_8h" startline="214">slist_s::next</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1aa10779953f2682ed895d5c94d38da154" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int slist_empty</definition>
+        <argsstring>(const slist_t *head)</argsstring>
+        <name>slist_empty</name>
+        <param>
+          <type>const <ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="244" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="244" bodyend="247"/>
+        <references refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" compoundref="list_8h" startline="214">slist_s::next</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1ab5500b0449c2960689eb04df286a4f64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void slist_init</definition>
+        <argsstring>(slist_t *head)</argsstring>
+        <name>slist_init</name>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="249" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="249" bodyend="252"/>
+        <references refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" compoundref="list_8h" startline="214">slist_s::next</references>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a1349cf272ce911dbd1efae591cfb2bef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int slist_entry_number</definition>
+        <argsstring>(slist_t *queue)</argsstring>
+        <name>slist_entry_number</name>
+        <param>
+          <type><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="322" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="322" bodyend="330"/>
+        <references refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" compoundref="list_8h" startline="214">slist_s::next</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Get<sp/>offset<sp/>of<sp/>a<sp/>member<sp/>variable.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>variable<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="list_8h_1a8cc696677b989b172f5ab8a938b06d1b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>aos_offsetof(type,<sp/>member)<sp/><sp/><sp/>((size_t)&amp;(((type<sp/>*)0)-&gt;member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>struct<sp/>for<sp/>this<sp/>entry.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>ptr<sp/><sp/><sp/><sp/><sp/>the<sp/>list<sp/>head<sp/>to<sp/>take<sp/>the<sp/>element<sp/>from.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>variable<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="list_8h_1ab351f3482972778a52453d4cf00f273c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>aos_container_of(ptr,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((type<sp/>*)<sp/>((char<sp/>*)<sp/>(ptr)<sp/>-<sp/>aos_offsetof(type,<sp/>member)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>for<sp/>double<sp/>link<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structdlist__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdlist__s" kindref="compound">dlist_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="32" refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdlist__s" kindref="compound">dlist_s</ref><sp/>*<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdlist__s" kindref="compound">dlist_s</ref><sp/>*<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="list_8h_1aeedb54ed9ac69e4fc599452bbc7eccbe" kindref="member">dlist_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" kindref="member">__dlist_add</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*node,<sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref>,<sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>=<sp/><ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref><sp/>=<sp/><ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>prev-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>next-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref><sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>struct<sp/>for<sp/>this<sp/>entry.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>addr<sp/><sp/><sp/><sp/>the<sp/>list<sp/>head<sp/>to<sp/>take<sp/>the<sp/>element<sp/>from.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>dlist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="list_8h_1aa90e0ac71281846733410d0625524d02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_entry(addr,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((type<sp/>*)((long)addr<sp/>-<sp/>aos_offsetof(type,<sp/>member)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="list_8h_1ab5fd92793cd02313e7a6e9f78d16bd57" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1ab5fd92793cd02313e7a6e9f78d16bd57" kindref="member">dlist_add</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*node,<sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*queue)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" kindref="member">__dlist_add</ref>(node,<sp/>queue,<sp/>queue-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="list_8h_1a7c8b4b86bc1355262e8cf9754d5e7ad6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a7c8b4b86bc1355262e8cf9754d5e7ad6" kindref="member">dlist_add_tail</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*node,<sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*queue)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" kindref="member">__dlist_add</ref>(node,<sp/>queue-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref>,<sp/>queue);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" kindref="member">dlist_del</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref><sp/>=<sp/>node-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>=<sp/>node-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>prev-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>=<sp/><ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>next-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref><sp/>=<sp/><ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="list_8h_1afb5ee572477c0667e9c24a8103ae5703" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1afb5ee572477c0667e9c24a8103ae5703" kindref="member">dlist_init</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>=<sp/>node-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref><sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" kindref="member">INIT_AOS_DLIST_HEAD</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" kindref="member">prev</ref><sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="list_8h_1a90536260cd9ef225666f9722ebcd6737" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a90536260cd9ef225666f9722ebcd6737" kindref="member">dlist_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>head-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>==<sp/>head;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/>Initialise<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>list<sp/><sp/><sp/><sp/>the<sp/>list<sp/>to<sp/>be<sp/>inited.</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="list_8h_1ad84316f170c0ed94abff6bee5ca3986d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_DLIST_INIT(list)<sp/><sp/>{&amp;(list),<sp/>&amp;(list)}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>first<sp/>element<sp/>from<sp/>a<sp/>list</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>ptr<sp/><sp/><sp/><sp/><sp/>the<sp/>list<sp/>head<sp/>to<sp/>take<sp/>the<sp/>element<sp/>from.</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>dlist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="list_8h_1af1a183b22309a4a18139101e0b8dc5be" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_first_entry(ptr,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>dlist_entry((ptr)-&gt;next,<sp/>type,<sp/>member)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/>Iterate<sp/>over<sp/>a<sp/>list.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>pos<sp/><sp/><sp/><sp/><sp/>the<sp/>&amp;struct<sp/>dlist_t<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>head<sp/><sp/><sp/><sp/>he<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="list_8h_1a85c0c0944bdf6463f332c38d02ee1b69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_for_each(pos,<sp/>head)<sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(pos<sp/>=<sp/>(head)-&gt;next;<sp/>pos<sp/>!=<sp/>(head);<sp/>pos<sp/>=<sp/>pos-&gt;next)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>Iterate<sp/>over<sp/>a<sp/>list<sp/>safe<sp/>against<sp/>removal<sp/>of<sp/>list<sp/>entry.</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>pos<sp/><sp/><sp/><sp/><sp/>the<sp/>&amp;struct<sp/>dlist_t<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>n<sp/><sp/><sp/><sp/><sp/><sp/><sp/>another<sp/>&amp;struct<sp/>dlist_t<sp/>to<sp/>use<sp/>as<sp/>temporary<sp/>storage.</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>head<sp/><sp/><sp/><sp/>he<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="list_8h_1a3b0134cd9d9839dbf4188a814fe19bd2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_for_each_safe(pos,<sp/>n,<sp/>head)<sp/>\</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(pos<sp/>=<sp/>(head)-&gt;next,<sp/>n<sp/>=<sp/>pos-&gt;next;<sp/>pos<sp/>!=<sp/>(head);<sp/>\</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>n,<sp/>n<sp/>=<sp/>pos-&gt;next)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/>Iterate<sp/>over<sp/>list<sp/>of<sp/>given<sp/>type.</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>queue<sp/><sp/><sp/>he<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>node<sp/><sp/><sp/><sp/>the<sp/>&amp;struct<sp/>dlist_t<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>dlist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="list_8h_1ac613bf70e3c79057a81c158113c50455" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_for_each_entry(queue,<sp/>node,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(node<sp/>=<sp/>aos_container_of((queue)-&gt;next,<sp/>type,<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;node-&gt;member<sp/>!=<sp/>(queue);<sp/>\</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>aos_container_of(node-&gt;member.next,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*<sp/>Iterate<sp/>over<sp/>list<sp/>of<sp/>given<sp/>type<sp/>safe<sp/>against<sp/>removal<sp/>of<sp/>list<sp/>entry.</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>queue<sp/><sp/><sp/>the<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>n<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>type<sp/>*<sp/>to<sp/>use<sp/>as<sp/>a<sp/>temp.</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>node<sp/><sp/><sp/><sp/>the<sp/>type<sp/>*<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>dlist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="list_8h_1a32b2914cd25f6124306ae66c046deb1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_for_each_entry_safe(queue,<sp/>n,<sp/>node,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(node<sp/>=<sp/>aos_container_of((queue)-&gt;next,<sp/>type,<sp/>member),<sp/><sp/>\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>(queue)-&gt;next<sp/>?<sp/>(queue)-&gt;next-&gt;next<sp/>:<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;node-&gt;member<sp/>!=<sp/>(queue);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>aos_container_of(n,<sp/>type,<sp/>member),<sp/>n<sp/>=<sp/>n<sp/>?<sp/>n-&gt;next<sp/>:<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>struct<sp/>for<sp/>this<sp/>entry.</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>ptr<sp/><sp/><sp/><sp/><sp/>the<sp/>list<sp/>head<sp/>to<sp/>take<sp/>the<sp/>element<sp/>from.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>variable<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="list_8h_1a26c976b7f654e70df318c1843e5094de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>list_entry(ptr,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aos_container_of(ptr,<sp/>type,<sp/>member)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>Iterate<sp/>backwards<sp/>over<sp/>list<sp/>of<sp/>given<sp/>type.</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>pos<sp/><sp/><sp/><sp/><sp/>the<sp/>type<sp/>*<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>head<sp/><sp/><sp/><sp/>he<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>dlist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="list_8h_1aaa882b0cf8af3cc7245e51a6b1095f4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dlist_for_each_entry_reverse(pos,<sp/>head,<sp/>member,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(pos<sp/>=<sp/>list_entry((head)-&gt;prev,<sp/>type,<sp/>member);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;pos-&gt;member<sp/>!=<sp/>(head);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>list_entry(pos-&gt;member.prev,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>list<sp/>length.</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/>queue<sp/><sp/>the<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="list_8h_1a91305a38743e579d91856140c66be2f8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a91305a38743e579d91856140c66be2f8" kindref="member">dlist_entry_number</ref>(<ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*queue)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/>*cur<sp/>=<sp/>queue;<sp/><sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(num=0;cur-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref><sp/>!=<sp/>queue;cur=cur-&gt;<ref refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" kindref="member">next</ref>,<sp/>num++)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>num;<sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*<sp/>Initialise<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>name<sp/><sp/><sp/><sp/>the<sp/>list<sp/>to<sp/>be<sp/>initialized.</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="list_8h_1ae00de76a37aadf228d5da0e6295736af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_DLIST_HEAD_INIT(name)<sp/>{<sp/>&amp;(name),<sp/>&amp;(name)<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>*<sp/>Initialise<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>name<sp/><sp/><sp/><sp/>the<sp/>list<sp/>to<sp/>be<sp/>initialized.</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="list_8h_1a6707b3b791b349124111c7c9e5b777dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_DLIST_HEAD(name)<sp/>\</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dlist_t<sp/>name<sp/>=<sp/>AOS_DLIST_HEAD_INIT(name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>for<sp/>single<sp/>link<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="structslist__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structslist__s" kindref="compound">slist_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="214" refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structslist__s" kindref="compound">slist_s</ref><sp/>*<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}<sp/><ref refid="list_8h_1adeee7753df41046b42a3cc5f094ff098" kindref="member">slist_t</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="list_8h_1a48d4ba068d5100a34df0cb301ef931b9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a48d4ba068d5100a34df0cb301ef931b9" kindref="member">slist_add</ref>(<ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*node,<sp/><ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref><sp/>=<sp/>head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref><sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="list_8h_1aede1ac1e67d228efdfd4f8b44683fef0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1aede1ac1e67d228efdfd4f8b44683fef0" kindref="member">slist_add_tail</ref>(<ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*node,<sp/><ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head<sp/>=<sp/>head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="list_8h_1a48d4ba068d5100a34df0cb301ef931b9" kindref="member">slist_add</ref>(node,<sp/>head);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="list_8h_1ac077ea4258f54c8e970b2007a3b4f770" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1ac077ea4258f54c8e970b2007a3b4f770" kindref="member">slist_del</ref>(<ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*node,<sp/><ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref><sp/>==<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref><sp/>=<sp/>node-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>head<sp/>=<sp/>head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="list_8h_1aa10779953f2682ed895d5c94d38da154" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="list_8h_1aa10779953f2682ed895d5c94d38da154" kindref="member">slist_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="list_8h_1ab5500b0449c2960689eb04df286a4f64" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="list_8h_1ab5500b0449c2960689eb04df286a4f64" kindref="member">slist_init</ref>(<ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>head-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="255"><highlight class="comment">*<sp/>Iterate<sp/>over<sp/>list<sp/>of<sp/>given<sp/>type.</highlight></codeline>
+<codeline lineno="256"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="257"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>queue<sp/><sp/><sp/>he<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="258"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>node<sp/><sp/><sp/><sp/>the<sp/>type<sp/>*<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="259"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="260"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>slist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="261"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="list_8h_1a2b49a24c73d18c6175de98419869d1ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>slist_for_each_entry(queue,<sp/>node,<sp/>type,<sp/>member)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(node<sp/>=<sp/>aos_container_of((queue)-&gt;next,<sp/>type,<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;node-&gt;member;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>aos_container_of(node-&gt;member.next,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*<sp/>Iterate<sp/>over<sp/>list<sp/>of<sp/>given<sp/>type<sp/>safe<sp/>against<sp/>removal<sp/>of<sp/>list<sp/>entry.</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>queue<sp/><sp/><sp/>the<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>tmp<sp/><sp/><sp/><sp/><sp/>the<sp/>type<sp/>*<sp/>to<sp/>use<sp/>as<sp/>a<sp/>temp.</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>node<sp/><sp/><sp/><sp/>the<sp/>type<sp/>*<sp/>to<sp/>use<sp/>as<sp/>a<sp/>loop<sp/>cursor.</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="274"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>slist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="275"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="list_8h_1aff7c0edb74de8e67a0c1cc15c4b06e8e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>slist_for_each_entry_safe(queue,<sp/>tmp,<sp/>node,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(node<sp/>=<sp/>aos_container_of((queue)-&gt;next,<sp/>type,<sp/>member),<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>(queue)-&gt;next<sp/>?<sp/>(queue)-&gt;next-&gt;next<sp/>:<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="279"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;node-&gt;member;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>aos_container_of(tmp,<sp/>type,<sp/>member),<sp/>tmp<sp/>=<sp/>tmp<sp/>?<sp/>tmp-&gt;next<sp/>:<sp/>tmp)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*<sp/>Initialise<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>name<sp/><sp/><sp/><sp/>the<sp/>list<sp/>to<sp/>be<sp/>initialized.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="list_8h_1afc7b63732b51ec4d92227018f6d71494" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_SLIST_HEAD_INIT(name)<sp/>{0}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*<sp/>Initialise<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>name<sp/><sp/><sp/><sp/>the<sp/>list<sp/>to<sp/>be<sp/>initialized.</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="list_8h_1a350fd389591b7bf3da3e81baed9fbbee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_SLIST_HEAD(name)<sp/>\</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slist_t<sp/>name<sp/>=<sp/>AOS_SLIST_HEAD_INIT(name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>struct<sp/>for<sp/>this<sp/>entry.</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>addr<sp/><sp/><sp/><sp/><sp/>the<sp/>list<sp/>head<sp/>to<sp/>take<sp/>the<sp/>element<sp/>from.</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="301"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>slist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="list_8h_1a7345be2c3717197378d0c294603a92f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>slist_entry(addr,<sp/>type,<sp/>member)<sp/>(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>addr<sp/>?<sp/>(type<sp/>*)((long)addr<sp/>-<sp/>aos_offsetof(type,<sp/>member))<sp/>:<sp/>(type<sp/>*)addr<sp/>\</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor">)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="308"><highlight class="comment">*<sp/>Get<sp/>the<sp/>first<sp/>element<sp/>from<sp/>a<sp/>list.</highlight></codeline>
+<codeline lineno="309"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="310"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>ptr<sp/><sp/><sp/><sp/><sp/>the<sp/>list<sp/>head<sp/>to<sp/>take<sp/>the<sp/>element<sp/>from.</highlight></codeline>
+<codeline lineno="311"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>type<sp/><sp/><sp/><sp/>the<sp/>type<sp/>of<sp/>the<sp/>struct<sp/>this<sp/>is<sp/>embedded<sp/>in.</highlight></codeline>
+<codeline lineno="312"><highlight class="comment">*<sp/>@param[in]<sp/><sp/><sp/>member<sp/><sp/>the<sp/>name<sp/>of<sp/>the<sp/>slist_t<sp/>within<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="313"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="list_8h_1af97027b393b390597759c365c6820c0f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>slist_first_entry(ptr,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>slist_entry((ptr)-&gt;next,<sp/>type,<sp/>member)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="318"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>list<sp/>length.</highlight></codeline>
+<codeline lineno="319"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="320"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>queue<sp/><sp/><sp/><sp/>the<sp/>head<sp/>for<sp/>your<sp/>list.</highlight></codeline>
+<codeline lineno="321"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="list_8h_1a1349cf272ce911dbd1efae591cfb2bef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="list_8h_1a1349cf272ce911dbd1efae591cfb2bef" kindref="member">slist_entry_number</ref>(<ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*queue)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structslist__s" kindref="compound">slist_t</ref><sp/>*cur<sp/>=<sp/>queue;<sp/><sp/></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(num=0;cur-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>;cur=cur-&gt;<ref refid="structslist__s_1a0fe502febb779ff4b2243c59d13fa826" kindref="member">next</ref>,<sp/>num++)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>num;<sp/></highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_LIST_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h"/>
+  </compounddef>
+</doxygen>

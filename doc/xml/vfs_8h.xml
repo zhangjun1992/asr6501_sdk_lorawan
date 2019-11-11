@@ -1,0 +1,777 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="vfs_8h" kind="file" language="C++">
+    <compoundname>vfs.h</compoundname>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes refid="types_8h" local="no">aos/types.h</includes>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <incdepgraph>
+      <node id="244">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="245">
+        <label>aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>stdint.h</label>
+      </node>
+      <node id="250">
+        <label>poll.h</label>
+      </node>
+      <node id="249">
+        <label>fcntl.h</label>
+      </node>
+      <node id="247">
+        <label>stddef.h</label>
+      </node>
+      <node id="243">
+        <label>sys/types.h</label>
+      </node>
+      <node id="248">
+        <label>unistd.h</label>
+      </node>
+      <node id="242">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="252">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="255">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="259">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structaos__dirent__t" prot="public">aos_dirent_t</innerclass>
+    <innerclass refid="structaos__dir__t" prot="public">aos_dir_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vfs_8h_1aef54e3c41eba34f466fe5aa9f246b0f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_open</definition>
+        <argsstring>(const char *path, int flags)</argsstring>
+        <name>aos_open</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open the file or device by its path.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path of the file or device to open. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mode of open operation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new file descriptor, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a906713ae1aee479aebe9386e0a63c144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_close</definition>
+        <argsstring>(int fd)</argsstring>
+        <name>aos_close</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the file or device by its file descriptor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptor of the file or device.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a1cf12ef52cc88e8e20c5cbbb186a6d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t aos_read</definition>
+        <argsstring>(int fd, void *buf, size_t nbytes)</argsstring>
+        <name>aos_read</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the contents of a file or device into a buffer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptor of the file or device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to read in to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes read, 0 at end of file, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1aa1df432533c08eae84f46a50702f4b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t aos_write</definition>
+        <argsstring>(int fd, const void *buf, size_t nbytes)</argsstring>
+        <name>aos_write</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the contents of a buffer to file or device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptor of the file or device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to write. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to write from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a8133136684b26ab56a9323ae4e7e1f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_ioctl</definition>
+        <argsstring>(int fd, int cmd, unsigned long arg)</argsstring>
+        <name>aos_ioctl</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a wildcard API for sending controller specific commands.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptior of the file or device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A controller specific command. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Argument to the command, interpreted according to the command.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>any return from the command. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a03a7a25b0cfac42b7bb65284a3fc1bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_poll</definition>
+        <argsstring>(struct pollfd *fds, int nfds, int timeout)</argsstring>
+        <name>aos_poll</name>
+        <param>
+          <type>struct pollfd *</type>
+          <declname>fds</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nfds</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A mechanism to multiplex input/output over a set of file descriptors. For every file descriptor provided, poll() examines it for any events registered for that particular file descriptor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a point to the array of pollfd struct carrying a file descriptor and bitmasks of events. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nfhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of file descriptors. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer value to timeout or -1 for loop forever.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of file descriptors selected (for which revents is non-zero). 0 if timed out with nothing selected. -1 for error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1afd56065fdc737494d0fca200331279dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_fcntl</definition>
+        <argsstring>(int fd, int cmd, int val)</argsstring>
+        <name>aos_fcntl</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs one of the operations described below on the open file descriptor, The operation is determined by cmd.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptor of the file or device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the operation of the file or device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>it depends on whether cmd need params.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1ac698dbacfd3361e86f4f64b8c8e333e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>off_t</type>
+        <definition>off_t aos_lseek</definition>
+        <argsstring>(int fd, off_t offset, int whence)</argsstring>
+        <name>aos_lseek</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>off_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the file position to a given offset from a given location.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptor of the file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset from whence to move to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">whence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start of where to seek. SEEK_SET to start from beginning of file. SEEK_CUR to start from current position in file. SEEK_END to start from end of file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new offset of the file. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1ad678b7cef27c2db4a00fdaeb9faa4ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_sync</definition>
+        <argsstring>(int fd)</argsstring>
+        <name>aos_sync</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flush any buffers associated with the file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file descriptor of the file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a8e1efc5812e6b42ab3b16437f8737fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_stat</definition>
+        <argsstring>(const char *path, struct stat *st)</argsstring>
+        <name>aos_stat</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct stat *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store information about the file in a stat structure.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the file to find information about. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stat buffer to write to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a7aa7b5d755eb1602425ee011c65e163e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_unlink</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>aos_unlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a file from the filesystem.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the file to remove.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1aafc67bc9a25656f35eea035e36566cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_rename</definition>
+        <argsstring>(const char *oldpath, const char *newpath)</argsstring>
+        <name>aos_rename</name>
+        <param>
+          <type>const char *</type>
+          <declname>oldpath</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>newpath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rename a file in the filesystem.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">oldpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the file to rename. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to rename it to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1aa0c6a7f420b357e153995c66dfda39dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref> *</type>
+        <definition>aos_dir_t* aos_opendir</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>aos_opendir</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open a directory on the filesystem.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path of the directory to open.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a point of directory stream on success, NULL on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1abcf24fbeac59408f74f5ded76f4575e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_closedir</definition>
+        <argsstring>(aos_dir_t *dir)</argsstring>
+        <name>aos_closedir</name>
+        <param>
+          <type><ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref> *</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close a directory.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle of the directory to close.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1ab5f5731375aec689bd8365c3dd0300ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structaos__dirent__t" kindref="compound">aos_dirent_t</ref> *</type>
+        <definition>aos_dirent_t* aos_readdir</definition>
+        <argsstring>(aos_dir_t *dir)</argsstring>
+        <name>aos_readdir</name>
+        <param>
+          <type><ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref> *</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the next directory entry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle of the directory to read.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to a dirent structure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a81549a9314547bb741f823bc5c5283ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aos_mkdir</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>aos_mkdir</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the directory, if they do not already exist.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path of the directory.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="188" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_VFS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_VFS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">aos/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structaos__dirent__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="structaos__dirent__t_1a9bd680fca6d1f7d3f796562fbff3a677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structaos__dirent__t_1a9bd680fca6d1f7d3f796562fbff3a677" kindref="member">d_ino</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>file<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structaos__dirent__t_1a652a204c017b603d885a8bf7ffd07662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaos__dirent__t_1a652a204c017b603d885a8bf7ffd07662" kindref="member">d_type</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>type<sp/>of<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structaos__dirent__t_1ad46b4f591981d2611b9d0a0b7ef4f27f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>d_name[];<sp/></highlight><highlight class="comment">/*<sp/>file<sp/>name<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="structaos__dirent__t" kindref="compound">aos_dirent_t</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structaos__dir__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="structaos__dir__t_1acc32cb2c98e7ca1e018a45e6f114dc80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structaos__dir__t_1acc32cb2c98e7ca1e018a45e6f114dc80" kindref="member">dd_vfs_fd</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structaos__dir__t_1a7ef5d0af21144f997372f1928fd999ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structaos__dir__t_1a7ef5d0af21144f997372f1928fd999ec" kindref="member">dd_rsv</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1aef54e3c41eba34f466fe5aa9f246b0f4" kindref="member">aos_open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1a906713ae1aee479aebe9386e0a63c144" kindref="member">aos_close</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">ssize_t<sp/><ref refid="vfs_8h_1a1cf12ef52cc88e8e20c5cbbb186a6d56" kindref="member">aos_read</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbytes);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">ssize_t<sp/><ref refid="vfs_8h_1aa1df432533c08eae84f46a50702f4b48" kindref="member">aos_write</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbytes);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1a8133136684b26ab56a9323ae4e7e1f99" kindref="member">aos_ioctl</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmd,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>arg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1a03a7a25b0cfac42b7bb65284a3fc1bde" kindref="member">aos_poll</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pollfd<sp/>*fds,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nfds,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1afd56065fdc737494d0fca200331279dc" kindref="member">aos_fcntl</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">off_t<sp/><ref refid="vfs_8h_1ac698dbacfd3361e86f4f64b8c8e333e5" kindref="member">aos_lseek</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd,<sp/>off_t<sp/>offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>whence);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1ad678b7cef27c2db4a00fdaeb9faa4ab5" kindref="member">aos_sync</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1a8e1efc5812e6b42ab3b16437f8737fb6" kindref="member">aos_stat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>stat<sp/>*st);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1a7aa7b5d755eb1602425ee011c65e163e" kindref="member">aos_unlink</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1aafc67bc9a25656f35eea035e36566cd2" kindref="member">aos_rename</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*oldpath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*newpath);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref><sp/>*<ref refid="vfs_8h_1aa0c6a7f420b357e153995c66dfda39dc" kindref="member">aos_opendir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1abcf24fbeac59408f74f5ded76f4575e5" kindref="member">aos_closedir</ref>(<ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref><sp/>*dir);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><ref refid="structaos__dirent__t" kindref="compound">aos_dirent_t</ref><sp/>*<ref refid="vfs_8h_1ab5f5731375aec689bd8365c3dd0300ce" kindref="member">aos_readdir</ref>(<ref refid="structaos__dir__t" kindref="compound">aos_dir_t</ref><sp/>*dir);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vfs_8h_1a81549a9314547bb741f823bc5c5283ed" kindref="member">aos_mkdir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_VFS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h"/>
+  </compounddef>
+</doxygen>

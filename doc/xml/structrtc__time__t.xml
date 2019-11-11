@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structrtc__time__t" kind="struct" language="C++" prot="public">
+    <compoundname>rtc_time_t</compoundname>
+    <includes refid="rtc_8h" local="yes">rtc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrtc__time__t_1a9e6b7c9a15685fe8c90a969550b80e76" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::sec</definition>
+        <argsstring></argsstring>
+        <name>sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="25" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a521dfb37091082541a7a08d527b3e5c4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="26" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a270692a5624d10a93cb0fb9df324e726" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::hr</definition>
+        <argsstring></argsstring>
+        <name>hr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="27" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a00d4d962ba445ab61fbfbbd89ebc54d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::weekday</definition>
+        <argsstring></argsstring>
+        <name>weekday</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="28" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1abaa2bf5c6fed1ec703e2dc24119b7374" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="29" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a72c1fb304848005b837a5966123feeb5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="30" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a1fe72fc7d918a328930c354af9ad3326" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_time_t::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="31" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="178">
+        <label>rtc_time_t</label>
+        <link refid="structrtc__time__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="24" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="24" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structrtc__time__t_1abaa2bf5c6fed1ec703e2dc24119b7374" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>date</name></member>
+      <member refid="structrtc__time__t_1a270692a5624d10a93cb0fb9df324e726" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>hr</name></member>
+      <member refid="structrtc__time__t_1a521dfb37091082541a7a08d527b3e5c4" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>min</name></member>
+      <member refid="structrtc__time__t_1a72c1fb304848005b837a5966123feeb5" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>month</name></member>
+      <member refid="structrtc__time__t_1a9e6b7c9a15685fe8c90a969550b80e76" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>sec</name></member>
+      <member refid="structrtc__time__t_1a00d4d962ba445ab61fbfbbd89ebc54d4" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>weekday</name></member>
+      <member refid="structrtc__time__t_1a1fe72fc7d918a328930c354af9ad3326" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

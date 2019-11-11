@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="adc_8h" kind="file" language="C++">
+    <compoundname>adc.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="474">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="473">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structadc__config__t" prot="public">adc_config_t</innerclass>
+    <innerclass refid="structadc__dev__t" prot="public">adc_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="adc_8h_1ac1bde467ed8ffbb24747442d60c888c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_adc_init</definition>
+        <argsstring>(adc_dev_t *adc)</argsstring>
+        <name>hal_adc_init</name>
+        <param>
+          <type><ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref> *</type>
+          <declname>adc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises an ADC interface, Prepares an ADC hardware interface for sampling</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/adc.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a9fcd2b50607d73642515034cd4ea21ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_adc_value_get</definition>
+        <argsstring>(adc_dev_t *adc, void *output, uint32_t timeout)</argsstring>
+        <name>hal_adc_value_get</name>
+        <param>
+          <type><ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref> *</type>
+          <declname>adc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Takes a single sample from an ADC interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be sampled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a variable which will receive the sample </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ms timeout</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/adc.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a0bd4fcde73ce5792ee9cdd96b6bf999a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_adc_finalize</definition>
+        <argsstring>(adc_dev_t *adc)</argsstring>
+        <name>hal_adc_finalize</name>
+        <param>
+          <type><ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref> *</type>
+          <declname>adc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initialises an ADC interface, Turns off an ADC hardware interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be de-initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/adc.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_ADC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_ADC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structadc__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structadc__config__t_1ac5c9b2b7036d07a1c39ca25d8c9b061d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structadc__config__t_1ac5c9b2b7036d07a1c39ca25d8c9b061d" kindref="member">sampling_cycle</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>sampling<sp/>period<sp/>in<sp/>number<sp/>of<sp/>ADC<sp/>clock<sp/>cycles<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/><ref refid="structadc__config__t" kindref="compound">adc_config_t</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structadc__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structadc__dev__t_1ada6a9d1961b39711361b128b9658f0f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structadc__dev__t_1ada6a9d1961b39711361b128b9658f0f2" kindref="member">port</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>adc<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structadc__dev__t_1ab7bffa841d196c594823699aeeb7d992" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structadc__config__t" kindref="compound">adc_config_t</ref><sp/><ref refid="structadc__dev__t_1ab7bffa841d196c594823699aeeb7d992" kindref="member">config</ref>;<sp/></highlight><highlight class="comment">/*<sp/>adc<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structadc__dev__t_1a0cc268164670dc249fc85611c144bc3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structadc__dev__t_1a0cc268164670dc249fc85611c144bc3b" kindref="member">priv</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/><ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">int32_t<sp/><ref refid="adc_8h_1ac1bde467ed8ffbb24747442d60c888c0" kindref="member">hal_adc_init</ref>(<ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref><sp/>*adc);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">int32_t<sp/><ref refid="adc_8h_1a9fcd2b50607d73642515034cd4ea21ac" kindref="member">hal_adc_value_get</ref>(<ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref><sp/>*adc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*output,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">int32_t<sp/><ref refid="adc_8h_1a0bd4fcde73ce5792ee9cdd96b6bf999a" kindref="member">hal_adc_finalize</ref>(<ref refid="structadc__dev__t" kindref="compound">adc_dev_t</ref><sp/>*adc);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_ADC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/adc.h"/>
+  </compounddef>
+</doxygen>

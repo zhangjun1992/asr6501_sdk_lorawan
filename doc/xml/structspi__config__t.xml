@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structspi__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>spi_config_t</compoundname>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspi__config__t_1a10afede6b824e2e9e01c2d0b1819aa23" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t spi_config_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="12" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__config__t_1af8b4b9033931adeaf0aec27eb38ce393" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t spi_config_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="187">
+        <label>spi_config_t</label>
+        <link refid="structspi__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/spi.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structspi__config__t_1af8b4b9033931adeaf0aec27eb38ce393" prot="public" virt="non-virtual"><scope>spi_config_t</scope><name>freq</name></member>
+      <member refid="structspi__config__t_1a10afede6b824e2e9e01c2d0b1819aa23" prot="public" virt="non-virtual"><scope>spi_config_t</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

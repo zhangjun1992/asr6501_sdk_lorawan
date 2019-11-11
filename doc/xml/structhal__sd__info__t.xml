@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__sd__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_sd_info_t</compoundname>
+    <includes refid="sd_8h" local="yes">sd.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__sd__info__t_1a63670e0e82f789f881bff615666b2455" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hal_sd_info_t::blk_nums</definition>
+        <argsstring></argsstring>
+        <name>blk_nums</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="20" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__sd__info__t_1a64682d8509a671382772d5274900154c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hal_sd_info_t::blk_size</definition>
+        <argsstring></argsstring>
+        <name>blk_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="21" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="108">
+        <label>hal_sd_info_t</label>
+        <link refid="structhal__sd__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="19" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="19" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structhal__sd__info__t_1a63670e0e82f789f881bff615666b2455" prot="public" virt="non-virtual"><scope>hal_sd_info_t</scope><name>blk_nums</name></member>
+      <member refid="structhal__sd__info__t_1a64682d8509a671382772d5274900154c" prot="public" virt="non-virtual"><scope>hal_sd_info_t</scope><name>blk_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

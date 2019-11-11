@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structuart__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>uart_dev_t</compoundname>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuart__dev__t_1a87c3a3c5be21833204d5da753d56d8e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uart_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="68" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__dev__t_1a034bb106fc2ddb2a00821b72255db94b" prot="public" static="no" mutable="no">
+        <type><ref refid="structuart__config__t" kindref="compound">uart_config_t</ref></type>
+        <definition>uart_config_t uart_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="69" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__dev__t_1accf065585c37d52cea2468640da1014f" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* uart_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="70" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="199">
+        <label>uart_dev_t</label>
+        <link refid="structuart__dev__t"/>
+        <childnode refid="200" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+      <node id="200">
+        <label>uart_config_t</label>
+        <link refid="structuart__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="67" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="67" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structuart__dev__t_1a034bb106fc2ddb2a00821b72255db94b" prot="public" virt="non-virtual"><scope>uart_dev_t</scope><name>config</name></member>
+      <member refid="structuart__dev__t_1a87c3a3c5be21833204d5da753d56d8e8" prot="public" virt="non-virtual"><scope>uart_dev_t</scope><name>port</name></member>
+      <member refid="structuart__dev__t_1accf065585c37d52cea2468640da1014f" prot="public" virt="non-virtual"><scope>uart_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

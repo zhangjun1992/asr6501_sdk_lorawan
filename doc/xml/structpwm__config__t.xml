@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpwm__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>pwm_config_t</compoundname>
+    <includes refid="pwm_8h" local="yes">pwm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpwm__config__t_1aafeaea7bebf451f7254933221f92f439" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float pwm_config_t::duty_cycle</definition>
+        <argsstring></argsstring>
+        <name>duty_cycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="9" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__config__t_1a4bfb97d483238f81041602077bbf9323" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t pwm_config_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="10" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="159">
+        <label>pwm_config_t</label>
+        <link refid="structpwm__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="8" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structpwm__config__t_1aafeaea7bebf451f7254933221f92f439" prot="public" virt="non-virtual"><scope>pwm_config_t</scope><name>duty_cycle</name></member>
+      <member refid="structpwm__config__t_1a4bfb97d483238f81041602077bbf9323" prot="public" virt="non-virtual"><scope>pwm_config_t</scope><name>freq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

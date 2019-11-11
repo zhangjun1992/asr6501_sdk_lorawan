@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="wdg_8h" kind="file" language="C++">
+    <compoundname>wdg.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="570">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h</label>
+        <link refid="wdg_8h"/>
+        <childnode refid="571" relation="include">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="573">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structwdg__config__t" prot="public">wdg_config_t</innerclass>
+    <innerclass refid="structwdg__dev__t" prot="public">wdg_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wdg_8h_1ae8d1d233f207b0dafb967e0a50fcad6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_wdg_init</definition>
+        <argsstring>(wdg_dev_t *wdg)</argsstring>
+        <name>hal_wdg_init</name>
+        <param>
+          <type><ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref> *</type>
+          <declname>wdg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will initialize the on board CPU hardware watch dog</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wdg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the watch dog device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wdg_8h_1a9fe79ef45a21dd5c6f1199eda5e21253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_wdg_reload</definition>
+        <argsstring>(wdg_dev_t *wdg)</argsstring>
+        <name>hal_wdg_reload</name>
+        <param>
+          <type><ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref> *</type>
+          <declname>wdg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reload watchdog counter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wdg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the watch dog device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wdg_8h_1ada475e22a5cdf6a261a5e6f56d5b9214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_wdg_finalize</definition>
+        <argsstring>(wdg_dev_t *wdg)</argsstring>
+        <name>hal_wdg_finalize</name>
+        <param>
+          <type><ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref> *</type>
+          <declname>wdg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function performs any platform-specific cleanup needed for hardware watch dog.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wdg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the watch dog device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_WDG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_WDG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structwdg__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structwdg__config__t_1a516d44bf98c4ba69400135bb732d897e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structwdg__config__t_1a516d44bf98c4ba69400135bb732d897e" kindref="member">timeout</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>Watchdag<sp/>timeout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/><ref refid="structwdg__config__t" kindref="compound">wdg_config_t</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structwdg__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structwdg__dev__t_1a786cf92373aac7c9a42dd347d7b2a5d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwdg__dev__t_1a786cf92373aac7c9a42dd347d7b2a5d2" kindref="member">port</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>wdg<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structwdg__dev__t_1af51b548a8c3ea402b6021fc36649b49a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwdg__config__t" kindref="compound">wdg_config_t</ref><sp/><ref refid="structwdg__dev__t_1af51b548a8c3ea402b6021fc36649b49a" kindref="member">config</ref>;<sp/></highlight><highlight class="comment">/*<sp/>wdg<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structwdg__dev__t_1a9e5e3b763ff5a2008e5e80415a57061d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structwdg__dev__t_1a9e5e3b763ff5a2008e5e80415a57061d" kindref="member">priv</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/><ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">int32_t<sp/><ref refid="wdg_8h_1ae8d1d233f207b0dafb967e0a50fcad6b" kindref="member">hal_wdg_init</ref>(<ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref><sp/>*wdg);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wdg_8h_1a9fe79ef45a21dd5c6f1199eda5e21253" kindref="member">hal_wdg_reload</ref>(<ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref><sp/>*wdg);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">int32_t<sp/><ref refid="wdg_8h_1ada475e22a5cdf6a261a5e6f56d5b9214" kindref="member">hal_wdg_finalize</ref>(<ref refid="structwdg__dev__t" kindref="compound">wdg_dev_t</ref><sp/>*wdg);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_WDG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/wdg.h"/>
+  </compounddef>
+</doxygen>

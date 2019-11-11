@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structcli__command" kind="struct" language="C++" prot="public">
+    <compoundname>cli_command</compoundname>
+    <includes refid="cli_8h" local="yes">cli.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcli__command_1a83cc311c7d2e771e1b095e7fe487cd08" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* cli_command::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="23" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__command_1aae28593ccc4863d9e56ef0a45d6dfd93" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* cli_command::help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="24" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__command_1a62db0c7aba24d582e62d5d321e115de1" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* cli_command::function) (char *pcWriteBuffer, int xWriteBufferLen, int argc, char **argv)</definition>
+        <argsstring>)(char *pcWriteBuffer, int xWriteBufferLen, int argc, char **argv)</argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="26" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="80">
+        <label>cli_command</label>
+        <link refid="structcli__command"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/cli.h" bodystart="22" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structcli__command_1a62db0c7aba24d582e62d5d321e115de1" prot="public" virt="non-virtual"><scope>cli_command</scope><name>function</name></member>
+      <member refid="structcli__command_1aae28593ccc4863d9e56ef0a45d6dfd93" prot="public" virt="non-virtual"><scope>cli_command</scope><name>help</name></member>
+      <member refid="structcli__command_1a83cc311c7d2e771e1b095e7fe487cd08" prot="public" virt="non-virtual"><scope>cli_command</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

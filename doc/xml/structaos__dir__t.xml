@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structaos__dir__t" kind="struct" language="C++" prot="public">
+    <compoundname>aos_dir_t</compoundname>
+    <includes refid="vfs_8h" local="yes">vfs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaos__dir__t_1acc32cb2c98e7ca1e018a45e6f114dc80" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int aos_dir_t::dd_vfs_fd</definition>
+        <argsstring></argsstring>
+        <name>dd_vfs_fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="23" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaos__dir__t_1a7ef5d0af21144f997372f1928fd999ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int aos_dir_t::dd_rsv</definition>
+        <argsstring></argsstring>
+        <name>dd_rsv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="24" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="66">
+        <label>aos_dir_t</label>
+        <link refid="structaos__dir__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" line="22" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/vfs.h" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structaos__dir__t_1a7ef5d0af21144f997372f1928fd999ec" prot="public" virt="non-virtual"><scope>aos_dir_t</scope><name>dd_rsv</name></member>
+      <member refid="structaos__dir__t_1acc32cb2c98e7ca1e018a45e6f114dc80" prot="public" virt="non-virtual"><scope>aos_dir_t</scope><name>dd_vfs_fd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

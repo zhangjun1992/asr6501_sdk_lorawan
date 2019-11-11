@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__sensor__node__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sensor_node_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sensor__node__t_1aa944c5ba35deb514b694a5dc4cac806a" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" kindref="member">sensor_tag_e</ref></type>
+        <definition>sensor_tag_e _sensor_node_t::tag</definition>
+        <argsstring></argsstring>
+        <name>tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="277" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sensor__node__t_1aad03e140cb1372009f97b437175d2993" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _sensor_node_t::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="278" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sensor__node__t_1a1ed9728890e7cc41c4cf18071528a7af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _sensor_node_t::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="279" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="53">
+        <label>_sensor_node_t</label>
+        <link refid="struct__sensor__node__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="276" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="276" bodyend="280"/>
+    <listofallmembers>
+      <member refid="struct__sensor__node__t_1a1ed9728890e7cc41c4cf18071528a7af" prot="public" virt="non-virtual"><scope>_sensor_node_t</scope><name>fd</name></member>
+      <member refid="struct__sensor__node__t_1aad03e140cb1372009f97b437175d2993" prot="public" virt="non-virtual"><scope>_sensor_node_t</scope><name>path</name></member>
+      <member refid="struct__sensor__node__t_1aa944c5ba35deb514b694a5dc4cac806a" prot="public" virt="non-virtual"><scope>_sensor_node_t</scope><name>tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

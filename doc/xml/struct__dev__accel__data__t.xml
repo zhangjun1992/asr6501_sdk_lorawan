@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__dev__accel__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_dev_accel_data_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__dev__accel__data__t_1a34484149a5258de2fdc8d376bcc806ba" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _dev_accel_data_t::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="141" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _dev_accel_data_t::data[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="142" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_dev_accel_data_t</label>
+        <link refid="struct__dev__accel__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="140" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="140" bodyend="146"/>
+    <listofallmembers>
+      <member refid="struct__dev__accel__data__t_1aa018398b10a2ce3044905c939b986e0a" prot="public" virt="non-virtual"><scope>_dev_accel_data_t</scope><name>data</name></member>
+      <member refid="struct__dev__accel__data__t_1a34484149a5258de2fdc8d376bcc806ba" prot="public" virt="non-virtual"><scope>_dev_accel_data_t</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

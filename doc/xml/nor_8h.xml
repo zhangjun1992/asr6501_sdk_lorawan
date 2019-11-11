@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="nor_8h" kind="file" language="C++">
+    <compoundname>nor.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="504">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="506">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h</label>
+        <link refid="nor_8h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnor__config__t" prot="public">nor_config_t</innerclass>
+    <innerclass refid="structnor__dev__t" prot="public">nor_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nor_8h_1a248e982817593d11903ce3a92bc1d28e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nor_init</definition>
+        <argsstring>(nor_dev_t *nor)</argsstring>
+        <name>hal_nor_init</name>
+        <param>
+          <type><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref> *</type>
+          <declname>nor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises a nor flash interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nor_8h_1a36da8067845870dfb82d68bd6cc4ebc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nor_finalize</definition>
+        <argsstring>(nor_dev_t *nor)</argsstring>
+        <name>hal_nor_finalize</name>
+        <param>
+          <type><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref> *</type>
+          <declname>nor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialises a nor flash interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nor_8h_1a2c4890ab5326a1748bac51c27f244b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nor_read</definition>
+        <argsstring>(nor_dev_t *nor, uint32_t *addr, uint8_t *data, uint32_t len)</argsstring>
+        <name>hal_nor_read</name>
+        <param>
+          <type><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref> *</type>
+          <declname>nor</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from NOR memory</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nor memory address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nor_8h_1a4c8b9aa42e7d02e862a8b9b44e44025e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nor_write</definition>
+        <argsstring>(nor_dev_t *nor, uint32_t *addr, uint8_t *data, uint32_t len)</argsstring>
+        <name>hal_nor_write</name>
+        <param>
+          <type><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref> *</type>
+          <declname>nor</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data to NOR memory</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source buffer to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nor memory address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to write</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nor_8h_1a781a31bfd825d77ec8df1691cee1d100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nor_erase_block</definition>
+        <argsstring>(nor_dev_t *nor, uint32_t *addr, uint32_t block_count)</argsstring>
+        <name>hal_nor_erase_block</name>
+        <param>
+          <type><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref> *</type>
+          <declname>nor</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>block_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nor_8h_1a5f6799cb9f3528419e2edfa909d8ddff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nor_erase_chip</definition>
+        <argsstring>(nor_dev_t *nor, uint32_t *addr)</argsstring>
+        <name>hal_nor_erase_chip</name>
+        <param>
+          <type><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref> *</type>
+          <declname>nor</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_NOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_NOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structnor__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structnor__config__t_1ae885923cc8d310b20f8fd4d8a2a0da82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnor__config__t_1ae885923cc8d310b20f8fd4d8a2a0da82" kindref="member">block_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOR<sp/>memory<sp/>block<sp/>size<sp/>number<sp/>of<sp/>bytes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structnor__config__t_1ade7d6b013e51382d190101226e4d99ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnor__config__t_1ade7d6b013e51382d190101226e4d99ca" kindref="member">chip_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOR<sp/>memory<sp/>chip<sp/>size<sp/>measured<sp/>in<sp/>number<sp/>of<sp/>blocks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><ref refid="structnor__config__t" kindref="compound">nor_config_t</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structnor__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="structnor__dev__t_1ab7657283a8afa323c210f9587ca20a18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnor__dev__t_1ab7657283a8afa323c210f9587ca20a18" kindref="member">base_addr</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structnor__dev__t_1a85751096327f81def4dc1adff7159e21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnor__config__t" kindref="compound">nor_config_t</ref><sp/><sp/><sp/><sp/><sp/><ref refid="structnor__dev__t_1a85751096327f81def4dc1adff7159e21" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structnor__dev__t_1a1fb5d7fe9c834b41908d2adea3c18f18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structnor__dev__t_1a1fb5d7fe9c834b41908d2adea3c18f18" kindref="member">priv</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">int32_t<sp/><ref refid="nor_8h_1a248e982817593d11903ce3a92bc1d28e" kindref="member">hal_nor_init</ref>(<ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref><sp/>*nor);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">int32_t<sp/><ref refid="nor_8h_1a36da8067845870dfb82d68bd6cc4ebc6" kindref="member">hal_nor_finalize</ref>(<ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref><sp/>*nor);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">int32_t<sp/><ref refid="nor_8h_1a2c4890ab5326a1748bac51c27f244b59" kindref="member">hal_nor_read</ref>(<ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref><sp/>*nor,<sp/>uint32_t<sp/>*addr,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">int32_t<sp/><ref refid="nor_8h_1a4c8b9aa42e7d02e862a8b9b44e44025e" kindref="member">hal_nor_write</ref>(<ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref><sp/>*nor,<sp/>uint32_t<sp/>*addr,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>Erase<sp/>the<sp/>blocks<sp/>of<sp/>the<sp/>NOR<sp/>memory</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>nor<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>interface<sp/>which<sp/>should<sp/>be<sp/>initialised</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>addr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nor<sp/>memory<sp/>address</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>block_count<sp/>the<sp/>number<sp/>of<sp/>block<sp/>to<sp/>erase</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/>0<sp/>:<sp/>on<sp/>success,<sp/>EIO<sp/>:<sp/>if<sp/>an<sp/>error<sp/>occurred<sp/>with<sp/>any<sp/>step</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">int32_t<sp/><ref refid="nor_8h_1a781a31bfd825d77ec8df1691cee1d100" kindref="member">hal_nor_erase_block</ref>(<ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref><sp/>*nor,<sp/>uint32_t<sp/>*addr,<sp/>uint32_t<sp/>block_count);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>Erase<sp/>the<sp/>entire<sp/>NOR<sp/>chip</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>nor<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>interface<sp/>which<sp/>should<sp/>be<sp/>initialised</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>@param[in]<sp/><sp/><sp/>addr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nor<sp/>memory<sp/>address</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/>0<sp/>:<sp/>on<sp/>success,<sp/>EIO<sp/>:<sp/>if<sp/>an<sp/>error<sp/>occurred<sp/>with<sp/>any<sp/>step</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">int32_t<sp/><ref refid="nor_8h_1a5f6799cb9f3528419e2edfa909d8ddff" kindref="member">hal_nor_erase_chip</ref>(<ref refid="structnor__dev__t" kindref="compound">nor_dev_t</ref><sp/>*nor,<sp/>uint32_t<sp/>*addr);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nor.h"/>
+  </compounddef>
+</doxygen>

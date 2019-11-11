@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdlist__s" kind="struct" language="C++" prot="public">
+    <compoundname>dlist_s</compoundname>
+    <includes refid="list_8h" local="yes">list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlist__s" kindref="compound">dlist_s</ref> *</type>
+        <definition>struct dlist_s* dlist_s::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="32" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" compoundref="list_8h" startline="36" endline="43">__dlist_add</referencedby>
+        <referencedby refid="list_8h_1a7c8b4b86bc1355262e8cf9754d5e7ad6" compoundref="list_8h" startline="61" endline="64">dlist_add_tail</referencedby>
+        <referencedby refid="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" compoundref="list_8h" startline="66" endline="73">dlist_del</referencedby>
+        <referencedby refid="list_8h_1afb5ee572477c0667e9c24a8103ae5703" compoundref="list_8h" startline="75" endline="78">dlist_init</referencedby>
+        <referencedby refid="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" compoundref="list_8h" startline="80" endline="84">INIT_AOS_DLIST_HEAD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlist__s" kindref="compound">dlist_s</ref> *</type>
+        <definition>struct dlist_s* dlist_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="33" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" compoundref="list_8h" startline="36" endline="43">__dlist_add</referencedby>
+        <referencedby refid="list_8h_1ab5fd92793cd02313e7a6e9f78d16bd57" compoundref="list_8h" startline="56" endline="59">dlist_add</referencedby>
+        <referencedby refid="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" compoundref="list_8h" startline="66" endline="73">dlist_del</referencedby>
+        <referencedby refid="list_8h_1a90536260cd9ef225666f9722ebcd6737" compoundref="list_8h" startline="86" endline="89">dlist_empty</referencedby>
+        <referencedby refid="list_8h_1a91305a38743e579d91856140c66be2f8" compoundref="list_8h" startline="185" endline="193">dlist_entry_number</referencedby>
+        <referencedby refid="list_8h_1afb5ee572477c0667e9c24a8103ae5703" compoundref="list_8h" startline="75" endline="78">dlist_init</referencedby>
+        <referencedby refid="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" compoundref="list_8h" startline="80" endline="84">INIT_AOS_DLIST_HEAD</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="85">
+        <label>dlist_s</label>
+        <link refid="structdlist__s"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>+prev</edgelabel>
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" line="31" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/list.h" bodystart="31" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" prot="public" virt="non-virtual"><scope>dlist_s</scope><name>next</name></member>
+      <member refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" prot="public" virt="non-virtual"><scope>dlist_s</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

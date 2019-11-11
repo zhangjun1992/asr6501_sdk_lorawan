@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__dev__heart__rate__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_dev_heart_rate_data_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__dev__heart__rate__data__t_1aa08e6e9362fac63079c7ae87c04af0f8" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _dev_heart_rate_data_t::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="209" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__heart__rate__data__t_1a6ff36bd887e9ff9a4760dfefdd6f791f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _dev_heart_rate_data_t::hear_rate</definition>
+        <argsstring></argsstring>
+        <name>hear_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="210" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="18">
+        <label>_dev_heart_rate_data_t</label>
+        <link refid="struct__dev__heart__rate__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="208" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="208" bodyend="211"/>
+    <listofallmembers>
+      <member refid="struct__dev__heart__rate__data__t_1a6ff36bd887e9ff9a4760dfefdd6f791f" prot="public" virt="non-virtual"><scope>_dev_heart_rate_data_t</scope><name>hear_rate</name></member>
+      <member refid="struct__dev__heart__rate__data__t_1aa08e6e9362fac63079c7ae87c04af0f8" prot="public" virt="non-virtual"><scope>_dev_heart_rate_data_t</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

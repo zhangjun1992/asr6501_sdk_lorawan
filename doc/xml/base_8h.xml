@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="base_8h" kind="file" language="C++">
+    <compoundname>base.h</compoundname>
+    <includes refid="aos_8h" local="no">aos/aos.h</includes>
+    <includedby refid="hal_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</includedby>
+    <includedby refid="lorawan_8h" local="yes">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</includedby>
+    <includedby refid="ota_8h" local="yes">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</includedby>
+    <includedby refid="sensor_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</includedby>
+    <includedby refid="wifi_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</includedby>
+    <incdepgraph>
+      <node id="295">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="311">
+        <label>stdbool.h</label>
+      </node>
+      <node id="288">
+        <label>aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>aos/debug.h</label>
+        <link refid="debug_8h"/>
+      </node>
+      <node id="289">
+        <label>stdint.h</label>
+      </node>
+      <node id="298">
+        <label>aos/cloud.h</label>
+        <link refid="cloud_8h"/>
+      </node>
+      <node id="293">
+        <label>poll.h</label>
+      </node>
+      <node id="292">
+        <label>fcntl.h</label>
+      </node>
+      <node id="296">
+        <label>aos/cli.h</label>
+        <link refid="cli_8h"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>stddef.h</label>
+      </node>
+      <node id="286">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>aos/errno.h</label>
+        <link refid="errno_8h"/>
+      </node>
+      <node id="301">
+        <label>aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>aos/internal/event_type_code.h</label>
+        <link refid="event__type__code_8h"/>
+      </node>
+      <node id="297">
+        <label>k_types.h</label>
+      </node>
+      <node id="302">
+        <label>aos/list.h</label>
+        <link refid="list_8h"/>
+      </node>
+      <node id="294">
+        <label>sys/types.h</label>
+      </node>
+      <node id="304">
+        <label>aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>aos/init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>unistd.h</label>
+      </node>
+      <node id="306">
+        <label>aos/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="307">
+        <label>aos/yloop.h</label>
+        <link refid="yloop_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="313">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="317">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhal__module__base__t" prot="public">hal_module_base_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7aed0b99bcac43e52a50afc2ff0236e438" prot="public">
+          <name>HAL_ERR_ARG</name>
+          <initializer>= -4096</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2a83615d43200eaf0aeb46629ba19349" prot="public">
+          <name>HAL_ERR_CAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="aos_8h" kindref="compound">aos/aos.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>HAL<sp/>common<sp/>error<sp/>code</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7aed0b99bcac43e52a50afc2ff0236e438" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7aed0b99bcac43e52a50afc2ff0236e438" kindref="member">HAL_ERR_ARG</ref><sp/>=<sp/>-4096,</highlight></codeline>
+<codeline lineno="15" refid="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2a83615d43200eaf0aeb46629ba19349" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="base_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2a83615d43200eaf0aeb46629ba19349" kindref="member">HAL_ERR_CAP</ref>,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>HAL<sp/>Module<sp/>define</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structhal__module__base__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22" refid="structhal__module__base__t_1a2432f19946eb8b33b9bcd36bbf79c465" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdlist__s" kindref="compound">dlist_t</ref><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__module__base__t_1a2432f19946eb8b33b9bcd36bbf79c465" kindref="member">list</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structhal__module__base__t_1ab88d0d0666b4a2f394de5c26f2a24a5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__module__base__t_1ab88d0d0666b4a2f394de5c26f2a24a5a" kindref="member">magic</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structhal__module__base__t_1a826df816d4125caccce5b5d86a2a2aaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structhal__module__base__t_1a826df816d4125caccce5b5d86a2a2aaf" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structhal__module__base__t_1a8abdb80f07459b9de7f78533e250a218" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structhal__module__base__t_1a8abdb80f07459b9de7f78533e250a218" kindref="member">priv_dev</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Driver<sp/>may<sp/>want<sp/>to<sp/>describe<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/><ref refid="structhal__module__base__t" kindref="compound">hal_module_base_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_BASE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h"/>
+  </compounddef>
+</doxygen>

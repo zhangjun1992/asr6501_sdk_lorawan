@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtimer__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>timer_config_t</compoundname>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtimer__config__t_1a29a91d91167e057631b4122a7d203b95" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t timer_config_t::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="14" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__config__t_1adb40e6e2ef34d7e373734a2538dc6d83" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t timer_config_t::reload_mode</definition>
+        <argsstring></argsstring>
+        <name>reload_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="15" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__config__t_1a55763e9c68653828773b6ac1d65f9b3e" prot="public" static="no" mutable="no">
+        <type><ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref></type>
+        <definition>hal_timer_cb_t timer_config_t::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="16" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__config__t_1a0f4f21e8d9c4206643f5569ec8687316" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* timer_config_t::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="17" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="192">
+        <label>timer_config_t</label>
+        <link refid="structtimer__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/timer.h" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structtimer__config__t_1a0f4f21e8d9c4206643f5569ec8687316" prot="public" virt="non-virtual"><scope>timer_config_t</scope><name>arg</name></member>
+      <member refid="structtimer__config__t_1a55763e9c68653828773b6ac1d65f9b3e" prot="public" virt="non-virtual"><scope>timer_config_t</scope><name>cb</name></member>
+      <member refid="structtimer__config__t_1a29a91d91167e057631b4122a7d203b95" prot="public" virt="non-virtual"><scope>timer_config_t</scope><name>period</name></member>
+      <member refid="structtimer__config__t_1adb40e6e2ef34d7e373734a2538dc6d83" prot="public" virt="non-virtual"><scope>timer_config_t</scope><name>reload_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__interpt__desc__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_interpt_desc_t</compoundname>
+    <includes refid="interpt_8h" local="yes">interpt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__interpt__desc__t_1aac35348475924e7c764890df906ed249" prot="public" static="no" mutable="no">
+        <type><ref refid="interpt_8h_1ad771111d2a649cfbf464e2a50ce647c0" kindref="member">hal_interpt_t</ref></type>
+        <definition>hal_interpt_t hal_interpt_desc_t::fun</definition>
+        <argsstring></argsstring>
+        <name>fun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="11" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__interpt__desc__t_1a339ef1696fdd19ca85bbaf6c44487261" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* hal_interpt_desc_t::para</definition>
+        <argsstring></argsstring>
+        <name>para</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="12" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="89">
+        <label>hal_interpt_desc_t</label>
+        <link refid="structhal__interpt__desc__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" line="10" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/interpt.h" bodystart="10" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structhal__interpt__desc__t_1aac35348475924e7c764890df906ed249" prot="public" virt="non-virtual"><scope>hal_interpt_desc_t</scope><name>fun</name></member>
+      <member refid="structhal__interpt__desc__t_1a339ef1696fdd19ca85bbaf6c44487261" prot="public" virt="non-virtual"><scope>hal_interpt_desc_t</scope><name>para</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

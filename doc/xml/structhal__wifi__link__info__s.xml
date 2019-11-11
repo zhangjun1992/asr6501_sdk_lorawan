@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__wifi__link__info__s" kind="struct" language="C++" prot="public">
+    <compoundname>hal_wifi_link_info_s</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__wifi__link__info__s_1a486b2765504d1783266a9bad89173428" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t hal_wifi_link_info_s::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="132" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>hal_wifi_link_info_s</label>
+        <link refid="structhal__wifi__link__info__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="131" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="131" bodyend="133"/>
+    <listofallmembers>
+      <member refid="structhal__wifi__link__info__s_1a486b2765504d1783266a9bad89173428" prot="public" virt="non-virtual"><scope>hal_wifi_link_info_s</scope><name>rssi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

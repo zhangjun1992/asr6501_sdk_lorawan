@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structqspi__cmd__t" kind="struct" language="C++" prot="public">
+    <compoundname>qspi_cmd_t</compoundname>
+    <includes refid="qspi_8h" local="yes">qspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structqspi__cmd__t_1a3be376563c3589da599f876cd6baade5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qspi_cmd_t::instruction</definition>
+        <argsstring></argsstring>
+        <name>instruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="19" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqspi__cmd__t_1aa5784a8f1102b9537a1361e3ba25394a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qspi_cmd_t::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="20" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqspi__cmd__t_1a66d88093c13c2b69a17d8168e11c4a91" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qspi_cmd_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="21" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="164">
+        <label>qspi_cmd_t</label>
+        <link refid="structqspi__cmd__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="18" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" bodystart="18" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structqspi__cmd__t_1aa5784a8f1102b9537a1361e3ba25394a" prot="public" virt="non-virtual"><scope>qspi_cmd_t</scope><name>address</name></member>
+      <member refid="structqspi__cmd__t_1a3be376563c3589da599f876cd6baade5" prot="public" virt="non-virtual"><scope>qspi_cmd_t</scope><name>instruction</name></member>
+      <member refid="structqspi__cmd__t_1a66d88093c13c2b69a17d8168e11c4a91" prot="public" virt="non-virtual"><scope>qspi_cmd_t</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

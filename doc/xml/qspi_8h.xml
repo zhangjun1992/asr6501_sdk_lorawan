@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="qspi_8h" kind="file" language="C++">
+    <compoundname>qspi.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="514">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="513">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h</label>
+        <link refid="qspi_8h"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structqspi__config__t" prot="public">qspi_config_t</innerclass>
+    <innerclass refid="structqspi__dev__t" prot="public">qspi_dev_t</innerclass>
+    <innerclass refid="structqspi__cmd__t" prot="public">qspi_cmd_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qspi_8h_1a2b3a28ed37e7ace201b66b98f4d8b667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_qspi_init</definition>
+        <argsstring>(qspi_dev_t *qspi)</argsstring>
+        <name>hal_qspi_init</name>
+        <param>
+          <type><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref> *</type>
+          <declname>qspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises the QSPI interface for a given QSPI device</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spi device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="qspi_8h_1a18df90c3a64717daa8c988b89eddf751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_qspi_send</definition>
+        <argsstring>(qspi_dev_t *qspi, const uint8_t *data, uint32_t timeout)</argsstring>
+        <name>hal_qspi_send</name>
+        <param>
+          <type><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref> *</type>
+          <declname>qspi</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Qspi send</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the qspi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>spi send data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="qspi_8h_1a1a331ae1ea745d57aec6303e326ca7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_qspi_recv</definition>
+        <argsstring>(qspi_dev_t *qspi, uint8_t *data, uint32_t timeout)</argsstring>
+        <name>hal_qspi_recv</name>
+        <param>
+          <type><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref> *</type>
+          <declname>qspi</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Qspi recv</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the qspi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>qspi recv data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>qspi recv data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="qspi_8h_1aedd2c139a02936549f57d3ac9f20b2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_qspi_command</definition>
+        <argsstring>(qspi_dev_t *qspi, qspi_cmd_t *cmd, uint32_t timeout)</argsstring>
+        <name>hal_qspi_command</name>
+        <param>
+          <type><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref> *</type>
+          <declname>qspi</declname>
+        </param>
+        <param>
+          <type><ref refid="structqspi__cmd__t" kindref="compound">qspi_cmd_t</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set qspi command</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the qspi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>qspi cmd </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="qspi_8h_1a591936e03644fa348e9671bc5dbf2e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_qspi_auto_polling</definition>
+        <argsstring>(qspi_dev_t *qspi, uint32_t cmd, uint32_t timeout)</argsstring>
+        <name>hal_qspi_auto_polling</name>
+        <param>
+          <type><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref> *</type>
+          <declname>qspi</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure automatic polling mode to wait for processing</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the qspi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>qspi cmd </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="qspi_8h_1a5000682873282dd0d7da00e659a0429b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_qspi_finalize</definition>
+        <argsstring>(qspi_dev_t *qspi)</argsstring>
+        <name>hal_qspi_finalize</name>
+        <param>
+          <type><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref> *</type>
+          <declname>qspi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initialises a QSPI interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the QSPI device to be de-initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_QSPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_QSPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structqspi__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structqspi__config__t_1a7f48f18d1c6378f97938698d0209fa42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structqspi__config__t_1a7f48f18d1c6378f97938698d0209fa42" kindref="member">freq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>communication<sp/>frequency<sp/>Hz<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/><ref refid="structqspi__config__t" kindref="compound">qspi_config_t</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structqspi__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structqspi__dev__t_1aa03bc4eccea123f4676bf139f30aec71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structqspi__dev__t_1aa03bc4eccea123f4676bf139f30aec71" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>qspi<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structqspi__dev__t_1a9911822b0fded42ce229f2fcce4a43d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structqspi__config__t" kindref="compound">qspi_config_t</ref><sp/><ref refid="structqspi__dev__t_1a9911822b0fded42ce229f2fcce4a43d5" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>qspi<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structqspi__dev__t_1a6e186a4e6d5ca754603a867c8f3ebac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structqspi__dev__t_1a6e186a4e6d5ca754603a867c8f3ebac4" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/><ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structqspi__cmd__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="structqspi__cmd__t_1a3be376563c3589da599f876cd6baade5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structqspi__cmd__t_1a3be376563c3589da599f876cd6baade5" kindref="member">instruction</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>qspi<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structqspi__cmd__t_1aa5784a8f1102b9537a1361e3ba25394a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structqspi__cmd__t_1aa5784a8f1102b9537a1361e3ba25394a" kindref="member">address</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>qspi<sp/>cmd<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structqspi__cmd__t_1a66d88093c13c2b69a17d8168e11c4a91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structqspi__cmd__t_1a66d88093c13c2b69a17d8168e11c4a91" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>qspi<sp/>cmd<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><ref refid="structqspi__cmd__t" kindref="compound">qspi_cmd_t</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">int32_t<sp/><ref refid="qspi_8h_1a2b3a28ed37e7ace201b66b98f4d8b667" kindref="member">hal_qspi_init</ref>(<ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref><sp/>*qspi);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">int32_t<sp/><ref refid="qspi_8h_1a18df90c3a64717daa8c988b89eddf751" kindref="member">hal_qspi_send</ref>(<ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref><sp/>*qspi,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">int32_t<sp/><ref refid="qspi_8h_1a1a331ae1ea745d57aec6303e326ca7d3" kindref="member">hal_qspi_recv</ref>(<ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref><sp/>*qspi,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">int32_t<sp/><ref refid="qspi_8h_1aedd2c139a02936549f57d3ac9f20b2df" kindref="member">hal_qspi_command</ref>(<ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref><sp/>*qspi,<sp/><ref refid="structqspi__cmd__t" kindref="compound">qspi_cmd_t</ref><sp/>*cmd,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">int32_t<sp/><ref refid="qspi_8h_1a591936e03644fa348e9671bc5dbf2e65" kindref="member">hal_qspi_auto_polling</ref>(<ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref><sp/>*qspi,<sp/>uint32_t<sp/>cmd,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">int32_t<sp/><ref refid="qspi_8h_1a5000682873282dd0d7da00e659a0429b" kindref="member">hal_qspi_finalize</ref>(<ref refid="structqspi__dev__t" kindref="compound">qspi_dev_t</ref><sp/>*qspi);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_QSPI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/qspi.h"/>
+  </compounddef>
+</doxygen>

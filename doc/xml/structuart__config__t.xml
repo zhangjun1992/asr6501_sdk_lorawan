@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structuart__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>uart_config_t</compoundname>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuart__config__t_1a988fe3be69cba628a241033f1b16f35e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t uart_config_t::baud_rate</definition>
+        <argsstring></argsstring>
+        <name>baud_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="59" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__config__t_1a98e3f985aac45435986be5e14fe47b76" prot="public" static="no" mutable="no">
+        <type><ref refid="uart_8h_1a631222ce1f55203f7456a62df1adaeaa" kindref="member">hal_uart_data_width_t</ref></type>
+        <definition>hal_uart_data_width_t uart_config_t::data_width</definition>
+        <argsstring></argsstring>
+        <name>data_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="60" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__config__t_1a33b566783011bf57508e65a9b60dc7de" prot="public" static="no" mutable="no">
+        <type><ref refid="uart_8h_1a67ed44b4958988acbd6cbccbe7d83b60" kindref="member">hal_uart_parity_t</ref></type>
+        <definition>hal_uart_parity_t uart_config_t::parity</definition>
+        <argsstring></argsstring>
+        <name>parity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="61" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__config__t_1a24881f4d7db115b05e72b4854ab81767" prot="public" static="no" mutable="no">
+        <type><ref refid="uart_8h_1aef51ce06a2c07532c061b3ebd5e22d25" kindref="member">hal_uart_stop_bits_t</ref></type>
+        <definition>hal_uart_stop_bits_t uart_config_t::stop_bits</definition>
+        <argsstring></argsstring>
+        <name>stop_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="62" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__config__t_1a8052316f7700cb2f3999cba2019e5d5c" prot="public" static="no" mutable="no">
+        <type><ref refid="uart_8h_1a33928493a14b4828cb32e778d1af482d" kindref="member">hal_uart_flow_control_t</ref></type>
+        <definition>hal_uart_flow_control_t uart_config_t::flow_control</definition>
+        <argsstring></argsstring>
+        <name>flow_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="63" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__config__t_1a7f871d76a5ea93222aaaac1ba9c31a95" prot="public" static="no" mutable="no">
+        <type><ref refid="uart_8h_1a6b1b9a8c0a8767360f69f0c1bc990d7a" kindref="member">hal_uart_mode_t</ref></type>
+        <definition>hal_uart_mode_t uart_config_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="64" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="197">
+        <label>uart_config_t</label>
+        <link refid="structuart__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" line="58" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/uart.h" bodystart="58" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structuart__config__t_1a988fe3be69cba628a241033f1b16f35e" prot="public" virt="non-virtual"><scope>uart_config_t</scope><name>baud_rate</name></member>
+      <member refid="structuart__config__t_1a98e3f985aac45435986be5e14fe47b76" prot="public" virt="non-virtual"><scope>uart_config_t</scope><name>data_width</name></member>
+      <member refid="structuart__config__t_1a8052316f7700cb2f3999cba2019e5d5c" prot="public" virt="non-virtual"><scope>uart_config_t</scope><name>flow_control</name></member>
+      <member refid="structuart__config__t_1a7f871d76a5ea93222aaaac1ba9c31a95" prot="public" virt="non-virtual"><scope>uart_config_t</scope><name>mode</name></member>
+      <member refid="structuart__config__t_1a33b566783011bf57508e65a9b60dc7de" prot="public" virt="non-virtual"><scope>uart_config_t</scope><name>parity</name></member>
+      <member refid="structuart__config__t_1a24881f4d7db115b05e72b4854ab81767" prot="public" virt="non-virtual"><scope>uart_config_t</scope><name>stop_bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

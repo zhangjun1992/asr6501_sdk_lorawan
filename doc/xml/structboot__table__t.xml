@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structboot__table__t" kind="struct" language="C++" prot="public">
+    <compoundname>boot_table_t</compoundname>
+    <includes refid="ota_8h" local="yes">ota.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structboot__table__t_1a38829ad8570cc9ad3f59e3c928e02ea9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t boot_table_t::start_address</definition>
+        <argsstring></argsstring>
+        <name>start_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="40" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboot__table__t_1a12590d63f9180d90e072fc6dd47fbbc5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t boot_table_t::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="41" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboot__table__t_1a4b2fc6e18945aecf679b8dd817b1b07d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t boot_table_t::version[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="42" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboot__table__t_1aa8ae40f4598a6658af8464f32529b790" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t boot_table_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="43" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboot__table__t_1a23f09774844ddb42c26af0e6091bdc6f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t boot_table_t::upgrade_type</definition>
+        <argsstring></argsstring>
+        <name>upgrade_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="44" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboot__table__t_1a0decc9ccb49f195a76948ff79c32534b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t boot_table_t::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="45" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboot__table__t_1af02f384553742a35f956e59cead43507" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t boot_table_t::reserved[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="46" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="78">
+        <label>boot_table_t</label>
+        <link refid="structboot__table__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" line="39" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h" bodystart="39" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structboot__table__t_1a0decc9ccb49f195a76948ff79c32534b" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>crc</name></member>
+      <member refid="structboot__table__t_1a12590d63f9180d90e072fc6dd47fbbc5" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>length</name></member>
+      <member refid="structboot__table__t_1af02f384553742a35f956e59cead43507" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>reserved</name></member>
+      <member refid="structboot__table__t_1a38829ad8570cc9ad3f59e3c928e02ea9" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>start_address</name></member>
+      <member refid="structboot__table__t_1aa8ae40f4598a6658af8464f32529b790" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>type</name></member>
+      <member refid="structboot__table__t_1a23f09774844ddb42c26af0e6091bdc6f" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>upgrade_type</name></member>
+      <member refid="structboot__table__t_1a4b2fc6e18945aecf679b8dd817b1b07d" prot="public" virt="non-virtual"><scope>boot_table_t</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

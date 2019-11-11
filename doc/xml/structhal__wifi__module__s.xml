@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__wifi__module__s" kind="struct" language="C++" prot="public">
+    <compoundname>hal_wifi_module_s</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__wifi__module__s_1ab84d8d230e40e1209b8150780bb15475" prot="public" static="no" mutable="no">
+        <type><ref refid="structhal__module__base__t" kindref="compound">hal_module_base_t</ref></type>
+        <definition>hal_module_base_t hal_wifi_module_s::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="157" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a52fd13db5939109e41a6f11c7b0dd008" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structhal__wifi__event__cb__t" kindref="compound">hal_wifi_event_cb_t</ref> *</type>
+        <definition>const hal_wifi_event_cb_t* hal_wifi_module_s::ev_cb</definition>
+        <argsstring></argsstring>
+        <name>ev_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="158" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a95dff476ea204f6870290af9d6b2ad41" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::init) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="160" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a04b776a310c14e9912e57ff34a175325" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::get_mac_addr) (hal_wifi_module_t *m, uint8_t *mac)</definition>
+        <argsstring>)(hal_wifi_module_t *m, uint8_t *mac)</argsstring>
+        <name>get_mac_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="161" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a0f8bd6940dcb2bc60534c65200025384" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::set_mac_addr) (hal_wifi_module_t *m, const uint8_t *mac)</definition>
+        <argsstring>)(hal_wifi_module_t *m, const uint8_t *mac)</argsstring>
+        <name>set_mac_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="162" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a94e44d2540e692e3d2efc746e86626ea" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::start) (hal_wifi_module_t *m, hal_wifi_init_type_t *init_para)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_init_type_t *init_para)</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="163" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a750caaba1f62477871d5217d12f65c1f" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::start_adv) (hal_wifi_module_t *m, hal_wifi_init_type_adv_t *init_para_adv)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_init_type_adv_t *init_para_adv)</argsstring>
+        <name>start_adv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="164" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a707cadeead0da028b1d6b5243c18900c" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::get_ip_stat) (hal_wifi_module_t *m, hal_wifi_ip_stat_t *out_net_para, hal_wifi_type_t wifi_type)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_ip_stat_t *out_net_para, hal_wifi_type_t wifi_type)</argsstring>
+        <name>get_ip_stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="166" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1abb507e301f7f57f953fd26697dec580d" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::get_link_stat) (hal_wifi_module_t *m, hal_wifi_link_stat_t *out_stat)</definition>
+        <argsstring>)(hal_wifi_module_t *m, hal_wifi_link_stat_t *out_stat)</argsstring>
+        <name>get_link_stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="168" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1ad48c4c184bba3cc27a586210849a223d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::start_scan) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>start_scan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="169" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a1b84ac2534fc197f67759fb0b6cb6c43" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::start_scan_adv) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>start_scan_adv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="170" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a69d0abd8ba10cb784511a358bb7b3bb7" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::power_off) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>power_off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="171" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a77467283034d025bea6fd53f59412c82" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::power_on) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>power_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="172" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1ac0578fa36fa49585ed9051ad40b70a78" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::suspend) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="173" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a9c2a49b64de903f670d19d263eda6271" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::suspend_station) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>suspend_station</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="174" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a7a433bfbbe79074a85b87a57f7521ea0" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::suspend_soft_ap) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>suspend_soft_ap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="175" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a82214a1288de0e66edc5438ac7e26fb9" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::set_channel) (hal_wifi_module_t *m, int ch)</definition>
+        <argsstring>)(hal_wifi_module_t *m, int ch)</argsstring>
+        <name>set_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="176" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a179564a3db7eee4a1517988917549de0" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::get_channel) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>get_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="177" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a3a7d0dd74bab774412f952d36585689f" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::get_channel_list) (hal_wifi_module_t *m, const uint8_t **chnlist)</definition>
+        <argsstring>)(hal_wifi_module_t *m, const uint8_t **chnlist)</argsstring>
+        <name>get_channel_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="178" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a231ec2946d6e261aa51b2f7a3d21bf52" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::start_monitor) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>start_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="179" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a7b76b2e974e526a25581c5d921a9537e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::stop_monitor) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>stop_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="180" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a02fbfdbee1e30b6b509dbea8896748ac" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::register_monitor_cb) (hal_wifi_module_t *m, monitor_data_cb_t fn)</definition>
+        <argsstring>)(hal_wifi_module_t *m, monitor_data_cb_t fn)</argsstring>
+        <name>register_monitor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="181" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1ab40f7b61e9eb6a585c9872d315513006" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::register_wlan_mgnt_monitor_cb) (hal_wifi_module_t *m, monitor_data_cb_t fn)</definition>
+        <argsstring>)(hal_wifi_module_t *m, monitor_data_cb_t fn)</argsstring>
+        <name>register_wlan_mgnt_monitor_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="182" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a1c0f13ce75fb7802c3584ed99a78161c" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::wlan_send_80211_raw_frame) (hal_wifi_module_t *m, uint8_t *buf, int len)</definition>
+        <argsstring>)(hal_wifi_module_t *m, uint8_t *buf, int len)</argsstring>
+        <name>wlan_send_80211_raw_frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="183" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a652a542258eecb507ef7ae088a9a5c06" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::start_debug_mode) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>start_debug_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="186" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a1d0d8052ddf439981e1571f87917678e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::stop_debug_mode) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>stop_debug_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="187" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1adc0944d05af28c5d88bacf06a8395df0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::mesh_register_cb) (hal_wifi_module_t *m, monitor_data_cb_t fn)</definition>
+        <argsstring>)(hal_wifi_module_t *m, monitor_data_cb_t fn)</argsstring>
+        <name>mesh_register_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="190" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a5f3e763677c112f9008df6cd4007b0a8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_wifi_module_s::mesh_set_bssid) (hal_wifi_module_t *m, const uint8_t *mac)</definition>
+        <argsstring>)(hal_wifi_module_t *m, const uint8_t *mac)</argsstring>
+        <name>mesh_set_bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="191" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a0e76bbb11149a0aa8b4d858ae4553f26" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::mesh_enable) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>mesh_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="192" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a751243a598d4aa5837e54d6ff81a3f70" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::mesh_disable) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>mesh_disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="193" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a7672dca970bc741685fe135b86c2bb05" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::mesh_radio_sleep) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>mesh_radio_sleep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="194" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__module__s_1a671b996c30e4a7c52bafbbec903a8e03" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_wifi_module_s::mesh_radio_wakeup) (hal_wifi_module_t *m)</definition>
+        <argsstring>)(hal_wifi_module_t *m)</argsstring>
+        <name>mesh_radio_wakeup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="195" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="127">
+        <label>dlist_s</label>
+        <link refid="structdlist__s"/>
+        <childnode refid="127" relation="usage">
+          <edgelabel>+prev</edgelabel>
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="126">
+        <label>hal_module_base_t</label>
+        <link refid="structhal__module__base__t"/>
+        <childnode refid="127" relation="usage">
+          <edgelabel>+list</edgelabel>
+        </childnode>
+      </node>
+      <node id="128">
+        <label>hal_wifi_event_cb_t</label>
+        <link refid="structhal__wifi__event__cb__t"/>
+      </node>
+      <node id="125">
+        <label>hal_wifi_module_s</label>
+        <link refid="structhal__wifi__module__s"/>
+        <childnode refid="126" relation="usage">
+          <edgelabel>+base</edgelabel>
+        </childnode>
+        <childnode refid="128" relation="usage">
+          <edgelabel>+ev_cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" line="156" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h" bodystart="156" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structhal__wifi__module__s_1ab84d8d230e40e1209b8150780bb15475" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>base</name></member>
+      <member refid="structhal__wifi__module__s_1a52fd13db5939109e41a6f11c7b0dd008" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>ev_cb</name></member>
+      <member refid="structhal__wifi__module__s_1a179564a3db7eee4a1517988917549de0" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>get_channel</name></member>
+      <member refid="structhal__wifi__module__s_1a3a7d0dd74bab774412f952d36585689f" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>get_channel_list</name></member>
+      <member refid="structhal__wifi__module__s_1a707cadeead0da028b1d6b5243c18900c" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>get_ip_stat</name></member>
+      <member refid="structhal__wifi__module__s_1abb507e301f7f57f953fd26697dec580d" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>get_link_stat</name></member>
+      <member refid="structhal__wifi__module__s_1a04b776a310c14e9912e57ff34a175325" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>get_mac_addr</name></member>
+      <member refid="structhal__wifi__module__s_1a95dff476ea204f6870290af9d6b2ad41" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>init</name></member>
+      <member refid="structhal__wifi__module__s_1a751243a598d4aa5837e54d6ff81a3f70" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>mesh_disable</name></member>
+      <member refid="structhal__wifi__module__s_1a0e76bbb11149a0aa8b4d858ae4553f26" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>mesh_enable</name></member>
+      <member refid="structhal__wifi__module__s_1a7672dca970bc741685fe135b86c2bb05" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>mesh_radio_sleep</name></member>
+      <member refid="structhal__wifi__module__s_1a671b996c30e4a7c52bafbbec903a8e03" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>mesh_radio_wakeup</name></member>
+      <member refid="structhal__wifi__module__s_1adc0944d05af28c5d88bacf06a8395df0" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>mesh_register_cb</name></member>
+      <member refid="structhal__wifi__module__s_1a5f3e763677c112f9008df6cd4007b0a8" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>mesh_set_bssid</name></member>
+      <member refid="structhal__wifi__module__s_1a69d0abd8ba10cb784511a358bb7b3bb7" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>power_off</name></member>
+      <member refid="structhal__wifi__module__s_1a77467283034d025bea6fd53f59412c82" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>power_on</name></member>
+      <member refid="structhal__wifi__module__s_1a02fbfdbee1e30b6b509dbea8896748ac" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>register_monitor_cb</name></member>
+      <member refid="structhal__wifi__module__s_1ab40f7b61e9eb6a585c9872d315513006" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>register_wlan_mgnt_monitor_cb</name></member>
+      <member refid="structhal__wifi__module__s_1a82214a1288de0e66edc5438ac7e26fb9" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>set_channel</name></member>
+      <member refid="structhal__wifi__module__s_1a0f8bd6940dcb2bc60534c65200025384" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>set_mac_addr</name></member>
+      <member refid="structhal__wifi__module__s_1a94e44d2540e692e3d2efc746e86626ea" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>start</name></member>
+      <member refid="structhal__wifi__module__s_1a750caaba1f62477871d5217d12f65c1f" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>start_adv</name></member>
+      <member refid="structhal__wifi__module__s_1a652a542258eecb507ef7ae088a9a5c06" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>start_debug_mode</name></member>
+      <member refid="structhal__wifi__module__s_1a231ec2946d6e261aa51b2f7a3d21bf52" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>start_monitor</name></member>
+      <member refid="structhal__wifi__module__s_1ad48c4c184bba3cc27a586210849a223d" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>start_scan</name></member>
+      <member refid="structhal__wifi__module__s_1a1b84ac2534fc197f67759fb0b6cb6c43" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>start_scan_adv</name></member>
+      <member refid="structhal__wifi__module__s_1a1d0d8052ddf439981e1571f87917678e" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>stop_debug_mode</name></member>
+      <member refid="structhal__wifi__module__s_1a7b76b2e974e526a25581c5d921a9537e" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>stop_monitor</name></member>
+      <member refid="structhal__wifi__module__s_1ac0578fa36fa49585ed9051ad40b70a78" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>suspend</name></member>
+      <member refid="structhal__wifi__module__s_1a7a433bfbbe79074a85b87a57f7521ea0" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>suspend_soft_ap</name></member>
+      <member refid="structhal__wifi__module__s_1a9c2a49b64de903f670d19d263eda6271" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>suspend_station</name></member>
+      <member refid="structhal__wifi__module__s_1a1c0f13ce75fb7802c3584ed99a78161c" prot="public" virt="non-virtual"><scope>hal_wifi_module_s</scope><name>wlan_send_80211_raw_frame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

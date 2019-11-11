@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__lrwan__time__itf__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_lrwan_time_itf_t</compoundname>
+    <includes refid="lorawan_8h" local="yes">lorawan.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a052f31066cab5511e9b67af9f97487c9" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::delay_ms) (uint32_t delay)</definition>
+        <argsstring>)(uint32_t delay)</argsstring>
+        <name>delay_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="33" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a792696c789c32c82cce21c739b6fa5ac" prot="public" static="no" mutable="no">
+        <type>TimerTime_t(*</type>
+        <definition>TimerTime_t(* hal_lrwan_time_itf_t::set_timer_context) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>set_timer_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="34" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a481f1ca9207ac628c0cc99bf4ac81fc7" prot="public" static="no" mutable="no">
+        <type>TimerTime_t(*</type>
+        <definition>TimerTime_t(* hal_lrwan_time_itf_t::get_timer_context) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_timer_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="35" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a9022a871086e444499475d7623e320fd" prot="public" static="no" mutable="no">
+        <type>TimerTime_t(*</type>
+        <definition>TimerTime_t(* hal_lrwan_time_itf_t::get_timer_elapsed_time) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_timer_elapsed_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="36" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1ace695e41092f8d57b6ba4509eac8aa03" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::stop_alarm) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>stop_alarm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="37" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1ab749e1f028982de780f266e5d8c5f456" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::set_alarm) (uint32_t timeout)</definition>
+        <argsstring>)(uint32_t timeout)</argsstring>
+        <name>set_alarm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="38" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a0a7b1a3c545ae76684ebf160dfce080c" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::set_uc_wakeup_time) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>set_uc_wakeup_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="39" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a1f025f63c62e9bb276b9915bd6ba6823" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::set_timeout) (TimerEvent_t *obj)</definition>
+        <argsstring>)(TimerEvent_t *obj)</argsstring>
+        <name>set_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="40" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a1420cdcc12bb00e40068046649fa6d71" prot="public" static="no" mutable="no">
+        <type>TimerTime_t(*</type>
+        <definition>TimerTime_t(* hal_lrwan_time_itf_t::compute_elapsed_time) (TimerTime_t time)</definition>
+        <argsstring>)(TimerTime_t time)</argsstring>
+        <name>compute_elapsed_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="41" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1adea0acc17bfbdecbb98dc8f9a7ad71ec" prot="public" static="no" mutable="no">
+        <type>TimerTime_t(*</type>
+        <definition>TimerTime_t(* hal_lrwan_time_itf_t::get_current_time) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>get_current_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="42" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a6d1c68715146518cd415a05b144f5ea0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::set_timer_val) (TimerEvent_t *obj, uint32_t value)</definition>
+        <argsstring>)(TimerEvent_t *obj, uint32_t value)</argsstring>
+        <name>set_timer_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="43" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a256e6d8c9403056be0c5e3debc7a242a" prot="public" static="no" mutable="no">
+        <type>uint32_t(*</type>
+        <definition>uint32_t(* hal_lrwan_time_itf_t::get_sys_time) (uint16_t *subSeconds)</definition>
+        <argsstring>)(uint16_t *subSeconds)</argsstring>
+        <name>get_sys_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="44" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__lrwan__time__itf__t_1a35237cd6f3917d73ab0017ffb97f6871" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* hal_lrwan_time_itf_t::set_sys_time) (uint32_t seconds, uint16_t subSeconds)</definition>
+        <argsstring>)(uint32_t seconds, uint16_t subSeconds)</argsstring>
+        <name>set_sys_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="45" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>hal_lrwan_time_itf_t</label>
+        <link refid="structhal__lrwan__time__itf__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" line="32" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h" bodystart="31" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structhal__lrwan__time__itf__t_1a1420cdcc12bb00e40068046649fa6d71" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>compute_elapsed_time</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a052f31066cab5511e9b67af9f97487c9" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>delay_ms</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1adea0acc17bfbdecbb98dc8f9a7ad71ec" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>get_current_time</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a256e6d8c9403056be0c5e3debc7a242a" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>get_sys_time</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a481f1ca9207ac628c0cc99bf4ac81fc7" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>get_timer_context</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a9022a871086e444499475d7623e320fd" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>get_timer_elapsed_time</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1ab749e1f028982de780f266e5d8c5f456" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>set_alarm</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a35237cd6f3917d73ab0017ffb97f6871" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>set_sys_time</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a1f025f63c62e9bb276b9915bd6ba6823" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>set_timeout</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a792696c789c32c82cce21c739b6fa5ac" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>set_timer_context</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a6d1c68715146518cd415a05b144f5ea0" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>set_timer_val</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1a0a7b1a3c545ae76684ebf160dfce080c" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>set_uc_wakeup_time</name></member>
+      <member refid="structhal__lrwan__time__itf__t_1ace695e41092f8d57b6ba4509eac8aa03" prot="public" virt="non-virtual"><scope>hal_lrwan_time_itf_t</scope><name>stop_alarm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

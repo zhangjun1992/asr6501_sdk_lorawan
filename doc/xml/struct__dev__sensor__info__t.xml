@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__dev__sensor__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>_dev_sensor_info_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__dev__sensor__info__t_1ade135e4653f3e5f725564e018c3d0283" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1a475dd050cee8a7ab888e5c71fce6bc6b" kindref="member">vendor_id_e</ref></type>
+        <definition>vendor_id_e _dev_sensor_info_t::vendor</definition>
+        <argsstring></argsstring>
+        <name>vendor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="231" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__info__t_1a99af6e5fb4d0d3725965f8580334d3ab" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _dev_sensor_info_t::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="232" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__info__t_1afbabd76e4c8634d5a35eaba32691153d" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1abdc6360148df063c4c119b584ec7146d" kindref="member">value_unit_e</ref></type>
+        <definition>value_unit_e _dev_sensor_info_t::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="233" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__info__t_1a500acdae77fb0cdf37ef3b1d375f1e3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _dev_sensor_info_t::range_max</definition>
+        <argsstring></argsstring>
+        <name>range_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="234" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__info__t_1a3a881b3967251ab0d098a291ed37aa5c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _dev_sensor_info_t::range_min</definition>
+        <argsstring></argsstring>
+        <name>range_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="235" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__info__t_1ac0c30e50f96e0683c9c93c6d9c722e0d" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1a0c7e8c7316dc0df7a83dc6e0524c3971" kindref="member">dev_health_state_e</ref></type>
+        <definition>dev_health_state_e _dev_sensor_info_t::health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="236" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>_dev_sensor_info_t</label>
+        <link refid="struct__dev__sensor__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="230" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="230" bodyend="238"/>
+    <listofallmembers>
+      <member refid="struct__dev__sensor__info__t_1ac0c30e50f96e0683c9c93c6d9c722e0d" prot="public" virt="non-virtual"><scope>_dev_sensor_info_t</scope><name>health</name></member>
+      <member refid="struct__dev__sensor__info__t_1a99af6e5fb4d0d3725965f8580334d3ab" prot="public" virt="non-virtual"><scope>_dev_sensor_info_t</scope><name>model</name></member>
+      <member refid="struct__dev__sensor__info__t_1a500acdae77fb0cdf37ef3b1d375f1e3e" prot="public" virt="non-virtual"><scope>_dev_sensor_info_t</scope><name>range_max</name></member>
+      <member refid="struct__dev__sensor__info__t_1a3a881b3967251ab0d098a291ed37aa5c" prot="public" virt="non-virtual"><scope>_dev_sensor_info_t</scope><name>range_min</name></member>
+      <member refid="struct__dev__sensor__info__t_1afbabd76e4c8634d5a35eaba32691153d" prot="public" virt="non-virtual"><scope>_dev_sensor_info_t</scope><name>unit</name></member>
+      <member refid="struct__dev__sensor__info__t_1ade135e4653f3e5f725564e018c3d0283" prot="public" virt="non-virtual"><scope>_dev_sensor_info_t</scope><name>vendor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="trace_8h" kind="file" language="C++">
+    <compoundname>trace.h</compoundname>
+    <includedby refid="hal_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</includedby>
+    <invincdepgraph>
+      <node id="575">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/trace.h</label>
+        <link refid="trace_8h"/>
+        <childnode refid="576" relation="include">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="trace_8h_1a97528b8c8622b9a882552c26402ea561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* trace_hal_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>trace_hal_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trace data transfer init. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/trace.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="trace_8h_1a723b3bcc8f7ffdb612127ef3d768fbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t trace_hal_send</definition>
+        <argsstring>(void *handle, void *buf, size_t len)</argsstring>
+        <name>trace_hal_send</name>
+        <param>
+          <type>void *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trace data transfer send.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data transfer channel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer store data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the len of data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size send success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/trace.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="trace_8h_1ae95a981721aa0ab5d7b92408d49afb9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t trace_hal_recv</definition>
+        <argsstring>(void *handle, void *buf)</argsstring>
+        <name>trace_hal_recv</name>
+        <param>
+          <type>void *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trace data transfer receive.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data transfer channel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to store data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size receive success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/trace.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="trace_8h_1ab514b3d34cdc784dab7498f5c9574866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trace_hal_deinit</definition>
+        <argsstring>(void *handle)</argsstring>
+        <name>trace_hal_deinit</name>
+        <param>
+          <type>void *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trace data transfer init.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data transfer channel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/trace.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_TRACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_TRACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="trace_8h_1a97528b8c8622b9a882552c26402ea561" kindref="member">trace_hal_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">ssize_t<sp/><ref refid="trace_8h_1a723b3bcc8f7ffdb612127ef3d768fbe3" kindref="member">trace_hal_send</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">ssize_t<sp/><ref refid="trace_8h_1ae95a981721aa0ab5d7b92408d49afb9a" kindref="member">trace_hal_recv</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="trace_8h_1ab514b3d34cdc784dab7498f5c9574866" kindref="member">trace_hal_deinit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_TRACE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/trace.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="nand_8h" kind="file" language="C++">
+    <compoundname>nand.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="499">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="501">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h</label>
+        <link refid="nand_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnand__config__t" prot="public">nand_config_t</innerclass>
+    <innerclass refid="structnand__addr__t" prot="public">nand_addr_t</innerclass>
+    <innerclass refid="structnand__dev__t" prot="public">nand_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nand_8h_1a47c42ddb3055e426785c0445686db196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_init</definition>
+        <argsstring>(nand_dev_t *nand)</argsstring>
+        <name>hal_nand_init</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises a nand flash interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nand_8h_1aa7639ab60bd2870013c8a2caa0c82115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_finalize</definition>
+        <argsstring>(nand_dev_t *nand)</argsstring>
+        <name>hal_nand_finalize</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialises a nand flash interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nand_8h_1ae78380215872801213f6ec90b45d970c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_read_page</definition>
+        <argsstring>(nand_dev_t *nand, nand_addr_t *addr, uint8_t *data, uint32_t page_count)</argsstring>
+        <name>hal_nand_read_page</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <param>
+          <type><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>page_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read nand page(s)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nand address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">page_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of pages to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nand_8h_1ac3c6bf17588f3013fa2c24ebcc623126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_write_page</definition>
+        <argsstring>(nand_dev_t *nand, nand_addr_t *addr, uint8_t *data, uint32_t page_count)</argsstring>
+        <name>hal_nand_write_page</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <param>
+          <type><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>page_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write nand page(s)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source buffer to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nand address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">page_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of pages to write</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nand_8h_1a896f9d1feaa9912f3e932150d0948221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_read_spare</definition>
+        <argsstring>(nand_dev_t *nand, nand_addr_t *addr, uint8_t *data, uint32_t data_len)</argsstring>
+        <name>hal_nand_read_spare</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <param>
+          <type><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read nand spare area</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer which will store incoming data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nand address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of spares to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nand_8h_1af3d4854bc3ea33feddfca5c865e3ff03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_write_spare</definition>
+        <argsstring>(nand_dev_t *nand, nand_addr_t *addr, uint8_t *data, uint32_t data_len)</argsstring>
+        <name>hal_nand_write_spare</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <param>
+          <type><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write nand spare area</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source buffer to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nand address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of spares to write</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="nand_8h_1aac0bcfa5e6db70df648e73a266ec78c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_nand_erase_block</definition>
+        <argsstring>(nand_dev_t *nand, nand_addr_t *addr)</argsstring>
+        <name>hal_nand_erase_block</name>
+        <param>
+          <type><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref> *</type>
+          <declname>nand</declname>
+        </param>
+        <param>
+          <type><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Erase nand block</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be initialised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nand address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_NAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_NAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structnand__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structnand__config__t_1add4d392cdf9e41422a6a695c12222475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnand__config__t_1add4d392cdf9e41422a6a695c12222475" kindref="member">page_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>page<sp/>size<sp/>w/o<sp/>spare<sp/>area<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structnand__config__t_1aedefd64c7d2fd309fd1d853fa8ebd2c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnand__config__t_1aedefd64c7d2fd309fd1d853fa8ebd2c3" kindref="member">spare_area_size</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>spare<sp/>area<sp/>size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structnand__config__t_1a13ff4164b21b1eb42499f23ef53df6da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnand__config__t_1a13ff4164b21b1eb42499f23ef53df6da" kindref="member">block_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>block<sp/>size<sp/>number<sp/>of<sp/>pages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structnand__config__t_1a8fcef4dbdc9a2017cdfe147764d8455e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnand__config__t_1a8fcef4dbdc9a2017cdfe147764d8455e" kindref="member">zone_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>zone<sp/>size<sp/>measured<sp/>in<sp/>number<sp/>of<sp/>blocks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structnand__config__t_1a32f97b2f673f9ff159bbd26d083bbd70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structnand__config__t_1a32f97b2f673f9ff159bbd26d083bbd70" kindref="member">zone_number</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>number<sp/>of<sp/>zones<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><ref refid="structnand__config__t" kindref="compound">nand_config_t</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structnand__addr__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="structnand__addr__t_1ac41455d4d78495defb47d4029d6dde02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structnand__addr__t_1ac41455d4d78495defb47d4029d6dde02" kindref="member">page</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>Page<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structnand__addr__t_1a7d73467e6ab83dc27d4ea43f2f1252fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structnand__addr__t_1a7d73467e6ab83dc27d4ea43f2f1252fa" kindref="member">block</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>Block<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structnand__addr__t_1abfaf6e8b5db5d7391a4655c74ec629e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structnand__addr__t_1abfaf6e8b5db5d7391a4655c74ec629e0" kindref="member">zone</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NAND<sp/>memory<sp/>Zone<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structnand__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="structnand__dev__t_1ab0c55b629cd0b5df2f29ceb56a595e42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnand__dev__t_1ab0c55b629cd0b5df2f29ceb56a595e42" kindref="member">base_addr</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structnand__dev__t_1a1684a7183389fa6d5d95646076afc9bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnand__config__t" kindref="compound">nand_config_t</ref><sp/><sp/><sp/><sp/><ref refid="structnand__dev__t_1a1684a7183389fa6d5d95646076afc9bb" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structnand__dev__t_1ab02a8867a604115a10428a77171a2656" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structnand__dev__t_1ab02a8867a604115a10428a77171a2656" kindref="member">priv</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/><ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1a47c42ddb3055e426785c0445686db196" kindref="member">hal_nand_init</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1aa7639ab60bd2870013c8a2caa0c82115" kindref="member">hal_nand_finalize</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1ae78380215872801213f6ec90b45d970c" kindref="member">hal_nand_read_page</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand,<sp/><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref><sp/>*addr,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>page_count);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1ac3c6bf17588f3013fa2c24ebcc623126" kindref="member">hal_nand_write_page</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand,<sp/><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref><sp/>*addr,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>page_count);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1a896f9d1feaa9912f3e932150d0948221" kindref="member">hal_nand_read_spare</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand,<sp/><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref><sp/>*addr,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1af3d4854bc3ea33feddfca5c865e3ff03" kindref="member">hal_nand_write_spare</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand,<sp/><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref><sp/>*addr,<sp/>uint8_t<sp/>*data,<sp/>uint32_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">int32_t<sp/><ref refid="nand_8h_1aac0bcfa5e6db70df648e73a266ec78c7" kindref="member">hal_nand_erase_block</ref>(<ref refid="structnand__dev__t" kindref="compound">nand_dev_t</ref><sp/>*nand,<sp/><ref refid="structnand__addr__t" kindref="compound">nand_addr_t</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/nand.h"/>
+  </compounddef>
+</doxygen>

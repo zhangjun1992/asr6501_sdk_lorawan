@@ -1,0 +1,1837 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="errno_8h" kind="file" language="C++">
+    <compoundname>errno.h</compoundname>
+    <includedby refid="aos_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</includedby>
+    <includedby refid="network_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/network.h</includedby>
+    <invincdepgraph>
+      <node id="68">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/mbedtls_ssl.h</label>
+        <link refid="mbedtls__ssl_8h"/>
+      </node>
+      <node id="71">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="75">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h</label>
+        <link refid="errno_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/network.h</label>
+        <link refid="network_8h"/>
+      </node>
+      <node id="72">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/lorawan.h</label>
+        <link refid="lorawan_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="errno_8h_1add669d31505a077f769cff8e66c780b3" prot="public" static="no">
+        <name>EPERM</name>
+        <initializer>1  /* Operation not permitted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="15" column="11" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a03e689f378f643d16ea7537918528a48" prot="public" static="no">
+        <name>ENOENT</name>
+        <initializer>2  /* No such file or directory */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="16" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a462e47a8af6288232a5df548221ada4c" prot="public" static="no">
+        <name>ESRCH</name>
+        <initializer>3  /* No such process */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="17" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a46b83d9f6c23b1b65a8cecfd775ddaed" prot="public" static="no">
+        <name>EINTR</name>
+        <initializer>4  /* Interrupted system call */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="18" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a70979f50f9c83e5aebab3d6a1bd4cf35" prot="public" static="no">
+        <name>EIO</name>
+        <initializer>5  /* I/O error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="19" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2b3884b11e4932bd372bb6d899d6fbfe" prot="public" static="no">
+        <name>ENXIO</name>
+        <initializer>6  /* No such device or address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="20" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aba8481985c201ff726f349d7f2d09895" prot="public" static="no">
+        <name>E2BIG</name>
+        <initializer>7  /* Arg list too long */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="21" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4d0b1b435ec441e7d50a430b83df5832" prot="public" static="no">
+        <name>ENOEXEC</name>
+        <initializer>8  /* Exec format error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="22" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ac54507d66b43ad12f9356257323c0018" prot="public" static="no">
+        <name>EBADF</name>
+        <initializer>9  /* Bad file number */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="23" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a47b42c351e0e011a048058d224205c0f" prot="public" static="no">
+        <name>ECHILD</name>
+        <initializer>10  /* No child processes */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="24" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1af0fac1cea1165b4debec7f686edf3313" prot="public" static="no">
+        <name>EAGAIN</name>
+        <initializer>11  /* Try again */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="25" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a6a05c923dad0c1208043e9c20a58c8e5" prot="public" static="no">
+        <name>ENOMEM</name>
+        <initializer>12  /* Out of memory */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="29" column="11" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ac2a2e9fa555401f94478f74e01868032" prot="public" static="no">
+        <name>EACCES</name>
+        <initializer>13  /* Permission denied */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="30" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a3f317946e043623f9d6b93dbf60e6316" prot="public" static="no">
+        <name>EFAULT</name>
+        <initializer>14  /* Bad address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="31" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa0a4b0e307e83f52be51099f01156936" prot="public" static="no">
+        <name>ENOTBLK</name>
+        <initializer>15  /* Block device required */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="32" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a8368025077a0385849d6817b2007c095" prot="public" static="no">
+        <name>EBUSY</name>
+        <initializer>16  /* Device or resource busy */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="33" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0a3bef9e5c47e42917692b5dae3b5498" prot="public" static="no">
+        <name>EEXIST</name>
+        <initializer>17  /* File exists */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="34" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a3396cf9fb0ff5af3a18dd2a2bbdb21e1" prot="public" static="no">
+        <name>EXDEV</name>
+        <initializer>18  /* Cross-device link */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="35" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ab9b8cc17d1947160d13faaba7a18d6d1" prot="public" static="no">
+        <name>ENODEV</name>
+        <initializer>19  /* No such device */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="36" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a9262fb92f7ef662d0bdd577912a5b101" prot="public" static="no">
+        <name>ENOTDIR</name>
+        <initializer>20  /* Not a directory */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="37" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae22c3a1e0a38f3896de238cc30d0e19b" prot="public" static="no">
+        <name>EISDIR</name>
+        <initializer>21  /* Is a directory */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="38" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2d1678d5a7cc8ce499643f3b8957def4" prot="public" static="no">
+        <name>EINVAL</name>
+        <initializer>22  /* Invalid argument */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="42" column="11" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a5554094b3fb4bb6ebeb0157cb3f82a55" prot="public" static="no">
+        <name>ENFILE</name>
+        <initializer>23  /* File table overflow */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="43" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a64a75c174882ddbfa726c7fd040f87a1" prot="public" static="no">
+        <name>EMFILE</name>
+        <initializer>24  /* Too many open files */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="44" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ac3daf409082bb528032f4452a81e1034" prot="public" static="no">
+        <name>ENOTTY</name>
+        <initializer>25  /* Not a typewriter */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="45" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aaed12e82224923d599b6f1939c8e0971" prot="public" static="no">
+        <name>ETXTBSY</name>
+        <initializer>26  /* Text file busy */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="46" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1af5401a500939ed1812c04ca200b95eef" prot="public" static="no">
+        <name>EFBIG</name>
+        <initializer>27  /* File too large */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="47" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a088abe8bad2df798edad3053d719b937" prot="public" static="no">
+        <name>ENOSPC</name>
+        <initializer>28  /* No space left on device */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="48" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0e42d4f9fecdcf5fcca2b333252173c3" prot="public" static="no">
+        <name>ESPIPE</name>
+        <initializer>29  /* Illegal seek */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="49" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1acb02bb67dddd7ca8cf82634a0781d58d" prot="public" static="no">
+        <name>EROFS</name>
+        <initializer>30  /* Read-only file system */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="50" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a97f59fa1a5a2f61b792c1b9dfc218072" prot="public" static="no">
+        <name>EMLINK</name>
+        <initializer>31  /* Too many links */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="51" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a5f8d33deb08fa27c04897b278ac7f965" prot="public" static="no">
+        <name>EPIPE</name>
+        <initializer>32  /* Broken pipe */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="52" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a55cc70ce0ba661298f3c412095dfeeb6" prot="public" static="no">
+        <name>EDEADLK</name>
+        <initializer>35  /* Resource deadlock would occur */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="61" column="12" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a41d5ab3a8a05f9c5eab536c9cfba305b" prot="public" static="no">
+        <name>ENAMETOOLONG</name>
+        <initializer>36  /* File name too long */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="62" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a65e1a7bda392be276a701988d0604e63" prot="public" static="no">
+        <name>ENOLCK</name>
+        <initializer>37  /* No record locks available */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="63" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a43785b9969e0bd1af532dbde06c5540b" prot="public" static="no">
+        <name>ENOSYS</name>
+        <initializer>38  /* Function not implemented */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="64" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa0f602f3fd369a6fede82190710b9c5c" prot="public" static="no">
+        <name>ENOTEMPTY</name>
+        <initializer>39  /* Directory not empty */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="65" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2f78c246352d2bf2f19dc5d43da2f0c9" prot="public" static="no">
+        <name>ELOOP</name>
+        <initializer>40  /* Too many symbolic links encountered */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="66" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4a3a0b3605fd3b2336455062ee8e25f0" prot="public" static="no">
+        <name>EWOULDBLOCK</name>
+        <initializer><ref refid="errno_8h_1af0fac1cea1165b4debec7f686edf3313" kindref="member">EAGAIN</ref>  /* Operation would block */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="67" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae40596feaa3f66f5440b485bf7c1c2d1" prot="public" static="no">
+        <name>ENOMSG</name>
+        <initializer>42  /* No message of desired type */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="68" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ad9913290fef890d46a6b7e8b4bfb1c29" prot="public" static="no">
+        <name>EIDRM</name>
+        <initializer>43  /* Identifier removed */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="69" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a15d68f826dc2f784d7d3627311e916c1" prot="public" static="no">
+        <name>ECHRNG</name>
+        <initializer>44  /* Channel number out of range */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="70" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1acdf97ac22e88c3988c28c9c8f7d14c5e" prot="public" static="no">
+        <name>EL2NSYNC</name>
+        <initializer>45  /* Level 2 not synchronized */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="71" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2e4efb348b873846645cd56144b0ea1e" prot="public" static="no">
+        <name>EL3HLT</name>
+        <initializer>46  /* Level 3 halted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="72" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a5117695086a9942c77befdbd650910cf" prot="public" static="no">
+        <name>EL3RST</name>
+        <initializer>47  /* Level 3 reset */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="73" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a059ed0ab5dab96dfe00ffca40b35155f" prot="public" static="no">
+        <name>ELNRNG</name>
+        <initializer>48  /* Link number out of range */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="74" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ac71878d33a396ae1a4e3fe16489f00a9" prot="public" static="no">
+        <name>EUNATCH</name>
+        <initializer>49  /* Protocol driver not attached */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="75" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2f1893e03a904a500dcb95ff8e35889b" prot="public" static="no">
+        <name>ENOCSI</name>
+        <initializer>50  /* No CSI structure available */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="76" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a81a4a94e4d7d996ad5d2a9137539e392" prot="public" static="no">
+        <name>EL2HLT</name>
+        <initializer>51  /* Level 2 halted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="77" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0c17130b2933edfec68b2c70a2cd0a7f" prot="public" static="no">
+        <name>EBADE</name>
+        <initializer>52  /* Invalid exchange */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="78" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aca1e9da0ef95864e910f550467d475fa" prot="public" static="no">
+        <name>EBADR</name>
+        <initializer>53  /* Invalid request descriptor */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="79" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a69aa360ec60f24c128556361f7729e48" prot="public" static="no">
+        <name>EXFULL</name>
+        <initializer>54  /* Exchange full */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="80" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a7eb46ddb59ec78bac0de2d45ce2a5053" prot="public" static="no">
+        <name>ENOANO</name>
+        <initializer>55  /* No anode */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="81" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1abe200466dc512a9e314b9cc7d081c1ac" prot="public" static="no">
+        <name>EBADRQC</name>
+        <initializer>56  /* Invalid request code */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="82" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a45d8c9818d0bf75ad33ebab50631276a" prot="public" static="no">
+        <name>EBADSLT</name>
+        <initializer>57  /* Invalid slot */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="83" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1acfea92d35e42dd807a7e9beb1e394e4c" prot="public" static="no">
+        <name>EDEADLOCK</name>
+        <initializer><ref refid="errno_8h_1a55cc70ce0ba661298f3c412095dfeeb6" kindref="member">EDEADLK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="85" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae4d80808cd12a64d14a3da0d39cad443" prot="public" static="no">
+        <name>EBFONT</name>
+        <initializer>59  /* Bad font file format */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="87" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a7cea86ddbdacae0b391674e680f17bdb" prot="public" static="no">
+        <name>ENOSTR</name>
+        <initializer>60  /* Device not a stream */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="88" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0030614bc864d1b24eaedd71585acc27" prot="public" static="no">
+        <name>ENODATA</name>
+        <initializer>61  /* No data available */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="89" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ab59cf3c65eaf836d5c647fa2a24ca649" prot="public" static="no">
+        <name>ETIME</name>
+        <initializer>62  /* Timer expired */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="90" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ad88bc6ea94ec1a5e91d3651677d85c00" prot="public" static="no">
+        <name>ENOSR</name>
+        <initializer>63  /* Out of streams resources */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="91" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4a49ca5a72811f9950d2773806eaa641" prot="public" static="no">
+        <name>ENONET</name>
+        <initializer>64  /* Machine is not on the network */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="92" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a63fb0df2a890ace70f5093b26cbf7065" prot="public" static="no">
+        <name>ENOPKG</name>
+        <initializer>65  /* Package not installed */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="93" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a5e1edba49c18fc631dbf54ff53702d4a" prot="public" static="no">
+        <name>EREMOTE</name>
+        <initializer>66  /* Object is remote */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="94" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1add4408349a756880be9d91efadb8aed0" prot="public" static="no">
+        <name>ENOLINK</name>
+        <initializer>67  /* Link has been severed */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="95" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a7ef87d37bfaf88d1ad1de1b531330a42" prot="public" static="no">
+        <name>EADV</name>
+        <initializer>68  /* Advertise error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="96" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae7df13cc989ed4b6921455a6eff3c249" prot="public" static="no">
+        <name>ESRMNT</name>
+        <initializer>69  /* Srmount error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="97" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ad9e159536fe852a5679a99a0b8191d69" prot="public" static="no">
+        <name>ECOMM</name>
+        <initializer>70  /* Communication error on send */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="98" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a5a92de56e8ebe19cbd8a2ce8c80ad03e" prot="public" static="no">
+        <name>EPROTO</name>
+        <initializer>71  /* Protocol error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="99" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4d7b69d7ce0dfa0a9b998403b4ffe226" prot="public" static="no">
+        <name>EMULTIHOP</name>
+        <initializer>72  /* Multihop attempted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="100" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a66443788a7b1b20f15ac1a67b106f20d" prot="public" static="no">
+        <name>EDOTDOT</name>
+        <initializer>73  /* RFS specific error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="101" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a251e9b536ed96ccb16aa28ca2d5bd656" prot="public" static="no">
+        <name>EBADMSG</name>
+        <initializer>74  /* Not a data message */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="102" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a888552a5e3c78b5883904cf5d55244ab" prot="public" static="no">
+        <name>EOVERFLOW</name>
+        <initializer>75  /* Value too large for defined data type */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="103" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1afb498fa12135b33c784f3dc4445ce30f" prot="public" static="no">
+        <name>ENOTUNIQ</name>
+        <initializer>76  /* Name not unique on network */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="104" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae9284c9860c0064da7dd8cba12c1f90f" prot="public" static="no">
+        <name>EBADFD</name>
+        <initializer>77  /* File descriptor in bad state */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="105" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa8fa21a58da5282010753ae1bed331af" prot="public" static="no">
+        <name>EREMCHG</name>
+        <initializer>78  /* Remote address changed */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="106" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a438fa452772ae90a9ccef5d3711bd752" prot="public" static="no">
+        <name>ELIBACC</name>
+        <initializer>79  /* Can not access a needed shared library */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="107" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a6c0c4ad172a62cde82900773c875e259" prot="public" static="no">
+        <name>ELIBBAD</name>
+        <initializer>80  /* Accessing a corrupted shared library */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="108" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1af208def3c8b59e39e6fe3d3d97d71a86" prot="public" static="no">
+        <name>ELIBSCN</name>
+        <initializer>81  /* .lib section in a.out corrupted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="109" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ad2084b03b9e1c7467ab1b8bdbdfc2fe6" prot="public" static="no">
+        <name>ELIBMAX</name>
+        <initializer>82  /* Attempting to link in too many shared libraries */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="110" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a95774ff58533d1e67961890ed30f87b2" prot="public" static="no">
+        <name>ELIBEXEC</name>
+        <initializer>83  /* Cannot exec a shared library directly */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="111" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ac6c071293826a4e66a717bb38db7794d" prot="public" static="no">
+        <name>EILSEQ</name>
+        <initializer>84  /* Illegal byte sequence */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="115" column="11" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0e5993319c80d5a93ed10b6253878ae5" prot="public" static="no">
+        <name>ERESTART</name>
+        <initializer>85  /* Interrupted system call should be restarted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="116" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a07773d22c3eb7a4d4ea0696ee5f49841" prot="public" static="no">
+        <name>ESTRPIPE</name>
+        <initializer>86  /* Streams pipe error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="117" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a9b153104ed38c8579f009f81bc7b2dc9" prot="public" static="no">
+        <name>EUSERS</name>
+        <initializer>87  /* Too many users */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="118" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae34fa7a550ac1c415daa2e114a1c0f38" prot="public" static="no">
+        <name>ENOTSOCK</name>
+        <initializer>88  /* Socket operation on non-socket */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="119" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0e416d3478cf030e37e90c55d68ad97a" prot="public" static="no">
+        <name>EDESTADDRREQ</name>
+        <initializer>89  /* Destination address required */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="120" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae37becfaa095a9df5c5c788bce5aa06f" prot="public" static="no">
+        <name>EMSGSIZE</name>
+        <initializer>90  /* Message too long */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="121" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ae6014faa948366b8321d755204acf755" prot="public" static="no">
+        <name>EPROTOTYPE</name>
+        <initializer>91  /* Protocol wrong type for socket */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="122" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1acd570f8ab92198653b4459773dc3bca3" prot="public" static="no">
+        <name>ENOPROTOOPT</name>
+        <initializer>92  /* Protocol not available */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="123" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ad581c46fdd4dee9419f60eaff40415e7" prot="public" static="no">
+        <name>EPROTONOSUPPORT</name>
+        <initializer>93  /* Protocol not supported */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="124" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a891103a0628442461b41d4d85fb6d945" prot="public" static="no">
+        <name>ESOCKTNOSUPPORT</name>
+        <initializer>94  /* Socket type not supported */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="125" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4b807895c74cea4d0302bf27725d4b9d" prot="public" static="no">
+        <name>EOPNOTSUPP</name>
+        <initializer>95  /* Operation not supported on transport endpoint */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="126" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a871b9fabb281dbc2d3b81cb79c163c20" prot="public" static="no">
+        <name>EPFNOSUPPORT</name>
+        <initializer>96  /* Protocol family not supported */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="127" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4c3a793b4d51cb7dd020af92e536fe21" prot="public" static="no">
+        <name>EAFNOSUPPORT</name>
+        <initializer>97  /* Address family not supported by protocol */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="128" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a61676e39b42371c65c3b960a91887b03" prot="public" static="no">
+        <name>EADDRINUSE</name>
+        <initializer>98  /* Address already in use */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="129" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a556612e55358838192165684c971a44f" prot="public" static="no">
+        <name>EADDRNOTAVAIL</name>
+        <initializer>99  /* Cannot assign requested address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="130" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aac51995026fa19cdd0ad84a272304af0" prot="public" static="no">
+        <name>ENETDOWN</name>
+        <initializer>100  /* Network is down */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="131" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a3f91f1ad503432783c7a5d1481b45419" prot="public" static="no">
+        <name>ENETUNREACH</name>
+        <initializer>101  /* Network is unreachable */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="132" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a92750db73ff8e83591c977bbb3a5bea1" prot="public" static="no">
+        <name>ENETRESET</name>
+        <initializer>102  /* Network dropped connection because of reset */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="133" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a45342991e001e28bbf87916d92b7e09a" prot="public" static="no">
+        <name>ECONNABORTED</name>
+        <initializer>103  /* Software caused connection abort */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="134" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1add4258b08af02fbe4590fbaae7260037" prot="public" static="no">
+        <name>ECONNRESET</name>
+        <initializer>104  /* Connection reset by peer */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="135" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a9e655f47bfd914a1174f281fc31cf63d" prot="public" static="no">
+        <name>ENOBUFS</name>
+        <initializer>105  /* No buffer space available */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="136" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a164ca8549da7a385e2fe1cba823b9eaf" prot="public" static="no">
+        <name>EISCONN</name>
+        <initializer>106  /* Transport endpoint is already connected */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="137" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1af23e48762a0676f49d480db91cfd5e4b" prot="public" static="no">
+        <name>ENOTCONN</name>
+        <initializer>107  /* Transport endpoint is not connected */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="138" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2a55c5dd8b54ff5aace6c274c6726d68" prot="public" static="no">
+        <name>ESHUTDOWN</name>
+        <initializer>108  /* Cannot send after transport endpoint shutdown */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="139" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a10426080250efba47f4aaf254036ff00" prot="public" static="no">
+        <name>ETOOMANYREFS</name>
+        <initializer>109  /* Too many references: cannot splice */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="140" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a597718e59a8fc9c4d4ab63f5a34e28b1" prot="public" static="no">
+        <name>ETIMEDOUT</name>
+        <initializer>110  /* Connection timed out */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="141" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aad88020b394ef1aa4af2f4ef9b4c8b39" prot="public" static="no">
+        <name>ECONNREFUSED</name>
+        <initializer>111  /* Connection refused */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="142" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa92bcaf70544db6998f4c503026359c5" prot="public" static="no">
+        <name>EHOSTDOWN</name>
+        <initializer>112  /* Host is down */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="143" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a53e186028fc992c3341ccb0d4d239b24" prot="public" static="no">
+        <name>EHOSTUNREACH</name>
+        <initializer>113  /* No route to host */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="144" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa4ccb54aa806de3e41a8515f06db85d4" prot="public" static="no">
+        <name>EALREADY</name>
+        <initializer>114  /* Operation already in progress */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="145" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a6c045d5be06e715cc335784a7320714e" prot="public" static="no">
+        <name>EINPROGRESS</name>
+        <initializer>115  /* Operation now in progress */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="146" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a09e189d2214d9fe2847d27bf270ca1d7" prot="public" static="no">
+        <name>ESTALE</name>
+        <initializer>116  /* Stale NFS file handle */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="147" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a909dbec1577dd4de42e3de940449d991" prot="public" static="no">
+        <name>EUCLEAN</name>
+        <initializer>117  /* Structure needs cleaning */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="148" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a604c754d9cff19a3f842f263939744ed" prot="public" static="no">
+        <name>ENOTNAM</name>
+        <initializer>118  /* Not a XENIX named type file */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="149" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4df8882de9228023855dc31287c1728c" prot="public" static="no">
+        <name>ENAVAIL</name>
+        <initializer>119  /* No XENIX semaphores available */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="150" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ab43dd11ce0541c2bc2bdbd36cbcbd6b7" prot="public" static="no">
+        <name>EISNAM</name>
+        <initializer>120  /* Is a named type file */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="151" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa206a5818e8b3666cd46274d71ab7c45" prot="public" static="no">
+        <name>EREMOTEIO</name>
+        <initializer>121  /* Remote I/O error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="152" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aa5a48566b00cf9062d9deeeb0682cdaf" prot="public" static="no">
+        <name>EDQUOT</name>
+        <initializer>122  /* Quota exceeded */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="153" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a434a80cd2a94a829078d50b61ebd277d" prot="public" static="no">
+        <name>ENOMEDIUM</name>
+        <initializer>123  /* No medium found */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="155" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a3431fd1c9d585b39b0089ebc0b97450f" prot="public" static="no">
+        <name>EMEDIUMTYPE</name>
+        <initializer>124  /* Wrong medium type */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="156" column="10" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a0aad02dc256f1be0676d11ec6e27403c" prot="public" static="no">
+        <name>ENSROK</name>
+        <initializer>0 /* DNS server returned answer with no data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="159" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a9f439125341de30146faf1cbadf0d773" prot="public" static="no">
+        <name>ENSRNODATA</name>
+        <initializer>160 /* DNS server returned answer with no data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="160" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a03eb82e028a18b1db5a50d70e5f13903" prot="public" static="no">
+        <name>ENSRFORMERR</name>
+        <initializer>161 /* DNS server claims query was misformatted */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="161" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a6d5e61725abcf8f9711a60c85a131c82" prot="public" static="no">
+        <name>ENSRSERVFAIL</name>
+        <initializer>162 /* DNS server returned general failure */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="162" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a15418f9b7df1bef919dee0e2e6de915a" prot="public" static="no">
+        <name>ENSRNOTFOUND</name>
+        <initializer>163 /* Domain name not found */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="163" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a71bca8d7c7a1828b0f223a3faa81ca45" prot="public" static="no">
+        <name>ENSRNOTIMP</name>
+        <initializer>164 /* DNS server does not implement requested operation */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="164" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a3cc1dd5d10132cc7703b75a1afbdd661" prot="public" static="no">
+        <name>ENSRREFUSED</name>
+        <initializer>165 /* DNS server refused query */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="165" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ad81fd661ff495c6076b3c1cd9fdad79c" prot="public" static="no">
+        <name>ENSRBADQUERY</name>
+        <initializer>166 /* Misformatted DNS query */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="166" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a324a7c96e2ffa3888344fd0d10adb302" prot="public" static="no">
+        <name>ENSRBADNAME</name>
+        <initializer>167 /* Misformatted domain name */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="167" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ab28023d62157bf646fd1a2a1575b56a3" prot="public" static="no">
+        <name>ENSRBADFAMILY</name>
+        <initializer>168 /* Unsupported address family */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="168" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1aeeb9d43caa716d66e224dda12b38f33d" prot="public" static="no">
+        <name>ENSRBADRESP</name>
+        <initializer>169 /* Misformatted DNS reply */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="169" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a2d0f02feac17dc3a0a1a765c37c71924" prot="public" static="no">
+        <name>ENSRCONNREFUSED</name>
+        <initializer>170 /* Could not contact DNS servers */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="170" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a4330a7bc710d3141e7c3f237cb7ee22c" prot="public" static="no">
+        <name>ENSRTIMEOUT</name>
+        <initializer>171 /* Timeout while contacting DNS servers */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="171" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a905b6c1fcadcf49b0008e380b714797c" prot="public" static="no">
+        <name>ENSROF</name>
+        <initializer>172 /* End of file */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="172" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1ac1c17d39b9c9df66c1628c24f7c05feb" prot="public" static="no">
+        <name>ENSRFILE</name>
+        <initializer>173 /* Error reading file */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="173" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a263be0599fb10d4b523159309c319392" prot="public" static="no">
+        <name>ENSRNOMEM</name>
+        <initializer>174 /* Out of memory */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="174" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1adfc036e589d30f7786599e529c0cc430" prot="public" static="no">
+        <name>ENSRDESTRUCTION</name>
+        <initializer>175 /* Application terminated lookup */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="175" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a61dca0674587a72a2918bd2bca897a1e" prot="public" static="no">
+        <name>ENSRQUERYDOMAINTOOLONG</name>
+        <initializer>176 /* Domain name is too long */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="176" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="errno_8h_1a158b526cfbf64103def6ba3aa9711019" prot="public" static="no">
+        <name>ENSRCNAMELOOP</name>
+        <initializer>177 /* Domain name is too long */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" line="177" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AOS_ERRNO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AOS_ERRNO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__GNUC__)&amp;&amp;!defined(__CC_ARM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="errno_8h" kindref="compound">errno.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="errno_8h_1add669d31505a077f769cff8e66c780b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EPERM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>not<sp/>permitted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="errno_8h_1a03e689f378f643d16ea7537918528a48" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>such<sp/>file<sp/>or<sp/>directory<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="errno_8h_1a462e47a8af6288232a5df548221ada4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESRCH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>such<sp/>process<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="errno_8h_1a46b83d9f6c23b1b65a8cecfd775ddaed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EINTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/></highlight><highlight class="comment">/*<sp/>Interrupted<sp/>system<sp/>call<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="errno_8h_1a70979f50f9c83e5aebab3d6a1bd4cf35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5<sp/><sp/></highlight><highlight class="comment">/*<sp/>I/O<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="errno_8h_1a2b3884b11e4932bd372bb6d899d6fbfe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENXIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>such<sp/>device<sp/>or<sp/>address<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="errno_8h_1aba8481985c201ff726f349d7f2d09895" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>E2BIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7<sp/><sp/></highlight><highlight class="comment">/*<sp/>Arg<sp/>list<sp/>too<sp/>long<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="errno_8h_1a4d0b1b435ec441e7d50a430b83df5832" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOEXEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>8<sp/><sp/></highlight><highlight class="comment">/*<sp/>Exec<sp/>format<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="errno_8h_1ac54507d66b43ad12f9356257323c0018" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9<sp/><sp/></highlight><highlight class="comment">/*<sp/>Bad<sp/>file<sp/>number<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="errno_8h_1a47b42c351e0e011a048058d224205c0f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ECHILD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>10<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>child<sp/>processes<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="errno_8h_1af0fac1cea1165b4debec7f686edf3313" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EAGAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>11<sp/><sp/></highlight><highlight class="comment">/*<sp/>Try<sp/>again<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/><sp/>ENOMEM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/><sp/>ENOMEM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="errno_8h_1a6a05c923dad0c1208043e9c20a58c8e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOMEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>12<sp/><sp/></highlight><highlight class="comment">/*<sp/>Out<sp/>of<sp/>memory<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="errno_8h_1ac2a2e9fa555401f94478f74e01868032" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EACCES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>13<sp/><sp/></highlight><highlight class="comment">/*<sp/>Permission<sp/>denied<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="errno_8h_1a3f317946e043623f9d6b93dbf60e6316" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EFAULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>14<sp/><sp/></highlight><highlight class="comment">/*<sp/>Bad<sp/>address<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="errno_8h_1aa0a4b0e307e83f52be51099f01156936" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTBLK<sp/><sp/><sp/><sp/><sp/><sp/>15<sp/><sp/></highlight><highlight class="comment">/*<sp/>Block<sp/>device<sp/>required<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="errno_8h_1a8368025077a0385849d6817b2007c095" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBUSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16<sp/><sp/></highlight><highlight class="comment">/*<sp/>Device<sp/>or<sp/>resource<sp/>busy<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="errno_8h_1a0a3bef9e5c47e42917692b5dae3b5498" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EEXIST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>17<sp/><sp/></highlight><highlight class="comment">/*<sp/>File<sp/>exists<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="errno_8h_1a3396cf9fb0ff5af3a18dd2a2bbdb21e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EXDEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18<sp/><sp/></highlight><highlight class="comment">/*<sp/>Cross-device<sp/>link<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="errno_8h_1ab9b8cc17d1947160d13faaba7a18d6d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENODEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/>19<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>such<sp/>device<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="errno_8h_1a9262fb92f7ef662d0bdd577912a5b101" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTDIR<sp/><sp/><sp/><sp/><sp/><sp/>20<sp/><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>a<sp/>directory<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="errno_8h_1ae22c3a1e0a38f3896de238cc30d0e19b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EISDIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>21<sp/><sp/></highlight><highlight class="comment">/*<sp/>Is<sp/>a<sp/>directory<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/><sp/>EINVAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/><sp/>EINVAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="errno_8h_1a2d1678d5a7cc8ce499643f3b8957def4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EINVAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>22<sp/><sp/></highlight><highlight class="comment">/*<sp/>Invalid<sp/>argument<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="errno_8h_1a5554094b3fb4bb6ebeb0157cb3f82a55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>23<sp/><sp/></highlight><highlight class="comment">/*<sp/>File<sp/>table<sp/>overflow<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="errno_8h_1a64a75c174882ddbfa726c7fd040f87a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EMFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>24<sp/><sp/></highlight><highlight class="comment">/*<sp/>Too<sp/>many<sp/>open<sp/>files<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="errno_8h_1ac3daf409082bb528032f4452a81e1034" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>25<sp/><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>a<sp/>typewriter<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="errno_8h_1aaed12e82224923d599b6f1939c8e0971" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ETXTBSY<sp/><sp/><sp/><sp/><sp/><sp/>26<sp/><sp/></highlight><highlight class="comment">/*<sp/>Text<sp/>file<sp/>busy<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="errno_8h_1af5401a500939ed1812c04ca200b95eef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EFBIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>27<sp/><sp/></highlight><highlight class="comment">/*<sp/>File<sp/>too<sp/>large<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="errno_8h_1a088abe8bad2df798edad3053d719b937" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOSPC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>28<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>space<sp/>left<sp/>on<sp/>device<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="errno_8h_1a0e42d4f9fecdcf5fcca2b333252173c3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESPIPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>29<sp/><sp/></highlight><highlight class="comment">/*<sp/>Illegal<sp/>seek<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="errno_8h_1acb02bb67dddd7ca8cf82634a0781d58d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EROFS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30<sp/><sp/></highlight><highlight class="comment">/*<sp/>Read-only<sp/>file<sp/>system<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="errno_8h_1a97f59fa1a5a2f61b792c1b9dfc218072" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EMLINK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>31<sp/><sp/></highlight><highlight class="comment">/*<sp/>Too<sp/>many<sp/>links<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="errno_8h_1a5f8d33deb08fa27c04897b278ac7f965" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EPIPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32<sp/><sp/></highlight><highlight class="comment">/*<sp/>Broken<sp/>pipe<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/><sp/>EDOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/><sp/>EDOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDOM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>33<sp/><sp/></highlight><highlight class="comment">/*<sp/>Math<sp/>argument<sp/>out<sp/>of<sp/>domain<sp/>of<sp/>func<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/><sp/>ERANGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/><sp/>ERANGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ERANGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>34<sp/><sp/></highlight><highlight class="comment">/*<sp/>Math<sp/>result<sp/>not<sp/>representable<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="errno_8h_1a55cc70ce0ba661298f3c412095dfeeb6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDEADLK<sp/><sp/><sp/><sp/><sp/><sp/>35<sp/><sp/></highlight><highlight class="comment">/*<sp/>Resource<sp/>deadlock<sp/>would<sp/>occur<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="errno_8h_1a41d5ab3a8a05f9c5eab536c9cfba305b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENAMETOOLONG<sp/>36<sp/><sp/></highlight><highlight class="comment">/*<sp/>File<sp/>name<sp/>too<sp/>long<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="errno_8h_1a65e1a7bda392be276a701988d0604e63" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOLCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>37<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>record<sp/>locks<sp/>available<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="errno_8h_1a43785b9969e0bd1af532dbde06c5540b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOSYS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>38<sp/><sp/></highlight><highlight class="comment">/*<sp/>Function<sp/>not<sp/>implemented<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="errno_8h_1aa0f602f3fd369a6fede82190710b9c5c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTEMPTY<sp/><sp/><sp/><sp/>39<sp/><sp/></highlight><highlight class="comment">/*<sp/>Directory<sp/>not<sp/>empty<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="errno_8h_1a2f78c246352d2bf2f19dc5d43da2f0c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELOOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>40<sp/><sp/></highlight><highlight class="comment">/*<sp/>Too<sp/>many<sp/>symbolic<sp/>links<sp/>encountered<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="errno_8h_1a4a3a0b3605fd3b2336455062ee8e25f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EWOULDBLOCK<sp/><sp/>EAGAIN<sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>would<sp/>block<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="errno_8h_1ae40596feaa3f66f5440b485bf7c1c2d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOMSG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>42<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>message<sp/>of<sp/>desired<sp/>type<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="errno_8h_1ad9913290fef890d46a6b7e8b4bfb1c29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EIDRM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>43<sp/><sp/></highlight><highlight class="comment">/*<sp/>Identifier<sp/>removed<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="errno_8h_1a15d68f826dc2f784d7d3627311e916c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ECHRNG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>44<sp/><sp/></highlight><highlight class="comment">/*<sp/>Channel<sp/>number<sp/>out<sp/>of<sp/>range<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="errno_8h_1acdf97ac22e88c3988c28c9c8f7d14c5e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EL2NSYNC<sp/><sp/><sp/><sp/><sp/>45<sp/><sp/></highlight><highlight class="comment">/*<sp/>Level<sp/>2<sp/>not<sp/>synchronized<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="errno_8h_1a2e4efb348b873846645cd56144b0ea1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EL3HLT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>46<sp/><sp/></highlight><highlight class="comment">/*<sp/>Level<sp/>3<sp/>halted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="errno_8h_1a5117695086a9942c77befdbd650910cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EL3RST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>47<sp/><sp/></highlight><highlight class="comment">/*<sp/>Level<sp/>3<sp/>reset<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="errno_8h_1a059ed0ab5dab96dfe00ffca40b35155f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELNRNG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>48<sp/><sp/></highlight><highlight class="comment">/*<sp/>Link<sp/>number<sp/>out<sp/>of<sp/>range<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="errno_8h_1ac71878d33a396ae1a4e3fe16489f00a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EUNATCH<sp/><sp/><sp/><sp/><sp/><sp/>49<sp/><sp/></highlight><highlight class="comment">/*<sp/>Protocol<sp/>driver<sp/>not<sp/>attached<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="errno_8h_1a2f1893e03a904a500dcb95ff8e35889b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOCSI<sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>CSI<sp/>structure<sp/>available<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="errno_8h_1a81a4a94e4d7d996ad5d2a9137539e392" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EL2HLT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>51<sp/><sp/></highlight><highlight class="comment">/*<sp/>Level<sp/>2<sp/>halted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="errno_8h_1a0c17130b2933edfec68b2c70a2cd0a7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>52<sp/><sp/></highlight><highlight class="comment">/*<sp/>Invalid<sp/>exchange<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="errno_8h_1aca1e9da0ef95864e910f550467d475fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>53<sp/><sp/></highlight><highlight class="comment">/*<sp/>Invalid<sp/>request<sp/>descriptor<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="errno_8h_1a69aa360ec60f24c128556361f7729e48" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EXFULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>54<sp/><sp/></highlight><highlight class="comment">/*<sp/>Exchange<sp/>full<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="errno_8h_1a7eb46ddb59ec78bac0de2d45ce2a5053" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOANO<sp/><sp/><sp/><sp/><sp/><sp/><sp/>55<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>anode<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="errno_8h_1abe200466dc512a9e314b9cc7d081c1ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADRQC<sp/><sp/><sp/><sp/><sp/><sp/>56<sp/><sp/></highlight><highlight class="comment">/*<sp/>Invalid<sp/>request<sp/>code<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="errno_8h_1a45d8c9818d0bf75ad33ebab50631276a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADSLT<sp/><sp/><sp/><sp/><sp/><sp/>57<sp/><sp/></highlight><highlight class="comment">/*<sp/>Invalid<sp/>slot<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="errno_8h_1acfea92d35e42dd807a7e9beb1e394e4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDEADLOCK<sp/><sp/><sp/><sp/>EDEADLK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="errno_8h_1ae4d80808cd12a64d14a3da0d39cad443" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBFONT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>59<sp/><sp/></highlight><highlight class="comment">/*<sp/>Bad<sp/>font<sp/>file<sp/>format<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="errno_8h_1a7cea86ddbdacae0b391674e680f17bdb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOSTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>60<sp/><sp/></highlight><highlight class="comment">/*<sp/>Device<sp/>not<sp/>a<sp/>stream<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="errno_8h_1a0030614bc864d1b24eaedd71585acc27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENODATA<sp/><sp/><sp/><sp/><sp/><sp/>61<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>data<sp/>available<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="errno_8h_1ab59cf3c65eaf836d5c647fa2a24ca649" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ETIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>62<sp/><sp/></highlight><highlight class="comment">/*<sp/>Timer<sp/>expired<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="errno_8h_1ad88bc6ea94ec1a5e91d3651677d85c00" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>63<sp/><sp/></highlight><highlight class="comment">/*<sp/>Out<sp/>of<sp/>streams<sp/>resources<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="errno_8h_1a4a49ca5a72811f9950d2773806eaa641" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENONET<sp/><sp/><sp/><sp/><sp/><sp/><sp/>64<sp/><sp/></highlight><highlight class="comment">/*<sp/>Machine<sp/>is<sp/>not<sp/>on<sp/>the<sp/>network<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="errno_8h_1a63fb0df2a890ace70f5093b26cbf7065" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOPKG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>65<sp/><sp/></highlight><highlight class="comment">/*<sp/>Package<sp/>not<sp/>installed<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="errno_8h_1a5e1edba49c18fc631dbf54ff53702d4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EREMOTE<sp/><sp/><sp/><sp/><sp/><sp/>66<sp/><sp/></highlight><highlight class="comment">/*<sp/>Object<sp/>is<sp/>remote<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="errno_8h_1add4408349a756880be9d91efadb8aed0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOLINK<sp/><sp/><sp/><sp/><sp/><sp/>67<sp/><sp/></highlight><highlight class="comment">/*<sp/>Link<sp/>has<sp/>been<sp/>severed<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="errno_8h_1a7ef87d37bfaf88d1ad1de1b531330a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EADV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>68<sp/><sp/></highlight><highlight class="comment">/*<sp/>Advertise<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="errno_8h_1ae7df13cc989ed4b6921455a6eff3c249" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESRMNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>69<sp/><sp/></highlight><highlight class="comment">/*<sp/>Srmount<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="errno_8h_1ad9e159536fe852a5679a99a0b8191d69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ECOMM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>70<sp/><sp/></highlight><highlight class="comment">/*<sp/>Communication<sp/>error<sp/>on<sp/>send<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="errno_8h_1a5a92de56e8ebe19cbd8a2ce8c80ad03e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EPROTO<sp/><sp/><sp/><sp/><sp/><sp/><sp/>71<sp/><sp/></highlight><highlight class="comment">/*<sp/>Protocol<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="errno_8h_1a4d7b69d7ce0dfa0a9b998403b4ffe226" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EMULTIHOP<sp/><sp/><sp/><sp/>72<sp/><sp/></highlight><highlight class="comment">/*<sp/>Multihop<sp/>attempted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="errno_8h_1a66443788a7b1b20f15ac1a67b106f20d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDOTDOT<sp/><sp/><sp/><sp/><sp/><sp/>73<sp/><sp/></highlight><highlight class="comment">/*<sp/>RFS<sp/>specific<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="errno_8h_1a251e9b536ed96ccb16aa28ca2d5bd656" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADMSG<sp/><sp/><sp/><sp/><sp/><sp/>74<sp/><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>a<sp/>data<sp/>message<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="errno_8h_1a888552a5e3c78b5883904cf5d55244ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EOVERFLOW<sp/><sp/><sp/><sp/>75<sp/><sp/></highlight><highlight class="comment">/*<sp/>Value<sp/>too<sp/>large<sp/>for<sp/>defined<sp/>data<sp/>type<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="errno_8h_1afb498fa12135b33c784f3dc4445ce30f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTUNIQ<sp/><sp/><sp/><sp/><sp/>76<sp/><sp/></highlight><highlight class="comment">/*<sp/>Name<sp/>not<sp/>unique<sp/>on<sp/>network<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="errno_8h_1ae9284c9860c0064da7dd8cba12c1f90f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EBADFD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>77<sp/><sp/></highlight><highlight class="comment">/*<sp/>File<sp/>descriptor<sp/>in<sp/>bad<sp/>state<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="errno_8h_1aa8fa21a58da5282010753ae1bed331af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EREMCHG<sp/><sp/><sp/><sp/><sp/><sp/>78<sp/><sp/></highlight><highlight class="comment">/*<sp/>Remote<sp/>address<sp/>changed<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="errno_8h_1a438fa452772ae90a9ccef5d3711bd752" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELIBACC<sp/><sp/><sp/><sp/><sp/><sp/>79<sp/><sp/></highlight><highlight class="comment">/*<sp/>Can<sp/>not<sp/>access<sp/>a<sp/>needed<sp/>shared<sp/>library<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="errno_8h_1a6c0c4ad172a62cde82900773c875e259" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELIBBAD<sp/><sp/><sp/><sp/><sp/><sp/>80<sp/><sp/></highlight><highlight class="comment">/*<sp/>Accessing<sp/>a<sp/>corrupted<sp/>shared<sp/>library<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="errno_8h_1af208def3c8b59e39e6fe3d3d97d71a86" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELIBSCN<sp/><sp/><sp/><sp/><sp/><sp/>81<sp/><sp/></highlight><highlight class="comment">/*<sp/>.lib<sp/>section<sp/>in<sp/>a.out<sp/>corrupted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="errno_8h_1ad2084b03b9e1c7467ab1b8bdbdfc2fe6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELIBMAX<sp/><sp/><sp/><sp/><sp/><sp/>82<sp/><sp/></highlight><highlight class="comment">/*<sp/>Attempting<sp/>to<sp/>link<sp/>in<sp/>too<sp/>many<sp/>shared<sp/>libraries<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="errno_8h_1a95774ff58533d1e67961890ed30f87b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ELIBEXEC<sp/><sp/><sp/><sp/><sp/>83<sp/><sp/></highlight><highlight class="comment">/*<sp/>Cannot<sp/>exec<sp/>a<sp/>shared<sp/>library<sp/>directly<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/><sp/>EILSEQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/><sp/>EILSEQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="errno_8h_1ac6c071293826a4e66a717bb38db7794d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EILSEQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/>84<sp/><sp/></highlight><highlight class="comment">/*<sp/>Illegal<sp/>byte<sp/>sequence<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="errno_8h_1a0e5993319c80d5a93ed10b6253878ae5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ERESTART<sp/><sp/><sp/><sp/><sp/>85<sp/><sp/></highlight><highlight class="comment">/*<sp/>Interrupted<sp/>system<sp/>call<sp/>should<sp/>be<sp/>restarted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="errno_8h_1a07773d22c3eb7a4d4ea0696ee5f49841" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESTRPIPE<sp/><sp/><sp/><sp/><sp/>86<sp/><sp/></highlight><highlight class="comment">/*<sp/>Streams<sp/>pipe<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="errno_8h_1a9b153104ed38c8579f009f81bc7b2dc9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EUSERS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>87<sp/><sp/></highlight><highlight class="comment">/*<sp/>Too<sp/>many<sp/>users<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="errno_8h_1ae34fa7a550ac1c415daa2e114a1c0f38" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTSOCK<sp/><sp/><sp/><sp/><sp/>88<sp/><sp/></highlight><highlight class="comment">/*<sp/>Socket<sp/>operation<sp/>on<sp/>non-socket<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="errno_8h_1a0e416d3478cf030e37e90c55d68ad97a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDESTADDRREQ<sp/>89<sp/><sp/></highlight><highlight class="comment">/*<sp/>Destination<sp/>address<sp/>required<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="errno_8h_1ae37becfaa095a9df5c5c788bce5aa06f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EMSGSIZE<sp/><sp/><sp/><sp/><sp/>90<sp/><sp/></highlight><highlight class="comment">/*<sp/>Message<sp/>too<sp/>long<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="errno_8h_1ae6014faa948366b8321d755204acf755" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EPROTOTYPE<sp/><sp/><sp/>91<sp/><sp/></highlight><highlight class="comment">/*<sp/>Protocol<sp/>wrong<sp/>type<sp/>for<sp/>socket<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="errno_8h_1acd570f8ab92198653b4459773dc3bca3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOPROTOOPT<sp/><sp/>92<sp/><sp/></highlight><highlight class="comment">/*<sp/>Protocol<sp/>not<sp/>available<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="errno_8h_1ad581c46fdd4dee9419f60eaff40415e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EPROTONOSUPPORT<sp/>93<sp/><sp/></highlight><highlight class="comment">/*<sp/>Protocol<sp/>not<sp/>supported<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="errno_8h_1a891103a0628442461b41d4d85fb6d945" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESOCKTNOSUPPORT<sp/>94<sp/><sp/></highlight><highlight class="comment">/*<sp/>Socket<sp/>type<sp/>not<sp/>supported<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="errno_8h_1a4b807895c74cea4d0302bf27725d4b9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EOPNOTSUPP<sp/><sp/><sp/><sp/><sp/><sp/>95<sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>not<sp/>supported<sp/>on<sp/>transport<sp/>endpoint<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="errno_8h_1a871b9fabb281dbc2d3b81cb79c163c20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EPFNOSUPPORT<sp/><sp/><sp/><sp/>96<sp/><sp/></highlight><highlight class="comment">/*<sp/>Protocol<sp/>family<sp/>not<sp/>supported<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="errno_8h_1a4c3a793b4d51cb7dd020af92e536fe21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EAFNOSUPPORT<sp/><sp/><sp/><sp/>97<sp/><sp/></highlight><highlight class="comment">/*<sp/>Address<sp/>family<sp/>not<sp/>supported<sp/>by<sp/>protocol<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="errno_8h_1a61676e39b42371c65c3b960a91887b03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EADDRINUSE<sp/><sp/><sp/><sp/><sp/><sp/>98<sp/><sp/></highlight><highlight class="comment">/*<sp/>Address<sp/>already<sp/>in<sp/>use<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="errno_8h_1a556612e55358838192165684c971a44f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EADDRNOTAVAIL<sp/><sp/><sp/>99<sp/><sp/></highlight><highlight class="comment">/*<sp/>Cannot<sp/>assign<sp/>requested<sp/>address<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="errno_8h_1aac51995026fa19cdd0ad84a272304af0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENETDOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>100<sp/><sp/></highlight><highlight class="comment">/*<sp/>Network<sp/>is<sp/>down<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="errno_8h_1a3f91f1ad503432783c7a5d1481b45419" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENETUNREACH<sp/><sp/><sp/><sp/>101<sp/><sp/></highlight><highlight class="comment">/*<sp/>Network<sp/>is<sp/>unreachable<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="errno_8h_1a92750db73ff8e83591c977bbb3a5bea1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENETRESET<sp/><sp/><sp/><sp/><sp/><sp/>102<sp/><sp/></highlight><highlight class="comment">/*<sp/>Network<sp/>dropped<sp/>connection<sp/>because<sp/>of<sp/>reset<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="errno_8h_1a45342991e001e28bbf87916d92b7e09a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ECONNABORTED<sp/><sp/><sp/>103<sp/><sp/></highlight><highlight class="comment">/*<sp/>Software<sp/>caused<sp/>connection<sp/>abort<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="errno_8h_1add4258b08af02fbe4590fbaae7260037" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ECONNRESET<sp/><sp/><sp/><sp/><sp/>104<sp/><sp/></highlight><highlight class="comment">/*<sp/>Connection<sp/>reset<sp/>by<sp/>peer<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="errno_8h_1a9e655f47bfd914a1174f281fc31cf63d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOBUFS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>105<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>buffer<sp/>space<sp/>available<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="errno_8h_1a164ca8549da7a385e2fe1cba823b9eaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EISCONN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>106<sp/><sp/></highlight><highlight class="comment">/*<sp/>Transport<sp/>endpoint<sp/>is<sp/>already<sp/>connected<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="errno_8h_1af23e48762a0676f49d480db91cfd5e4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTCONN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>107<sp/><sp/></highlight><highlight class="comment">/*<sp/>Transport<sp/>endpoint<sp/>is<sp/>not<sp/>connected<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="errno_8h_1a2a55c5dd8b54ff5aace6c274c6726d68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESHUTDOWN<sp/><sp/><sp/><sp/><sp/><sp/>108<sp/><sp/></highlight><highlight class="comment">/*<sp/>Cannot<sp/>send<sp/>after<sp/>transport<sp/>endpoint<sp/>shutdown<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="errno_8h_1a10426080250efba47f4aaf254036ff00" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ETOOMANYREFS<sp/><sp/><sp/>109<sp/><sp/></highlight><highlight class="comment">/*<sp/>Too<sp/>many<sp/>references:<sp/>cannot<sp/>splice<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="errno_8h_1a597718e59a8fc9c4d4ab63f5a34e28b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ETIMEDOUT<sp/><sp/><sp/><sp/><sp/><sp/>110<sp/><sp/></highlight><highlight class="comment">/*<sp/>Connection<sp/>timed<sp/>out<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="errno_8h_1aad88020b394ef1aa4af2f4ef9b4c8b39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ECONNREFUSED<sp/><sp/><sp/>111<sp/><sp/></highlight><highlight class="comment">/*<sp/>Connection<sp/>refused<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="errno_8h_1aa92bcaf70544db6998f4c503026359c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EHOSTDOWN<sp/><sp/><sp/><sp/><sp/><sp/>112<sp/><sp/></highlight><highlight class="comment">/*<sp/>Host<sp/>is<sp/>down<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="errno_8h_1a53e186028fc992c3341ccb0d4d239b24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EHOSTUNREACH<sp/><sp/><sp/>113<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>route<sp/>to<sp/>host<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="errno_8h_1aa4ccb54aa806de3e41a8515f06db85d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EALREADY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>114<sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>already<sp/>in<sp/>progress<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="errno_8h_1a6c045d5be06e715cc335784a7320714e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EINPROGRESS<sp/><sp/><sp/><sp/>115<sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>now<sp/>in<sp/>progress<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="errno_8h_1a09e189d2214d9fe2847d27bf270ca1d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ESTALE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>116<sp/><sp/></highlight><highlight class="comment">/*<sp/>Stale<sp/>NFS<sp/>file<sp/>handle<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="errno_8h_1a909dbec1577dd4de42e3de940449d991" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EUCLEAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>117<sp/><sp/></highlight><highlight class="comment">/*<sp/>Structure<sp/>needs<sp/>cleaning<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="errno_8h_1a604c754d9cff19a3f842f263939744ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOTNAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>118<sp/><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>a<sp/>XENIX<sp/>named<sp/>type<sp/>file<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="errno_8h_1a4df8882de9228023855dc31287c1728c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENAVAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>119<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>XENIX<sp/>semaphores<sp/>available<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="errno_8h_1ab43dd11ce0541c2bc2bdbd36cbcbd6b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EISNAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>120<sp/><sp/></highlight><highlight class="comment">/*<sp/>Is<sp/>a<sp/>named<sp/>type<sp/>file<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="errno_8h_1aa206a5818e8b3666cd46274d71ab7c45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EREMOTEIO<sp/><sp/><sp/><sp/><sp/><sp/>121<sp/><sp/></highlight><highlight class="comment">/*<sp/>Remote<sp/>I/O<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="errno_8h_1aa5a48566b00cf9062d9deeeb0682cdaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDQUOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>122<sp/><sp/></highlight><highlight class="comment">/*<sp/>Quota<sp/>exceeded<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="errno_8h_1a434a80cd2a94a829078d50b61ebd277d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ENOMEDIUM<sp/><sp/><sp/><sp/><sp/><sp/>123<sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>medium<sp/>found<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="errno_8h_1a3431fd1c9d585b39b0089ebc0b97450f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EMEDIUMTYPE<sp/><sp/><sp/><sp/>124<sp/><sp/></highlight><highlight class="comment">/*<sp/>Wrong<sp/>medium<sp/>type<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="errno_8h_1a0aad02dc256f1be0676d11ec6e27403c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSROK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>returned<sp/>answer<sp/>with<sp/>no<sp/>data<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="errno_8h_1a9f439125341de30146faf1cbadf0d773" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRNODATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>160<sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>returned<sp/>answer<sp/>with<sp/>no<sp/>data<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="errno_8h_1a03eb82e028a18b1db5a50d70e5f13903" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRFORMERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>161<sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>claims<sp/>query<sp/>was<sp/>misformatted<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="errno_8h_1a6d5e61725abcf8f9711a60c85a131c82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRSERVFAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>162<sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>returned<sp/>general<sp/>failure<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="errno_8h_1a15418f9b7df1bef919dee0e2e6de915a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRNOTFOUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>163<sp/></highlight><highlight class="comment">/*<sp/>Domain<sp/>name<sp/>not<sp/>found<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="errno_8h_1a71bca8d7c7a1828b0f223a3faa81ca45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRNOTIMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>164<sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>does<sp/>not<sp/>implement<sp/>requested<sp/>operation<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="errno_8h_1a3cc1dd5d10132cc7703b75a1afbdd661" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRREFUSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>165<sp/></highlight><highlight class="comment">/*<sp/>DNS<sp/>server<sp/>refused<sp/>query<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="errno_8h_1ad81fd661ff495c6076b3c1cd9fdad79c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRBADQUERY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>166<sp/></highlight><highlight class="comment">/*<sp/>Misformatted<sp/>DNS<sp/>query<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="errno_8h_1a324a7c96e2ffa3888344fd0d10adb302" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRBADNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>167<sp/></highlight><highlight class="comment">/*<sp/>Misformatted<sp/>domain<sp/>name<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="errno_8h_1ab28023d62157bf646fd1a2a1575b56a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRBADFAMILY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>168<sp/></highlight><highlight class="comment">/*<sp/>Unsupported<sp/>address<sp/>family<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="errno_8h_1aeeb9d43caa716d66e224dda12b38f33d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRBADRESP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>169<sp/></highlight><highlight class="comment">/*<sp/>Misformatted<sp/>DNS<sp/>reply<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="errno_8h_1a2d0f02feac17dc3a0a1a765c37c71924" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRCONNREFUSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>170<sp/></highlight><highlight class="comment">/*<sp/>Could<sp/>not<sp/>contact<sp/>DNS<sp/>servers<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="errno_8h_1a4330a7bc710d3141e7c3f237cb7ee22c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRTIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>171<sp/></highlight><highlight class="comment">/*<sp/>Timeout<sp/>while<sp/>contacting<sp/>DNS<sp/>servers<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="errno_8h_1a905b6c1fcadcf49b0008e380b714797c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSROF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>172<sp/></highlight><highlight class="comment">/*<sp/>End<sp/>of<sp/>file<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="errno_8h_1ac1c17d39b9c9df66c1628c24f7c05feb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>173<sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>reading<sp/>file<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="errno_8h_1a263be0599fb10d4b523159309c319392" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRNOMEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>174<sp/></highlight><highlight class="comment">/*<sp/>Out<sp/>of<sp/>memory<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="errno_8h_1adfc036e589d30f7786599e529c0cc430" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRDESTRUCTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>175<sp/></highlight><highlight class="comment">/*<sp/>Application<sp/>terminated<sp/>lookup<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="errno_8h_1a61dca0674587a72a2918bd2bca897a1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRQUERYDOMAINTOOLONG<sp/><sp/>176<sp/></highlight><highlight class="comment">/*<sp/>Domain<sp/>name<sp/>is<sp/>too<sp/>long<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="errno_8h_1a158b526cfbf64103def6ba3aa9711019" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENSRCNAMELOOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>177<sp/></highlight><highlight class="comment">/*<sp/>Domain<sp/>name<sp/>is<sp/>too<sp/>long<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor">#ifdef<sp/>BUILD_BIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>set_errno</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>set_errno(err)<sp/>do<sp/>{<sp/>if<sp/>(err)<sp/>{<sp/>errno<sp/>=<sp/>(err);<sp/>}<sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BUILD_APP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>get_errno(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_errno(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>errno</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>errno<sp/>get_errno()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AOS_ERRNO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/aos/errno.h"/>
+  </compounddef>
+</doxygen>

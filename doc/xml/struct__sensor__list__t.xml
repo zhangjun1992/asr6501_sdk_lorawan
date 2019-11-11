@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__sensor__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sensor_list_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sensor__list__t_1a0147bcda803936d61022a6a0970f85fe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sensor_list_t::cnt</definition>
+        <argsstring></argsstring>
+        <name>cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="226" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sensor__list__t_1a9f789ed1e9c0946de84a1fc95b61db3b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _sensor_list_t::list[TAG_DEV_SENSOR_NUM_MAX]</definition>
+        <argsstring>[TAG_DEV_SENSOR_NUM_MAX]</argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="227" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>_sensor_list_t</label>
+        <link refid="struct__sensor__list__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="225" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="225" bodyend="228"/>
+    <listofallmembers>
+      <member refid="struct__sensor__list__t_1a0147bcda803936d61022a6a0970f85fe" prot="public" virt="non-virtual"><scope>_sensor_list_t</scope><name>cnt</name></member>
+      <member refid="struct__sensor__list__t_1a9f789ed1e9c0946de84a1fc95b61db3b" prot="public" virt="non-virtual"><scope>_sensor_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

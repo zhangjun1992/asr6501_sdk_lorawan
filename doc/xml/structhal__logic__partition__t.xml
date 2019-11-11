@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structhal__logic__partition__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_logic_partition_t</compoundname>
+    <includes refid="flash_8h" local="yes">flash.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__logic__partition__t_1ad75fd480c3bd88c6b0f07d1fc2f440b0" prot="public" static="no" mutable="no">
+        <type><ref refid="flash_8h_1ad6e8fb5585076e4fc4986317027ab76d" kindref="member">hal_flash_t</ref></type>
+        <definition>hal_flash_t hal_logic_partition_t::partition_owner</definition>
+        <argsstring></argsstring>
+        <name>partition_owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" line="45" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__logic__partition__t_1af89475ae7ce468f0e153db5b6686c8dd" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* hal_logic_partition_t::partition_description</definition>
+        <argsstring></argsstring>
+        <name>partition_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" line="46" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__logic__partition__t_1a5d4665d55094278d3e2ca4b9639d0216" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hal_logic_partition_t::partition_start_addr</definition>
+        <argsstring></argsstring>
+        <name>partition_start_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" line="47" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__logic__partition__t_1a8e01a8760d2001357fab02315f670804" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hal_logic_partition_t::partition_length</definition>
+        <argsstring></argsstring>
+        <name>partition_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" line="48" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__logic__partition__t_1a4f36f9a67fae10932b9ad5b47e32cfff" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hal_logic_partition_t::partition_options</definition>
+        <argsstring></argsstring>
+        <name>partition_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" line="49" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="91">
+        <label>hal_logic_partition_t</label>
+        <link refid="structhal__logic__partition__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" line="44" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/flash.h" bodystart="44" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structhal__logic__partition__t_1af89475ae7ce468f0e153db5b6686c8dd" prot="public" virt="non-virtual"><scope>hal_logic_partition_t</scope><name>partition_description</name></member>
+      <member refid="structhal__logic__partition__t_1a8e01a8760d2001357fab02315f670804" prot="public" virt="non-virtual"><scope>hal_logic_partition_t</scope><name>partition_length</name></member>
+      <member refid="structhal__logic__partition__t_1a4f36f9a67fae10932b9ad5b47e32cfff" prot="public" virt="non-virtual"><scope>hal_logic_partition_t</scope><name>partition_options</name></member>
+      <member refid="structhal__logic__partition__t_1ad75fd480c3bd88c6b0f07d1fc2f440b0" prot="public" virt="non-virtual"><scope>hal_logic_partition_t</scope><name>partition_owner</name></member>
+      <member refid="structhal__logic__partition__t_1a5d4665d55094278d3e2ca4b9639d0216" prot="public" virt="non-virtual"><scope>hal_logic_partition_t</scope><name>partition_start_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

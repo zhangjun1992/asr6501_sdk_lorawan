@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="rtc_8h" kind="file" language="C++">
+    <compoundname>rtc.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="524">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="526">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="524" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrtc__config__t" prot="public">rtc_config_t</innerclass>
+    <innerclass refid="structrtc__dev__t" prot="public">rtc_dev_t</innerclass>
+    <innerclass refid="structrtc__time__t" prot="public">rtc_time_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rtc_8h_1a96a714c6bf198248f0e94518a6b3cf07" prot="public" static="no">
+        <name>HAL_RTC_FORMAT_DEC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="8" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rtc_8h_1a4a940ec9f3c7a724c27e3b0062c92752" prot="public" static="no">
+        <name>HAL_RTC_FORMAT_BCD</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="9" column="9" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rtc_8h_1aee653074577a0fb95e22416466b2a1be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_rtc_init</definition>
+        <argsstring>(rtc_dev_t *rtc)</argsstring>
+        <name>hal_rtc_init</name>
+        <param>
+          <type><ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref> *</type>
+          <declname>rtc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will initialize the on board CPU real time clock</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rtc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rtc device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rtc_8h_1a90a23a2ef5852bcbd5f2a13d2dc4e358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_rtc_get_time</definition>
+        <argsstring>(rtc_dev_t *rtc, rtc_time_t *time)</argsstring>
+        <name>hal_rtc_get_time</name>
+        <param>
+          <type><ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref> *</type>
+          <declname>rtc</declname>
+        </param>
+        <param>
+          <type><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref> *</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will return the value of time read from the on board CPU real time clock.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rtc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rtc device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a time structure</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rtc_8h_1ad1f0bb1de873ca94f8ea996c7f5d2a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_rtc_set_time</definition>
+        <argsstring>(rtc_dev_t *rtc, const rtc_time_t *time)</argsstring>
+        <name>hal_rtc_set_time</name>
+        <param>
+          <type><ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref> *</type>
+          <declname>rtc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref> *</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will set MCU RTC time to a new value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rtc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rtc device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a time structure</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="rtc_8h_1af844ebc447b9174d5610db56cea8687c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_rtc_finalize</definition>
+        <argsstring>(rtc_dev_t *rtc)</argsstring>
+        <name>hal_rtc_finalize</name>
+        <param>
+          <type><ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref> *</type>
+          <declname>rtc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initialises an RTC interface, Turns off an RTC hardware interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">RTC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be de-initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_RTC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_RTC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="rtc_8h_1a96a714c6bf198248f0e94518a6b3cf07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_RTC_FORMAT_DEC<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="rtc_8h_1a4a940ec9f3c7a724c27e3b0062c92752" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_RTC_FORMAT_BCD<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structrtc__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="structrtc__config__t_1ab0720a115347f33456500c12902a08b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structrtc__config__t_1ab0720a115347f33456500c12902a08b4" kindref="member">format</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>time<sp/>formart<sp/>DEC<sp/>or<sp/>BCD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<sp/><ref refid="structrtc__config__t" kindref="compound">rtc_config_t</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structrtc__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="structrtc__dev__t_1aaa13aec880a85a91144588e95e2b91cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__dev__t_1aaa13aec880a85a91144588e95e2b91cf" kindref="member">port</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>rtc<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structrtc__dev__t_1a44eb93a9ebaa7e66fbbde13e61180b6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structrtc__config__t" kindref="compound">rtc_config_t</ref><sp/><ref refid="structrtc__dev__t_1a44eb93a9ebaa7e66fbbde13e61180b6a" kindref="member">config</ref>;<sp/></highlight><highlight class="comment">/*<sp/>rtc<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structrtc__dev__t_1ae3aa18ad032ecd8b4d7fd0f1a08de487" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>*<ref refid="structrtc__dev__t_1ae3aa18ad032ecd8b4d7fd0f1a08de487" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/><ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>RTC<sp/>time</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structrtc__time__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25" refid="structrtc__time__t_1a9e6b7c9a15685fe8c90a969550b80e76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1a9e6b7c9a15685fe8c90a969550b80e76" kindref="member">sec</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>0<sp/>to<sp/>59,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x00<sp/>to<sp/>0x59<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structrtc__time__t_1a521dfb37091082541a7a08d527b3e5c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1a521dfb37091082541a7a08d527b3e5c4" kindref="member">min</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>0<sp/>to<sp/>59,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x00<sp/>to<sp/>0x59<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structrtc__time__t_1a270692a5624d10a93cb0fb9df324e726" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1a270692a5624d10a93cb0fb9df324e726" kindref="member">hr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>0<sp/>to<sp/>23,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x00<sp/>to<sp/>0x23<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structrtc__time__t_1a00d4d962ba445ab61fbfbbd89ebc54d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1a00d4d962ba445ab61fbfbbd89ebc54d4" kindref="member">weekday</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>1<sp/>to<sp/><sp/>7,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x01<sp/>to<sp/>0x07<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structrtc__time__t_1abaa2bf5c6fed1ec703e2dc24119b7374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1abaa2bf5c6fed1ec703e2dc24119b7374" kindref="member">date</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>1<sp/>to<sp/>31,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x01<sp/>to<sp/>0x31<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structrtc__time__t_1a72c1fb304848005b837a5966123feeb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1a72c1fb304848005b837a5966123feeb5" kindref="member">month</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>1<sp/>to<sp/>12,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x01<sp/>to<sp/>0x12<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structrtc__time__t_1a1fe72fc7d918a328930c354af9ad3326" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structrtc__time__t_1a1fe72fc7d918a328930c354af9ad3326" kindref="member">year</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEC<sp/>format:value<sp/>range<sp/>from<sp/>0<sp/>to<sp/>99,<sp/>BCD<sp/>format:value<sp/>range<sp/>from<sp/>0x00<sp/>to<sp/>0x99<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">int32_t<sp/><ref refid="rtc_8h_1aee653074577a0fb95e22416466b2a1be" kindref="member">hal_rtc_init</ref>(<ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref><sp/>*rtc);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">int32_t<sp/><ref refid="rtc_8h_1a90a23a2ef5852bcbd5f2a13d2dc4e358" kindref="member">hal_rtc_get_time</ref>(<ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref><sp/>*rtc,<sp/><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref><sp/>*time);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">int32_t<sp/><ref refid="rtc_8h_1ad1f0bb1de873ca94f8ea996c7f5d2a89" kindref="member">hal_rtc_set_time</ref>(<ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref><sp/>*rtc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref><sp/>*time);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">int32_t<sp/><ref refid="rtc_8h_1af844ebc447b9174d5610db56cea8687c" kindref="member">hal_rtc_finalize</ref>(<ref refid="structrtc__dev__t" kindref="compound">rtc_dev_t</ref><sp/>*rtc);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_RTC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h"/>
+  </compounddef>
+</doxygen>

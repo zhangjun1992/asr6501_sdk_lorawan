@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structrtc__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>rtc_dev_t</compoundname>
+    <includes refid="rtc_8h" local="yes">rtc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrtc__dev__t_1aaa13aec880a85a91144588e95e2b91cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="16" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__dev__t_1a44eb93a9ebaa7e66fbbde13e61180b6a" prot="public" static="no" mutable="no">
+        <type><ref refid="structrtc__config__t" kindref="compound">rtc_config_t</ref></type>
+        <definition>rtc_config_t rtc_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="17" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__dev__t_1ae3aa18ad032ecd8b4d7fd0f1a08de487" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* rtc_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="18" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="175">
+        <label>rtc_dev_t</label>
+        <link refid="structrtc__dev__t"/>
+        <childnode refid="176" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+      <node id="176">
+        <label>rtc_config_t</label>
+        <link refid="structrtc__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" line="15" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/rtc.h" bodystart="15" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structrtc__dev__t_1a44eb93a9ebaa7e66fbbde13e61180b6a" prot="public" virt="non-virtual"><scope>rtc_dev_t</scope><name>config</name></member>
+      <member refid="structrtc__dev__t_1aaa13aec880a85a91144588e95e2b91cf" prot="public" virt="non-virtual"><scope>rtc_dev_t</scope><name>port</name></member>
+      <member refid="structrtc__dev__t_1ae3aa18ad032ecd8b4d7fd0f1a08de487" prot="public" virt="non-virtual"><scope>rtc_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

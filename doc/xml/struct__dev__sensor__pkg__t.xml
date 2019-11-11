@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__dev__sensor__pkg__t" kind="struct" language="C++" prot="public">
+    <compoundname>_dev_sensor_pkg_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__dev__sensor__pkg__t_1a23ed61169f5d69121bb9b9c3a4c0dba4" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1afec7f91a836354cbb49eaa58f010e524" kindref="member">sensor_tag_e</ref></type>
+        <definition>sensor_tag_e _dev_sensor_pkg_t::tag</definition>
+        <argsstring></argsstring>
+        <name>tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="251" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__pkg__t_1ad7baced7a7fda4b29928992c7cbce9a8" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1a15d91b8dc735b2ae99308bacb3efdf11" kindref="member">dev_sensor_info_t</ref></type>
+        <definition>dev_sensor_info_t _dev_sensor_pkg_t::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="253" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__pkg__t_1a8f5534aa8404fa2dc053df3080f074d7" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1aebac9839ff3a2f8c943c139a5543df69" kindref="member">dev_sensor_config_t</ref></type>
+        <definition>dev_sensor_config_t _dev_sensor_pkg_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="254" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__pkg__t_1a85f16d935c5e05f1de09ea0121aeac74" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1af47d40763bf7856fb8ea76c314658bad" kindref="member">dev_sensor_data_t</ref></type>
+        <definition>dev_sensor_data_t _dev_sensor_pkg_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="255" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__dev__sensor__pkg__t_1a3eddeaccc9a9e71123367b62bf0cb0a5" prot="public" static="no" mutable="no">
+        <type>union _dev_sensor_pkg_t::@2</type>
+        <definition>union _dev_sensor_pkg_t::@2 _dev_sensor_pkg_t::allocator</definition>
+        <argsstring></argsstring>
+        <name>allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="256" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>_dev_sensor_pkg_t</label>
+        <link refid="struct__dev__sensor__pkg__t"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>+info</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>+data</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>_dev_sensor_data_t</label>
+        <link refid="struct__dev__sensor__data__t"/>
+      </node>
+      <node id="41">
+        <label>_dev_sensor_info_t</label>
+        <link refid="struct__dev__sensor__info__t"/>
+      </node>
+      <node id="42">
+        <label>_dev_sensor_config_t</label>
+        <link refid="struct__dev__sensor__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" line="250" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h" bodystart="250" bodyend="257"/>
+    <listofallmembers>
+      <member refid="struct__dev__sensor__pkg__t_1a3eddeaccc9a9e71123367b62bf0cb0a5" prot="public" virt="non-virtual"><scope>_dev_sensor_pkg_t</scope><name>allocator</name></member>
+      <member refid="struct__dev__sensor__pkg__t_1a8f5534aa8404fa2dc053df3080f074d7" prot="public" virt="non-virtual"><scope>_dev_sensor_pkg_t</scope><name>config</name></member>
+      <member refid="struct__dev__sensor__pkg__t_1a85f16d935c5e05f1de09ea0121aeac74" prot="public" virt="non-virtual"><scope>_dev_sensor_pkg_t</scope><name>data</name></member>
+      <member refid="struct__dev__sensor__pkg__t_1ad7baced7a7fda4b29928992c7cbce9a8" prot="public" virt="non-virtual"><scope>_dev_sensor_pkg_t</scope><name>info</name></member>
+      <member refid="struct__dev__sensor__pkg__t_1a23ed61169f5d69121bb9b9c3a4c0dba4" prot="public" virt="non-virtual"><scope>_dev_sensor_pkg_t</scope><name>tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

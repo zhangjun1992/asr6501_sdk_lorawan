@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="pwm_8h" kind="file" language="C++">
+    <compoundname>pwm.h</compoundname>
+    <includedby refid="soc_8h" local="no">/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="509">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="511">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="510" relation="include">
+        </childnode>
+      </node>
+      <node id="508">
+        <label>/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h</label>
+        <link refid="pwm_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpwm__config__t" prot="public">pwm_config_t</innerclass>
+    <innerclass refid="structpwm__dev__t" prot="public">pwm_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pwm_8h_1a3efaaee5a76c75a33617a68efa5e31fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_pwm_init</definition>
+        <argsstring>(pwm_dev_t *pwm)</argsstring>
+        <name>hal_pwm_init</name>
+        <param>
+          <type><ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref> *</type>
+          <declname>pwm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises a PWM pin</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pwm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PWM device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="pwm_8h_1a7789f0b361e257a3039a024c5e7f7f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_pwm_start</definition>
+        <argsstring>(pwm_dev_t *pwm)</argsstring>
+        <name>hal_pwm_start</name>
+        <param>
+          <type><ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref> *</type>
+          <declname>pwm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts Pulse-Width Modulation signal output on a PWM pin</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pwm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PWM device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="pwm_8h_1a6f00e8ed683f28dead5f9e806c591ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_pwm_stop</definition>
+        <argsstring>(pwm_dev_t *pwm)</argsstring>
+        <name>hal_pwm_stop</name>
+        <param>
+          <type><ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref> *</type>
+          <declname>pwm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stops output on a PWM pin</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pwm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PWM device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="pwm_8h_1ac19ddc0908bfebb1936675d326552b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_pwm_finalize</definition>
+        <argsstring>(pwm_dev_t *pwm)</argsstring>
+        <name>hal_pwm_finalize</name>
+        <param>
+          <type><ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref> *</type>
+          <declname>pwm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initialises an PWM interface, Turns off an PWM hardware interface</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pwm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface which should be de-initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred with any step </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_PWM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_PWM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structpwm__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structpwm__config__t_1aafeaea7bebf451f7254933221f92f439" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpwm__config__t_1aafeaea7bebf451f7254933221f92f439" kindref="member">duty_cycle</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>pwm<sp/>duty_cycle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structpwm__config__t_1a4bfb97d483238f81041602077bbf9323" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structpwm__config__t_1a4bfb97d483238f81041602077bbf9323" kindref="member">freq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>pwm<sp/>freq<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><ref refid="structpwm__config__t" kindref="compound">pwm_config_t</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structpwm__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="structpwm__dev__t_1a571455f811c0211665502aaff62bc695" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpwm__dev__t_1a571455f811c0211665502aaff62bc695" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>pwm<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structpwm__dev__t_1a10136f178f2b7dfbfd7f9aff64568bbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpwm__config__t" kindref="compound">pwm_config_t</ref><sp/><ref refid="structpwm__dev__t_1a10136f178f2b7dfbfd7f9aff64568bbc" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structpwm__dev__t_1af8f857b9f5313bd1975ea4a9c2246fa4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpwm__dev__t_1af8f857b9f5313bd1975ea4a9c2246fa4" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">int32_t<sp/><ref refid="pwm_8h_1a3efaaee5a76c75a33617a68efa5e31fc" kindref="member">hal_pwm_init</ref>(<ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref><sp/>*pwm);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">int32_t<sp/><ref refid="pwm_8h_1a7789f0b361e257a3039a024c5e7f7f58" kindref="member">hal_pwm_start</ref>(<ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref><sp/>*pwm);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">int32_t<sp/><ref refid="pwm_8h_1a6f00e8ed683f28dead5f9e806c591ca0" kindref="member">hal_pwm_stop</ref>(<ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref><sp/>*pwm);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">int32_t<sp/><ref refid="pwm_8h_1ac19ddc0908bfebb1936675d326552b96" kindref="member">hal_pwm_finalize</ref>(<ref refid="structpwm__dev__t" kindref="compound">pwm_dev_t</ref><sp/>*pwm);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_PWM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpwm__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>pwm_dev_t</compoundname>
+    <includes refid="pwm_8h" local="yes">pwm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpwm__dev__t_1a571455f811c0211665502aaff62bc695" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t pwm_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="14" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__dev__t_1a10136f178f2b7dfbfd7f9aff64568bbc" prot="public" static="no" mutable="no">
+        <type><ref refid="structpwm__config__t" kindref="compound">pwm_config_t</ref></type>
+        <definition>pwm_config_t pwm_dev_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="15" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__dev__t_1af8f857b9f5313bd1975ea4a9c2246fa4" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* pwm_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="16" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="161">
+        <label>pwm_dev_t</label>
+        <link refid="structpwm__dev__t"/>
+        <childnode refid="162" relation="usage">
+          <edgelabel>+config</edgelabel>
+        </childnode>
+      </node>
+      <node id="162">
+        <label>pwm_config_t</label>
+        <link refid="structpwm__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" line="13" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/pwm.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structpwm__dev__t_1a10136f178f2b7dfbfd7f9aff64568bbc" prot="public" virt="non-virtual"><scope>pwm_dev_t</scope><name>config</name></member>
+      <member refid="structpwm__dev__t_1a571455f811c0211665502aaff62bc695" prot="public" virt="non-virtual"><scope>pwm_dev_t</scope><name>port</name></member>
+      <member refid="structpwm__dev__t_1af8f857b9f5313bd1975ea4a9c2246fa4" prot="public" virt="non-virtual"><scope>pwm_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

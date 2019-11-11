@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structsd__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>sd_config_t</compoundname>
+    <includes refid="sd_8h" local="yes">sd.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsd__config__t_1a90a95e38c9ff5d400a1882f19bcc9c24" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sd_config_t::bus_wide</definition>
+        <argsstring></argsstring>
+        <name>bus_wide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="28" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__config__t_1a6b72eb18aacc51a85cea64da138c0e45" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sd_config_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="29" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="180">
+        <label>sd_config_t</label>
+        <link refid="structsd__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" line="27" column="1" bodyfile="/mnt/d/6_workSpace/55_lora/4_node/2_ASR6501/2_code/4_3/alios-asr-lora-4.3_rel/include/hal/soc/sd.h" bodystart="27" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structsd__config__t_1a90a95e38c9ff5d400a1882f19bcc9c24" prot="public" virt="non-virtual"><scope>sd_config_t</scope><name>bus_wide</name></member>
+      <member refid="structsd__config__t_1a6b72eb18aacc51a85cea64da138c0e45" prot="public" virt="non-virtual"><scope>sd_config_t</scope><name>freq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
