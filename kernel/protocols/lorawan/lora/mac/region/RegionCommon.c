@@ -40,7 +40,7 @@ Maintainer: Miguel Luis ( Semtech ), Gregory Cristian ( Semtech ) and Daniel Jae
 #define BACKOFF_DC_24_HOURS     3
 
 
-
+/*信道数？*/
 static uint8_t CountChannels( uint16_t mask, uint8_t nbBits )
 {
     uint8_t nbActiveBits = 0;
@@ -56,7 +56,7 @@ static uint8_t CountChannels( uint16_t mask, uint8_t nbBits )
 }
 
 
-
+/*获取加入占空比*/
 uint16_t RegionCommonGetJoinDc( TimerTime_t elapsedTime )
 {
     uint16_t dutyCycle = 0;
@@ -76,6 +76,7 @@ uint16_t RegionCommonGetJoinDc( TimerTime_t elapsedTime )
     return dutyCycle;
 }
 
+/*核实信道占空比*/
 bool RegionCommonChanVerifyDr( uint8_t nbChannels, uint16_t* channelsMask, int8_t dr, int8_t minDr, int8_t maxDr, ChannelParams_t* channels )
 {
     if( RegionCommonValueInRange( dr, minDr, maxDr ) == 0 )
@@ -109,6 +110,7 @@ bool RegionCommonChanVerifyDr( uint8_t nbChannels, uint16_t* channelsMask, int8_
     return false;
 }
 
+/*判断大小*/
 uint8_t RegionCommonValueInRange( int8_t value, int8_t min, int8_t max )
 {
     if( ( value >= min ) && ( value <= max ) )
@@ -118,6 +120,7 @@ uint8_t RegionCommonValueInRange( int8_t value, int8_t min, int8_t max )
     return 0;
 }
 
+/*信道禁止*/
 bool RegionCommonChanDisable( uint16_t* channelsMask, uint8_t id, uint8_t maxChannels )
 {
     uint8_t index = id / 16;
@@ -133,6 +136,7 @@ bool RegionCommonChanDisable( uint16_t* channelsMask, uint8_t id, uint8_t maxCha
     return true;
 }
 
+/*信道总数*/
 uint8_t RegionCommonCountChannels( uint16_t* channelsMask, uint8_t startIdx, uint8_t stopIdx )
 {
     uint8_t nbChannels = 0;
@@ -150,6 +154,7 @@ uint8_t RegionCommonCountChannels( uint16_t* channelsMask, uint8_t startIdx, uin
     return nbChannels;
 }
 
+/*信道掩码拷贝*/
 void RegionCommonChanMaskCopy( uint16_t* channelsMaskDest, uint16_t* channelsMaskSrc, uint8_t len )
 {
     if( ( channelsMaskDest != NULL ) && ( channelsMaskSrc != NULL ) )
@@ -216,6 +221,7 @@ TimerTime_t RegionCommonUpdateBandTimeOff( bool joined, bool dutyCycle, Band_t* 
     return nextTxDelay;
 }
 
+/*解析adr请求？*/
 uint8_t RegionCommonParseLinkAdrReq( uint8_t* payload, LinkAdrParams_t* linkAdrParams )
 {
     uint8_t retIndex = 0;
@@ -240,6 +246,7 @@ uint8_t RegionCommonParseLinkAdrReq( uint8_t* payload, LinkAdrParams_t* linkAdrP
     return retIndex;
 }
 
+/*计算同步字时间？*/
 double RegionCommonComputeSymbolTimeLoRa( uint8_t phyDr, uint32_t bandwidth )
 {
     return ( ( double )( 1 << phyDr ) / ( double )bandwidth ) * 1000;
@@ -250,12 +257,14 @@ double RegionCommonComputeSymbolTimeFsk( uint8_t phyDr )
     return ( 8.0 / ( double )phyDr ); // 1 symbol equals 1 byte
 }
 
+/*计算接收窗口参数*/
 void RegionCommonComputeRxWindowParameters( double tSymbol, uint8_t minRxSymbols, uint32_t rxError, uint32_t wakeUpTime, uint32_t* windowTimeout, int32_t* windowOffset )
 {
     *windowTimeout = MAX( ( uint32_t )ceil( ( ( 2 * minRxSymbols - 8 ) * tSymbol + 2 * rxError ) / tSymbol ), minRxSymbols ); // Computed number of symbols
     *windowOffset = ( int32_t )ceil( ( 4.0 * tSymbol ) - ( ( *windowTimeout * tSymbol ) / 2.0 ) - wakeUpTime );
 }
 
+/*计算发送功率*/
 int8_t RegionCommonComputeTxPower( int8_t txPowerIndex, float maxEirp, float antennaGain )
 {
     int8_t phyTxPower = 0;
@@ -264,6 +273,8 @@ int8_t RegionCommonComputeTxPower( int8_t txPowerIndex, float maxEirp, float ant
 
     return phyTxPower;
 }
+
+/*接收信标设置*/
 void RegionCommonRxBeaconSetup( RegionCommonRxBeaconSetupParams_t* rxBeaconSetupParams )
 {
     bool rxContinuous = true;

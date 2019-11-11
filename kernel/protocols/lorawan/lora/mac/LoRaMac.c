@@ -208,23 +208,23 @@ static uint32_t AdrAckCounter = 0;
  * If the node has sent a FRAME_TYPE_DATA_CONFIRMED_UP this variable indicates
  * if the nodes needs to manage the server acknowledgement.
  */
-static bool NodeAckRequested = false;
+static bool NodeAckRequested = false;//用来表示确认帧是否已经应答
 
 /*!
  * If the server has sent a FRAME_TYPE_DATA_CONFIRMED_DOWN this variable indicates
  * if the ACK bit must be set for the next transmission
  */
-static bool SrvAckRequested = false;
+static bool SrvAckRequested = false;//用来响应服务器发送的确认帧，节点给服务器应答
 
 /*!
  * Indicates if the MAC layer wants to send MAC commands
  */
-static bool MacCommandsInNextTx = false;
+static bool MacCommandsInNextTx = false;//指明mac发送的是否是mac命令
 
 /*!
  * Contains the current MacCommandsBuffer index
  */
-static uint8_t MacCommandsBufferIndex = 0;
+static uint8_t MacCommandsBufferIndex = 0;//mac命令缓存索引
 
 /*!
  * Contains the current MacCommandsBuffer index for MAC commands to repeat
@@ -234,40 +234,40 @@ static uint8_t MacCommandsBufferToRepeatIndex = 0;
 /*!
  * Buffer containing the MAC layer commands
  */
-static uint8_t MacCommandsBuffer[LORA_MAC_COMMAND_MAX_LENGTH];
+static uint8_t MacCommandsBuffer[LORA_MAC_COMMAND_MAX_LENGTH];//mac命令缓存
 
 /*!
  * Buffer containing the MAC layer commands which must be repeated
  */
-static uint8_t MacCommandsBufferToRepeat[LORA_MAC_COMMAND_MAX_LENGTH];
+static uint8_t MacCommandsBufferToRepeat[LORA_MAC_COMMAND_MAX_LENGTH];//必须重复的mac命令缓冲区
 
 /*!
  * LoRaMac parameters
  */
-LoRaMacParams_t LoRaMacParams;
+LoRaMacParams_t LoRaMacParams;//mac参数
 
 /*!
  * LoRaMac default parameters
  */
-LoRaMacParams_t LoRaMacParamsDefaults;
+LoRaMacParams_t LoRaMacParamsDefaults; //默认参数
 
 /*!
- * Uplink messages repetitions counter
+ * Uplink messages repetitions counter 上行消息重复次数
  */
 static uint8_t ChannelsNbRepCounter = 0;
 
 /*!
- * Maximum duty cycle
+ * Maximum duty cycle 最大占空比
  * \remark Possibility to shutdown the device.
  */
 static uint8_t MaxDCycle = 0;
 
 /*!
- * Aggregated duty cycle management
+ * Aggregated duty cycle management  综合占空比管理
  */
 static uint16_t AggregatedDCycle;
-static TimerTime_t AggregatedLastTxDoneTime;
-static TimerTime_t AggregatedTimeOff;
+static TimerTime_t AggregatedLastTxDoneTime;//最后发送完成时间
+static TimerTime_t AggregatedTimeOff;//合计关闭时间
 
 /*!
  * Enables/Disables duty cycle management (Test only)
@@ -282,19 +282,19 @@ static uint8_t Channel;
 /*!
  * Current channel index
  */
-static uint8_t LastTxChannel;
+static uint8_t LastTxChannel;//现在通道
 
 /*!
  * Set to true, if the last uplink was a join request
  */
-static bool LastTxIsJoinRequest;
+static bool LastTxIsJoinRequest;//发送的是加入请求
 
 /*!
  * Stores the time at LoRaMac initialization.
  *
  * \remark Used for the BACKOFF_DC computation.
  */
-static TimerTime_t LoRaMacInitializationTime = 0;
+static TimerTime_t LoRaMacInitializationTime = 0;//lora mac初始化的时间
 
 static TimerSysTime_t LastTxSysTime = { 0 };
 
@@ -302,14 +302,14 @@ static TimerSysTime_t LastTxSysTime = { 0 };
  * LoRaMac internal states
  */
 enum eLoRaMacState {
-    LORAMAC_IDLE          = 0x00000000,
-    LORAMAC_TX_RUNNING    = 0x00000001,
-    LORAMAC_RX            = 0x00000002,
-    LORAMAC_ACK_REQ       = 0x00000004,
-    LORAMAC_ACK_RETRY     = 0x00000008,
-    LORAMAC_TX_DELAYED    = 0x00000010,
-    LORAMAC_TX_CONFIG     = 0x00000020,
-    LORAMAC_RX_ABORT      = 0x00000040,
+    LORAMAC_IDLE          = 0x00000000,//空闲
+    LORAMAC_TX_RUNNING    = 0x00000001,//正在发送
+    LORAMAC_RX            = 0x00000002,//接收
+    LORAMAC_ACK_REQ       = 0x00000004,//应答请求
+    LORAMAC_ACK_RETRY     = 0x00000008,//应答重试
+    LORAMAC_TX_DELAYED    = 0x00000010,//延时发送
+    LORAMAC_TX_CONFIG     = 0x00000020,//发送配置
+    LORAMAC_RX_ABORT      = 0x00000040,//接收终止
 };
 
 /*!
@@ -342,64 +342,64 @@ static RadioEvents_t RadioEvents;
  */
 static TimerEvent_t TxDelayedTimer;
 
-#ifdef CONFIG_LORA_CAD
-static TimerEvent_t TxImmediateTimer;
-static uint8_t g_lora_cad_cnt = 1;    
+#ifdef CONFIG_LORA_CAD          //CAD检测
+static TimerEvent_t TxImmediateTimer; //立即发送时间
+static uint8_t g_lora_cad_cnt = 1;   //cad次数  
 #endif
 /*!
  * LoRaMac reception windows timers
  */
-static TimerEvent_t RxWindowTimer1;
-static TimerEvent_t RxWindowTimer2;
+static TimerEvent_t RxWindowTimer1;//接收窗口1
+static TimerEvent_t RxWindowTimer2;//接收窗口2
 
 /*!
  * LoRaMac reception windows delay
  * \remark normal frame: RxWindowXDelay = ReceiveDelayX - RADIO_WAKEUP_TIME
  *         join frame  : RxWindowXDelay = JoinAcceptDelayX - RADIO_WAKEUP_TIME
  */
-static uint32_t RxWindow1Delay;
-static uint32_t RxWindow2Delay;
+static uint32_t RxWindow1Delay;//接收窗口1延时
+static uint32_t RxWindow2Delay;//接收窗口2延时
 
 /*!
  * LoRaMac Rx windows configuration
  */
-static RxConfigParams_t RxWindow1Config;
-static RxConfigParams_t RxWindow2Config;
+static RxConfigParams_t RxWindow1Config;//接收窗口1配置
+static RxConfigParams_t RxWindow2Config;//接收窗口2配置
 
 /*!
  * Acknowledge timeout timer. Used for packet retransmissions.
  */
-static TimerEvent_t AckTimeoutTimer;
+static TimerEvent_t AckTimeoutTimer;//应答超时时间
 
 /*!
  * Number of trials to get a frame acknowledged
  */
-static uint8_t AckTimeoutRetries = 1;
+static uint8_t AckTimeoutRetries = 1;//
 
 /*!
  * Number of trials to get a frame acknowledged
  */
-static uint8_t AckTimeoutRetriesCounter = 1;
+static uint8_t AckTimeoutRetriesCounter = 1;//应答重试次数
 
 /*!
  * Indicates if the AckTimeout timer has expired or not
  */
-static bool AckTimeoutRetry = false;
+static bool AckTimeoutRetry = false;//应答超时是否重试
 
 /*!
  * Last transmission time on air
  */
-TimerTime_t TxTimeOnAir = 0;
+TimerTime_t TxTimeOnAir = 0;//空气中的传输时间
 
 /*!
  * Number of trials for the Join Request
  */
-static uint8_t JoinRequestTrials;
+static uint8_t JoinRequestTrials;//加入请求重试时间
 
 /*!
  * Maximum number of trials for the Join Request
  */
-static uint8_t MaxJoinRequestTrials;
+static uint8_t MaxJoinRequestTrials;//请求加入最大重试次数
 
 /*!
  * Structure to hold an MCPS indication data.
@@ -429,7 +429,7 @@ static LoRaMacRxSlot_t RxSlot;
 /*!
  * LoRaMac tx/rx operation state
  */
-LoRaMacFlags_t LoRaMacFlags;
+LoRaMacFlags_t LoRaMacFlags;//
 
 #ifdef CONFIG_LWAN
 static bool DownLinkFramePending = false;    
@@ -438,36 +438,40 @@ static bool DownLinkFramePending = false;
 /*!
  * \brief Function to be executed on Radio Tx Done event
  */
-static void OnRadioTxDone( void );
+static void OnRadioTxDone( void );//发送完成
 
 /*!
  * \brief This function prepares the MAC to abort the execution of function
  *        OnRadioRxDone in case of a reception error.
  */
-static void PrepareRxDoneAbort( void );
+static void PrepareRxDoneAbort( void );//准备接收终止
 
 /*!
  * \brief Function to be executed on Radio Rx Done event
+ * 接收完成
  */
 static void OnRadioRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr );
 
 /*!
  * \brief Function executed on Radio Tx Timeout event
+ * 发送超时
  */
 static void OnRadioTxTimeout( void );
 
 /*!
  * \brief Function executed on Radio Rx error event
+ * 接收错误
  */
 static void OnRadioRxError( void );
 
 /*!
  * \brief Function executed on Radio Rx Timeout event
+ * 接收超时
  */
 static void OnRadioRxTimeout( void );
 
 #ifdef CONFIG_LORA_CAD
-static void OnRadioCadDone( bool channelActivityDetected );
+static void OnRadioCadDone( bool channelActivityDetected ); //cad完成
 static void OnTxImmediateTimerEvent( void );
 #endif
 
@@ -2442,21 +2446,23 @@ static void ProcessMacCommands( uint8_t *payload, uint8_t macIndex, uint8_t comm
 }
 
 #ifdef CONFIG_LORA_CAD
+
+//启动CAD检查
 static bool StartCAD( uint8_t channel )
 {    
     TxConfigParams_t txConfig;
     int8_t txPower = 0;
     TimerTime_t txTime = 0;
 
-    memset(&txConfig, 0, sizeof(TxConfigParams_t));
-    txConfig.Channel = channel;
-    txConfig.Datarate = LoRaMacParams.ChannelsDatarate;
-    txConfig.TxPower = LoRaMacParams.ChannelsTxPower;
-    txConfig.MaxEirp = LoRaMacParams.MaxEirp;
-    txConfig.AntennaGain = LoRaMacParams.AntennaGain;
+    memset(&txConfig, 0, sizeof(TxConfigParams_t));//设置发送参数
+    txConfig.Channel = channel;//信道
+    txConfig.Datarate = LoRaMacParams.ChannelsDatarate;//速率
+    txConfig.TxPower = LoRaMacParams.ChannelsTxPower;//发射功率
+    txConfig.MaxEirp = LoRaMacParams.MaxEirp;//最大辐射功率
+    txConfig.AntennaGain = LoRaMacParams.AntennaGain;//天线增益
     txConfig.PktLen = LoRaMacBufferPktLen;
 
-    bool ret = RegionTxConfig( LoRaMacRegion, &txConfig, &txPower, &txTime );
+    bool ret = RegionTxConfig( LoRaMacRegion, &txConfig, &txPower, &txTime );//发送配置
     Radio.StartCad(LORA_CAD_SYMBOLS);
     
     return ret;
@@ -2510,6 +2516,7 @@ LoRaMacStatus_t Send( LoRaMacHeader_t *macHdr, uint8_t fPort, void *fBuffer, uin
     return status;
 }
 
+//计划发送
 static LoRaMacStatus_t ScheduleTx( void )
 {
     TimerTime_t dutyCycleTimeOff = 0;

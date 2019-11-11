@@ -13,22 +13,22 @@ typedef struct
 {
     uint16_t      Addr;                             //!< The address of the register
     uint8_t       Value;                            //!< The value of the register
-}RadioRegisters_t;
+}RadioRegisters_t;//射频寄存器结构体
 
 /*!
  * \brief Holds the internal operating mode of the radio
  */
-static volatile RadioOperatingModes_t OperatingMode;
+static volatile RadioOperatingModes_t OperatingMode;//工作模式
 
 /*!
  * \brief Stores the current packet type set in the radio
  */
-static RadioPacketTypes_t PacketType;
+static RadioPacketTypes_t PacketType;//包类型
 
 /*!
  * \brief Stores the last frequency error measured on LoRa received packet
  */
-volatile uint32_t FrequencyError = 0;
+volatile uint32_t FrequencyError = 0;//频率错误
 
 /*!
  * \brief Hold the status of the Image calibration
@@ -42,34 +42,34 @@ static bool ImageCalibrated = false;
 /*!
  * \brief DIO 0 IRQ callback
  */
-void SX126xOnDioIrq( void );
+void SX126xOnDioIrq( void );//DIO 0中断回调
 
 /*!
  * \brief DIO 0 IRQ callback
  */
-void SX126xSetPollingMode( void );
+void SX126xSetPollingMode( void );//
 
 /*!
- * \brief DIO 0 IRQ callback
+ * \brief 
  */
-void SX126xSetInterruptMode( void );
+void SX126xSetInterruptMode( void );//设置中断模式
 
 /*
  * \brief Process the IRQ if handled by the driver
  */
-void SX126xProcessIrqs( void );
+void SX126xProcessIrqs( void );//处理中断
 
-extern bool UseTCXO;
-extern uint8_t gPaOptSetting;
-int SX126xInit( DioIrqHandler dioIrq )
+extern bool UseTCXO; //是否使用温补晶振
+extern uint8_t gPaOptSetting;  //PA设置？
+int SX126xInit( DioIrqHandler dioIrq ) //SX126X初始化
 {
-    SX126xReset( );
+    SX126xReset( );//复位
  
-    SX126xIoIrqInit( dioIrq );
-    SX126xWakeup( );
-    SX126xSetStandby( STDBY_RC );
+    SX126xIoIrqInit( dioIrq );//中断初始化
+    SX126xWakeup( );//唤醒
+    SX126xSetStandby( STDBY_RC );//设置待机方式
     
-    if(UseTCXO) {
+    if(UseTCXO) {  //如果使用温补晶振的情况
         CalibrationParams_t calibParam;
 
         SX126xSetDio3AsTcxoCtrl( TCXO_CTRL_1_8V, SX126xGetBoardTcxoWakeupTime( ) << 6 ); // convert from ms to SX126x time base
@@ -78,61 +78,63 @@ int SX126xInit( DioIrqHandler dioIrq )
     }
     
     
-    SX126xSetDio2AsRfSwitchCtrl( true );
+    SX126xSetDio2AsRfSwitchCtrl( true );//射频开关
     OperatingMode = MODE_STDBY_RC;
     return 0;
 }
 
-RadioOperatingModes_t SX126xGetOperatingMode( void )
+RadioOperatingModes_t SX126xGetOperatingMode( void ) //获取操作模式
 {
     return OperatingMode;
 }
-void SX126xSetOperatingMode(RadioOperatingModes_t mode)
+void SX126xSetOperatingMode(RadioOperatingModes_t mode)//设置操作模式
 {
     OperatingMode=mode;
 }
 
-void SX126xCheckDeviceReady( void )
+void SX126xCheckDeviceReady( void )//检查设备是否就绪
 {
     if( ( SX126xGetOperatingMode( ) == MODE_SLEEP ) || ( SX126xGetOperatingMode( ) == MODE_RX_DC ) )
     {
-        SX126xWakeup( );
+        SX126xWakeup( );//唤醒
         // Switch is turned off when device is in sleep mode and turned on is all other modes
-        SX126xAntSwOn( );
+        SX126xAntSwOn( );//射频开关开
     }
-    SX126xWaitOnBusy( );
+    SX126xWaitOnBusy( );//等待繁忙
 }
 
-void SX126xSetPayload( uint8_t *payload, uint8_t size )
+void SX126xSetPayload( uint8_t *payload, uint8_t size )//设置发送负载数据
 {
     SX126xWriteBuffer( 0x00, payload, size );
 }
 
-uint8_t SX126xGetPayload( uint8_t *buffer, uint8_t *size,  uint8_t maxSize )
+uint8_t SX126xGetPayload( uint8_t *buffer, uint8_t *size,  uint8_t maxSize )//获取物理负载
 {
     uint8_t offset = 0;
 
-    SX126xGetRxBufferStatus( size, &offset );
+    SX126xGetRxBufferStatus( size, &offset );//获取接收缓存状态
     if( *size > maxSize )
     {
         return 1;
     }
-    SX126xReadBuffer( offset, buffer, *size );
+    SX126xReadBuffer( offset, buffer, *size );//读取缓存状态
     return 0;
 }
 
-void SX126xSendPayload( uint8_t *payload, uint8_t size, uint32_t timeout )
+void SX126xSendPayload( uint8_t *payload, uint8_t size, uint32_t timeout )//发送物理负载数据
 {
-    SX126xSetPayload( payload, size );
-    SX126xSetTx( timeout );
+    SX126xSetPayload( payload, size );//设置负载数据
+    SX126xSetTx( timeout );//
 }
 
+/*设置同步字*/
 uint8_t SX126xSetSyncWord( uint8_t *syncWord )
 {
     SX126xWriteRegister(REG_LR_SYNCWORD, *syncWord);
     return 0;
 }
 
+/*设置CRC校验种子*/
 void SX126xSetCrcSeed( uint16_t seed )
 {
     uint8_t buf[2];
@@ -151,6 +153,7 @@ void SX126xSetCrcSeed( uint16_t seed )
     }
 }
 
+/*设置CRC多项式*/
 void SX126xSetCrcPolynomial( uint16_t polynomial )
 {
     uint8_t buf[2];
@@ -187,12 +190,13 @@ void SX126xSetWhiteningSeed( uint16_t seed )
     }
 }
 
+/*获取随机数*/
 uint32_t SX126xGetRandom( void )
 {
     uint8_t buf[] = { 0, 0, 0, 0 };
 
     // Set radio in continuous reception
-    SX126xSetRx( 0 );
+    SX126xSetRx( 0 );//设置连续接收
 
     DelayMs( 1 );
 
@@ -203,14 +207,16 @@ uint32_t SX126xGetRandom( void )
     return ( buf[0] << 24 ) | ( buf[1] << 16 ) | ( buf[2] << 8 ) | buf[3];
 }
 
+/*设置休眠配置*/
 void SX126xSetSleep( SleepParams_t sleepConfig )
 {
-    SX126xAntSwOff( );
+    SX126xAntSwOff( );//天线关闭
 
-    SX126xWriteCommand( RADIO_SET_SLEEP, &sleepConfig.Value, 1 );
-    OperatingMode = MODE_SLEEP;
+    SX126xWriteCommand( RADIO_SET_SLEEP, &sleepConfig.Value, 1 );//写休眠命令
+    OperatingMode = MODE_SLEEP;//休眠
 }
 
+/*设置备用方式*/
 void SX126xSetStandby( RadioStandbyModes_t standbyConfig )
 {
     SX126xWriteCommand( RADIO_SET_STANDBY, ( uint8_t* )&standbyConfig, 1 );
@@ -230,6 +236,7 @@ void SX126xSetFs( void )
     OperatingMode = MODE_FS;
 }
 
+/*设置发送，超时事件*/
 void SX126xSetTx( uint32_t timeout )
 {
     uint8_t buf[3];
@@ -242,6 +249,7 @@ void SX126xSetTx( uint32_t timeout )
     SX126xWriteCommand( RADIO_SET_TX, buf, 3 );
 }
 
+/*设置接收，参数超时事件*/
 void SX126xSetRx( uint32_t timeout )
 {
     uint8_t buf[3];
@@ -254,6 +262,7 @@ void SX126xSetRx( uint32_t timeout )
     SX126xWriteCommand( RADIO_SET_RX, buf, 3 );
 }
 
+/*设置接收boosted*/
 void SX126xSetRxBoosted( uint32_t timeout )
 {
     uint8_t buf[3];
@@ -268,6 +277,7 @@ void SX126xSetRxBoosted( uint32_t timeout )
     SX126xWriteCommand( RADIO_SET_RX, buf, 3 );
 }
 
+/*设置接收占空比*/
 void SX126xSetRxDutyCycle( uint32_t rxTime, uint32_t sleepTime )
 {
     uint8_t buf[6];
@@ -282,17 +292,20 @@ void SX126xSetRxDutyCycle( uint32_t rxTime, uint32_t sleepTime )
     OperatingMode = MODE_RX_DC;
 }
 
+/*设置CAD 信道空闲检测*/
 void SX126xSetCad( void )
 {
     SX126xWriteCommand( RADIO_SET_CAD, 0, 0 );
     OperatingMode = MODE_CAD;
 }
 
+/*设置发送连续波*/
 void SX126xSetTxContinuousWave( void )
 {
     SX126xWriteCommand( RADIO_SET_TXCONTINUOUSWAVE, 0, 0 );
 }
 
+/*设置发送无限序言？*/
 void SX126xSetTxInfinitePreamble( void )
 {
     SX126xWriteCommand( RADIO_SET_TXCONTINUOUSPREAMBLE, 0, 0 );
@@ -308,11 +321,13 @@ void SX126xSetLoRaSymbNumTimeout( uint8_t SymbNum )
     SX126xWriteCommand( RADIO_SET_LORASYMBTIMEOUT, &SymbNum, 1 );
 }
 
+/*设置调节器模式*/
 void SX126xSetRegulatorMode( RadioRegulatorMode_t mode )
 {
     SX126xWriteCommand( RADIO_SET_REGULATORMODE, ( uint8_t* )&mode, 1 );
 }
 
+/*校正*/
 void SX126xCalibrate( CalibrationParams_t calibParam )
 {
     SX126xWriteCommand( RADIO_CALIBRATE, ( uint8_t* )&calibParam, 1 );
@@ -350,6 +365,7 @@ void SX126xCalibrateImage( uint32_t freq )
     SX126xWriteCommand( RADIO_CALIBRATEIMAGE, calFreq, 2 );
 }
 
+/*PA配置*/
 void SX126xSetPaConfig( uint8_t paDutyCycle, uint8_t hpMax, uint8_t deviceSel, uint8_t paLut )
 {
     uint8_t buf[4];
@@ -361,11 +377,13 @@ void SX126xSetPaConfig( uint8_t paDutyCycle, uint8_t hpMax, uint8_t deviceSel, u
     SX126xWriteCommand( RADIO_SET_PACONFIG, buf, 4 );
 }
 
+/*设置接收、发送回退模式*/
 void SX126xSetRxTxFallbackMode( uint8_t fallbackMode )
 {
     SX126xWriteCommand( RADIO_SET_TXFALLBACKMODE, &fallbackMode, 1 );
 }
 
+/*设置DIo中断参数*/
 void SX126xSetDioIrqParams( uint16_t irqMask, uint16_t dio1Mask, uint16_t dio2Mask, uint16_t dio3Mask )
 {
     uint8_t buf[8];
@@ -381,6 +399,7 @@ void SX126xSetDioIrqParams( uint16_t irqMask, uint16_t dio1Mask, uint16_t dio2Ma
     SX126xWriteCommand( RADIO_CFG_DIOIRQ, buf, 8 );
 }
 
+/*获取中断状态*/
 uint16_t SX126xGetIrqStatus( void )
 {
     uint8_t irqStatus[2];
@@ -389,11 +408,13 @@ uint16_t SX126xGetIrqStatus( void )
     return ( irqStatus[0] << 8 ) | irqStatus[1];
 }
 
+/*设置DIo2 asr 射频开光控制状态*/
 void SX126xSetDio2AsRfSwitchCtrl( uint8_t enable )
 {
     SX126xWriteCommand( RADIO_SET_RFSWITCHMODE, &enable, 1 );
 }
 
+/*设置DIO3，TCXO状态控制*/
 void SX126xSetDio3AsTcxoCtrl( RadioTcxoCtrlVoltage_t tcxoVoltage, uint32_t timeout )
 {
     uint8_t buf[4];
@@ -406,6 +427,7 @@ void SX126xSetDio3AsTcxoCtrl( RadioTcxoCtrlVoltage_t tcxoVoltage, uint32_t timeo
     SX126xWriteCommand( RADIO_SET_TCXOMODE, buf, 4 );
 }
 
+/*设置无线频率*/
 void SX126xSetRfFrequency( uint32_t frequency )
 {
     uint8_t buf[4];
@@ -425,6 +447,7 @@ void SX126xSetRfFrequency( uint32_t frequency )
     SX126xWriteCommand( RADIO_SET_RFFREQUENCY, buf, 4 );
 }
 
+/*设置包类型*/
 void SX126xSetPacketType( RadioPacketTypes_t packetType )
 {
     // Save packet type internally to avoid questioning the radio
@@ -432,16 +455,20 @@ void SX126xSetPacketType( RadioPacketTypes_t packetType )
     SX126xWriteCommand( RADIO_SET_PACKETTYPE, ( uint8_t* )&packetType, 1 );
 }
 
+/*获取包类型*/
 RadioPacketTypes_t SX126xGetPacketType( void )
 {
     return PacketType;
 }
 
+/*设置发送参数
+*参数：power 功率；ramptime 射频持续时间
+*/
 void SX126xSetTxParams( int8_t power, RadioRampTimes_t rampTime )
 {
     uint8_t buf[2];
 
-    if( SX126xGetPaSelect( 0 ) == SX1261 )
+    if( SX126xGetPaSelect( 0 ) == SX1261 ) //获取pa选择
     {
         if( power == 15 )
         {
@@ -498,6 +525,9 @@ void SX126xSetTxParams( int8_t power, RadioRampTimes_t rampTime )
     SX126xWriteCommand( RADIO_SET_TXPARAMS, buf, 2 );
 }
 
+/*设置调制参数
+*参数：设置参数
+*/
 void SX126xSetModulationParams( ModulationParams_t *modulationParams )
 {
     uint8_t n;
@@ -543,6 +573,7 @@ void SX126xSetModulationParams( ModulationParams_t *modulationParams )
     }
 }
 
+/*设置包参数*/
 void SX126xSetPacketParams( PacketParams_t *packetParams )
 {
     uint8_t n;
@@ -602,6 +633,11 @@ void SX126xSetPacketParams( PacketParams_t *packetParams )
     SX126xWriteCommand( RADIO_SET_PACKETPARAMS, buf, n );
 }
 
+/*
+*设置CAD参数
+*参数：
+*
+*/
 void SX126xSetCadParams( RadioLoRaCadSymbols_t cadSymbolNum, uint8_t cadDetPeak, uint8_t cadDetMin, RadioCadExitModes_t cadExitMode, uint32_t cadTimeout )
 {
     uint8_t buf[7];
@@ -617,6 +653,10 @@ void SX126xSetCadParams( RadioLoRaCadSymbols_t cadSymbolNum, uint8_t cadDetPeak,
     OperatingMode = MODE_CAD;
 }
 
+/*设置缓存基地址
+*参数：发送基地址，接收基地址
+*
+*/
 void SX126xSetBufferBaseAddress( uint8_t txBaseAddress, uint8_t rxBaseAddress )
 {
     uint8_t buf[2];
@@ -626,6 +666,7 @@ void SX126xSetBufferBaseAddress( uint8_t txBaseAddress, uint8_t rxBaseAddress )
     SX126xWriteCommand( RADIO_SET_BUFFERBASEADDRESS, buf, 2 );
 }
 
+/*获取状态*/
 RadioStatus_t SX126xGetStatus( void )
 {
     uint8_t stat = 0;
@@ -636,6 +677,7 @@ RadioStatus_t SX126xGetStatus( void )
     return status;
 }
 
+/*获取信号强度？*/
 int8_t SX126xGetRssiInst( void )
 {
     uint8_t buf[1];
@@ -646,6 +688,7 @@ int8_t SX126xGetRssiInst( void )
     return rssi;
 }
 
+/*获取接收缓存状态*/
 void SX126xGetRxBufferStatus( uint8_t *payloadLength, uint8_t *rxStartBufferPointer )
 {
     uint8_t status[2];
@@ -665,6 +708,7 @@ void SX126xGetRxBufferStatus( uint8_t *payloadLength, uint8_t *rxStartBufferPoin
     *rxStartBufferPointer = status[1];
 }
 
+/*获取包状态*/
 void SX126xGetPacketStatus( PacketStatus_t *pktStatus )
 {
     uint8_t status[3];
@@ -674,14 +718,14 @@ void SX126xGetPacketStatus( PacketStatus_t *pktStatus )
     pktStatus->packetType = SX126xGetPacketType( );
     switch( pktStatus->packetType )
     {
-        case PACKET_TYPE_GFSK:
+        case PACKET_TYPE_GFSK: 
             pktStatus->Params.Gfsk.RxStatus = status[0];
             pktStatus->Params.Gfsk.RssiSync = -status[1] >> 1;
             pktStatus->Params.Gfsk.RssiAvg = -status[2] >> 1;
             pktStatus->Params.Gfsk.FreqError = 0;
             break;
 
-        case PACKET_TYPE_LORA:
+        case PACKET_TYPE_LORA: //lora 包
             pktStatus->Params.LoRa.RssiPkt = -status[0] >> 1;
             ( status[1] < 128 ) ? ( pktStatus->Params.LoRa.SnrPkt = status[1] >> 2 ) : ( pktStatus->Params.LoRa.SnrPkt = ( ( status[1] - 256 ) >> 2 ) );
             pktStatus->Params.LoRa.SignalRssiPkt = -status[2] >> 1;
@@ -698,6 +742,7 @@ void SX126xGetPacketStatus( PacketStatus_t *pktStatus )
     }
 }
 
+/*获取设备错误*/
 RadioError_t SX126xGetDeviceErrors( void )
 {
     RadioError_t error;
@@ -706,12 +751,14 @@ RadioError_t SX126xGetDeviceErrors( void )
     return error;
 }
 
+/*清楚设备错误*/
 void SX126xClearDeviceErrors( void )
 {
     uint8_t buf[2] = { 0x00, 0x00 };
     SX126xWriteCommand( RADIO_CLR_ERROR, buf, 2 );
 }
 
+/*清楚中断状态*/
 void SX126xClearIrqStatus( uint16_t irq )
 {
     uint8_t buf[2];

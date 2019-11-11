@@ -16,16 +16,16 @@
 #define ATCMD_SIZE (LORAWAN_APP_DATA_BUFF_SIZE * 2 + 18)
 #define PORT_LEN 4
 
-#define QUERY_CMD		0x01
-#define EXECUTE_CMD		0x02
-#define DESC_CMD        0x03
-#define SET_CMD			0x04
+#define QUERY_CMD		0x01 //查询命令
+#define EXECUTE_CMD		0x02 //执行命令
+#define DESC_CMD        0x03 //描述命令 
+#define SET_CMD			0x04 //设置命令
 
 uint8_t atcmd[ATCMD_SIZE];
-uint16_t atcmd_index = 0;
+uint16_t atcmd_index = 0;//脚标
 volatile bool g_atcmd_processing = false;
 uint8_t g_default_key[LORA_KEY_LENGTH] = {0x41, 0x53, 0x52, 0x36, 0x35, 0x30, 0x58, 0x2D, 
-                                          0x32, 0x30, 0x31, 0x38, 0x31, 0x30, 0x33, 0x30};
+                                          0x32, 0x30, 0x31, 0x38, 0x31, 0x30, 0x33, 0x30};//默认密钥？用来干啥
 
 typedef struct {
 	char *cmd;
@@ -33,30 +33,30 @@ typedef struct {
 }at_cmd_t;
 
 //AT functions
-static int at_cjoinmode_func(int opt, int argc, char *argv[]);
-static int at_cdeveui_func(int opt, int argc, char *argv[]);
-static int at_cappeui_func(int opt, int argc, char *argv[]);
-static int at_cappkey_func(int opt, int argc, char *argv[]);
-static int at_cdevaddr_func(int opt, int argc, char *argv[]);
-static int at_cappskey_func(int opt, int argc, char *argv[]);
-static int at_cnwkskey_func(int opt, int argc, char *argv[]);
-static int at_caddmulticast_func(int opt, int argc, char *argv[]);
-static int at_cdelmulticast_func(int opt, int argc, char *argv[]);
-static int at_cnummulticast_func(int opt, int argc, char *argv[]);
-static int at_cfreqbandmask_func(int opt, int argc, char *argv[]);
-static int at_culdlmode_func(int opt, int argc, char *argv[]);
-static int at_cworkmode_func(int opt, int argc, char *argv[]);
-static int at_cclass_func(int opt, int argc, char *argv[]);
-static int at_cbl_func(int opt, int argc, char *argv[]);
-static int at_cstatus_func(int opt, int argc, char *argv[]);
-static int at_cjoin_func(int opt, int argc, char *argv[]);
-static int at_dtrx_func(int opt, int argc, char *argv[]);
+static int at_cjoinmode_func(int opt, int argc, char *argv[]);//加入模式
+static int at_cdeveui_func(int opt, int argc, char *argv[]);//dev eui
+static int at_cappeui_func(int opt, int argc, char *argv[]);//app eui
+static int at_cappkey_func(int opt, int argc, char *argv[]);//app key
+static int at_cdevaddr_func(int opt, int argc, char *argv[]);//dev addr
+static int at_cappskey_func(int opt, int argc, char *argv[]);//app skey
+static int at_cnwkskey_func(int opt, int argc, char *argv[]);//nw key
+static int at_caddmulticast_func(int opt, int argc, char *argv[]);//添加组播
+static int at_cdelmulticast_func(int opt, int argc, char *argv[]);//删除组播
+static int at_cnummulticast_func(int opt, int argc, char *argv[]);//组播数
+static int at_cfreqbandmask_func(int opt, int argc, char *argv[]);//频率参数
+static int at_culdlmode_func(int opt, int argc, char *argv[]);//
+static int at_cworkmode_func(int opt, int argc, char *argv[]);//工作模式
+static int at_cclass_func(int opt, int argc, char *argv[]);//class
+static int at_cbl_func(int opt, int argc, char *argv[]);//CBL？
+static int at_cstatus_func(int opt, int argc, char *argv[]);//状态
+static int at_cjoin_func(int opt, int argc, char *argv[]);//加入
+static int at_dtrx_func(int opt, int argc, char *argv[]);//发送数据
 static int at_drx_func(int opt, int argc, char *argv[]);
-static int at_cconfirm_func(int opt, int argc, char *argv[]);
-static int at_cappport_func(int opt, int argc, char *argv[]);
-static int at_cdatarate_func(int opt, int argc, char *argv[]);
-static int at_crssi_func(int opt, int argc, char *argv[]);
-static int at_cnbtrials_func(int opt, int argc, char *argv[]);
+static int at_cconfirm_func(int opt, int argc, char *argv[]);//确认数据
+static int at_cappport_func(int opt, int argc, char *argv[]);//应用端口
+static int at_cdatarate_func(int opt, int argc, char *argv[]);//速率
+static int at_crssi_func(int opt, int argc, char *argv[]);//信号强度
+static int at_cnbtrials_func(int opt, int argc, char *argv[]);//
 static int at_crm_func(int opt, int argc, char *argv[]);
 static int at_ctxp_func(int opt, int argc, char *argv[]);
 static int at_clinkcheck_func(int opt, int argc, char *argv[]);

@@ -45,10 +45,10 @@ Maintainer: Miguel Luis ( Semtech ), Gregory Cristian ( Semtech ) and Daniel Jae
 /*!
  * LoRaMAC channels
  */
-static ChannelParams_t Channels[CN470_MAX_NB_CHANNELS];
+static ChannelParams_t Channels[CN470_MAX_NB_CHANNELS];//信道
 
 /*!
- * LoRaMac bands
+ * LoRaMac bands //
  */
 static Band_t Bands[CN470_MAX_NB_BANDS] =
 {
@@ -56,16 +56,16 @@ static Band_t Bands[CN470_MAX_NB_BANDS] =
 };
 
 /*!
- * LoRaMac channels mask
+ * LoRaMac channels mask  信道掩码
  */
 static uint16_t ChannelsMask[CHANNELS_MASK_SIZE];
 
 /*!
- * LoRaMac channels default mask
+ * LoRaMac channels default mask 默认信道掩码
  */
 static uint16_t ChannelsDefaultMask[CHANNELS_MASK_SIZE];
 
-// Static functions
+// Static functions 获取下一次调低的速率
 static int8_t GetNextLowerTxDr( int8_t dr, int8_t minDr )
 {
     uint8_t nextLowerDr = 0;
@@ -81,6 +81,7 @@ static int8_t GetNextLowerTxDr( int8_t dr, int8_t minDr )
     return nextLowerDr;
 }
 
+//获取带宽
 static uint32_t GetBandwidth( uint32_t drIndex )
 {
     switch( BandwidthsCN470[drIndex] )
@@ -95,6 +96,7 @@ static uint32_t GetBandwidth( uint32_t drIndex )
     }
 }
 
+//限定发送功率
 static int8_t LimitTxPower( int8_t txPower, int8_t maxBandTxPower, int8_t datarate, uint16_t* channelsMask )
 {
     int8_t txPowerResult = txPower;
@@ -139,6 +141,7 @@ static uint8_t CountNbOfEnabledChannels( uint8_t datarate, uint16_t* channelsMas
     return nbEnabledChannels;
 }
 
+//470获取物理参数
 PhyParam_t RegionCN470GetPhyParam( GetPhyParams_t* getPhy )
 {
     PhyParam_t phyParam = { 0 };
@@ -308,11 +311,13 @@ PhyParam_t RegionCN470GetPhyParam( GetPhyParams_t* getPhy )
     return phyParam;
 }
 
+
 void RegionCN470SetBandTxDone( SetBandTxDoneParams_t* txDone )
 {
     RegionCommonSetBandTxDone( txDone->Joined, &Bands[Channels[txDone->Channel].Band], txDone->LastTxDoneTime );
 }
 
+//470默认初始
 void RegionCN470InitDefaults( InitType_t type )
 {
     switch( type )
@@ -353,6 +358,7 @@ void RegionCN470InitDefaults( InitType_t type )
     }
 }
 
+//470校验
 bool RegionCN470Verify( VerifyParams_t* verify, PhyAttribute_t phyAttribute )
 {
     switch( phyAttribute )
@@ -415,6 +421,7 @@ bool RegionCN470ChanMaskSet( ChanMaskSetParams_t* chanMaskSet )
     return true;
 }
 
+//下一个自动速率
 bool RegionCN470AdrNext( AdrNextParams_t* adrNext, int8_t* drOut, int8_t* txPowOut, uint32_t* adrAckCounter )
 {
     bool adrAckReq = false;
@@ -480,6 +487,7 @@ bool RegionCN470AdrNext( AdrNextParams_t* adrNext, int8_t* drOut, int8_t* txPowO
     return adrAckReq;
 }
 
+//计算接收窗口参数
 void RegionCN470ComputeRxWindowParameters( int8_t datarate, uint8_t minRxSymbols, uint32_t rxError, RxConfigParams_t *rxConfigParams )
 {
     double tSymbol = 0.0;
@@ -494,6 +502,7 @@ void RegionCN470ComputeRxWindowParameters( int8_t datarate, uint8_t minRxSymbols
     RegionCommonComputeRxWindowParameters( tSymbol, minRxSymbols, rxError, radioWakeUpTime, &rxConfigParams->WindowTimeout, &rxConfigParams->WindowOffset );
 }
 
+//接收配置
 bool RegionCN470RxConfig( RxConfigParams_t* rxConfig, int8_t* datarate )
 {
     int8_t dr = rxConfig->Datarate;
@@ -535,6 +544,7 @@ bool RegionCN470RxConfig( RxConfigParams_t* rxConfig, int8_t* datarate )
     return true;
 }
 
+//470发送配置
 bool RegionCN470TxConfig( TxConfigParams_t* txConfig, int8_t* txPower, TimerTime_t* txTimeOnAir )
 {
     int8_t phyDr = DataratesCN470[txConfig->Datarate];
@@ -561,6 +571,7 @@ bool RegionCN470TxConfig( TxConfigParams_t* txConfig, int8_t* txPower, TimerTime
     return true;
 }
 
+//470adr请求
 uint8_t RegionCN470LinkAdrReq( LinkAdrReqParams_t* linkAdrReq, int8_t* drOut, int8_t* txPowOut, uint8_t* nbRepOut, uint8_t* nbBytesParsed )
 {
     uint8_t status = 0x07;
@@ -655,6 +666,7 @@ uint8_t RegionCN470LinkAdrReq( LinkAdrReqParams_t* linkAdrReq, int8_t* drOut, in
     return status;
 }
 
+//470接收参数设置请求
 uint8_t RegionCN470RxParamSetupReq( RxParamSetupReqParams_t* rxParamSetupReq )
 {
     uint8_t status = 0x07;
@@ -684,12 +696,14 @@ uint8_t RegionCN470RxParamSetupReq( RxParamSetupReqParams_t* rxParamSetupReq )
     return status;
 }
 
+//新信道请求，没有任何东西
 uint8_t RegionCN470NewChannelReq( NewChannelReqParams_t* newChannelReq )
 {
     // Datarate and frequency KO
     return 0;
 }
 
+//
 int8_t RegionCN470TxParamSetupReq( TxParamSetupReqParams_t* txParamSetupReq )
 {
     return -1;
@@ -700,6 +714,7 @@ uint8_t RegionCN470DlChannelReq( DlChannelReqParams_t* dlChannelReq )
     return 0;
 }
 
+//交替ADR
 int8_t RegionCN470AlternateDr( AlternateDrParams_t* alternateDr )
 {
     int8_t datarate = 0;
@@ -731,6 +746,7 @@ int8_t RegionCN470AlternateDr( AlternateDrParams_t* alternateDr )
     return datarate;
 }
 
+//计算退避
 void RegionCN470CalcBackOff( CalcBackOffParams_t* calcBackOff )
 {
     uint8_t channel = calcBackOff->Channel;
@@ -749,6 +765,7 @@ void RegionCN470CalcBackOff( CalcBackOffParams_t* calcBackOff )
     }
 }
 
+//470下一个信道
 bool RegionCN470NextChannel( NextChanParams_t* nextChanParams, uint8_t* channel, TimerTime_t* time, TimerTime_t* aggregatedTimeOff )
 {
     uint8_t nbEnabledChannels = 0;
@@ -808,16 +825,19 @@ bool RegionCN470NextChannel( NextChanParams_t* nextChanParams, uint8_t* channel,
     }
 }
 
+//信道增加
 LoRaMacStatus_t RegionCN470ChannelAdd( ChannelAddParams_t* channelAdd )
 {
     return LORAMAC_STATUS_PARAMETER_INVALID;
 }
 
+//信道移除
 bool RegionCN470ChannelsRemove( ChannelRemoveParams_t* channelRemove  )
 {
     return LORAMAC_STATUS_PARAMETER_INVALID;
 }
 
+//设置连续波
 void RegionCN470SetContinuousWave( ContinuousWaveParams_t* continuousWave )
 {
     int8_t txPowerLimited = LimitTxPower( continuousWave->TxPower, Bands[Channels[continuousWave->Channel].Band].TxMaxPower, continuousWave->Datarate, ChannelsMask );
@@ -841,6 +861,7 @@ uint8_t RegionCN470ApplyDrOffset( uint8_t downlinkDwellTime, int8_t dr, int8_t d
     return datarate;
 }
 
+//信标设置
 void RegionCN470RxBeaconSetup( RxBeaconSetup_t* rxBeaconSetup, uint8_t* outDr )
 {
     RegionCommonRxBeaconSetupParams_t regionCommonRxBeaconSetup;

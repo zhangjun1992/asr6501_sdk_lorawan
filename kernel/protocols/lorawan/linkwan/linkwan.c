@@ -72,6 +72,7 @@ static void notify_host()
 }  
 #endif    
 
+//发送数据帧？
 static bool send_frame(void)
 {
     McpsReq_t mcpsReq;
@@ -121,6 +122,7 @@ static bool send_frame(void)
     return true;
 }
 
+//准备发送帧
 static void prepare_tx_frame(void)
 {
     if (g_lwan_mac_config_p->modes.report_mode == TX_ON_TIMER) {
@@ -141,6 +143,7 @@ static uint8_t get_freqband_num(void)
     }
     return num;
 }
+//下一个频段
 static uint8_t get_next_freqband(void)
 {
     uint8_t freqband[16];
@@ -158,10 +161,12 @@ static uint8_t get_next_freqband(void)
 }
 #endif
 
+//复位加入状态
 static void reset_join_state(void)
 {
     g_lwan_device_state = DEVICE_STATE_JOIN;
 }
+
 static void on_tx_next_packet_timer_event(void)
 {
     MibRequestConfirm_t mib_req;
@@ -506,6 +511,7 @@ MulticastParams_t *get_lora_cur_multicast(void)
     return NULL;
 }
 
+//打样设备信息
 static void print_dev_info(void)
 {
     if(g_lwan_dev_config_p->modes.join_mode == JOIN_MODE_OTAA){
@@ -540,6 +546,7 @@ static void print_dev_info(void)
     DBG_LINKWAN("scan chn mask 0x%04x\r\n", g_lwan_dev_config_p->freqband_mask);
 }
 
+//初始化lwan配置
 void init_lwan_configs() 
 {
     LWanDevKeys_t default_keys = LWAN_DEV_KEYS_DEFAULT;
@@ -567,18 +574,19 @@ void lora_init(LoRaMainCallback_t *callbacks)
 #endif
 }
 
+//lora状态机
 void lora_fsm( void )
 {
     while (1) {
 #ifdef CONFIG_LINKWAN_AT
-        linkwan_at_process();
+        linkwan_at_process();//at命令处理
 #endif
         if (Radio.IrqProcess != NULL) {
             Radio.IrqProcess();
         }
         
         switch (g_lwan_device_state) {
-            case DEVICE_STATE_INIT: { 
+            case DEVICE_STATE_INIT: { //初始化状态
                 LoRaMacPrimitives.MacMcpsConfirm = mcps_confirm;
                 LoRaMacPrimitives.MacMcpsIndication = mcps_indication;
                 LoRaMacPrimitives.MacMlmeConfirm = mlme_confirm;
@@ -614,12 +622,12 @@ void lora_fsm( void )
                 if(!lwan_is_key_valid(g_lwan_dev_keys_p->pkey, LORA_KEY_LENGTH))
                     print_dev_info();
                 
-                TimerInit( &TxNextPacketTimer, on_tx_next_packet_timer_event );
+                TimerInit( &TxNextPacketTimer, on_tx_next_packet_timer_event );//下一包定时器
 
                 lwan_dev_params_update();
                 lwan_mac_params_update();
                 
-                if(g_lwan_dev_config_p->modes.join_mode == JOIN_MODE_ABP){
+                if(g_lwan_dev_config_p->modes.join_mode == JOIN_MODE_ABP){ //判断加入模式
                     MibRequestConfirm_t mibReq;
                     mibReq.Type = MIB_NET_ID;
                     mibReq.Param.NetID = LORAWAN_NETWORK_ID;
@@ -656,11 +664,11 @@ void lora_fsm( void )
                         linkwan_at_prompt_print();
                     }
                 }
-                lwan_dev_status_set(DEVICE_STATUS_IDLE);
+                lwan_dev_status_set(DEVICE_STATUS_IDLE);//切换到空闲
                 break;
             }
 
-            case DEVICE_STATE_JOIN: {
+            case DEVICE_STATE_JOIN: {//加入状态
                 if(g_lwan_dev_config_p->modes.join_mode == JOIN_MODE_OTAA){
                     MlmeReq_t mlmeReq;
 
@@ -697,7 +705,7 @@ void lora_fsm( void )
                 g_lwan_device_state = DEVICE_STATE_SLEEP;
                 break;
             }
-            case DEVICE_STATE_JOINED: {
+            case DEVICE_STATE_JOINED: { //已经加入状态
                 DBG_LINKWAN("Joined\n\r");
 #ifdef CONFIG_LINKWAN                
                 JoinSettings_t join_settings;
@@ -728,7 +736,7 @@ void lora_fsm( void )
                 }
                 break;
             }
-            case DEVICE_STATE_REQ_DEVICE_TIME: {
+            case DEVICE_STATE_REQ_DEVICE_TIME: {    //请求设备时间？
                 MlmeReq_t mlmeReq;
                 MibRequestConfirm_t mib_req;
 
@@ -772,10 +780,10 @@ void lora_fsm( void )
                 g_lwan_device_state = DEVICE_STATE_SEND_MAC;
                 break;
             }
-            case DEVICE_STATE_SEND: {
+            case DEVICE_STATE_SEND: {  //发送数据
                 if (next_tx == true) {
-                    prepare_tx_frame();
-                    next_tx = send_frame();
+                    prepare_tx_frame(); //转变数据帧
+                    next_tx = send_frame();//发送数据帧
                 }
                 if (g_lwan_mac_config_p->modes.report_mode == TX_ON_TIMER) {
                     start_dutycycle_timer();
@@ -784,7 +792,7 @@ void lora_fsm( void )
                 g_lwan_device_state = DEVICE_STATE_SLEEP;
                 break;
             }
-            case DEVICE_STATE_SEND_MAC: {
+            case DEVICE_STATE_SEND_MAC: { //mac帧发送
                 if (next_tx == true) {
                     tx_data.BuffSize = 0;
                     next_tx = send_frame();
@@ -792,7 +800,7 @@ void lora_fsm( void )
                 g_lwan_device_state = DEVICE_STATE_SLEEP;
                 break;
             }
-            case DEVICE_STATE_SLEEP: {       
+            case DEVICE_STATE_SLEEP: {      //睡眠  
 #ifndef LOW_POWER_DISABLE
                 LowPower_Handler( );
 #endif
@@ -884,6 +892,7 @@ int lwan_mac_req_send(int type, void *param)
     return ret;
 }
 
+//lwan加入请求
 int lwan_join(uint8_t bJoin, uint8_t bAutoJoin, uint16_t joinInterval, uint16_t joinRetryCnt)
 {
     int ret = LWAN_SUCCESS;
@@ -935,6 +944,7 @@ int lwan_join(uint8_t bJoin, uint8_t bAutoJoin, uint16_t joinInterval, uint16_t 
     return ret;
 }
 
+//数据发送
 int lwan_data_send(uint8_t confirm, uint8_t Nbtrials, uint8_t *payload, uint8_t len)
 {
     MibRequestConfirm_t mib_req;
@@ -957,6 +967,7 @@ int lwan_data_send(uint8_t confirm, uint8_t Nbtrials, uint8_t *payload, uint8_t 
     return LWAN_ERROR;
 }
 
+//lwan数据接收
 int lwan_data_recv(uint8_t *port, uint8_t **payload, uint8_t *size)
 {
     if(!port || !payload || !size)
@@ -969,11 +980,13 @@ int lwan_data_recv(uint8_t *port, uint8_t **payload, uint8_t *size)
     return LWAN_SUCCESS;
 }
 
+//获取电池电量
 uint8_t lwan_dev_battery_get()
 {
     return app_callbacks->BoardGetBatteryLevel();
 }
 
+//获取信号强度
 int lwan_dev_rssi_get(uint8_t band, int16_t *channel_rssi)
 {
     //CN470A Only
@@ -997,7 +1010,7 @@ int lwan_dev_rssi_get(uint8_t band, int16_t *channel_rssi)
     return LWAN_SUCCESS;
 }
 
-
+//组播添加
 bool lwan_multicast_add(void *multicastInfo )
 {
     MibRequestConfirm_t mibset;
@@ -1017,6 +1030,7 @@ bool lwan_multicast_add(void *multicastInfo )
     return true;
 }
 
+//组播删除
 bool lwan_multicast_del(uint32_t dev_addr)
 {
     MulticastParams_t *multiCastNode = get_lora_cur_multicast();
@@ -1044,6 +1058,7 @@ bool lwan_multicast_del(uint32_t dev_addr)
     return false;
 }
 
+//组播数量获取
 uint8_t lwan_multicast_num_get(void)
 {
     MulticastParams_t *multiCastNode = get_lora_cur_multicast();
@@ -1058,6 +1073,7 @@ uint8_t lwan_multicast_num_get(void)
     return num;
 }
 
+//系统复位
 void lwan_sys_reboot(int8_t mode)
 {
     if (mode == 0) {
