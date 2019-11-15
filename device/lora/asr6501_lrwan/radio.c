@@ -1006,7 +1006,7 @@ void RadioStartCad( uint8_t symbols )
     else
         cadSymbolNum = LORA_CAD_01_SYMBOL;
     
-    SX126xSetDioIrqParams( IRQ_CAD_DONE | IRQ_CAD_ACTIVITY_DETECTED,
+    SX126xSetDioIrqParams( IRQ_CAD_DONE | IRQ_CAD_ACTIVITY_DETECTED,//有效检测到
                            IRQ_CAD_DONE | IRQ_CAD_ACTIVITY_DETECTED,
                            IRQ_RADIO_NONE,
                            IRQ_RADIO_NONE );

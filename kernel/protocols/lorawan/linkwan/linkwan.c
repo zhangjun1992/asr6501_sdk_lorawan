@@ -79,18 +79,18 @@ static bool send_frame(void)
     LoRaMacTxInfo_t txInfo;
     uint8_t send_msg_type;
 
-    if (LoRaMacQueryTxPossible(tx_data.BuffSize, &txInfo) != LORAMAC_STATUS_OK) {
+    if (LoRaMacQueryTxPossible(tx_data.BuffSize, &txInfo) != LORAMAC_STATUS_OK) {  //查询发送可能性？
         return true;
     }
 
     if(g_lwan_mac_config_p->modes.linkcheck_mode == 2) {
         MlmeReq_t mlmeReq;
-        mlmeReq.Type = MLME_LINK_CHECK;
+        mlmeReq.Type = MLME_LINK_CHECK;  //link检查
         LoRaMacMlmeRequest(&mlmeReq);
     }
     
     send_msg_type = g_data_send_msg_type>=0?g_data_send_msg_type:g_lwan_mac_config_p->modes.confirmed_msg;
-    if (send_msg_type == LORAWAN_UNCONFIRMED_MSG) {
+    if (send_msg_type == LORAWAN_UNCONFIRMED_MSG) {  //非确认帧
         MibRequestConfirm_t mibReq;
         mibReq.Type = MIB_CHANNELS_NB_REP;
         mibReq.Param.ChannelNbRep = g_data_send_nbtrials?g_data_send_nbtrials:
@@ -102,7 +102,7 @@ static bool send_frame(void)
         mcpsReq.Req.Unconfirmed.fBuffer = tx_data.Buff;
         mcpsReq.Req.Unconfirmed.fBufferSize = tx_data.BuffSize;
         mcpsReq.Req.Unconfirmed.Datarate = g_lwan_mac_config_p->datarate;
-    } else {
+    } else {  //确认帧
         mcpsReq.Type = MCPS_CONFIRMED;
         mcpsReq.Req.Confirmed.fPort = g_lwan_mac_config_p->port;
         mcpsReq.Req.Confirmed.fBuffer = tx_data.Buff;
@@ -115,7 +115,7 @@ static bool send_frame(void)
     g_data_send_nbtrials = 0;
     g_data_send_msg_type = -1;
     
-    if (LoRaMacMcpsRequest(&mcpsReq) == LORAMAC_STATUS_OK) {
+    if (LoRaMacMcpsRequest(&mcpsReq) == LORAMAC_STATUS_OK) {  //mac层发送数据
         return false;
     }
 
@@ -782,7 +782,7 @@ void lora_fsm( void )
             }
             case DEVICE_STATE_SEND: {  //发送数据
                 if (next_tx == true) {
-                    prepare_tx_frame(); //转变数据帧
+                    prepare_tx_frame(); //准备数据帧
                     next_tx = send_frame();//发送数据帧
                 }
                 if (g_lwan_mac_config_p->modes.report_mode == TX_ON_TIMER) {
@@ -950,17 +950,17 @@ int lwan_data_send(uint8_t confirm, uint8_t Nbtrials, uint8_t *payload, uint8_t 
     MibRequestConfirm_t mib_req;
     LoRaMacStatus_t status;
 
-    TimerStop(&TxNextPacketTimer);
+    TimerStop(&TxNextPacketTimer);//停止下一包定时器
 
-    mib_req.Type = MIB_NETWORK_JOINED;
-    status = LoRaMacMibGetRequestConfirm(&mib_req);
-    if (status == LORAMAC_STATUS_OK) {
-        if (mib_req.Param.IsNetworkJoined == true) {
-            g_data_send_msg_type = confirm;
-            memcpy(tx_data.Buff, payload, len);
-            tx_data.BuffSize = len;
+    mib_req.Type = MIB_NETWORK_JOINED;//已经加入
+    status = LoRaMacMibGetRequestConfirm(&mib_req); //获取mac状态
+    if (status == LORAMAC_STATUS_OK) {  //如果状态是OK
+        if (mib_req.Param.IsNetworkJoined == true) { //如果网络已经加入
+            g_data_send_msg_type = confirm; //发送类型
+            memcpy(tx_data.Buff, payload, len);//拷贝数据到发送数据的缓存
+            tx_data.BuffSize = len;//发送数据的长度
             g_data_send_nbtrials = Nbtrials;
-            g_lwan_device_state = DEVICE_STATE_SEND;
+            g_lwan_device_state = DEVICE_STATE_SEND;//状态机切换到发送状态
             return LWAN_SUCCESS;
         }
     }

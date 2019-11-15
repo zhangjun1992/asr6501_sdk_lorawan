@@ -793,11 +793,11 @@ static int at_dtrx_func(int opt, int argc, char *argv[])
             uint8_t confirm, Nbtrials;
             uint16_t len;
             int bin_len = 0;
-            uint8_t payload[LORAWAN_APP_DATA_BUFF_SIZE];
-            confirm = strtol((const char *)argv[0], NULL, 0);
-            Nbtrials = strtol((const char *)argv[1], NULL, 0);
-            len = strtol((const char *)argv[2], NULL, 0);
-            bin_len = hex2bin((const char *)argv[3], payload, len);
+            uint8_t payload[LORAWAN_APP_DATA_BUFF_SIZE];//负载数据
+            confirm = strtol((const char *)argv[0], NULL, 0);//是否是确认帧
+            Nbtrials = strtol((const char *)argv[1], NULL, 0);//重试次数
+            len = strtol((const char *)argv[2], NULL, 0);//数据长度
+            bin_len = hex2bin((const char *)argv[3], payload, len);//hex长度
             
             if(bin_len>=0) {
                 ret = LWAN_SUCCESS;

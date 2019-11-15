@@ -1702,17 +1702,18 @@ static void OnMacStateCheckTimerEvent( void )
 
 }
 
+//发送颜色事件
 static void OnTxDelayedTimerEvent( void )
 {
     LoRaMacHeader_t macHdr;
     LoRaMacFrameCtrl_t fCtrl;
     AlternateDrParams_t altDr;
 
-    TimerStop( &TxDelayedTimer );
-    LoRaMacState &= ~LORAMAC_TX_DELAYED;
+    TimerStop( &TxDelayedTimer );//停止该延时
+    LoRaMacState &= ~LORAMAC_TX_DELAYED;//发送延时
 
     if ( ( LoRaMacFlags.Bits.MlmeReq == 1 ) && ( LoRaMacConfirmQueueIsCmdActive( MLME_JOIN ) == true ) ) {
-        ResetMacParameters( );
+        ResetMacParameters( );//重设mac层参数
 
         altDr.NbTrials = JoinRequestTrials + 1;
 #ifdef CONFIG_LINKWAN
@@ -2469,12 +2470,13 @@ static bool StartCAD( uint8_t channel )
 }
 #endif
 
+//发送数据 mac帧头，端口、数据、数据长度
 LoRaMacStatus_t Send( LoRaMacHeader_t *macHdr, uint8_t fPort, void *fBuffer, uint16_t fBufferSize )
 {
-    LoRaMacFrameCtrl_t fCtrl;
+    LoRaMacFrameCtrl_t fCtrl; //帧控制
     LoRaMacStatus_t status = LORAMAC_STATUS_PARAMETER_INVALID;
 #ifdef CONFIG_LWAN
-    lwan_dev_status_set(DEVICE_STATUS_IDLE);
+    lwan_dev_status_set(DEVICE_STATUS_IDLE);//设备空闲状态？
 #endif
     fCtrl.Value = 0;
     fCtrl.Bits.FOptsLen      = 0;
@@ -2494,7 +2496,7 @@ LoRaMacStatus_t Send( LoRaMacHeader_t *macHdr, uint8_t fPort, void *fBuffer, uin
     fCtrl.Bits.Adr           = AdrCtrlOn;
 
     // Prepare the frame
-    status = PrepareFrame( macHdr, &fCtrl, fPort, fBuffer, fBufferSize );
+    status = PrepareFrame( macHdr, &fCtrl, fPort, fBuffer, fBufferSize );//准备数据帧
 
     // Validate status
     if ( status != LORAMAC_STATUS_OK ) {
@@ -2505,7 +2507,8 @@ LoRaMacStatus_t Send( LoRaMacHeader_t *macHdr, uint8_t fPort, void *fBuffer, uin
     McpsConfirm.NbRetries = 0;
     McpsConfirm.AckReceived = false;
     McpsConfirm.UpLinkCounter = UpLinkCounter;
-
+    
+    //安排发送数据
     status = ScheduleTx( );
 #ifdef CONFIG_LORA_VERIFY
     if (g_lora_debug == true) {
@@ -2516,13 +2519,13 @@ LoRaMacStatus_t Send( LoRaMacHeader_t *macHdr, uint8_t fPort, void *fBuffer, uin
     return status;
 }
 
-//计划发送
+//安排发送发送
 static LoRaMacStatus_t ScheduleTx( void )
 {
     TimerTime_t dutyCycleTimeOff = 0;
     NextChanParams_t nextChan;
 
-    // Check if the device is off
+    // Check if the device is off 检查设备是否关闭
     if ( MaxDCycle == 255 ) {
         return LORAMAC_STATUS_DEVICE_OFF;
     }
@@ -2530,13 +2533,13 @@ static LoRaMacStatus_t ScheduleTx( void )
         AggregatedTimeOff = 0;
     }
 
-    // Update Backoff
+    // Update Backoff 计算退避
     CalculateBackOff( LastTxChannel );
 
     nextChan.AggrTimeOff = AggregatedTimeOff;
-    nextChan.Datarate = LoRaMacParams.ChannelsDatarate;
-    nextChan.DutyCycleEnabled = DutyCycleOn;
-    nextChan.Joined = IsLoRaMacNetworkJoined;
+    nextChan.Datarate = LoRaMacParams.ChannelsDatarate;//速率
+    nextChan.DutyCycleEnabled = DutyCycleOn;//占空比
+    nextChan.Joined = IsLoRaMacNetworkJoined;//已经加入
     nextChan.LastAggrTx = AggregatedLastTxDoneTime;
 #ifdef CONFIG_LINKWAN
     nextChan.joinmethod = LoRaMacParams.method;
@@ -2557,7 +2560,7 @@ static LoRaMacStatus_t ScheduleTx( void )
     LoRaMacParams.update_freqband = nextChan.update_freqband;
 #endif
 
-    // Compute Rx1 windows parameters
+    // 计算 rx1窗口参数 Rx1 windows parameters
     RegionComputeRxWindowParameters( LoRaMacRegion,
                                      RegionApplyDrOffset( LoRaMacRegion, LoRaMacParams.DownlinkDwellTime, LoRaMacParams.ChannelsDatarate,
                                                           LoRaMacParams.Rx1DrOffset ),
@@ -2574,9 +2577,11 @@ static LoRaMacStatus_t ScheduleTx( void )
     if ( IsLoRaMacNetworkJoined == false ) {
         RxWindow1Delay = LoRaMacParams.JoinAcceptDelay1 + RxWindow1Config.WindowOffset;
         RxWindow2Delay = LoRaMacParams.JoinAcceptDelay2 + RxWindow2Config.WindowOffset;
-    } else {
-        if ( ValidatePayloadLength( LoRaMacTxPayloadLen, LoRaMacParams.ChannelsDatarate, MacCommandsBufferIndex ) == false ) {
-            return LORAMAC_STATUS_LENGTH_ERROR;
+    } 
+    else {
+        if ( ValidatePayloadLength( LoRaMacTxPayloadLen, LoRaMacParams.ChannelsDatarate, MacCommandsBufferIndex ) == false ) 
+        {
+            return LORAMAC_STATUS_LENGTH_ERROR;//长度错误
         }
         RxWindow1Delay = LoRaMacParams.ReceiveDelay1 + RxWindow1Config.WindowOffset;
         RxWindow2Delay = LoRaMacParams.ReceiveDelay2 + RxWindow2Config.WindowOffset;
@@ -2601,13 +2606,14 @@ static LoRaMacStatus_t ScheduleTx( void )
     }
 }
 
+//计算退避
 static void CalculateBackOff( uint8_t channel )
 {
     CalcBackOffParams_t calcBackOff;
 
-    calcBackOff.Joined = IsLoRaMacNetworkJoined;
-    calcBackOff.DutyCycleEnabled = DutyCycleOn;
-    calcBackOff.Channel = channel;
+    calcBackOff.Joined = IsLoRaMacNetworkJoined;//已经加入
+    calcBackOff.DutyCycleEnabled = DutyCycleOn;//占空比打开
+    calcBackOff.Channel = channel;//信道
     calcBackOff.ElapsedTime = TimerGetElapsedTime( LoRaMacInitializationTime );
     calcBackOff.TxTimeOnAir = TxTimeOnAir;
     calcBackOff.LastTxIsJoinRequest = LastTxIsJoinRequest;
@@ -2709,7 +2715,7 @@ LoRaMacStatus_t PrepareFrame( LoRaMacHeader_t *macHdr, LoRaMacFrameCtrl_t *fCtrl
         if (g_lora_debug)
             PRINTF_RAW("UpLoad frame %d being processed\r\n", macHdr->Bits.MType);
 #endif
-        case FRAME_TYPE_JOIN_REQ:
+        case FRAME_TYPE_JOIN_REQ://加入请求帧
             LoRaMacBufferPktLen = pktHeaderLen;
 
             memcpyr( LoRaMacBuffer + LoRaMacBufferPktLen, LoRaMacAppEui, 8 );
@@ -2734,10 +2740,10 @@ LoRaMacStatus_t PrepareFrame( LoRaMacHeader_t *macHdr, LoRaMacFrameCtrl_t *fCtrl
             LoRaMacBuffer[LoRaMacBufferPktLen++] = ( mic >> 24 ) & 0xFF;
 
             break;
-        case FRAME_TYPE_DATA_CONFIRMED_UP:
+        case FRAME_TYPE_DATA_CONFIRMED_UP://需确认上行帧
             NodeAckRequested = true;
         //Intentional fallthrough
-        case FRAME_TYPE_DATA_UNCONFIRMED_UP:
+        case FRAME_TYPE_DATA_UNCONFIRMED_UP://非确认上行帧
             if ( IsLoRaMacNetworkJoined == false ) {
                 return LORAMAC_STATUS_NO_NETWORK_JOINED; // No network has been joined yet
             }
@@ -2758,14 +2764,14 @@ LoRaMacStatus_t PrepareFrame( LoRaMacHeader_t *macHdr, LoRaMacFrameCtrl_t *fCtrl
                 fCtrl->Bits.Ack = 1;
             }
 
-            LoRaMacBuffer[pktHeaderLen++] = ( LoRaMacDevAddr ) & 0xFF;
+            LoRaMacBuffer[pktHeaderLen++] = ( LoRaMacDevAddr ) & 0xFF;//填设备地址
             LoRaMacBuffer[pktHeaderLen++] = ( LoRaMacDevAddr >> 8 ) & 0xFF;
             LoRaMacBuffer[pktHeaderLen++] = ( LoRaMacDevAddr >> 16 ) & 0xFF;
             LoRaMacBuffer[pktHeaderLen++] = ( LoRaMacDevAddr >> 24 ) & 0xFF;
 
-            LoRaMacBuffer[pktHeaderLen++] = fCtrl->Value;
+            LoRaMacBuffer[pktHeaderLen++] = fCtrl->Value;//填控制字
 
-            LoRaMacBuffer[pktHeaderLen++] = UpLinkCounter & 0xFF;
+            LoRaMacBuffer[pktHeaderLen++] = UpLinkCounter & 0xFF;//上行计数器
             LoRaMacBuffer[pktHeaderLen++] = ( UpLinkCounter >> 8 ) & 0xFF;
 
             // Copy the MAC commands which must be re-send into the MAC command buffer
@@ -2821,6 +2827,7 @@ LoRaMacStatus_t PrepareFrame( LoRaMacHeader_t *macHdr, LoRaMacFrameCtrl_t *fCtrl
             }
             LoRaMacBufferPktLen = pktHeaderLen + LoRaMacTxPayloadLen;
 
+            //计算校验和
             LoRaMacComputeMic( LoRaMacBuffer, LoRaMacBufferPktLen, LoRaMacNwkSKey, LoRaMacDevAddr, UP_LINK, UpLinkCounter, &mic );
 
             LoRaMacBuffer[LoRaMacBufferPktLen + 0] = mic & 0xFF;
@@ -2828,10 +2835,11 @@ LoRaMacStatus_t PrepareFrame( LoRaMacHeader_t *macHdr, LoRaMacFrameCtrl_t *fCtrl
             LoRaMacBuffer[LoRaMacBufferPktLen + 2] = ( mic >> 16 ) & 0xFF;
             LoRaMacBuffer[LoRaMacBufferPktLen + 3] = ( mic >> 24 ) & 0xFF;
 
+            //buff长度
             LoRaMacBufferPktLen += LORAMAC_MFR_LEN;
 
             break;
-        case FRAME_TYPE_PROPRIETARY:
+        case FRAME_TYPE_PROPRIETARY://专用帧
             if ( ( fBuffer != NULL ) && ( LoRaMacTxPayloadLen > 0 ) ) {
                 memcpy1( LoRaMacBuffer + pktHeaderLen, ( uint8_t * ) fBuffer, LoRaMacTxPayloadLen );
                 LoRaMacBufferPktLen = pktHeaderLen + LoRaMacTxPayloadLen;
@@ -3791,7 +3799,7 @@ LoRaMacStatus_t LoRaMacMlmeRequest( MlmeReq_t *mlmeRequest )
             status = Send( &macHdr, 0, NULL, 0 );
             break;
         }
-        case MLME_LINK_CHECK: {
+        case MLME_LINK_CHECK: { //link检查
             // Apply the request
             LoRaMacFlags.Bits.MlmeReq = 1;
             queueElement.Request = mlmeRequest->Type;
@@ -3908,6 +3916,7 @@ LoRaMacStatus_t LoRaMacMlmeRequest( MlmeReq_t *mlmeRequest )
     return status;
 }
 
+//Mac层 数据请求
 LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
 {
     GetPhyParams_t getPhy;
@@ -3921,7 +3930,7 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
     int8_t datarate;
     bool readyToSend = false;
 
-#ifdef CONFIG_LORA_VERIFY
+#ifdef CONFIG_LORA_VERIFY //lora校验？
 	if (g_lora_debug) {
 		mcps_start_time = TimerGetCurrentTime( );
 	}
@@ -3931,7 +3940,7 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
     }
     if ( ( ( LoRaMacState & LORAMAC_TX_RUNNING ) == LORAMAC_TX_RUNNING ) ||
          ( ( LoRaMacState & LORAMAC_TX_DELAYED ) == LORAMAC_TX_DELAYED ) ) {
-        return LORAMAC_STATUS_BUSY;
+        return LORAMAC_STATUS_BUSY; //返回繁忙，发送失败
     }
 
     macHdr.Value = 0;
@@ -3942,7 +3951,7 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
     AckTimeoutRetriesCounter = 1;
 
     switch ( mcpsRequest->Type ) {
-        case MCPS_UNCONFIRMED: {
+        case MCPS_UNCONFIRMED: { //非确认帧
             readyToSend = true;
             AckTimeoutRetries = 1;
 
@@ -3953,7 +3962,7 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
             datarate = mcpsRequest->Req.Unconfirmed.Datarate;
             break;
         }
-        case MCPS_CONFIRMED: {
+        case MCPS_CONFIRMED: {//确认帧
             readyToSend = true;
             AckTimeoutRetries = mcpsRequest->Req.Confirmed.NbTrials;
 
@@ -3964,7 +3973,7 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
             datarate = mcpsRequest->Req.Confirmed.Datarate;
             break;
         }
-        case MCPS_PROPRIETARY: {
+        case MCPS_PROPRIETARY: {//专属帧。mac命令？
             readyToSend = true;
             AckTimeoutRetries = 1;
 
@@ -3979,32 +3988,37 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest )
     }
 
     // Filter fPorts
-    if( IsFPortAllowed( fPort ) == false )
+    if( IsFPortAllowed( fPort ) == false )//端口过滤，查看端口是否能用
     {
         return LORAMAC_STATUS_PARAMETER_INVALID;
     }
 
     // Get the minimum possible datarate
-    getPhy.Attribute = PHY_MIN_TX_DR;
-    getPhy.UplinkDwellTime = LoRaMacParams.UplinkDwellTime;
-    phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
+    getPhy.Attribute = PHY_MIN_TX_DR;  //获取最小发送速率
+    getPhy.UplinkDwellTime = LoRaMacParams.UplinkDwellTime;//上行现在时间
+    phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );//获取物理参数
     // Apply the minimum possible datarate.
     // Some regions have limitations for the minimum datarate.
-    datarate = MAX( datarate, phyParam.Value );
+    datarate = MAX( datarate, phyParam.Value );//比较物理参数和传参的速率，取最大
 
-    if ( readyToSend == true ) {
-        if ( AdrCtrlOn == false ) {
+    if ( readyToSend == true ) 
+    { //准备发送
+        if ( AdrCtrlOn == false ) 
+        {//adr控制打开与否
             verify.DatarateParams.Datarate = datarate;
             verify.DatarateParams.UplinkDwellTime = LoRaMacParams.UplinkDwellTime;
 
-            if ( RegionVerify( LoRaMacRegion, &verify, PHY_TX_DR ) == true ) {
+            if ( RegionVerify( LoRaMacRegion, &verify, PHY_TX_DR ) == true ) 
+            {
                 LoRaMacParams.ChannelsDatarate = verify.DatarateParams.Datarate;
-            } else {
+            } 
+            else 
+            {
                 return LORAMAC_STATUS_PARAMETER_INVALID;
             }
         }
 
-        status = Send( &macHdr, fPort, fBuffer, fBufferSize );
+        status = Send( &macHdr, fPort, fBuffer, fBufferSize );//发送
         if ( status == LORAMAC_STATUS_OK ) {
             McpsConfirm.McpsRequest = mcpsRequest->Type;
             LoRaMacFlags.Bits.McpsReq = 1;
